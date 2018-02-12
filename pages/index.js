@@ -1,5 +1,6 @@
+import Header from "../components/Header"
 
-const Index = (props) => (
+const Home = () => (
   <div>
       <h1>Openfisca france</h1>
       <p>le meilleur logiciel au monde</p>
@@ -29,4 +30,9 @@ const Index = (props) => (
   </div>
   )
 
-export default Index
+export default () => (
+  <div>
+    <Header />
+    <Home />
+  </div>
+)
