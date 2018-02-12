@@ -2,9 +2,11 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 
 const Home = () => (
-  <div>
+  <div id='content'>
     <div id='hero'>
-      <img src='https://fr.openfisca.org/hotlinks/logo-openfisca.svg' />
+      <div id='logo'>
+        <img src='https://fr.openfisca.org/hotlinks/logo-openfisca.svg' />
+      </div>
       <div id='pitch'>
         <p>Codez la loi ! OpenFisca permet la transcription du code législatif en code informatique. Son moteur de microsimulation aide à comprendre les lois, analyser leurs changements et simuler des situations. Entièrement libre et gratuit, modulable et réutilisable, OpenFisca transforme le droit en logiciel.</p>
         <a>DECOUVREZ COMMENT</a>
@@ -16,11 +18,10 @@ const Home = () => (
     <div id='trio'>
       <h2>Réutilisations</h2>
       <ul>
-        <li>element 1</li>
-        <li>element 2</li>
-        <li>element 3</li>
+        <li><a>Mes Aides</a></li>
+        <li><a>PNDS</a></li>
+        <li><a>IDK</a></li>
       </ul>
-      <a>Ceci est un cta </a>
     </div>
 
     <div id='commencer'>
@@ -32,11 +33,11 @@ const Home = () => (
     <div id='trio_outils'>
       <h2>top 3 des outils</h2>
       <ul>
-        <li>API web</li>
-        <li>legislation explorer</li>
-        <li>documentation</li>
+        <li><Link href='https://legislation.openfisca.fr/swagger'>API web</Link></li>
+        <li><Link href='https://legislation.openfisca.fr'>Legislation Explorer</Link></li>
+        <li><Link href='https://openfisca.org/doc'>Documentation</Link></li>
       </ul>
-      <a>Ceci est un cta </a>
+      
     </div>
 
     <div id='trio_plus_partenaires'>
@@ -53,17 +54,44 @@ const Home = () => (
     </div>
 
     <style jsx>{`
-        h1, a {
+        #hero{
+          margin: 1em;
+        }
+        #logo{
+          float: left;
+          margin-right: 2em;
+          margin-bottom: 2em;
+        }
+        #pitch {
+          margin:1em;
+        }
+        #pitch a {
+          font-size: 1em;
+        }
+        #content{
+          margin: 3em;
           font-family: "Arial";
+          font-size: 1.5em;
+        }
+        #pitch{
+          font-size: 1.4em;
+        }
+
+        Link {
+          font-size: 3em;
+          background-color: black;
         }
 
         ul {
+          margin: 0;
           padding: 0;
+          list-style-type: none;
         }
+        ul li { display: inline; }
 
         li {
           list-style: none;
-          margin: 5px 0;
+          margin: 7em;
         }
 
         a {
