@@ -42,12 +42,12 @@ const Home = () => (
     <div id='trio_plus_partenaires'>
       <h2>Nos partenaires</h2>
       <ul>
-        <li><img src='"../static/logo-ipp.png"'/></li>
-        <li><img alt='Etalab' src='../public/assets/logo-etalab.png' /></li>
-        <li><img alt='MSA' src='../public/assets/logo-msa.svg' /></li>
-        <li><img alt='beta.gouv.fr' src='../public/assets/logo-betagouv.jpeg' /></li>
-        <li><img alt='IDEP' src='../public/assets/logo-idep.png' /></li>
-        <li><img alt='France Stratégie' src='../public/assets/logo-france-strategie.jpg' /></li>
+        <li><img alt='IPP' src='/static/images/logo-ipp.png'/></li>
+        <li><img alt='Etalab' src='/static/images/logo-etalab.png' /></li>
+        <li><img alt='MSA' src='/static/images/logo-msa.svg' /></li>
+        <li><img alt='beta.gouv.fr' src='/static/images/logo-betagouv-url.svg' /></li>
+        <li><img alt='IDEP' src='/static/images/logo-idep.png' /></li>
+        <li><img alt='France Stratégie' src='/static/images/logo-france-strategie.jpg' /></li>
       </ul>
       <a>Ceci est un cta </a>
     </div>
