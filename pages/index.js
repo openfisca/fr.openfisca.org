@@ -1,4 +1,5 @@
 import Header from "../components/Header"
+import Footer from "../components/Footer"
 
 const Home = () => (
   <div>
@@ -34,5 +35,6 @@ export default () => (
   <div>
     <Header />
     <Home />
+    <Footer />
   </div>
 )
