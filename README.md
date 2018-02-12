@@ -7,3 +7,14 @@ Ceci est le code source du [site web](http://fr.openfisca.org) de la communauté
 ## [EN] Introduction
 [OpenFisca](http://openfisca.org/en) is a versatile microsimulation free software.  
 This is the source code of the [web site](http://fr.openfisca.org) for the community working on the french tax and benefit system.
+
+## Install
+yarn init (creates package.json)
+yarn add next
+yarn add react
+yarn add react-dom
+Create pages/index.js
+add script "dev": "next" in the package.json
+yarn install
+yarn run dev
+
