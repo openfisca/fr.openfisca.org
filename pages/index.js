@@ -10,11 +10,37 @@ const Home = () => (
       <div id='pitch'>
         <h1>OpenFisca modélise le système socio-fisca Français en code informatique.</h1>
         <p>Son moteur de microsimulation aide à comprendre les lois, analyser leurs changements et simuler des situations.</p>
-        <p>Entièrement libre et gratuit, modulable et réutilisable, OpenFisca transforme le droit en logiciel.</p>
+        <p>Entièrement libre et gratuit, modulable et réutilisable, OpenFisca transforme la legislation en logiciel.</p>
 
         <a id='cta'>DECOUVREZ COMMENT</a>
       </div>
     </div>
+        <div id='trio_outils'>
+      <h2>Les outils à votre disposition</h2>
+      <ul>
+        <li><a href='https://legislation.openfisca.fr/swagger'>API web</a></li>
+        <li><a href='https://legislation.openfisca.fr'>Legislation Explorer</a></li>
+        <li><a href='https://openfisca.org/doc'>Documentation</a></li>
+        <li><a href='https://github.com/openfisca/openfisca-france'>Code source</a></li>
+      </ul>
+      
+    </div>
+
+    <div id='commencer'>
+      <h2>Débuter avec OpenFisca</h2>
+      <p>Chase dog then run away purr. Hide at bottom of staircase to trip human sit in window and stare oooh, a bird, yum. Spot something, big eyes, big eyes, crouch, shake butt, prepare to pounce shove bum in owner's face like camera lens but please stop looking at your phone and pet me make muffins, yet chase laser ignore the human until she needs to get up, then climb on her lap and sprawl. Gate keepers of hell hate dog, so man running from cops stops to pet cats, goes to jail. Lick the curtain just to be annoying curl up and sleep on the freshly laundered towels.</p>
+      <a>Découvrez nos tutoriels</a>
+    </div>
+
+    <div id='trio'>
+      <h2>Réutilisations</h2>
+      <ul>
+        <li><a>Mes Aides</a></li>
+        <li><a>PNDS</a></li>
+        <li><a>IDK</a></li>
+      </ul>
+    </div>
+
     <div id='introduction'>
       <h2>Qui sommes nous ?</h2>
       <p>OpenFisca est un moteur ouvert de microsimulation du système socio-fiscal.</p>
@@ -26,40 +52,17 @@ const Home = () => (
       <p>Une seule condition est imposée : les travaux dérivés d’OpenFisca doivent eux aussi être libres.</p>
       <p>Cette contrainte permet à la communauté de grandir à travers des améliorations constantes du moteur de calcul, des mises à jour des systèmes représentés et des nouveaux usages.</p>
     </div>
-    <div id='trio'>
-      <h2>Réutilisations</h2>
-      <ul>
-        <li><a>Mes Aides</a></li>
-        <li><a>PNDS</a></li>
-        <li><a>IDK</a></li>
-      </ul>
-    </div>
 
-    <div id='commencer'>
-      <h2>Débuter avec OpenFisca</h2>
-      <p>Chase dog then run away purr. Hide at bottom of staircase to trip human sit in window and stare oooh, a bird, yum. Spot something, big eyes, big eyes, crouch, shake butt, prepare to pounce shove bum in owner's face like camera lens but please stop looking at your phone and pet me make muffins, yet chase laser ignore the human until she needs to get up, then climb on her lap and sprawl. Gate keepers of hell hate dog, so man running from cops stops to pet cats, goes to jail. Lick the curtain just to be annoying curl up and sleep on the freshly laundered towels.</p>
-      <a>Ceci est un cta</a>
-    </div>
-
-    <div id='trio_outils'>
-      <h2>top 3 des outils</h2>
-      <ul>
-        <li><a class='btn' href='https://legislation.openfisca.fr/swagger'>API web</a></li>
-        <li><a href='https://legislation.openfisca.fr'>Legislation Explorer</a></li>
-        <li><a href='https://openfisca.org/doc'>Documentation</a></li>
-      </ul>
-      
-    </div>
 
     <div id='trio_plus_partenaires'>
       <h2>Nos partenaires</h2>
       <ul>
         <li><img alt='IPP' src='/static/images/logo-ipp.png'/></li>
-        <li><img width='250em' alt='Etalab' src='/static/images/logo-etalab.png' /></li>
-        <li><img width='250em' alt='MSA' src='/static/images/logo-msa.svg' /></li>
-        <li><img width='250em' alt='beta.gouv.fr' src='/static/images/logo-betagouv-url.svg' /></li>
-        <li><img width='250em' alt='IDEP' src='/static/images/logo-idep.png' /></li>
-        <li><img width='250em' alt='France Stratégie' src='/static/images/logo-france-strategie.jpg' /></li>
+        <li><img alt='Etalab' src='/static/images/logo-etalab.png' /></li>
+        <li><img alt='MSA' src='/static/images/logo-msa.svg' /></li>
+        <li><img alt='beta.gouv.fr' src='/static/images/logo-betagouv-url.svg' /></li>
+        <li><img alt='IDEP' src='/static/images/logo-idep.png' /></li>
+        <li><img alt='France Stratégie' src='/static/images/logo-france-strategie.jpg' /></li>
       </ul>
     </div>
 
