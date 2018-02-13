@@ -8,12 +8,23 @@ const Home = () => (
         <img src='https://fr.openfisca.org/hotlinks/logo-openfisca.svg' />
       </div>
       <div id='pitch'>
-        <p>Codez la loi ! OpenFisca permet la transcription du code législatif en code informatique. Son moteur de microsimulation aide à comprendre les lois, analyser leurs changements et simuler des situations. Entièrement libre et gratuit, modulable et réutilisable, OpenFisca transforme le droit en logiciel.</p>
-        <a>DECOUVREZ COMMENT</a>
+        <h1>OpenFisca modélise le système socio-fisca Français en code informatique.</h1>
+        <p>Son moteur de microsimulation aide à comprendre les lois, analyser leurs changements et simuler des situations.</p>
+        <p>Entièrement libre et gratuit, modulable et réutilisable, OpenFisca transforme le droit en logiciel.</p>
+
+        <a id='cta'>DECOUVREZ COMMENT</a>
       </div>
     </div>
     <div id='introduction'>
-      <p>OpenFisca est un moteur ouvert de microsimulation du système socio-fiscal. A travers OpenFisca France, une communauté de développeurs, économistes, enseignants, instituts d'études et de recherche enrichissent et améliorent les modèles de simulation du système socio-fiscal français. Un de ses objectifs, pédagogique, est de permettre d’aider les citoyens à mieux comprendre les réformes qui impactent leur quotidienne. OpenFisca et OpenFisca France sont des projets libres. Cela signifie que vous pouvez utiliser les logiciels associés, les installer, étudier leur code source, les modifier, les redistribuer de la façon que vous souhaitez. Une seule condition est imposée : les travaux dérivés d’OpenFisca doivent eux aussi être libres. Cette contrainte permet à la communauté de grandir à travers des améliorations constantes du moteur de calcul, des mises à jour des systèmes représentés et des nouveaux usages.</p>
+      <h2>Qui sommes nous ?</h2>
+      <p>OpenFisca est un moteur ouvert de microsimulation du système socio-fiscal.</p>
+      <p>A travers OpenFisca France, une communauté de développeurs, économistes, enseignants, instituts d'études et de recherche
+       enrichissent et améliorent les modèles de simulation du système socio-fiscal français.</p>
+      <p>Un de ses objectifs, pédagogique, est de permettre d’aider les citoyens à mieux comprendre les réformes qui impactent leur quotidienne.</p>
+      <p>OpenFisca et OpenFisca France sont des projets libres.</p>
+      <p>Cela signifie que vous pouvez utiliser les logiciels associés, les installer, étudier leur code source, les modifier, les redistribuer de la façon que vous souhaitez.</p>
+      <p>Une seule condition est imposée : les travaux dérivés d’OpenFisca doivent eux aussi être libres.</p>
+      <p>Cette contrainte permet à la communauté de grandir à travers des améliorations constantes du moteur de calcul, des mises à jour des systèmes représentés et des nouveaux usages.</p>
     </div>
     <div id='trio'>
       <h2>Réutilisations</h2>
@@ -33,9 +44,9 @@ const Home = () => (
     <div id='trio_outils'>
       <h2>top 3 des outils</h2>
       <ul>
-        <li><Link href='https://legislation.openfisca.fr/swagger'>API web</Link></li>
-        <li><Link href='https://legislation.openfisca.fr'>Legislation Explorer</Link></li>
-        <li><Link href='https://openfisca.org/doc'>Documentation</Link></li>
+        <li><a class='btn' href='https://legislation.openfisca.fr/swagger'>API web</a></li>
+        <li><a href='https://legislation.openfisca.fr'>Legislation Explorer</a></li>
+        <li><a href='https://openfisca.org/doc'>Documentation</a></li>
       </ul>
       
     </div>
@@ -44,13 +55,12 @@ const Home = () => (
       <h2>Nos partenaires</h2>
       <ul>
         <li><img alt='IPP' src='/static/images/logo-ipp.png'/></li>
-        <li><img alt='Etalab' src='/static/images/logo-etalab.png' /></li>
-        <li><img alt='MSA' src='/static/images/logo-msa.svg' /></li>
-        <li><img alt='beta.gouv.fr' src='/static/images/logo-betagouv-url.svg' /></li>
-        <li><img alt='IDEP' src='/static/images/logo-idep.png' /></li>
-        <li><img alt='France Stratégie' src='/static/images/logo-france-strategie.jpg' /></li>
+        <li><img width='250em' alt='Etalab' src='/static/images/logo-etalab.png' /></li>
+        <li><img width='250em' alt='MSA' src='/static/images/logo-msa.svg' /></li>
+        <li><img width='250em' alt='beta.gouv.fr' src='/static/images/logo-betagouv-url.svg' /></li>
+        <li><img width='250em' alt='IDEP' src='/static/images/logo-idep.png' /></li>
+        <li><img width='250em' alt='France Stratégie' src='/static/images/logo-france-strategie.jpg' /></li>
       </ul>
-      <a>Ceci est un cta </a>
     </div>
 
     <style jsx>{`
