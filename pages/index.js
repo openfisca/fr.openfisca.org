@@ -3,19 +3,7 @@ import Footer from "../components/Footer"
 
 const Home = () => (
   <div id='content'>
-    <div id='hero'>
-      <div id='logo'>
-        <img src='https://fr.openfisca.org/hotlinks/logo-openfisca.svg' />
-      </div>
-      <div id='pitch'>
-        <h1>OpenFisca modélise le système socio-fisca Français en code informatique.</h1>
-        <p>Son moteur de microsimulation aide à comprendre les lois, analyser leurs changements et simuler des situations.</p>
-        <p>Entièrement libre et gratuit, modulable et réutilisable, OpenFisca transforme la legislation en logiciel.</p>
-
-        <a id='cta'>DECOUVREZ COMMENT</a>
-      </div>
-    </div>
-        <div id='trio_outils'>
+    <div id='trio-outils'>
       <h2>Les outils à votre disposition</h2>
       <ul>
         <li><a href='https://legislation.openfisca.fr/swagger'>API web</a></li>
@@ -76,24 +64,9 @@ const Home = () => (
           font-family: "Arial";
           font-size: 1em;
         }
-        #hero{
-          margin: 3em;
-        }
         #cta {
           margin-top: 2em;
           margin-bottom: 3em;
-        }
-        #logo{
-          float: left;
-          margin-right: 6em;
-          margin-bottom: 2em;
-        }
-        #logo img{
-          width: 20em;
-        }
-        #pitch {
-          margin:1em;
-          font-size: 1.2em;
         }
         #introduction{
           margin-bottom: 3em
