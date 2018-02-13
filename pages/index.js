@@ -64,32 +64,57 @@ const Home = () => (
     </div>
 
     <style jsx>{`
+      img {
+        width: 10em;
+        margin: 1em;
+      }
+      #content{
+          margin: 6em;
+          font-family: "Arial";
+          font-size: 1em;
+        }
         #hero{
-          margin: 1em;
+          margin: 3em;
+        }
+        #cta {
+          margin-top: 2em;
+          margin-bottom: 3em;
         }
         #logo{
           float: left;
-          margin-right: 2em;
+          margin-right: 6em;
           margin-bottom: 2em;
+        }
+        #logo img{
+          width: 20em;
         }
         #pitch {
           margin:1em;
+          font-size: 1.2em;
         }
-        #pitch a {
-          font-size: 1em;
+        #introduction{
+          margin-bottom: 3em
         }
-        #content{
-          margin: 3em;
-          font-family: "Arial";
-          font-size: 1.5em;
-        }
-        #pitch{
-          font-size: 1.4em;
+        h2 {
+          margin-top: 3em;
+          margin-bottom: 2em;
         }
 
-        Link {
-          font-size: 3em;
-          background-color: black;
+        a {
+          color: #ffffff;
+          background-color: #2b6a8d;
+          border-color: #2b6a8d;
+          border: 1px solid transparent;
+          border-radius: 4px;
+          display: inline-block;
+          padding: 6px 12px;
+          margin-bottom: 0;
+          font-size: 1em;
+          font-weight: 400;
+          line-height: 1.5;
+          text-align: center;
+          white-space: nowrap;
+          vertical-align: middle;
         }
 
         ul {
@@ -97,20 +122,10 @@ const Home = () => (
           padding: 0;
           list-style-type: none;
         }
-        ul li { display: inline; }
-
         li {
+          display: inline;
           list-style: none;
           margin: 7em;
-        }
-
-        a {
-          text-decoration: none;
-          color: blue;
-        }
-
-        a:hover {
-          opacity: 0.6;
         }
       `}</style>
   </div>
