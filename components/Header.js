@@ -5,14 +5,19 @@ const linkStyle = {
 }
 
 const Header = () => (
-	<div>
-		<Link href="/">
-			<a style={linkStyle}>Home</a>
-		</Link>
-		<Link href="/about">
-			<a style={linkStyle}>About</a>
-		</Link>
-	</div>
+    <header>
+		<div class="intro">
+			<a id="home" href="index.html">
+				<img id="logo-small" src="https://fr.openfisca.org/hotlinks/logo-openfisca.svg" alt="OpenFisca" />
+			</a>
+			<h1>Transformer le code législatif en code logiciel</h1>
+		</div>
+		<ul>
+			<li><a href="#trio">Produits</a></li>
+			<li><a href="countries">Pays disponibles</a></li>
+			<li><a href="http://openfisca.org/doc/">Documentation</a></li>
+  		</ul>
+	</header>
 	)
 
 export default Header
