@@ -3,7 +3,7 @@ import Link from 'next/link'
 const Header = () => (
     <header>
 			<ul>
-				<li><a href="#trio-outils">Outils</a></li>
+				<li><a href="#outils">Outils</a></li>
 				<li><a><img src="/static/images/GitHub-Mark-Light-64px.png" alt=""/>Code source</a></li>
 				<li><a href="http://openfisca.org/doc/">Documentation</a></li>
 			</ul>
@@ -26,7 +26,6 @@ const Header = () => (
 				margin: 0;
 				align-self: flex-end;
 				font-size: 1em;
-				align-items: center;
 			}
 
 
