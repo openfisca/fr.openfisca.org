@@ -1,5 +1,6 @@
 import Header from "../components/Header"
 import Footer from "../components/Footer"
+import Hero from "../components/Hero"
 
 const Home = () => (
   <div id='content'>
@@ -110,6 +111,7 @@ const Home = () => (
 export default () => (
   <div>
     <Header />
+    <Hero/>
     <Home />
     <Footer />
   </div>
