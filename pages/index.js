@@ -4,31 +4,48 @@ import Hero from "../components/Hero"
 
 const Home = () => (
   <div id='content'>
-    <div id='trio-outils'>
+    <div className='trio' id='outils'>
       <h2>Les outils à votre disposition</h2>
-      <ul>
-        <li><a href='https://legislation.openfisca.fr/swagger'>API web</a></li>
-        <li><a href='https://legislation.openfisca.fr'>Legislation Explorer</a></li>
-        <li><a href='https://openfisca.org/doc'>Documentation</a></li>
-        <li><a href='https://github.com/openfisca/openfisca-france'>Code source</a></li>
-      </ul>
+      <div className='flex-container'>
+        <div className='flex-item'>
+          <a href='https://legislation.openfisca.fr/swagger'>API web</a>
+          <p>Les endpoints permettent de consulter les données OpenFisca ou d'effectuer des calculs</p>
+        </div>
+        <div className='flex-item'>
+          <a href='https://legislation.openfisca.fr'>Legislation Explorer</a>
+          <p>propose une documentation des données et calculs disponibles dans OpenFisca avec un moteur de recherche</p>
+        </div>
+        <div className='flex-item'>
+          <a href='https://openfisca.org/doc'>Documentation</a>
+          <p>en anglais, la documentation explique comment modéliser un ajout à la législation ou une réforme</p>
+        </div>
+        <div className='flex-item'>
+          <a href='https://github.com/openfisca/openfisca-france'>Code source</a>
+          <p>sur la plateforme Github</p>
+        </div>
+      </div>
       
     </div>
 
     <div id='commencer'>
       <h2>Débuter avec OpenFisca</h2>
-      <p>Chase dog then run away purr. Hide at bottom of staircase to trip human sit in window and stare oooh, a bird, yum. Spot something, big eyes, big eyes, crouch, shake butt, prepare to pounce shove bum in owner's face like camera lens but please stop looking at your phone and pet me make muffins, yet chase laser ignore the human until she needs to get up, then climb on her lap and sprawl. Gate keepers of hell hate dog, so man running from cops stops to pet cats, goes to jail. Lick the curtain just to be annoying curl up and sleep on the freshly laundered towels.</p>
-      <a>Découvrez nos tutoriels</a>
+      <p>OpenFisca peut être utilisé par deux moyens :</p>
+      <ul>
+        <li>L'API web</li>
+        <li>L'API Python</li>
+      </ul>
+      <p>Pour utiliser l'API web, nous avons mis en place <a className='cta' href='https://legislation.openfisca.fr/swagger'>une documentation interactive</a>.</p>
+      <p>Pour apprendre à utiliser l'API Python, nous proposons <a className='cta' href='https://github.com/openfisca/tutorial'>un ensemble de tutoriels</a> sur un répository dédié.</p>
     </div>
 
-    <div id='trio'>
+    <section className='trio'>
       <h2>Réutilisations</h2>
-      <ul>
-        <li><a>Mes Aides</a></li>
-        <li><a>PNDS</a></li>
-        <li><a>IDK</a></li>
-      </ul>
-    </div>
+      <div className='flex-container'>
+        <div className='flex-item'><a>Mes Aides</a></div>
+        <div className='flex-item'><a>PNDS</a></div>
+        <div className='flex-item'><a>IDK</a></div>
+      </div>
+    </section>
 
     <div id='introduction'>
       <h2>Qui sommes nous ?</h2>
@@ -43,66 +60,84 @@ const Home = () => (
     </div>
 
 
-    <div id='trio_plus_partenaires'>
+    <div className='trio'>
       <h2>Nos partenaires</h2>
-      <ul>
-        <li><img alt='IPP' src='/static/images/logo-ipp.png'/></li>
-        <li><img alt='Etalab' src='/static/images/logo-etalab.png' /></li>
-        <li><img alt='MSA' src='/static/images/logo-msa.svg' /></li>
-        <li><img alt='beta.gouv.fr' src='/static/images/logo-betagouv-url.svg' /></li>
-        <li><img alt='IDEP' src='/static/images/logo-idep.png' /></li>
-        <li><img alt='France Stratégie' src='/static/images/logo-france-strategie.jpg' /></li>
-      </ul>
+      <div className='flex-container'>
+        <div className='flex-item'><img alt='IPP' src='/static/images/logo-ipp.png'/></div>
+        <div className='flex-item'><img alt='Etalab' src='/static/images/logo-etalab.png' /></div>
+        <div className='flex-item'><img alt='MSA' src='/static/images/logo-msa.svg' /></div>
+        <div className='flex-item'><img alt='beta.gouv.fr' src='/static/images/logo-betagouv-url.svg' /></div>
+        <div className='flex-item'><img alt='IDEP' src='/static/images/logo-idep.png' /></div>
+        <div className='flex-item'><img alt='France Stratégie' src='/static/images/logo-france-strategie.jpg' /></div>
+      </div>
     </div>
 
     <style jsx>{`
+      
+      #content{
+        margin: 2em auto;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        font-size: 140%;
+        font-family: "Helvetica Neue",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      }
+        }
+
+      #introduction{
+        margin-bottom: 3em
+      }
+      .flex-container > div + div {
+        margin-left: 2em;
+      }
+      .flex-container{
+        border: 1px solid transparent;
+        display: flex;
+        justify-content: center;
+      }
+
+      h2 {
+        margin-top: 2em;
+        margin-bottom: 1em;
+        font-weight: normal;
+      }
+      p {
+        font-weight: 300;
+      }
+
+      a {
+        color: #ffffff;
+        background-color: #2b6a8d;
+        border-color: #2b6a8d;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        display: inline-block;
+        padding: 6px 12px;
+        margin-bottom: 0;
+        font-size: 1em;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        text-decoration: none;
+      }
       img {
         width: 10em;
-        margin: 1em;
+        margin: O;
       }
-      #content{
-          margin: 6em;
-          font-family: "Arial";
-          font-size: 1em;
+      @media (max-width: 720px) {
+        #content{
+          width:80%
+          margin: 0 auto;
         }
-        #cta {
-          margin-top: 2em;
-          margin-bottom: 3em;
+        .flex-container {
+          align-self: center;
+          display:contents;
         }
-        #introduction{
-          margin-bottom: 3em
-        }
-        h2 {
-          margin-top: 3em;
-          margin-bottom: 2em;
-        }
-
-        a {
-          color: #ffffff;
-          background-color: #2b6a8d;
-          border-color: #2b6a8d;
-          border: 1px solid transparent;
-          border-radius: 4px;
-          display: inline-block;
-          padding: 6px 12px;
-          margin-bottom: 0;
-          font-size: 1em;
-          font-weight: 400;
-          line-height: 1.5;
-          text-align: center;
-          white-space: nowrap;
-          vertical-align: middle;
-        }
-
-        ul {
-          margin: 0;
-          padding: 0;
-          list-style-type: none;
-        }
-        li {
-          display: inline;
-          list-style: none;
-          margin: 7em;
+        .flex-container > div + div {
+          margin: 0.5em 0
         }
       `}</style>
   </div>
