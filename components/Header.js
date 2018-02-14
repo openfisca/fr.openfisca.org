@@ -11,8 +11,8 @@ const Header = () => (
 		<style jsx>{`
 			header {
 				background: #1d3242;
-				padding: 0 1em;
 				color: #fff;
+				padding: 0 1em;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
@@ -62,7 +62,7 @@ const Header = () => (
 			}
 
 
-			@media (max-width: 1000px) {
+			@media (max-width: 720px) {
 
 				ul {
 					align-self: center;
