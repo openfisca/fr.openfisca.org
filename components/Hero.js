@@ -1,23 +1,24 @@
 const Hero = () => (
-	<div className='hero'>
-		<div className='content'>
-			<div id='logo-large'>
-				<img src='https://fr.openfisca.org/hotlinks/logo-openfisca.svg' />
-			</div>
+  <div className='hero'>
+    <div className='content'>
+      <div id='logo-large'>
+        <img src='https://fr.openfisca.org/hotlinks/logo-openfisca.svg' />
+      </div>
 
-			<div id='pitch'>
-				<h1>OpenFisca modélise le système socio-fiscal Français en code informatique.</h1>
-				<p>Son moteur de microsimulation aide à comprendre les lois, analyser leurs changements et simuler des situations.</p>
-				<p>Entièrement libre et gratuit, modulable et réutilisable, OpenFisca transforme la legislation en logiciel.</p>
-
-				<a id='cta'>DECOUVREZ COMMENT</a>
-			</div>
-
-		</div>
-		<style jsx>{`
+      <div id='pitch'>
+        <h1>OpenFisca modélise le système socio-fiscal Français en code informatique.</h1>
+        <p>Son moteur de microsimulation aide à comprendre les lois, analyser leurs changements et simuler des situations.</p>
+        <p>Entièrement libre et gratuit, modulable et réutilisable, OpenFisca transforme la legislation en logiciel.</p>
+        <a id='cta'>DECOUVREZ COMMENT</a>
+      </div>
+    </div>
+    <style jsx>{`
 			.hero {
 				background: #1d3242;
-				color: white;
+				color: #fff;
+				text-align: center;
+				padding: 2.5em 0 4.5em;
+				font-family: "Arial";
 			}
 
 			.content{
@@ -58,44 +59,24 @@ const Hero = () => (
 				vertical-align: middle;
 			}
 
-
-			.hero {
-				text-align: center;
-				padding: 2.5em 0 4.5em;
-				font-family: "Arial";
-			}
-
-			header:not(.main-header) {
-				padding: 0 1em;
-				display: flex;
-				align-items: center;
-				background: #1d3242;
-				justify-content: space-between;
-				flex-direction: row;
-			}
-			
-			header:not(.main-header) > ul {
-				align-self: center;
-			}
-
-			@media (max-width: 720px) {
-				header > ul {
-				align-self: center;
-				}
-			
-				header > ul > li {
-					display: flex;
-				}
-			
-				header:not(.main-header) {
-					flex-wrap: wrap;
-				}
-			
-				header:not(.main-header) .intro {
-					margin-top: 1em;
-				}
-		`}</style>
-	</div>
-	)
+      @media (max-width: 720px) {
+        .content{
+          width:80%
+          margin: 0 auto;
+        }
+        #logo-large {
+          margin-right: 0em;
+          margin-bottom: 1em;
+        }
+				#logo-large img{
+          width: 70%;
+			   }
+        #pitch {
+          margin:1em;
+          font-size: 1em;
+        }
+    `}</style>
+  </div>
+  )
 
 export default Hero
