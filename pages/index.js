@@ -9,7 +9,7 @@ const Home = () => (
       <div className='flex-container'>
         <div className='flex-item'>
           <a className='cta' href='https://legislation.openfisca.fr/swagger'>API web</a>
-          <p>Les endpoints permettent de consulter les données OpenFisca ou d'effectuer des calculs</p>
+          <p>et ses endpoints permettent de consulter les données OpenFisca ou d'effectuer des calculs</p>
         </div>
         <div className='flex-item'>
           <a className='cta' href='https://legislation.openfisca.fr'>Legislation Explorer</a>
@@ -21,7 +21,7 @@ const Home = () => (
         </div>
         <div className='flex-item'>
           <a className='cta' href='https://github.com/openfisca/openfisca-france'>Code source</a>
-          <p>sur la plateforme Github</p>
+          <p>sur la plateforme GitHub</p>
         </div>
       </div>
       
@@ -35,7 +35,7 @@ const Home = () => (
         <li>L'API Python</li>
       </ul>
       <p>Pour utiliser l'API web, nous avons mis en place <a className='reference' href='https://legislation.openfisca.fr/swagger'>une documentation interactive</a>.</p>
-      <p>Pour apprendre à utiliser l'API Python, nous proposons <a className='reference' href='https://github.com/openfisca/tutorial'>un ensemble de tutoriels</a> sur un répository dédié.</p>
+      <p>Pour apprendre à utiliser l'API Python, nous proposons <a className='reference' href='https://github.com/openfisca/tutorial'>un ensemble de tutoriels</a> sur un dépôt dédié.</p>
     </div>
 
     <section className='trio'>
@@ -53,8 +53,8 @@ const Home = () => (
       <p>A travers OpenFisca France, une communauté de développeurs, économistes, enseignants, instituts d'études et de recherche
        enrichissent et améliorent les modèles de simulation du système socio-fiscal français.</p>
       <p>Un de ses objectifs, pédagogique, est de permettre d’aider les citoyens à mieux comprendre les réformes qui impactent leur quotidienne.</p>
-      <p>OpenFisca et OpenFisca France sont des projets libres.</p>
-      <p>Cela signifie que vous pouvez utiliser les logiciels associés, les installer, étudier leur code source, les modifier, les redistribuer de la façon que vous souhaitez.</p>
+      <p>OpenFisca et OpenFisca France sont des projets libres.
+        Cela signifie que vous pouvez utiliser les logiciels associés, les installer, étudier leur code source, les modifier, les redistribuer de la façon que vous souhaitez.</p>
       <p>Une seule condition est imposée : les travaux dérivés d’OpenFisca doivent eux aussi être libres.</p>
       <p>Cette contrainte permet à la communauté de grandir à travers des améliorations constantes du moteur de calcul, des mises à jour des systèmes représentés et des nouveaux usages.</p>
     </div>
@@ -100,7 +100,9 @@ const Home = () => (
         margin-top: 2em;
         margin-bottom: 1em;
         font-weight: normal;
+        color: #1e3242;
       }
+
       p {
         font-weight: 300;
       }
