@@ -4,7 +4,7 @@ const Header = () => (
     <header>
 			<ul>
 				<li><a href="#outils">Outils</a></li>
-				<li><a><img src="/static/images/GitHub-Mark-Light-64px.png" alt=""/>Code source</a></li>
+				<li><a href='https://github.com/openfisca/openfisca-france'><img src="/static/images/GitHub-Mark-Light-64px.png" alt=""/>Code source</a></li>
 				<li><a href="http://openfisca.org/doc/">Documentation</a></li>
 			</ul>
 
