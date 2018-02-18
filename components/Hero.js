@@ -55,6 +55,7 @@ const Hero = () => (
 				font-weight: 400;
 				line-height: 1.5;
 				text-align: center;
+				text-decoration: none;
 				white-space: nowrap;
 				vertical-align: middle;
 			}

@@ -56,8 +56,7 @@ const Header = () => (
 				text-align: center;
 				white-space: nowrap;
 				vertical-align: middle;
-				text-decoration: none;
-				
+				text-decoration: none;	
 			}
 
 
