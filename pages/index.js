@@ -8,19 +8,19 @@ const Home = () => (
       <h2>Les outils à votre disposition</h2>
       <div className='flex-container'>
         <div className='flex-item'>
-          <a href='https://legislation.openfisca.fr/swagger'>API web</a>
+          <a className='cta' href='https://legislation.openfisca.fr/swagger'>API web</a>
           <p>Les endpoints permettent de consulter les données OpenFisca ou d'effectuer des calculs</p>
         </div>
         <div className='flex-item'>
-          <a href='https://legislation.openfisca.fr'>Legislation Explorer</a>
+          <a className='cta' href='https://legislation.openfisca.fr'>Legislation Explorer</a>
           <p>propose une documentation des données et calculs disponibles dans OpenFisca avec un moteur de recherche</p>
         </div>
         <div className='flex-item'>
-          <a href='https://openfisca.org/doc'>Documentation</a>
+          <a className='cta' href='https://openfisca.org/doc'>Documentation</a>
           <p>en anglais, la documentation explique comment modéliser un ajout à la législation ou une réforme</p>
         </div>
         <div className='flex-item'>
-          <a href='https://github.com/openfisca/openfisca-france'>Code source</a>
+          <a className='cta' href='https://github.com/openfisca/openfisca-france'>Code source</a>
           <p>sur la plateforme Github</p>
         </div>
       </div>
@@ -34,16 +34,16 @@ const Home = () => (
         <li>L'API web</li>
         <li>L'API Python</li>
       </ul>
-      <p>Pour utiliser l'API web, nous avons mis en place <a className='cta' href='https://legislation.openfisca.fr/swagger'>une documentation interactive</a>.</p>
-      <p>Pour apprendre à utiliser l'API Python, nous proposons <a className='cta' href='https://github.com/openfisca/tutorial'>un ensemble de tutoriels</a> sur un répository dédié.</p>
+      <p>Pour utiliser l'API web, nous avons mis en place <a className='reference' href='https://legislation.openfisca.fr/swagger'>une documentation interactive</a>.</p>
+      <p>Pour apprendre à utiliser l'API Python, nous proposons <a className='reference' href='https://github.com/openfisca/tutorial'>un ensemble de tutoriels</a> sur un répository dédié.</p>
     </div>
 
     <section className='trio'>
       <h2>Réutilisations</h2>
       <div className='flex-container'>
-        <div className='flex-item'><a>Mes Aides</a></div>
-        <div className='flex-item'><a>PNDS</a></div>
-        <div className='flex-item'><a>IDK</a></div>
+        <div className='cta flex-item'><a>Mes Aides</a></div>
+        <div className='cta flex-item'><a>PNDS</a></div>
+        <div className='cta flex-item'><a>IDK</a></div>
       </div>
     </section>
 
@@ -83,7 +83,6 @@ const Home = () => (
         font-size: 140%;
         font-family: "Helvetica Neue",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
       }
-        }
 
       #introduction{
         margin-bottom: 3em
@@ -106,7 +105,7 @@ const Home = () => (
         font-weight: 300;
       }
 
-      a {
+      .cta {
         color: #ffffff;
         background-color: #2b6a8d;
         border-color: #2b6a8d;
@@ -123,10 +122,17 @@ const Home = () => (
         vertical-align: middle;
         text-decoration: none;
       }
+
+      .reference {
+        text-decoration: underline;
+        color: #2b6a8d;
+      }
+
       img {
         width: 10em;
         margin: O;
       }
+
       @media (max-width: 720px) {
         #content{
           width:80%
