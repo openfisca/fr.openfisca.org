@@ -21,6 +21,7 @@ const Footer = () => (
 				background: #1d3242;
 				margin-top: 3em;
 				padding: 3em;
+				font-family: Arial
 			}
 
 			footer ul {
