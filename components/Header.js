@@ -9,6 +9,8 @@ const Header = () => (
 				<li><a href="http://openfisca.org/doc/">Documentation</a></li>
 			</ul>
 
+			<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
 		<style jsx>{`
 			header {
 				font-family: "Helvetica Neue",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
