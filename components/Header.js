@@ -1,5 +1,6 @@
 import asset from 'next/asset'
 
+
 const Header = () => (
     <header>
 			<ul>
@@ -10,7 +11,7 @@ const Header = () => (
 
 		<style jsx>{`
 			header {
-				font-family: Arial
+				font-family: "Helvetica Neue",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 				background: #1d3242;
 				color: #fff;
 				padding: 0 1em;

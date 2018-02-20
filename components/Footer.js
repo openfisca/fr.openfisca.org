@@ -19,7 +19,7 @@ const Footer = () => (
 				background: #1d3242;
 				margin-top: 3em;
 				padding: 3em;
-				font-family: Arial
+				font-family: "Helvetica Neue",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 			}
 
 			footer ul {

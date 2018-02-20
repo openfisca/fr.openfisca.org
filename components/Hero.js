@@ -5,8 +5,8 @@ const Hero = () => (
         <img src='https://fr.openfisca.org/hotlinks/logo-openfisca.svg' />
       </div>
 
+			<h1>OpenFisca modélise le système socio-fiscal français en code informatique.</h1>
       <div id='pitch'>
-        <h1>OpenFisca modélise le système socio-fiscal français en code informatique.</h1>
         <p>Son moteur de microsimulation aide à comprendre les lois, analyser leurs changements et simuler des situations.</p>
         <p>Entièrement libre et gratuit, modulable et réutilisable, OpenFisca transforme la legislation en logiciel.</p>
         <a id='cta' href='#commencer'>DECOUVREZ COMMENT</a>
@@ -14,11 +14,14 @@ const Hero = () => (
     </div>
     <style jsx>{`
 			.hero {
+				font-family: "Helvetica Neue",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 				background: #1d3242;
 				color: #fff;
-				text-align: center;
 				padding: 2.5em 0 4.5em;
-				font-family: "Arial";
+			}
+
+			.h1 {
+				text-align: center;
 			}
 
 			.content{
@@ -37,7 +40,7 @@ const Hero = () => (
 
 			#pitch {
 				margin:1em;
-				font-size: 1.2em;
+				font-size: 120%;
 			}
 
 			a {
