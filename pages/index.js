@@ -9,7 +9,7 @@ const Home = () => (
       <ul>
         <li className='column'>
           <a className='cta' href='https://legislation.openfisca.fr/swagger'>API web</a>
-          <p>et ses endpoints permettent de consulter les données OpenFisca ou d'effectuer des calculs</p>
+          <p>et ses endpoints permet de consulter les données OpenFisca ou d'effectuer des calculs</p>
         </li>
         <li className='column'>
           <a className='cta' href='https://legislation.openfisca.fr'>Legislation Explorer</a>
@@ -17,7 +17,7 @@ const Home = () => (
         </li>
         <li className='column'>
           <a className='cta' href='https://openfisca.org/doc'>Documentation</a>
-          <p>en anglais, la documentation explique comment modéliser un ajout à la législation ou une réforme</p>
+          <p>en anglais, elle comment modéliser un ajout à la législation ou une réforme</p>
         </li>
         <li className='column'>
           <a className='cta' href='https://github.com/openfisca/openfisca-france'>Code source</a>
@@ -31,20 +31,26 @@ const Home = () => (
       <h2>Débuter avec OpenFisca</h2>
       <p>OpenFisca peut être utilisé par deux moyens :</p>
       <ul>
-        <li>L'API web</li>
-        <li>L'API Python</li>
+        <li>
+          Une API Web
+          <p>Pour utiliser l'API Web, nous avons mis en place <a className='reference' href='https://legislation.openfisca.fr/swagger'>une documentation interactive</a>.</p>
+        </li>
+        <li>
+          Une API Python
+          <p>Pour apprendre à utiliser l'API Python, nous proposons <a className='reference' href='https://github.com/openfisca/tutorial'>un ensemble de tutoriels</a> sur un dépôt dédié.</p>
+        </li>
       </ul>
-      <p>Pour utiliser l'API web, nous avons mis en place <a className='reference' href='https://legislation.openfisca.fr/swagger'>une documentation interactive</a>.</p>
-      <p>Pour apprendre à utiliser l'API Python, nous proposons <a className='reference' href='https://github.com/openfisca/tutorial'>un ensemble de tutoriels</a> sur un dépôt dédié.</p>
+      
+      
     </div>
 
     <section>
       <h2>Réutilisations</h2>
-      <div className='trio'>
-        <a className='cta'>Mes Aides</a>
-        <a className='cta'>PNDS</a>
-        <a className='cta'>Revenu de base</a>
-      </div>
+      <ul>
+        <li><a className='cta' href='https://beta.gouv.fr/startup/mes-aides'>Simulateur Mes Aides</a></li>
+        <li><a className='cta' href='https://www.mesdroitssociaux.gouv.fr'>Portail National des Droits Sociaux</a></li>
+        <li><a className='cta' href='http://www.revenudebase.info/2017/04/07/apprehender-cout-dun-revenu-de-base'>Publication du MFRB</a></li>
+      </ul>
     </section>
 
     <div id='introduction'>
@@ -52,7 +58,7 @@ const Home = () => (
       <p>OpenFisca est un moteur ouvert de microsimulation du système socio-fiscal.</p>
       <p>A travers OpenFisca France, une communauté de développeurs, économistes, enseignants, instituts d'études et de recherche
        enrichissent et améliorent les modèles de simulation du système socio-fiscal français.</p>
-      <p>Un de ses objectifs, pédagogique, est de permettre d’aider les citoyens à mieux comprendre les réformes qui impactent leur quotidienne.</p>
+      <p>Un de ses objectifs est d’aider les citoyens à mieux comprendre les réformes qui impactent leur vie quotidienne.</p>
       <p>OpenFisca et OpenFisca France sont des projets libres.
         Cela signifie que vous pouvez utiliser les logiciels associés, les installer, étudier leur code source, les modifier, les redistribuer de la façon que vous souhaitez.</p>
       <p>Une seule condition est imposée : les travaux dérivés d’OpenFisca doivent eux aussi être libres.</p>
