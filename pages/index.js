@@ -1,3 +1,5 @@
+import asset from 'next/asset'
+
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import Hero from "../components/Hero"
@@ -17,7 +19,7 @@ const Home = () => (
         </li>
         <li className='column'>
           <a className='cta' href='https://openfisca.org/doc'>Documentation</a>
-          <p>en anglais, elle comment modéliser un ajout à la législation ou une réforme</p>
+          <p>en anglais, elle explique comment modéliser un ajout à la législation ou une réforme</p>
         </li>
         <li className='column'>
           <a className='cta' href='https://github.com/openfisca/openfisca-france'>Code source</a>
@@ -69,12 +71,12 @@ const Home = () => (
     <div>
       <h2>Nos partenaires</h2>
       <ul>
-        <li><img alt='IPP' src='/static/images/logo-ipp.png'/></li>
-        <li><img alt='Etalab' src='/static/images/logo-etalab.png' /></li>
-        <li><img alt='MSA' src='/static/images/logo-msa.svg' /></li>
-        <li><img alt='beta.gouv.fr' src='/static/images/logo-betagouv-url.svg' /></li>
-        <li><img alt='IDEP' src='/static/images/logo-idep.png' /></li>
-        <li><img alt='France Stratégie' src='/static/images/logo-france-strategie.jpg' /></li>
+        <li><img alt='IPP' src={asset('/images/logo-ipp.png')} /></li>
+        <li><img alt='Etalab' src={asset('/images/logo-etalab.png')} /></li>
+        <li><img alt='MSA' src={asset('/images/logo-msa.svg')} /></li>
+        <li><img alt='beta.gouv.fr' src={asset('/images/logo-betagouv-url.svg')} /></li>
+        <li><img alt='IDEP' src={asset('/images/logo-idep.png')} /></li>
+        <li><img alt='France Stratégie' src={asset('/images/logo-france-strategie.jpg')} /></li>
       </ul>
     </div>
 

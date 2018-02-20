@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import asset from 'next/asset'
 
 
 const Footer = () => (
@@ -7,7 +7,7 @@ const Footer = () => (
 			<ul>
 			<li><a href="mailto:contact@openfisca.org?Subject=openfisca.org">Contact</a></li>
 			<li><a href="http://openfisca.org">openfisca.org</a></li>
-			<li><a id="github" href="https://github.com/openfisca/fr.openfisca.org"><img src="/static/images/GitHub-Mark-Light-64px.png" alt=""/>Contribuer à cette page</a></li>
+			<li><a id="github" href="https://github.com/openfisca/fr.openfisca.org"><img src={asset('/images/GitHub-Mark-Light-64px.png')} alt=""/>Contribuer à cette page</a></li>
 			</ul>
 		</footer>
 

@@ -1,31 +1,31 @@
-import Link from 'next/link'
+import asset from 'next/asset'
 
 const Header = () => (
     <header>
 			<ul>
 				<li><a href="#outils">Outils</a></li>
-				<li><a href='https://github.com/openfisca/openfisca-france'><img src="/static/images/GitHub-Mark-Light-64px.png" alt=""/>Code source</a></li>
+				<li><a href='https://github.com/openfisca/openfisca-france'><img src={asset('/images/GitHub-Mark-Light-64px.png')} alt=""/>Code source</a></li>
 				<li><a href="http://openfisca.org/doc/">Documentation</a></li>
 			</ul>
 
 		<style jsx>{`
 			header {
+				font-family: Arial
 				background: #1d3242;
 				color: #fff;
 				padding: 0 1em;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
-				font-family: Arial
 			}
 
 			ul {
-				display: flex;
-				min-height: 3em;
+				font-size: 1em;
 				list-style-type: none;
 				margin: 0;
+				min-height: 3em;
+				display: flex;
 				align-self: flex-end;
-				font-size: 1em;
 			}
 
 
@@ -61,7 +61,6 @@ const Header = () => (
 
 
 			@media (max-width: 720px) {
-
 				ul {
 					align-self: center;
 					display:contents;
