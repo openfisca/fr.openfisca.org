@@ -4,26 +4,26 @@ import Hero from "../components/Hero"
 
 const Home = () => (
   <div id='content'>
-    <div className='trio' id='outils'>
+    <div id='outils'>
       <h2>Les outils à votre disposition</h2>
-      <div className='flex-container'>
-        <div className='flex-item'>
+      <ul>
+        <li className='column'>
           <a className='cta' href='https://legislation.openfisca.fr/swagger'>API web</a>
           <p>et ses endpoints permettent de consulter les données OpenFisca ou d'effectuer des calculs</p>
-        </div>
-        <div className='flex-item'>
+        </li>
+        <li className='column'>
           <a className='cta' href='https://legislation.openfisca.fr'>Legislation Explorer</a>
           <p>propose une documentation des données et calculs disponibles dans OpenFisca avec un moteur de recherche</p>
-        </div>
-        <div className='flex-item'>
+        </li>
+        <li className='column'>
           <a className='cta' href='https://openfisca.org/doc'>Documentation</a>
           <p>en anglais, la documentation explique comment modéliser un ajout à la législation ou une réforme</p>
-        </div>
-        <div className='flex-item'>
+        </li>
+        <li className='column'>
           <a className='cta' href='https://github.com/openfisca/openfisca-france'>Code source</a>
           <p>sur la plateforme GitHub</p>
-        </div>
-      </div>
+        </li>
+      </ul>
       
     </div>
 
@@ -38,12 +38,12 @@ const Home = () => (
       <p>Pour apprendre à utiliser l'API Python, nous proposons <a className='reference' href='https://github.com/openfisca/tutorial'>un ensemble de tutoriels</a> sur un dépôt dédié.</p>
     </div>
 
-    <section className='trio'>
+    <section>
       <h2>Réutilisations</h2>
-      <div className='flex-container'>
-        <div className='cta flex-item'><a>Mes Aides</a></div>
-        <div className='cta flex-item'><a>PNDS</a></div>
-        <div className='cta flex-item'><a>IDK</a></div>
+      <div className='trio'>
+        <a className='cta'>Mes Aides</a>
+        <a className='cta'>PNDS</a>
+        <a className='cta'>Revenu de base</a>
       </div>
     </section>
 
@@ -60,40 +60,25 @@ const Home = () => (
     </div>
 
 
-    <div className='trio'>
+    <div>
       <h2>Nos partenaires</h2>
-      <div className='flex-container'>
-        <div className='flex-item'><img alt='IPP' src='/static/images/logo-ipp.png'/></div>
-        <div className='flex-item'><img alt='Etalab' src='/static/images/logo-etalab.png' /></div>
-        <div className='flex-item'><img alt='MSA' src='/static/images/logo-msa.svg' /></div>
-        <div className='flex-item'><img alt='beta.gouv.fr' src='/static/images/logo-betagouv-url.svg' /></div>
-        <div className='flex-item'><img alt='IDEP' src='/static/images/logo-idep.png' /></div>
-        <div className='flex-item'><img alt='France Stratégie' src='/static/images/logo-france-strategie.jpg' /></div>
-      </div>
+      <ul>
+        <li><img alt='IPP' src='/static/images/logo-ipp.png'/></li>
+        <li><img alt='Etalab' src='/static/images/logo-etalab.png' /></li>
+        <li><img alt='MSA' src='/static/images/logo-msa.svg' /></li>
+        <li><img alt='beta.gouv.fr' src='/static/images/logo-betagouv-url.svg' /></li>
+        <li><img alt='IDEP' src='/static/images/logo-idep.png' /></li>
+        <li><img alt='France Stratégie' src='/static/images/logo-france-strategie.jpg' /></li>
+      </ul>
     </div>
 
     <style jsx>{`
       
       #content{
-        margin: 2em auto;
-        padding: 1em;
-        display: flex;
-        flex-direction: column;
         margin: 0;
+        width: 100%;
         font-size: 140%;
         font-family: "Helvetica Neue",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-      }
-
-      #introduction{
-        margin-bottom: 3em
-      }
-      .flex-container > div + div {
-        margin-left: 2em;
-      }
-      .flex-container{
-        border: 1px solid transparent;
-        display: flex;
-        justify-content: center;
       }
 
       h2 {
@@ -103,8 +88,27 @@ const Home = () => (
         color: #1e3242;
       }
 
+      ul {
+        margin: auto;
+        padding: 1em;
+        
+        list-style-type: none;
+
+        display: flex;
+        flex-flow: row wrap;
+      	justify-content: center;
+      }
+
+      ul li {
+        margin: 1em;
+      }
+
       p {
         font-weight: 300;
+      }
+
+      .column {
+        width: 20%;
       }
 
       .cta {
@@ -135,17 +139,10 @@ const Home = () => (
         margin: O;
       }
 
-      @media (max-width: 720px) {
+      @media (min-width: 960px) {
         #content{
           width:80%
           margin: 0 auto;
-        }
-        .flex-container {
-          align-self: center;
-          display:contents;
-        }
-        .flex-container > div + div {
-          margin: 0.5em 0
         }
       `}</style>
   </div>
