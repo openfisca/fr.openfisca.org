@@ -8,23 +8,23 @@ const Home = () => (
   <div id='content'>
     <div id='outils'>
       <h2>Les outils à votre disposition</h2>
-      <ul className='row'>
-        <li className='column'>
-          <a className='cta' href='https://legislation.openfisca.fr/swagger'>API web</a>
+      <ul className='flex-container'>
+        <li className='flex-item'>
+          <a className='cta' href='https://legislation.openfisca.fr/swagger'>API Web</a>
           <p>et ses endpoints permet de consulter les données OpenFisca ou d'effectuer des calculs</p>
         </li>
-        <li className='column'>
+        <li className='flex-item'>
           <a className='cta' href='https://legislation.openfisca.fr'>Legislation Explorer</a>
           <p>propose une documentation des données et calculs disponibles dans OpenFisca avec un moteur de recherche</p>
         </li>
-        <li className='column'>
+        <li className='flex-item'>
           <a className='cta' href='https://openfisca.org/doc'>Documentation</a>
           <p>en anglais, elle explique comment modéliser un ajout à la législation ou une réforme</p>
         </li>
-        <li className='column'>
+        <li className='flex-item'>
           <a className='cta' href='https://github.com/openfisca/openfisca-france'>Code source</a>
           <p>sur la plateforme GitHub</p>
-        </li>
+        </li> 
       </ul>
       
     </div>
@@ -32,12 +32,12 @@ const Home = () => (
     <div id='commencer'>
       <h2>Débuter avec OpenFisca</h2>
       <p>Deux méthodes principales pour interagir avec OpenFisca :</p>
-      <ul className='row'>
-        <li className='column'>
+      <ul className='flex-container'>
+        <li className='flex-item'>
           Une API Web
           <p>Pour utiliser l'API Web, nous avons mis en place <a className='reference' href='https://legislation.openfisca.fr/swagger'>une documentation interactive</a>.</p>
         </li>
-        <li className='column'>
+        <li className='flex-item'>
           Une API Python
           <p>Pour apprendre à utiliser l'API Python, nous proposons <a className='reference' href='https://github.com/openfisca/tutorial'>un ensemble de tutoriels</a> sur un dépôt dédié.</p>
         </li>
@@ -49,10 +49,10 @@ const Home = () => (
     <section>
       <h2>Réutilisations</h2>
       <p>Des services variés font appel à OpenFisca France :</p>
-      <ul>
-        <li><a className='cta' href='https://beta.gouv.fr/startup/mes-aides'>Simulateur Mes Aides</a></li>
-        <li><a className='cta' href='https://www.mesdroitssociaux.gouv.fr'>Portail National des Droits Sociaux</a></li>
-        <li><a className='cta' href='http://www.revenudebase.info/2017/04/07/apprehender-cout-dun-revenu-de-base'>Publication du MFRB</a></li>
+      <ul className='flex-container'>
+        <li className='flex-item'><a className='cta' href='https://beta.gouv.fr/startup/mes-aides'>Simulateur Mes Aides</a></li>
+        <li className='flex-item'><a className='cta' href='https://www.mesdroitssociaux.gouv.fr'>Portail National des Droits Sociaux</a></li>
+        <li className='flex-item'><a className='cta' href='http://www.revenudebase.info/2017/04/07/apprehender-cout-dun-revenu-de-base'>Publication du MFRB</a></li>
       </ul>
     </section>
 
@@ -71,13 +71,13 @@ const Home = () => (
 
     <div>
       <h2>Nos partenaires</h2>
-      <ul className='row'>
-        <li className='column'><img alt='IPP' src={asset('/images/logo-ipp.png')} /></li>
-        <li className='column'><img alt='Etalab' src={asset('/images/logo-etalab.png')} /></li>
-        <li className='column'><img alt='MSA' src={asset('/images/logo-msa.svg')} /></li>
-        <li className='column'><img alt='beta.gouv.fr' src={asset('/images/logo-betagouv-url.svg')} /></li>
-        <li className='column'><img alt='IDEP' src={asset('/images/logo-idep.png')} /></li>
-        <li className='column'><img alt='France Stratégie' src={asset('/images/logo-france-strategie.jpg')} /></li>
+      <ul className='flex-container'>
+        <li className='flex-item'><img alt='IPP' src={asset('/images/logo-ipp.png')} /></li>
+        <li className='flex-item'><img alt='Etalab' src={asset('/images/logo-etalab.png')} /></li>
+        <li className='flex-item'><img alt='MSA' src={asset('/images/logo-msa.svg')} /></li>
+        <li className='flex-item'><img alt='beta.gouv.fr' src={asset('/images/logo-betagouv-url.svg')} /></li>
+        <li className='flex-item'><img alt='IDEP' src={asset('/images/logo-idep.png')} /></li>
+        <li className='flex-item'><img alt='France Stratégie' src={asset('/images/logo-france-strategie.jpg')} /></li>
       </ul>
     </div>
 
@@ -98,32 +98,32 @@ const Home = () => (
       ul {
         margin: auto;
         padding: 1em;
-        
         list-style-type: none;
-      }
-
-      ul li {
-        margin: 1em;
       }
 
       p {
         font-weight: 300; 
       }
 
-      .column {
+      .flex-item {
         display: flex;
         flex-flow: column;
-        justify-content: space-between;
-
+        justify-content: flex-start;
+        align-items: center;
+        border: 1px solid transparent;
+        margin: 1em;
+        padding: 0.5em;
         max-width: 20%;
+        min-width: 20em;
       }
 
-      .row {
+      .flex-container {
         display: flex;
-        flex-flow: row wrap;
         justify-content: center;
-
-        align-items: flex-start;
+        margin: auto;
+        padding: 1em;
+        display: flex;
+        flex-wrap: wrap;
       }
 
       .cta {
@@ -132,7 +132,6 @@ const Home = () => (
         border-color: #2b6a8d;
         border: 1px solid transparent;
         border-radius: .2em;
-
         display: inline-block;
         padding: .3em 1em;
         margin: 0;
@@ -145,22 +144,29 @@ const Home = () => (
 
         transition: filter 0.2s;
       }
-
       .reference {
         text-decoration: underline;
         color: #2b6a8d;
       }
-
       img {
-        width: 7em;
+        width: 10em;
         margin: O;
       }
 
-      @media (max-width: 720px) {
+      @media (max-width: 1100px) {
         .cta {
           padding-left: 1em;
           padding-right: 1em;
         }
+        .flex-container{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .flex-item{
+          width: 100%;
+        }
+      }
       `}</style>
   </div>
   )
