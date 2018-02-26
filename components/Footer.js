@@ -1,4 +1,5 @@
 import asset from 'next/asset'
+import Link from 'next/link'
 
 
 const Footer = () => (
@@ -6,8 +7,10 @@ const Footer = () => (
 		<footer>
 			<ul>
 			<li><a href="mailto:contact@openfisca.org?Subject=openfisca.org">Contact</a></li>
+			<li><a href="http://www.openfisca.org/doc">Documentation</a></li>
 			<li><a href="http://openfisca.org">openfisca.org</a></li>
 			<li><a id="github" href="https://github.com/openfisca/fr.openfisca.org"><img src={asset('/images/GitHub-Mark-Light-64px.png')} alt=""/>Contribuer à cette page</a></li>
+			<li><Link href="/cookies"><a>Statistiques d'usages</a></Link></li>
 			</ul>
 		</footer>
 
@@ -22,7 +25,7 @@ const Footer = () => (
 				font-family: "Helvetica Neue",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 			}
 
-			footer ul {
+			ul {
 				margin: auto;
 				padding: 1em;
 				display: flex;
@@ -31,20 +34,19 @@ const Footer = () => (
 				flex-flow: row wrap;
 			}
 
-			footer ul li {
+			ul li {
 				display: inline;
 			}
 
-			footer ul li+li {
-				margin-left: 1em;
+			ul li+li {
+				margin-left: 4em;
 			}
 
-			footer img {
+			img {
 				max-width: 1em;
 				margin-right: 5px;
 			}
-
-			footer a {
+			a {
 				text-decoration: none;
 				color: #fff;
 				display: flex;
@@ -64,7 +66,7 @@ const Footer = () => (
 					padding-right: 0;
 				}
 
-				footer > ul {
+				ul {
 					flex-flow: column;
 				}
 			}

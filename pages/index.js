@@ -83,8 +83,6 @@ const Home = () => (
         Une seule condition est imposée : les travaux dérivés d’OpenFisca doivent eux aussi être libres.</p>
       <p>Cette contrainte permet à la communauté de grandir à travers des améliorations constantes du moteur de calcul, des mises à jour des systèmes représentés et des nouveaux usages.</p>
     </div>
-
-
     <div>
       <h2>Nos partenaires</h2>
       <ul className='flex-container'>

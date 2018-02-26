@@ -12,11 +12,11 @@ const Cookies = () => (
       Cela nous permet de mesurer combien de visites nous avons et quelles sont les pages les plus regardées.
     </p>
     <div id='iframe-container'>
-      <iframe class="optout" style={{backgroundColor: '#9a9a9a24', width:'70%', border: 'none', padding: '1em 2em 0 2em'}} src="https://stats.data.gouv.fr/index.php?module=CoreAdminHome&action=optOut&language=fr"></iframe>
+      <iframe style={{backgroundColor: '#9a9a9a24', width:'70%', border: 'none', padding: '1em 2em 0 2em'}} src="https://stats.data.gouv.fr/index.php?module=CoreAdminHome&action=optOut&language=fr"></iframe>
     </div>
     <h2>Ce site web n'indique pas de bannière de consentement aux cookies. Pourquoi ?</h2>
     <p>
-      <a href='https://matomo.org/'>Matomo</a>- notre service de suivi - est configuré en conformité avec les règles de gestion de "Cookies" de la <a href='https://www.cnil.fr/fr/solutions-pour-les-cookies-de-mesure-daudience'>CNIL</a> des autorités françaises
+      <a href='https://matomo.org/'>Matomo</a> - notre service de suivi - est configuré en conformité avec les règles de gestion de "Cookies" de la <a href='https://www.cnil.fr/fr/solutions-pour-les-cookies-de-mesure-daudience'>CNIL</a> des autorités françaises
       (Matomo anonymise votre adresse IP de façon à rendre impossible le lien entre votre visite et vous-même).
     </p>
     <h2>Je contribue à vos données. Puis-je y accéder ?</h2>
