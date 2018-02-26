@@ -4,12 +4,11 @@ const Hero = () => (
       <div id='logo-large'>
         <img src='https://fr.openfisca.org/hotlinks/logo-openfisca.svg' />
       </div>
-
-			<h1>OpenFisca modélise le système socio-fiscal français en code informatique.</h1>
       <div id='pitch'>
+      <h1>OpenFisca modélise le système socio-fiscal français en code informatique.</h1>
         <p>Son moteur de microsimulation aide à comprendre les lois, analyser leurs changements et simuler des situations.</p>
         <p>Entièrement libre et gratuit, modulable et réutilisable, OpenFisca transforme la legislation en logiciel.</p>
-        <a id='cta' href='#commencer'>DECOUVREZ COMMENT</a>
+        <a href='#commencer'>DECOUVREZ COMMENT</a>
       </div>
     </div>
     <style jsx>{`
@@ -26,6 +25,7 @@ const Hero = () => (
 
 			.content{
 				margin: 0px 6em;
+				display: flex;
 			}
 
 			#logo-large {
@@ -63,18 +63,23 @@ const Hero = () => (
 				vertical-align: middle;
 			}
 
-      @media (max-width: 720px) {
+      @media (max-width:1100px) {
         .content{
           width:80%
           margin: 0 auto;
+          flex-direction: column;
+          align-items: center;
         }
         #logo-large {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
           margin-right: 0em;
           margin-bottom: 1em;
         }
-				#logo-large img{
+        #logo-large img{
           width: 70%;
-			   }
+        }
         #pitch {
           margin:1em;
           font-size: 1em;
