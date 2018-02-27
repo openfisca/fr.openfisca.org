@@ -3,6 +3,7 @@ import asset from 'next/asset'
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import Hero from "../components/Hero"
+import Piwik from "../components/Piwik"
 
 const Cookies = () => (
   <div id='content'>
@@ -134,5 +135,6 @@ export default () => (
     <Header />
     <Cookies />
     <Footer />
+    <Piwik page='cookies'/>
   </div>
 )

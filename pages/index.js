@@ -1,5 +1,6 @@
 import asset from 'next/asset'
 
+import Piwik from "../components/Piwik"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import Hero from "../components/Hero"
@@ -193,5 +194,6 @@ export default () => (
     <Hero/>
     <Home />
     <Footer />
+    <Piwik page='HomePage'/>
   </div>
 )
