@@ -1,2 +1,2 @@
-baseline: "h1",
-installationLink: {a: "TODO"}
+pitch: "h1",
+docLink: {a: "Documentation"}

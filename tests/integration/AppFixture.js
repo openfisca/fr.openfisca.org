@@ -1,2 +1,2 @@
-baseline = /OpenFisca modélise le système socio-fiscal français en code informatique./
-installationLink = "TODO"
+pitch = /OpenFisca modélise le système socio-fiscal français en code informatique./
+docLink = "http://openfisca.org/doc/"
