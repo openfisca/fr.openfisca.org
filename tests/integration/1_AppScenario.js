@@ -1,7 +1,7 @@
-description: "The header should show OpenFisca pitch",
+description: "L'en-tête doit présenter ce que fait OpenFisca.",
 
 steps: [
     {
-        "AppComponent.baseline": baseline
+        "AppComponent.pitch": pitch
     }
 ]
