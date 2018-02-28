@@ -43,8 +43,14 @@ const Home = () => (
           <p>Pour utiliser l'API Web, nous avons mis en place <a className='reference' href='https://legislation.openfisca.fr/swagger'>une documentation interactive</a>.</p>
         </li>
         <li className='flex-item'>
+          Des Notebooks Juyter
+          <p>
+            Nous proposons des <a href="https://github.com/openfisca/tutorial/tree/master/notebooks">tutoriels</a>, utilisables dans votre navigateur via <a href="https://mybinder.org/v2/gh/openfisca/tutorial/master?filepath=notebooks/getting_started.ipynb">Binder</a>.
+          </p>
+        </li>
+        <li className='flex-item'>
           Une API Python
-          <p>Pour apprendre à utiliser l'API Python, nous proposons <a className='reference' href='https://github.com/openfisca/tutorial'>un ensemble de tutoriels</a> sur un dépôt dédié.</p>
+          <p>Après avoir <a href="https://github.com/openfisca/openfisca-france#installation">installé OpenFisca-France</a>, nous proposons <a className="reference" href="https://github.com/openfisca/tutorial">un ensemble de tutoriels</a> en python.</p>
         </li>
       </ul>
       
