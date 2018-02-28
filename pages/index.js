@@ -190,7 +190,7 @@ const Home = () => (
 
 export default () => (
   <div>
-    <Header />
+    <Header page='HomePage'/>
     <Hero/>
     <Home />
     <Footer />

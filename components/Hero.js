@@ -36,6 +36,7 @@ const Hero = () => (
 
 			#logo-large img{
 				width: 20em;
+				margin-top: 3em
 			}
 
 			#pitch {
