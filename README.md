@@ -13,12 +13,25 @@ This is the source code of the [web site](http://fr.openfisca.org) for the commu
 ## Install
 
 ```sh
-yarn init (creates package.json)
-yarn add next
-yarn add react
-yarn add react-dom
-Create pages/index.js
-add script "dev": "next" in the package.json
 yarn install
+```
+
+## Run locally
+
+```sh
+yarn run build
 yarn run dev
 ```
+
+## Run on a server
+
+```sh
+yarn run build
+yarn run start
+```
+
+The OPS configuration on the instance running on fr.openfisca.org cans be found in the [openfisca-ops repository](https://www.github.com/openfisca/openfisca-ops).
+
+## Tracking
+
+The tracking is configured in `piwik.config.jon`. Change the information there if you are running a seperate Piwik or Matomo instance.
