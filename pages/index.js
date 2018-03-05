@@ -127,11 +127,15 @@ const Home = () => (
         font-weight: 300; 
       }
 
+      p + p {
+        margin-top: 0; 
+      }
+
       .flex-item {
         background-color: #9a9a9a24;
         display: flex;
         flex-flow: column;
-        justify-content: flex-start;
+        justify-content: space-between;
         align-items: center;
         border: 1px solid transparent;
         margin: 1em;
@@ -178,17 +182,20 @@ const Home = () => (
       }
 
       @media (max-width: 1100px) {
+        #content{
+          padding: 0 1em 0 1em;
+        }
         .cta {
           padding-left: 1em;
           padding-right: 1em;
         }
         .flex-container{
           flex-direction: column;
-          justify-content: center;
           align-items: center;
         }
         .flex-item{
           width: 100%;
+          min-width: 100%;
         }
       }
       `}</style>
