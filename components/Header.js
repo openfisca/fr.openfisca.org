@@ -7,10 +7,10 @@ const Header = (props) => (
 		  <div>
 				<Link href="/index">
 					{(props.page == 'HomePage')? (
-            <div></div>
-            ) : (
-            <img id="logo-small" src='https://fr.openfisca.org/hotlinks/logo-openfisca.svg' />
-            )}
+            			<div></div>
+            			) : (
+            			<img id="logo-small" src='https://fr.openfisca.org/hotlinks/logo-openfisca.svg' />
+            		)}
 				</Link>
 			</div>
 			<ul>
@@ -84,12 +84,11 @@ const Header = (props) => (
 					flex-direction: column;
 				}
 				ul {
-					align-self: center;
 					display:contents;
+                    padding: 0;
+                    flex-direction: column;
+                    align-items: center;
 				}
-		
-			
-
 		`}</style>
 	</header>
 	)
