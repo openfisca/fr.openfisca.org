@@ -30,8 +30,8 @@ yarn run build
 yarn run start
 ```
 
-The OPS configuration on the instance running on fr.openfisca.org cans be found in the [openfisca-ops repository](https://www.github.com/openfisca/openfisca-ops).
+Learn more about the server's production configuration for `fr.openfisca.org` on the [openfisca-ops repository](https://www.github.com/openfisca/openfisca-ops).
 
 ## Tracking
 
-The tracking is configured in `piwik.config.jon`. Change the information there if you are running a seperate Piwik or Matomo instance.
+fr.openfisca.org uses [Matomo](https://matomo.org/) (formerly Piwik) to track visits. The tracking is configured in `piwik.config.json`. Change the information there if you are running a seperate Piwik or Matomo instance.
