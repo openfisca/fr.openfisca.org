@@ -5,7 +5,6 @@ const PiwikConfig = require('../piwik.config')
 
 class Piwik extends React.Component {
   componentDidMount() {
-    console.log(window)
     setTimeout(() => {
       if (window.Piwik) {
         const tracker = window.Piwik.getTracker(`${PiwikConfig.url}/piwik.php`, PiwikConfig.siteId)
