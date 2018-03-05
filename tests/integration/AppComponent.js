@@ -1,2 +1,2 @@
 pitch: "h1",
-docLink: {a: "Documentation"}
+docLink: "a[href='http://openfisca.org/doc/']"
