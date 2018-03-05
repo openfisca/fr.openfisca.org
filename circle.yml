@@ -11,7 +11,6 @@ machine:
 dependencies:
   override:
     - npm install
-    - npm list
     - npm run build
 
   post:
