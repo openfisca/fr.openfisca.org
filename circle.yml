@@ -9,11 +9,15 @@ machine:
     PORT: 3000 # Nextjs App serving port
 
 dependencies:
+  override:
+    - npm install
+    - npm list
+    - npm run build
+
   post:
     - npm install saucelabs # allow sending Watai results to SauceLabs
     - wget https://saucelabs.com/downloads/sc-4.4.9-linux.tar.gz
     - tar -xzf sc-4.4.9-linux.tar.gz
-    - npm run build
 
 test:
   pre:
