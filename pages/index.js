@@ -35,21 +35,23 @@ const Home = () => (
 
     <div id='commencer'>
       <h2>Débuter avec OpenFisca</h2>
-      <p>Deux méthodes principales pour interagir avec OpenFisca :</p>
-      <ul className='flex-container'>
-        <li className='flex-item'>
-          Une API Web
-          <p>Pour utiliser l'API Web, nous avons mis en place <a className='reference' href='https://legislation.openfisca.fr/swagger'>une documentation interactive</a>.</p>
+      <p>En ligne ou en local, différentes méthodes pour interagir avec OpenFisca :</p>
+      <ul className="flex-container">
+        <li className="flex-item">
+          Une API Web publique
+          <p>Sans installation</p>
+          <p>Interrogez OpenFisca-France sur des situations d'individus ou de familles. pour commencer, consultez <a className="reference" href="https://legislation.openfisca.fr/swagger">la documentation interactive</a>.</p>
         </li>
         <li className="flex-item">
           Des Notebooks Juyter
+          <p>Sans installation</p>
           <p>
-            Nous proposons des <a href="https://github.com/openfisca/tutorial/tree/master/notebooks">tutoriels</a>, utilisables dans votre navigateur via <a href="https://mybinder.org/v2/gh/openfisca/tutorial/master?filepath=notebooks/getting_started.ipynb">Binder</a>.
+            Lancez des simulations sur le modèle actuel ou modélisez vos propres réformes. Nous proposons des <a className="reference" href="https://github.com/openfisca/tutorial/tree/master/notebooks">tutoriels</a> tels que ce <a className="reference" href="https://mybinder.org/v2/gh/openfisca/tutorial/master?filepath=notebooks/getting_started.ipynb">notebook</a> utilisable dans votre navigateur via <a className="reference" href="https://mybinder.org/">binder</a>.
           </p>
         </li>
         <li className="flex-item">
           Une API Python
-          <p>Après avoir <a href="https://github.com/openfisca/openfisca-france#installation">installé OpenFisca-France</a>, nous proposons <a className="reference" href="https://github.com/openfisca/tutorial">un ensemble de tutoriels</a> en python.</p>
+          <p>Customisez et servez votre instance d'Openfisca-France. Après avoir <a className="reference" href="https://github.com/openfisca/openfisca-france#installation">installé OpenFisca-France</a>, nous proposons <a className="reference" href="https://github.com/openfisca/tutorial">un ensemble de tutoriels</a> en python.</p>
         </li>
       </ul>
       

@@ -7,7 +7,7 @@ const Hero = () => (
       <div id='pitch'>
       <h1>OpenFisca modélise le système socio-fiscal français en code informatique.</h1>
         <p>Son moteur de microsimulation aide à comprendre les lois, analyser leurs changements et simuler des situations.</p>
-        <p>Entièrement libre et gratuit, modulable et réutilisable, OpenFisca transforme la legislation en logiciel.</p>
+        <p>Entièrement libre et gratuit, modulable et réutilisable, OpenFisca permet de transformer la legislation en logiciel.</p>
         <a href='#commencer'>DECOUVREZ COMMENT</a>
       </div>
     </div>
