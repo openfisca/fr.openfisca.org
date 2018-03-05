@@ -52,27 +52,8 @@ const Cookies = () => (
         color: #1e3242;
       }
 
-      ul {
-        margin: auto;
-        padding: 1em;
-        list-style-type: none;
-      }
-
       p {
         font-weight: 300; 
-      }
-
-      .flex-item {
-        background-color: #9a9a9a24;
-        display: flex;
-        flex-flow: column;
-        justify-content: flex-start;
-        align-items: center;
-        border: 1px solid transparent;
-        margin: 1em;
-        padding: 0.5em;
-        max-width: 20%;
-        min-width: 20em;
       }
 
       .flex-container {
@@ -84,46 +65,12 @@ const Cookies = () => (
         flex-wrap: wrap;
       }
 
-      .cta {
-        color: #ffffff;
-        background-color: #2b6a8d;
-        border-color: #2b6a8d;
-        border: 1px solid transparent;
-        border-radius: .2em;
-        display: inline-block;
-        padding: .3em 1em;
-        margin: 0;
-        font-weight: 400;
-        line-height: 1.5;
-        text-align: center;
-        white-space: nowrap;
-        vertical-align: middle;
-        text-decoration: none;
-        transition: filter 0.2s;
-      }
-      .reference {
-        text-decoration: underline;
-        color: #2b6a8d;
-      }
-      .logo{
-        background-color:transparent
-      }
-      img {
-        width: 10em;
-      }
 
       @media (max-width: 1100px) {
-        .cta {
-          padding-left: 1em;
-          padding-right: 1em;
-        }
         .flex-container{
           flex-direction: column;
           justify-content: center;
           align-items: center;
-        }
-        .flex-item{
-          width: 100%;
         }
       }
       `}</style>
