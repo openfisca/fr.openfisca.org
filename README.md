@@ -12,16 +12,39 @@ This is the source code of the [web site](http://fr.openfisca.org) for the commu
 
 ## Install
 
+> This project uses [Next.js](https://github.com/zeit/next.js) and [React](https://reactjs.org).  
+
+To install this project's dependencies, go to its directory and run:
 ```sh
-yarn install
+npm install
 ```
 
-## Run
+## Run 
 
-Learn more about the server's production configuration for `fr.openfisca.org` on the [openfisca-ops repository](https://www.github.com/openfisca/openfisca-ops).
+* To run the website locally in a development mode, call:
+```sh
+npm run dev
+# Expected result example: 
+# DONE  Compiled successfully in 2285ms                                 10:22:29 PM
+# > Ready on http://localhost:3000
+```
 
+* To run the website in a production mode, build it then start it with:
+```sh
+npm run build
+# Expected result example: 
+# > next build
 
-## Test
+npm start
+# Expected result example:
+# > next start
+# > Ready on http://localhost:3000
+```
+
+> Learn more about the server's production configuration for `fr.openfisca.org` on the [openfisca-ops repository](https://www.github.com/openfisca/openfisca-ops).
+
+:tada: In your browser, the website is available at this address: `http://localhost:3000`
+
 
 ## Integration tests
 
