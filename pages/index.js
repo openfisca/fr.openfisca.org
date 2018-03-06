@@ -181,7 +181,7 @@ const Home = () => (
         width: 10em;
       }
 
-      @media (max-width: 1100px) {
+      @media (max-width: 720px) {
         #content{
           padding: 0 1em 0 1em;
         }
