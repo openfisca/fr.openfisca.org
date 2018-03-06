@@ -33,13 +33,13 @@ To run the tests with Watai, we need Java JRE and a Selenium standalone server.
 
 #### Install Java JRE
 
-Check if a JRE is already installed on your environment with:
+Check if a Java Runtime Environment (JRE) is already installed on your environment with:
 ```
 java -version
 # Expected answer example: java version "1.8.0_40"
 ```
 
-If you get an error, download Java last `JRE` version on [Oracle website](http://www.oracle.com/technetwork/java/javase/downloads/index.html). 
+If you get an error, download Java last `JRE` version on [Oracle website](http://www.oracle.com/technetwork/java/javase/downloads/jre9-downloads-3848532.html). 
 
 #### Install Selenium
 Download the standalone selenium server on the [official website](https://www.seleniumhq.org/download/).  
@@ -74,7 +74,7 @@ Default configuration in this project uses Chrome browser.
 If you have Chrome, install `chromedriver` as follows:
 
 ```sh
-sudo npm install —global chromedriver
+sudo npm install --global chromedriver
 ```
 This will add a chromedriver to your global environment.  
 Its installation directory (e.g., `/usr/local/lib/node_modules/chromedriver`) will be used in the next step.
