@@ -25,11 +25,11 @@ Learn more about the server's production configuration for `fr.openfisca.org` on
 
 ## Integration tests
 
-This code uses [Watai](https://github.com/MattiSG/Watai/wiki) framework for integration tests.
+This code uses [Watai](https://github.com/MattiSG/Watai/wiki) framework for integration testing.
 
 ### Install integration tests environment
 
-To run the tests with Watai, we need Java JRE and a Selenium standalone server.
+To run the tests with Watai, we need the Java JRE and a Selenium standalone server.
 
 #### Install Java JRE
 
@@ -39,10 +39,11 @@ java -version
 # Expected answer example: java version "1.8.0_40"
 ```
 
-If you get an error, download Java last `JRE` version on [Oracle website](http://www.oracle.com/technetwork/java/javase/downloads/jre9-downloads-3848532.html). 
+If you get an error, download Java last `JRE` version on the [Oracle website](http://www.oracle.com/technetwork/java/javase/downloads/jre9-downloads-3848532.html). 
 
 #### Install Selenium
-Download the standalone selenium server on the [official website](https://www.seleniumhq.org/download/).  
+
+Download the standalone Selenium server on the [official website](https://www.seleniumhq.org/download/).  
 
 Your download result is a Java `.jar` file (e.g., `selenium-server-standalone-3.4.0.jar`)   
 
@@ -68,6 +69,7 @@ Then, end it with Ctrl-C.
 
 
 #### Select testing browser
+
 To run the integration tests locally, you need a testing browser.
 Default configuration in this project uses Chrome browser.
 
@@ -85,6 +87,7 @@ If you don't have Chrome, update the browser name in `tests/integration/config.j
     browser: 'firefox',
 ```
 And this doesn't need further driver installation.
+
 #### Link Chromedriver & Selenium
 
 Go in the Selenium directory and add a (symbolic) link to the chrome driver:
