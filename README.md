@@ -29,60 +29,101 @@ This code uses [Watai](https://github.com/MattiSG/Watai/wiki) framework for inte
 
 ### Install integration tests environment
 
-#### Selenium
-Watai needs a Selenium standalone server and describes installation instructions in its [documentation](https://github.com/MattiSG/Watai/wiki/Installing#selenium-server).
+To run the tests with Watai, we need Java JRE and a Selenium standalone server.
 
-To test your installation, run: 
+#### Install Java JRE
 
-```sh
-sudo selenium
+Check if a JRE is already installed on your environment with:
+```
+java -version
+# Expected answer example: java version "1.8.0_40"
 ```
 
-Or, without administrator's rights: 
+If you get an error, download Java last `JRE` version on [Oracle website](http://www.oracle.com/technetwork/java/javase/downloads/index.html). 
 
+#### Install Selenium
+Download the standalone selenium server on the [official website](https://www.seleniumhq.org/download/).  
+
+Your download result is a Java `.jar` file (e.g., `selenium-server-standalone-3.4.0.jar`)   
+
+Move this file to the desired directory.
+In this example, we will save it to: `/opt/local/lib/selenium`  
+
+And register the jar full path in `$SELENIUM` environment variable:
+```sh
+export SELENIUM=/opt/local/lib/selenium/selenium-server-standalone-3.4.0.jar
+```
+
+To test your installation, run: 
 ```sh
 java -jar $SELENIUM
-```  
-
-where `$SELENIUM` contains a path to Selenium standalone server jar file (e.g. `/usr/local/lib/node_modules/selenium-server/lib/runner/selenium-server-standalone-3.4.0.jar`).
+# Expected answer example:
+# 15:26:11.981 INFO - Selenium build info: version: '3.4.0', revision: 'unknown'
+# 15:26:11.982 INFO - Launching a standalone Selenium Server
+# (...)
+# 15:26:12.323 INFO - Selenium Server is up and running
+```
 
 Then, end it with Ctrl-C.
 
 
-#### Chromedriver
-To run the tests in development mode, you will need to install `chromedriver` as `tests/integration/config.js` is pre-configured to use Chrome browser:
+#### Select testing browser
+To run the integration tests locally, you need a testing browser.
+Default configuration in this project uses Chrome browser.
+
+If you have Chrome, install `chromedriver` as follows:
 
 ```sh
 sudo npm install —global chromedriver
 ```
-This will add a chromedriver to your global environment (e.g., `/usr/local/lib/node_modules/chromedriver`).
+This will add a chromedriver to your global environment.  
+Its installation directory (e.g., `/usr/local/lib/node_modules/chromedriver`) will be used in the next step.
 
+If you don't have Chrome, update the browser name in `tests/integration/config.js`. E.g., for `firefox`:
+
+```
+    browser: 'firefox',
+```
+And this doesn't need further driver installation.
 #### Link Chromedriver & Selenium
 
-Add chromedriver reference to selenium server by creating a symbolic link to the driver in selenium directory:
+Go in the Selenium directory and add a (symbolic) link to the chrome driver:
 
 ```sh
 cd `dirname $SELENIUM`
 sudo ln -s /usr/local/lib/node_modules/chromedriver/lib/chromedriver/chromedriver chromedriver
-
 ```
 
 ### Run tests
 
-1. Run the web site in developement mode:
+Every step is runned in a new terminal window.
 
+1. Terminal window #1: in `fr.openfisca.org` directory, run the web site in developement mode
 ```sh
 npm run dev
+# Expected answer example:  
+# DONE  Compiled successfully in 2276ms                                3:25:21 PM
+# > Ready on http://localhost:3000
 ```
 
-2. In a new terminal, run the selenium server:
+2. Terminal window #2: run the selenium server
 ```sh
 java -jar $SELENIUM 
+# Expected answer example:
+# 15:26:11.981 INFO - Selenium build info: version: '3.4.0', revision: 'unknown'
+# 15:26:11.982 INFO - Launching a standalone Selenium Server
+# (...)
+# 15:26:12.323 INFO - Selenium Server is up and running
 ```
 
-3. In an other terminal, run the integration tests (this step opens a new Chrome window):
+3. Terminal window #3: in `fr.openfisca.org` directory, run the integration tests (this step opens Chrome browser)
 ```sh
-npm run test
+npm run test:integration
+# Expected answer example:
+# (...)
+# ⨁  fr.openfisca.org                       
+# ✔  L'en-tête doit présenter ce que fait OpenFisca.
+# ✔  La page d'accueil doit indiquer les informations de documentation.
 ```
 
 ## Tracking
