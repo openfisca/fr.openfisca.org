@@ -66,11 +66,9 @@ const Footer = () => (
 
 			@media (max-width: 720px) {
 				ul {
-					align-self: center;
-					display:contents;
+					padding: 0;
 					flex-direction: column;
 					align-items: center;
-					padding: 0;
 				}
 		`}</style>
 	</div>

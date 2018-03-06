@@ -18,7 +18,6 @@ const Header = (props) => (
 				<li><a href="http://openfisca.org/doc/">Documentation</a></li>
 			</ul>
 
-
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 		<style jsx>{`
@@ -85,7 +84,6 @@ const Header = (props) => (
 					flex-direction: column;
 				}
 				ul {
-					display:contents;
                     padding: 0;
                     flex-direction: column;
                     align-items: center;

@@ -1,5 +1,4 @@
 import asset from 'next/asset'
-
 import Piwik from "../components/Piwik"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
@@ -196,6 +195,7 @@ const Home = () => (
         .flex-item{
           width: 100%;
           min-width: 100%;
+          margin: 1em auto 1em auto
         }
       }
       `}</style>
