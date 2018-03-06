@@ -5,13 +5,13 @@ import Link from 'next/link'
 const Header = (props) => (
     <header>
 		  <div>
-				<Link href="/index">
-					{(props.page == 'HomePage')? (
-            			<div></div>
-            			) : (
+				{(props.page == 'HomePage')? (
+            		<div></div>
+            		) : (
+            		<Link href="/index">
             			<img id="logo-small" src='https://fr.openfisca.org/hotlinks/logo-openfisca.svg' />
-            		)}
-				</Link>
+					</Link>
+				)}
 			</div>
 			<ul>
 				<li><a href='https://github.com/openfisca/openfisca-france'><img src={asset('/images/GitHub-Mark-Light-64px.png')} alt=""/>Code source</a></li>
