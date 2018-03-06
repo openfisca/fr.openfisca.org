@@ -25,6 +25,7 @@ const Header = (props) => (
 			#logo-small {
 				max-width: 4em;
 				margin: 1em;
+				cursor:pointer;
 			}
 
 			header {
