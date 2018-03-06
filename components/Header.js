@@ -9,7 +9,7 @@ const Header = (props) => (
             		<div></div>
             		) : (
             		<Link href="/index">
-            			<img id="logo-small" src='https://fr.openfisca.org/hotlinks/logo-openfisca.svg' />
+            			<img id="logo-small" src='http://openfisca.org/img/logo-openfisca.svg' />
 					</Link>
 				)}
 			</div>

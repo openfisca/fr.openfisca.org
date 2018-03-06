@@ -2,7 +2,7 @@ const Hero = () => (
   <div className='hero'>
     <div className='content'>
       <div id='logo-large'>
-        <img src='https://fr.openfisca.org/hotlinks/logo-openfisca.svg' />
+        <img src='http://openfisca.org/img/logo-openfisca.svg' />
       </div>
       <div id='pitch'>
       <h1>OpenFisca modélise le système socio-fiscal français en code informatique.</h1>
