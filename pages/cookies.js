@@ -17,12 +17,12 @@ const Cookies = () => (
     </div>
     <h2>Ce site web n'indique pas de bannière de consentement aux cookies. Pourquoi ?</h2>
     <p>
-      <a href='https://matomo.org/'>Matomo</a> - notre service de suivi - est configuré en conformité avec les règles de gestion de "Cookies" de la <a href='https://www.cnil.fr/fr/solutions-pour-les-cookies-de-mesure-daudience'>CNIL</a> des autorités françaises
+      <a className="reference" href='https://matomo.org/'>Matomo</a> - notre service de suivi - est configuré en conformité avec les règles de gestion de "Cookies" de la <a className="reference" href='https://www.cnil.fr/fr/solutions-pour-les-cookies-de-mesure-daudience'>CNIL</a> des autorités françaises
       (Matomo anonymise votre adresse IP de façon à rendre impossible le lien entre votre visite et vous-même).
     </p>
     <h2>Je contribue à vos données. Puis-je y accéder ?</h2>
     <p>
-      Bien sûr ! Les données d'analyse d'OpenFisca sont librement disponible ici : <a href='http://stats.data.gouv.fr/index.php?module=CoreHome&action=index&idSite=4&period=range&date=previous30#?module=Dashboard&action=embeddedIndex&idSite=4&period=range&date=previous30&idDashboard=1'>stats.data.gouv.fr</a>
+      Bien sûr ! Les données d'analyse d'OpenFisca sont librement disponible ici : <a className="reference" href='http://stats.data.gouv.fr/index.php?module=CoreHome&action=index&idSite=4&period=range&date=previous30#?module=Dashboard&action=embeddedIndex&idSite=4&period=range&date=previous30&idDashboard=1'>stats.data.gouv.fr</a>
     </p>
  
     <style jsx>{` 
@@ -56,7 +56,12 @@ const Cookies = () => (
         font-weight: 300; 
       }
 
-     @media (max-width: 720px) {
+      .reference {
+        text-decoration: underline;
+        color: #2b6a8d;
+      }
+
+      @media (max-width: 720px) {
         #content{
           padding: 0 1em 1em 1em;
         }
