@@ -22,7 +22,7 @@ const Home = () => (
         <li className="flex-item">
           <h3>Documentation</h3>
           <p>Entièrement en anglais, elle explique comment modéliser un ajout à la législation ou une réforme. </p>
-          <a className="cta" href="https://openfisca.org/doc">Découvrir</a>
+          <a className="cta" href="http://openfisca.org/doc">Découvrir</a>
         </li>
         <li className="flex-item">
           <h3>Code source</h3>
