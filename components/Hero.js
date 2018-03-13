@@ -23,7 +23,7 @@ const Hero = () => (
 				text-align: center;
 			}
 
-			.content{
+			.content {
 				margin: 0px 6em;
 				display: flex;
 			}
@@ -34,7 +34,7 @@ const Hero = () => (
 				margin-bottom: 2em;
 			}
 
-			#logo-large img{
+			#logo-large img {
 				width: 20em;
 				margin-top: 3em
 			}
@@ -65,7 +65,7 @@ const Hero = () => (
 			}
 
       @media (max-width:1100px) {
-        .content{
+        .content {
           width:80%
           margin: 0 auto;
           flex-direction: column;
@@ -78,13 +78,14 @@ const Hero = () => (
           margin-right: 0em;
           margin-bottom: 1em;
         }
-        #logo-large img{
+        #logo-large img {
           width: 70%;
         }
         #pitch {
           margin:1em;
           font-size: 1em;
-        }
+				}
+			}
     `}</style>
   </div>
   )

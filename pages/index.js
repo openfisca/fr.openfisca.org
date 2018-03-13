@@ -169,19 +169,22 @@ const Home = () => (
         text-decoration: none;
         transition: filter 0.2s;
       }
+
       .reference {
         text-decoration: underline;
         color: #2b6a8d;
       }
-      .logo{
+
+      .logo {
         background-color:transparent
       }
+
       img {
         width: 10em;
       }
 
       @media (max-width: 720px) {
-        #content{
+        #content {
           padding: 0 1em 0 1em;
         }
         .cta {
@@ -198,7 +201,7 @@ const Home = () => (
           margin: 1em auto 1em auto
         }
       }
-      `}</style>
+    `}</style>
   </div>
   )
 
