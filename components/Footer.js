@@ -63,13 +63,13 @@ const Footer = () => (
 				text-decoration: none;	
 			}
 
-
 			@media (max-width: 720px) {
 				ul {
 					padding: 0;
 					flex-direction: column;
 					align-items: center;
 				}
+			}
 		`}</style>
 	</div>
 	)

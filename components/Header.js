@@ -88,6 +88,7 @@ const Header = (props) => (
                     flex-direction: column;
                     align-items: center;
 				}
+			}
 		`}</style>
 	</header>
 	)
