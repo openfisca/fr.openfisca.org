@@ -33,7 +33,8 @@ const Cookies = () => (
         font-size: 120%;
         font-family: "Helvetica Neue",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
       }
-      #iframe-container{
+
+      #iframe-container {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -56,12 +57,17 @@ const Cookies = () => (
         font-weight: 300; 
       }
 
-     @media (max-width: 720px) {
-        #content{
+      a {
+        text-decoration: underline;
+        color: #2b6a8d;
+      }
+
+      @media (max-width: 720px) {
+        #content {
           padding: 0 1em 1em 1em;
         }
       }
-      `}</style>
+    `}</style>
   </div>
   )
 
