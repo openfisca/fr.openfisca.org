@@ -47,7 +47,6 @@ const Header = (props) => (
 				align-items : flex-end;
 			}
 
-
 			li + li {
 				margin-left: 0.5em;
 			}
@@ -56,7 +55,6 @@ const Header = (props) => (
 				display: inline;
 				list-style: none;
 				margin: 1em;
-
 			}
 
 			li img {

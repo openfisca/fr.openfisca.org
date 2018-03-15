@@ -39,18 +39,18 @@ const Home = () => (
         <li className="flex-item">
           Une API Web publique
           <p>Sans installation</p>
-          <p>Interrogez OpenFisca-France sur des situations d'individus ou de familles. pour commencer, consultez <a className="reference" href="https://legislation.openfisca.fr/swagger">la documentation interactive</a>.</p>
+          <p>Interrogez OpenFisca-France sur des situations d'individus ou de familles. pour commencer, consultez <a href="https://legislation.openfisca.fr/swagger">la documentation interactive</a>.</p>
         </li>
         <li className="flex-item">
           Des Notebooks Juyter
           <p>Sans installation</p>
           <p>
-            Lancez des simulations sur le modèle actuel ou modélisez vos propres réformes. Nous proposons des <a className="reference" href="https://github.com/openfisca/tutorial/tree/master/notebooks">tutoriels</a> tels que ce <a className="reference" href="https://mybinder.org/v2/gh/openfisca/tutorial/master?filepath=notebooks/getting_started.ipynb">notebook</a> utilisable dans votre navigateur via <a className="reference" href="https://mybinder.org/">binder</a>.
+            Lancez des simulations sur le modèle actuel ou modélisez vos propres réformes. Nous proposons des <a href="https://github.com/openfisca/tutorial/tree/master/notebooks">tutoriels</a> tels que ce <a href="https://mybinder.org/v2/gh/openfisca/tutorial/master?filepath=notebooks/getting_started.ipynb">notebook</a> utilisable dans votre navigateur via <a href="https://mybinder.org/">binder</a>.
           </p>
         </li>
         <li className="flex-item">
           Une API Python
-          <p>Customisez et servez votre instance d'Openfisca-France. Après avoir <a className="reference" href="https://github.com/openfisca/openfisca-france#installation">installé OpenFisca-France</a>, nous proposons <a className="reference" href="https://github.com/openfisca/tutorial">un ensemble de tutoriels</a> en python.</p>
+          <p>Customisez et servez votre instance d'Openfisca-France. Après avoir <a href="https://github.com/openfisca/openfisca-france#installation">installé OpenFisca-France</a>, nous proposons <a href="https://github.com/openfisca/tutorial">un ensemble de tutoriels</a> en python.</p>
         </li>
       </ul>
       
@@ -64,17 +64,17 @@ const Home = () => (
         <li className="flex-item">
           <h3>Simulateur Mes Aides</h3>
           <img alt='Mes Aides' src={asset("/images/mes-aides.png")}/>
-          <a className="reference" href="https://beta.gouv.fr/startup/mes-aides">Simuler vos aides</a>
+          <a href="https://beta.gouv.fr/startup/mes-aides">Simuler vos aides</a>
         </li>
         <li className="flex-item">
           <h3>Portail National des Droits Sociaux</h3>
           <img alt='MFRB' src={asset('/images/logo-pnds.png')}/>
-          <a className="reference" href="https://www.mesdroitssociaux.gouv.fr">Visiter le portail</a>
+          <a href="https://www.mesdroitssociaux.gouv.fr">Visiter le portail</a>
         </li>
         <li className="flex-item">
           <h3>Publication du MFRB</h3>
           <img alt='MFRB' src={asset("/images/logo_mfrb.png")}/>
-          <a className="reference" href="http://www.revenudebase.info/2017/04/07/apprehender-cout-dun-revenu-de-base">Lire la publication</a>
+          <a href="http://www.revenudebase.info/2017/04/07/apprehender-cout-dun-revenu-de-base">Lire la publication</a>
         </li>
       </ul>
     </section>
@@ -130,6 +130,15 @@ const Home = () => (
         margin-top: 0; 
       }
 
+      a {
+        text-decoration: underline;
+        color: #2b6a8d;
+      }
+
+      img {
+        width: 10em;
+      }
+
       .flex-item {
         background-color: #9a9a9a24;
         display: flex;
@@ -170,17 +179,8 @@ const Home = () => (
         transition: filter 0.2s;
       }
 
-      .reference {
-        text-decoration: underline;
-        color: #2b6a8d;
-      }
-
       .logo {
         background-color:transparent
-      }
-
-      img {
-        width: 10em;
       }
 
       @media (max-width: 720px) {
