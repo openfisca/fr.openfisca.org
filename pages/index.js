@@ -64,7 +64,7 @@ const Home = () => (
         <li className="flex-item">
           <h3>Simulateur Mes Aides</h3>
           <img alt='Mes Aides' src={asset("/images/mes-aides.png")}/>
-          <a href="https://beta.gouv.fr/startup/mes-aides">Simuler vos aides</a>
+          <a href="https://mes-aides.gouv.fr">Simuler vos aides</a>
         </li>
         <li className="flex-item">
           <h3>Portail National des Droits Sociaux</h3>
