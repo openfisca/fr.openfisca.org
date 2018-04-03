@@ -12,12 +12,12 @@ const Home = () => (
         <li className="flex-item">
           <h3>API Web</h3>
           <p>L'API REST et ses endpoints permet de consulter les données OpenFisca ou d'effectuer des calculs sur la legislation Française.</p>
-          <a className="cta" href="https://legislation.openfisca.fr/swagger">Interroger</a>
+          <a className="cta" href="https://fr.openfisca.org/legislation/swagger">Interroger</a>
         </li>
         <li className="flex-item">
           <h3>Legislation Explorer</h3>
           <p>Ce site propose toutes les données et calculs disponibles dans OpenFisca avec un moteur de recherche.</p>
-          <a className="cta" href="https://legislation.openfisca.fr">Explorer</a>
+          <a className="cta" href="https://fr.openfisca.org/legislation">Explorer</a>
         </li>
         <li className="flex-item">
           <h3>Documentation</h3>
@@ -39,7 +39,7 @@ const Home = () => (
         <li className="flex-item">
           Une API Web publique
           <p>Sans installation</p>
-          <p>Interrogez OpenFisca-France sur des situations d'individus ou de familles. pour commencer, consultez <a href="https://legislation.openfisca.fr/swagger">la documentation interactive</a>.</p>
+          <p>Interrogez OpenFisca-France sur des situations d'individus ou de familles. pour commencer, consultez <a href="https://fr.openfisca.org/legislation/swagger">la documentation interactive</a>.</p>
         </li>
         <li className="flex-item">
           Des Notebooks Juyter
