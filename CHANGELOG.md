@@ -1,5 +1,9 @@
 # Changelog
 
+### [#11](https://github.com/openfisca/fr.openfisca.org/pull/11)
+
+* Add deployment script
+
 ## 0.1.0 [#9](https://github.com/openfisca/fr.openfisca.org/pull/9)
 
 * Update legislation explorer links
