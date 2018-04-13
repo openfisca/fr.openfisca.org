@@ -49,4 +49,4 @@ deployment:
   master:
     branch: master
     commands:
-      - ssh deploy-fr-openfisca-org@fr.openfisca.org
+      - ssh -l openfisca fr.openfisca.org "cd fr.openfisca.org; ./deploy.sh"
