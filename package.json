@@ -22,5 +22,8 @@
   "devDependencies": {
     "watai": "^0.7.0",
     "webpack-sources": "^1.1.0"
+  },
+  "engines": {
+    "node": ">= 6.14.1 <7.0.0"
   }
 }
