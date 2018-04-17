@@ -8,6 +8,7 @@ git checkout master
 git pull
 
 # Rebuild website
+# User must have rights on '/node_modules' & '/.next'
 npm install
 npm run build
 

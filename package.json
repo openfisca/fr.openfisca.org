@@ -1,6 +1,5 @@
 {
   "name": "fr.openfisca.org",
-  "version": "1.0.0",
   "description": "Site web officiel de la communauté OpenFisca France",
   "main": "index.js",
   "repository": "git@github.com:openfisca/fr.openfisca.org.git",

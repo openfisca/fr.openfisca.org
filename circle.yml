@@ -44,3 +44,9 @@ test:
   post:
     - killall --wait sc:  # wait until Sauce Connect closes the tunnel
         parallel: true
+
+deployment:
+  master:
+    branch: master
+    commands:
+      - ssh -l openfisca fr.openfisca.org "cd fr.openfisca.org; ./deploy.sh"
