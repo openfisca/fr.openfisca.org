@@ -12,7 +12,7 @@ This is the source code of the [web site](http://fr.openfisca.org) for the commu
 
 ## Install
 
-> This project uses [Node.js (lts/boron)](https://nodejs.org), [Next.js](https://github.com/zeit/next.js) and [React](https://reactjs.org).
+> This project uses [Node.js](https://nodejs.org), [Next.js](https://github.com/zeit/next.js) and [React](https://reactjs.org).
 
 To install this project's dependencies, go to its directory and run:
 ```sh
