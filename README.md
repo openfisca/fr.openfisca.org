@@ -2,29 +2,29 @@
 
 ## [FR] Introduction
 
-[OpenFisca](http://openfisca.org/fr) est un logiciel libre de micro-simulation.  
+[OpenFisca](http://openfisca.org/fr) est un logiciel libre de micro-simulation.
 Ceci est le code source du [site web](http://fr.openfisca.org) de la communauté traitant du modèle socio-fiscal français.
 
 ## [EN] Introduction
 
-[OpenFisca](http://openfisca.org/en) is a versatile microsimulation free software.  
+[OpenFisca](http://openfisca.org/en) is a versatile microsimulation free software.
 This is the source code of the [web site](http://fr.openfisca.org) for the community working on the french tax and benefit system.
 
 ## Install
 
-> This project uses [Next.js](https://github.com/zeit/next.js) and [React](https://reactjs.org).  
+> This project uses [Node.js](https://nodejs.org), [Next.js](https://github.com/zeit/next.js) and [React](https://reactjs.org).
 
 To install this project's dependencies, go to its directory and run:
 ```sh
 npm install
 ```
 
-## Run 
+## Run
 
 * To run the website locally in a development mode, call:
 ```sh
 npm run dev
-# Expected result example: 
+# Expected result example:
 # DONE  Compiled successfully in 2285ms                                 10:22:29 PM
 # > Ready on http://localhost:3000
 ```
@@ -32,7 +32,7 @@ npm run dev
 * To run the website in a production mode, build it then start it with:
 ```sh
 npm run build
-# Expected result example: 
+# Expected result example:
 # > next build
 
 npm start
@@ -62,23 +62,23 @@ java -version
 # Expected answer example: java version "1.8.0_40"
 ```
 
-If you get an error, download Java last `JRE` version on the [Oracle website](http://www.oracle.com/technetwork/java/javase/downloads/jre9-downloads-3848532.html). 
+If you get an error, download Java last `JRE` version on the [Oracle website](http://www.oracle.com/technetwork/java/javase/downloads/jre9-downloads-3848532.html).
 
 #### Install Selenium
 
-Download the standalone Selenium server on the [official website](https://www.seleniumhq.org/download/).  
+Download the standalone Selenium server on the [official website](https://www.seleniumhq.org/download/).
 
-Your download result is a Java `.jar` file (e.g., `selenium-server-standalone-3.4.0.jar`)   
+Your download result is a Java `.jar` file (e.g., `selenium-server-standalone-3.4.0.jar`)
 
 Move this file to the desired directory.
-In this example, we will save it to: `/opt/local/lib/selenium`  
+In this example, we will save it to: `/opt/local/lib/selenium`
 
 And register the jar full path in `$SELENIUM` environment variable:
 ```sh
 export SELENIUM=/opt/local/lib/selenium/selenium-server-standalone-3.4.0.jar
 ```
 
-To test your installation, run: 
+To test your installation, run:
 ```sh
 java -jar $SELENIUM
 # Expected answer example:
@@ -101,7 +101,7 @@ If you have Chrome, install `chromedriver` as follows:
 ```sh
 sudo npm install --global chromedriver
 ```
-This will add a chromedriver to your global environment.  
+This will add a chromedriver to your global environment.
 Its installation directory (e.g., `/usr/local/lib/node_modules/chromedriver`) will be used in the next step.
 
 If you don't have Chrome, update the browser name in `tests/integration/config.js`. E.g., for `firefox`:
@@ -127,14 +127,14 @@ Every step is runned in a new terminal window.
 1. Terminal window #1: in `fr.openfisca.org` directory, run the web site in developement mode
 ```sh
 npm run dev
-# Expected answer example:  
+# Expected answer example:
 # DONE  Compiled successfully in 2276ms                                3:25:21 PM
 # > Ready on http://localhost:3000
 ```
 
 2. Terminal window #2: run the selenium server
 ```sh
-java -jar $SELENIUM 
+java -jar $SELENIUM
 # Expected answer example:
 # 15:26:11.981 INFO - Selenium build info: version: '3.4.0', revision: 'unknown'
 # 15:26:11.982 INFO - Launching a standalone Selenium Server
@@ -147,7 +147,7 @@ java -jar $SELENIUM
 npm run test:integration
 # Expected answer example:
 # (...)
-# ⨁  fr.openfisca.org                       
+# ⨁  fr.openfisca.org
 # ✔  L'en-tête doit présenter ce que fait OpenFisca.
 # ✔  La page d'accueil doit indiquer les informations de documentation.
 ```
