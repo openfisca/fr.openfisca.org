@@ -42,7 +42,7 @@ const Home = () => (
           <p>Interrogez OpenFisca-France sur des situations d'individus ou de familles. pour commencer, consultez <a href="https://fr.openfisca.org/legislation/swagger">la documentation interactive</a>.</p>
         </li>
         <li className="flex-item">
-          Des Notebooks Juyter
+          Des Notebooks Jupyter
           <p>Sans installation</p>
           <p>
             Lancez des simulations sur le modèle actuel ou modélisez vos propres réformes. Nous proposons des <a href="https://github.com/openfisca/tutorial/tree/master/notebooks">tutoriels</a> tels que ce <a href="https://mybinder.org/v2/gh/openfisca/tutorial/master?filepath=notebooks/getting_started.ipynb">notebook</a> utilisable dans votre navigateur via <a href="https://mybinder.org/">binder</a>.
