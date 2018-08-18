@@ -71,7 +71,7 @@ jobs:
     steps:
       - run:
           name: Deploy app
-          command: ssh -l openfisca fr.openfisca.org "cd fr.openfisca.org; ./deploy.sh"
+          command: ssh deploy-fr-openfisca-org@fr.openfisca.org
 workflows:
   version: 2
   build:
