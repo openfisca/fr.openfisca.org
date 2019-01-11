@@ -9,13 +9,13 @@ const Header = (props) => (
             		<div></div>
             		) : (
             		<Link href="/index">
-            			<img id="logo-small" src='http://openfisca.org/img/logo-openfisca.svg' />
+            			<img id="logo-small" src='https://openfisca.org/img/logo-openfisca.svg' />
 					</Link>
 				)}
 			</div>
 			<ul>
 				<li><a href='https://github.com/openfisca/openfisca-france'><img src={asset('/images/GitHub-Mark-Light-64px.png')} alt=""/>Code source</a></li>
-				<li><a href="http://openfisca.org/doc/">Documentation</a></li>
+				<li><a href="https://openfisca.org/doc/">Documentation</a></li>
 			</ul>
 
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
