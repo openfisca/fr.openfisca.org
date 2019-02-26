@@ -11,7 +11,7 @@ const Communaute = () => (
     <h2>Qui sommes-nous ?</h2>
     <p>
      OpenFisca est une communauté Open Source soutenue par Beta Gouv & Etalab, deux équipes d’innovation au sein du gouvernement français. 
-     En 2019, OpenFisca est utilisée par 8 pays dans le monde (France, Côte d’Ivoire, Espagne, Italie, Mali, Nouvelle Zélande, Sénégal & Tunisie). 
+     En 2019, OpenFisca est utilisée par 10 pays dans le monde (France, Côte d’Ivoire, Espagne, Italie, Mali, Nouvelle Zélande, Sénégal & Tunisie). 
      Plus de 70 personnes ont rejoint cette aventure. Ils contribuent, s’entraident et participent chaque jour à améliorer le code d’OpenFisca.    
     </p>
 
@@ -80,6 +80,6 @@ export default () => (
     <Header />
     <Communaute />
     <Footer />
-    <Piwik page='communaute'/>
+    <Piwik page='community'/>
   </div>
 )
