@@ -5,27 +5,27 @@ import Footer from "../components/Footer"
 import Hero from "../components/Hero"
 import Piwik from "../components/Piwik"
 
-const Cookies = () => (
+const Legal = () => (
   <div id='content'>
     <h1>Mentions légales</h1>
     <h2>Responsable de la publication</h2>
     <p>
-	  	Laure Lucchesi<br />
+      Laure Lucchesi<br />
       Directrice d’Etalab<br />
       20, avenue de Ségur<br />
       75007 Paris<br />
       <a href="https://www.etalab.gouv.fr">https//www.etalab.gouv.fr</a>
     </p>
 
-	<h2>Hébergeur</h2>
-	<p>
-  	GitHub, Inc<br />
-  	88 Colin P Kelly Jr St<br />
-  	San Francisco, CA 94107 - United States<br />
-  	+1 (877) 448-4820
-	</p>
- 
-    <style jsx>{` 
+    <h2>Hébergeur</h2>
+    <p>
+      GitHub, Inc<br />
+      88 Colin P Kelly Jr St<br />
+      San Francisco, CA 94107 - United States<br />
+      +1 (877) 448-4820
+    </p>
+
+    <style jsx>{`
       #content{
         max-width: 42em;
         margin: auto;
@@ -54,7 +54,7 @@ const Cookies = () => (
       }
 
       p {
-        font-weight: 300; 
+        font-weight: 300;
       }
 
       a {
@@ -74,8 +74,8 @@ const Cookies = () => (
 export default () => (
   <div>
     <Header />
-    <Cookies />
+    <Legal />
     <Footer />
-    <Piwik page='cookies'/>
+    <Piwik page='legal'/>
   </div>
 )

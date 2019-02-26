@@ -61,7 +61,7 @@ const Footer = () => (
 				text-align: center;
 				white-space: nowrap;
 				vertical-align: middle;
-				text-decoration: none;	
+				text-decoration: none;
 			}
 
 			@media (max-width: 720px) {
