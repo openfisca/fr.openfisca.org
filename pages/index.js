@@ -1,6 +1,7 @@
 import asset from 'next/asset'
 import Piwik from "../components/Piwik"
 import Header from "../components/Header"
+import Partners from "../components/Partners"
 import Footer from "../components/Footer"
 import Hero from "../components/Hero"
 
@@ -28,7 +29,7 @@ const Home = () => (
           <h3>Code source</h3>
           <p>L'ensemble du code d'OpenFisca-France peut être lu, forké et cloné depuis la plateforme GitHub.</p>
           <a className="cta" href="https://github.com/openfisca/openfisca-france">Contribuer</a>
-        </li> 
+        </li>
       </ul>
     </div>
 
@@ -53,8 +54,8 @@ const Home = () => (
           <p>Customisez et servez votre instance d'Openfisca-France. Après avoir <a href="https://github.com/openfisca/openfisca-france#installation">installé OpenFisca-France</a>, nous proposons <a href="https://github.com/openfisca/tutorial">un ensemble de tutoriels</a> en python.</p>
         </li>
       </ul>
-      
-      
+
+
     </div>
 
     <section>
@@ -90,19 +91,8 @@ const Home = () => (
         Une seule condition est imposée : les travaux dérivés d’OpenFisca doivent eux aussi être libres.</p>
       <p>Cette contrainte permet à la communauté de grandir à travers des améliorations constantes du moteur de calcul, des mises à jour des systèmes représentés et des nouveaux usages.</p>
     </div>
-    <div>
-      <h2>Nos partenaires</h2>
-      <ul className="flex-container">
-        <li className="flex-item logo"><img alt='IPP' src={asset('/images/logo-ipp.png')} /></li>
-        <li className="flex-item logo"><img alt='Etalab' src={asset('/images/logo-etalab.png')} /></li>
-        <li className="flex-item logo"><img alt='MSA' src={asset('/images/logo-msa.svg')} /></li>
-        <li className="flex-item logo"><img alt='beta.gouv.fr' src={asset('/images/logo-betagouv-url.svg')} /></li>
-        <li className="flex-item logo"><img alt='IDEP' src={asset('/images/logo-idep.png')} /></li>
-        <li className="flex-item logo"><img alt='France Stratégie' src={asset('/images/logo-france-strategie.jpg')} /></li>
-      </ul>
-    </div>
 
-    <style jsx>{` 
+    <style jsx>{`
       #content{
         padding: 0 3em 0 3em;
         font-size: 120%;
@@ -123,11 +113,11 @@ const Home = () => (
       }
 
       p {
-        font-weight: 300; 
+        font-weight: 300;
       }
 
       p + p {
-        margin-top: 0; 
+        margin-top: 0;
       }
 
       a {
@@ -210,6 +200,7 @@ export default () => (
     <Header page="HomePage"/>
     <Hero/>
     <Home />
+    <Partners />
     <Footer />
     <Piwik page="HomePage"/>
   </div>
