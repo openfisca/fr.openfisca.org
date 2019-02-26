@@ -6,7 +6,7 @@ const Footer = () => (
 	<div>
 		<footer>
 			<ul>
-				<li><a href="https://status.openfisca.org/">Etat des services</a></li>
+				<li><Link href="/status" passHref><a>Etat des services</a></Link></li>
 				<li><Link href="/cookies" passHref><a>Informatique & libertés</a></Link></li>
 				<li><Link href="/legal" passHref><a>Mentions légales</a></Link></li>
 				<li><a href="mailto:contact@openfisca.org?Subject=openfisca.org">Contact</a></li>
