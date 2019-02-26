@@ -7,10 +7,10 @@ const Footer = () => (
 		<footer>
 			<ul>
 				<li><a href="https://status.openfisca.org/">Etat des services</a></li>
+				<li><Link href="/cookies" passHref><a>Informatique & Libertés</a></Link></li>
 				<li><a href="mailto:contact@openfisca.org?Subject=openfisca.org">Contact</a></li>
 				<li><a href="https://openfisca.org/doc">Documentation</a></li>
 				<li><a id="github" href="https://github.com/openfisca/fr.openfisca.org"><img src={asset('/images/GitHub-Mark-Light-64px.png')} alt=""/>Contribuer à cette page</a></li>
-				<li><Link href="/cookies" passHref><a>Statistiques d'usages</a></Link></li>
 			</ul>
 		</footer>
 
