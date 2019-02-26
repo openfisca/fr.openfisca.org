@@ -18,6 +18,7 @@ const Header = (props) => (
 				<li><a href="https://openfisca.org/doc/">Documentation</a></li>
 				<li><Link href="/community" passHref><a>Communauté</a></Link></li>
 				<li><a href='https://github.com/openfisca/openfisca-france'><img src={asset('/images/GitHub-Mark-Light-64px.png')} alt=""/>Code source</a></li>
+				<li><Link href="/start" passHref><a>Commencer <img src={asset('/images/icon_rocket.svg')} /></a></Link></li>
 			</ul>
 
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
