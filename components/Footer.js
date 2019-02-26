@@ -12,7 +12,6 @@ const Footer = () => (
 				<li><Link href="/contribute" passHref><a>Contribuer</a></Link></li>
 
 				<li><a href="mailto:contact@openfisca.org?Subject=openfisca.org">Contact</a></li>
-				<li><a href="http://www.openfisca.org/doc">Documentation</a></li>
 			</ul>
 		</footer>
 
