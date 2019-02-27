@@ -5,31 +5,10 @@ import Footer from "../components/Footer"
 import Hero from "../components/Hero"
 import Piwik from "../components/Piwik"
 
-const Projets = () => (
+const Projects = () => (
   <div id='content'>
     <h1>Projets</h1>
-    <h2>Suggérer ou ajouter des contenus</h2>
-    <h3>Ce site - tout comme ce projet - est contributif !>/h3>
-    <p>
-      Vous avez besoin d’un outil ? Il vous manque un élément d’information ? Vous avez une suggestion ?
-      Vous pouvez contribuez via GitHub en créant un outil pour tous - en proposant une modification de contenu ou un ajout.  
-      Si vous n’êtes pas en mesure de contribuer, parlez-en  la communauté via Slack ou dites-le nous par email ! 
-      Peut-être que d’autres membres ont le même besoin que vous.
-    </p>
 
-    <h2>Parler d'OpenFisca</h2>
-    <p>
-      Vous souhaitez présenter OpenFisca à quelqu’un ? 
-      Vous voulez convaincre quelqu’un de l’utiliser ? 
-      Vous écrivez un article à propos d’OpenFisca ? 
-      Utilisez ce document de présentation.
-    </p>
-    
-    <h2>Réutiliser OpenFisca</h2>
-    <p>
-OpenFisca utilise la licence AGPL. 
-Vous pouvez utilisez ces éléments pour citer OpenFisca dans le produit que vous avez créé. 
-    </p>
 
     <style jsx>{`
       #content{
@@ -80,8 +59,8 @@ Vous pouvez utilisez ces éléments pour citer OpenFisca dans le produit que vou
 export default () => (
   <div>
     <Header />
-    <Projets />
+    <Projects />
     <Footer />
-    <Piwik page='projets'/>
+    <Piwik page='projects'/>
   </div>
 )
