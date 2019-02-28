@@ -1,4 +1,5 @@
 import asset from 'next/asset'
+import GlobalStyle from '../components/GlobalStyle'
 import Piwik from "../components/Piwik"
 import Header from "../components/Header"
 import Partners from "../components/Partners"
@@ -197,6 +198,7 @@ const Home = () => (
 
 export default () => (
   <div>
+    <GlobalStyle/>
     <Header page="HomePage"/>
     <Hero/>
     <Home />
