@@ -1,4 +1,5 @@
 import asset from 'next/asset'
+import GlobalStyle from '../components/GlobalStyle'
 import Piwik from "../components/Piwik"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
@@ -28,7 +29,7 @@ const Home = () => (
           <h3>Code source</h3>
           <p>L'ensemble du code d'OpenFisca-France peut être lu, forké et cloné depuis la plateforme GitHub.</p>
           <a className="cta" href="https://github.com/openfisca/openfisca-france">Contribuer</a>
-        </li> 
+        </li>
       </ul>
     </div>
 
@@ -53,8 +54,8 @@ const Home = () => (
           <p>Customisez et servez votre instance d'Openfisca-France. Après avoir <a href="https://github.com/openfisca/openfisca-france#installation">installé OpenFisca-France</a>, nous proposons <a href="https://github.com/openfisca/tutorial">un ensemble de tutoriels</a> en python.</p>
         </li>
       </ul>
-      
-      
+
+
     </div>
 
     <section>
@@ -102,7 +103,7 @@ const Home = () => (
       </ul>
     </div>
 
-    <style jsx>{` 
+    <style jsx>{`
       #content{
         padding: 0 3em 0 3em;
         font-size: 120%;
@@ -123,11 +124,11 @@ const Home = () => (
       }
 
       p {
-        font-weight: 300; 
+        font-weight: 300;
       }
 
       p + p {
-        margin-top: 0; 
+        margin-top: 0;
       }
 
       a {
@@ -207,6 +208,7 @@ const Home = () => (
 
 export default () => (
   <div>
+    <GlobalStyle/>
     <Header page="HomePage"/>
     <Hero/>
     <Home />
