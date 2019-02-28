@@ -9,7 +9,7 @@ const Header = (props) => (
             		<div></div>
             		) : (
             		<Link href="/index">
-            			<img id="logo-small" src='https://openfisca.org/img/logo-openfisca.svg' />
+            			<img id="logo-small" src={asset('/images/logo_mini.svg')} />
 					</Link>
 				)}
 			</div>
@@ -18,7 +18,7 @@ const Header = (props) => (
 				<li><Link href="/resources" passHref><a>Ressources</a></Link></li>
 				<li><a href="https://openfisca.org/doc/">Documentation</a></li>
 				<li><Link href="/community" passHref><a>Communauté</a></Link></li>
-				<li><a href='https://github.com/openfisca/openfisca-france'><img src={asset('/images/GitHub-Mark-Light-64px.png')} alt=""/>Code source</a></li>
+				<li><a href='https://github.com/openfisca/openfisca-france'>Code source <img src={asset('/images/GitHub-Mark-Light-64px.png')} alt=""/></a></li>
 				<li><Link href="/start" passHref><a>Commencer <img src={asset('/images/icon_rocket.svg')} /></a></Link></li>
 			</ul>
 
@@ -31,10 +31,13 @@ const Header = (props) => (
 				cursor:pointer;
 			}
 
-			header {
-				font-family: "Helvetica Neue",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-				background: #1d3242;
-				color: #fff;
+			header {				
+				background: #6d69fb; /* Old browsers */
+				background: -moz-linear-gradient(-45deg, #6d69fb 0%, #00baaf 45%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(-45deg, #6d69fb 0%,#00baaf 45%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(135deg, #6d69fb 0%,#00baaf 45%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d69fb', endColorstr='#00baaf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */			
+								color: #fff;
 				padding: 0 1em;
 				display: flex;
 				flex-direction: row;
@@ -79,7 +82,6 @@ const Header = (props) => (
 				vertical-align: middle;
 				text-decoration: none;	
 			}
-
 
 			@media (max-width: 720px) {
 				header{
