@@ -17,15 +17,6 @@ const Partners = () => (
     <style jsx>{`
       div {
         padding: 0 3em 0 3em;
-        font-size: 120%;
-        font-family: "Helvetica Neue",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-      }
-
-      h2 {
-        margin-top: 2em;
-        margin-bottom: 1em;
-        font-weight: normal;
-        color: #1e3242;
       }
 
       ul {
