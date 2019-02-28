@@ -17,12 +17,19 @@ const Footer = () => (
 
 		<style jsx>{`
 			footer {
-				font-family: "Helvetica Neue",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-				background: #1d3242;
+				background: #6d69fb; /* Old browsers */
+				background: -moz-linear-gradient(-45deg, #6d69fb 0%, #00baaf 45%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(-45deg, #6d69fb 0%,#00baaf 45%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(135deg, #6d69fb 0%,#00baaf 45%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d69fb', endColorstr='#00baaf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */			
+				
 				color: #fff;
 				padding: 0 1em;
+				height: 320px;
 			}
 
+			
+			
 			ul {
 				font-size: 1em;
 				list-style-type: none;
@@ -52,11 +59,8 @@ const Footer = () => (
 
 			a {
 				color: #ffffff;
-				border: 1px solid transparent;
-				border-radius: 4px;
 				display: inline-block;
 				padding: 6px 12px;
-				font-weight: 300;
 				line-height: 1.5;
 				text-align: center;
 				white-space: nowrap;
