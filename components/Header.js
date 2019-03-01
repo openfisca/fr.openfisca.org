@@ -32,17 +32,7 @@ const Header = (props) => (
 			}
 
 			header {				
-				background: #6d69fb; /* Old browsers */
-				background: -moz-linear-gradient(-45deg, #6d69fb 0%, #00baaf 45%); /* FF3.6-15 */
-				background: -webkit-linear-gradient(-45deg, #6d69fb 0%,#00baaf 45%); /* Chrome10-25,Safari5.1-6 */
-				background: linear-gradient(135deg, #6d69fb 0%,#00baaf 45%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d69fb', endColorstr='#00baaf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */			
-								color: #fff;
-				padding: 0 1em;
-				display: flex;
-				flex-direction: row;
-				align-items: center;
-				justify-content: space-between;
+				background-image: linear-gradient(to top, #00baaf, #6d69fb 93%, #6d69fb);
 			}
 
 			ul {

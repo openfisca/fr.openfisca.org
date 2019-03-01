@@ -1,4 +1,5 @@
 import asset from 'next/asset'
+import GlobalStyle from "../components/GlobalStyle"
 
 import Header from "../components/Header"
 import Footer from "../components/Footer"
@@ -60,6 +61,7 @@ const Status = () => (
 
 export default () => (
   <div>
+    <GlobalStyle/>
     <Header />
     <Status />
     <Footer />
