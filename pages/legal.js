@@ -1,8 +1,7 @@
-import asset from 'next/asset'
-
+import asset from "next/asset"
+import GlobalStyle from "../components/GlobalStyle"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
-import Hero from "../components/Hero"
 import Piwik from "../components/Piwik"
 
 const Legal = () => (
@@ -73,7 +72,8 @@ const Legal = () => (
 
 export default () => (
   <div>
-    <Header />
+    <GlobalStyle/>
+    <Header page="legal" />
     <Legal />
     <Footer />
     <Piwik page='legal'/>
