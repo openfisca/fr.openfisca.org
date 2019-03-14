@@ -35,11 +35,6 @@ Vous pouvez utilisez ces éléments pour citer OpenFisca dans le produit que vou
         flex-direction: row;
         justify-content: center;
       }
-
-      a {
-        text-decoration: underline;
-        color: #2b6a8d;
-      }
     `}</style>
   </div>
   )
