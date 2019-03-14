@@ -3,7 +3,6 @@ import GlobalStyle from '../components/GlobalStyle'
 import Header from "../components/Header"
 import Partners from "../components/Partners"
 import Footer from "../components/Footer"
-import Hero from "../components/Hero"
 import Piwik from "../components/Piwik"
 
 const Contribuer = () => (
