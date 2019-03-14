@@ -1,6 +1,6 @@
 import asset from 'next/asset'
 import Link from 'next/link'
-
+import GlobalStyle from './GlobalStyle'
 
 const Header = (props) => (
     <header>
@@ -12,15 +12,16 @@ const Header = (props) => (
             			<img id="logo-small" src={asset('/images/logo_mini.svg')} />
 					</Link>
 				)}
-			</div>
+			
 			<ul>
-				<li><Link href="/projects" passHref><a>Projets</a></Link></li>
-				<li><Link href="/resources" passHref><a>Ressources</a></Link></li>
-				<li><a href="https://openfisca.org/doc/">Documentation</a></li>
-				<li><Link href="/community" passHref><a>Communauté</a></Link></li>
-				<li><a href='https://github.com/openfisca/openfisca-france'>Code source <img src={asset('/images/GitHub-Mark-Light-64px.png')} alt=""/></a></li>
-				<li><Link href="/start" passHref><a>Commencer <img src={asset('/images/icon_rocket.svg')} /></a></Link></li>
+				<li><Link href="/projects" passHref><a className="menu">Projets</a></Link></li>
+				<li><Link href="/resources" passHref><a className="menu">Ressources</a></Link></li>
+				<li><a className="menu" href="https://openfisca.org/doc/">Documentation</a></li>
+				<li><Link href="/community" passHref><a className="menu">Communauté</a></Link></li>
+				<li><a className="menu" href='https://github.com/openfisca/openfisca-france'>Code source <img src={asset('/images/GitHub-Mark-Light-64px.png')} alt=""/></a></li>
+				<li><Link href="/start" passHref><a className="CTA">Commencer <img src={asset('/images/icons/icon_rocket.svg')} /></a></Link></li>
 			</ul>
+			</div>
 
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
@@ -36,7 +37,6 @@ const Header = (props) => (
 			}
 
 			ul {
-				font-size: 1em;
 				list-style-type: none;
 				margin: 0.4em;
 				min-height: 3em;
@@ -59,19 +59,6 @@ const Header = (props) => (
 				margin-right: 5px;
 			}
 
-			a {
-				color: #ffffff;
-				border: 1px solid #ffffff;
-				border-radius: 4px;
-				display: inline-block;
-				padding: 6px 12px;
-				font-weight: 600;
-				line-height: 1.5;
-				text-align: center;
-				white-space: nowrap;
-				vertical-align: middle;
-				text-decoration: none;	
-			}
 
 			@media (max-width: 720px) {
 				header{
