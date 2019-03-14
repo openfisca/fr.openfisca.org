@@ -1,8 +1,7 @@
-import asset from 'next/asset'
-
+import asset from "next/asset"
+import GlobalStyle from "../components/GlobalStyle"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
-import Hero from "../components/Hero"
 import Piwik from "../components/Piwik"
 
 const Resources = () => (
@@ -24,18 +23,6 @@ const Resources = () => (
         justify-content: center;
       }
 
-      h1 {
-         text-align: center;
-         margin-top: 2em;
-         margin-bottom: 2em;
-       }
-
-      h2 {
-        margin-top: 2em;
-        margin-bottom: 1em;
-        font-weight: normal;
-        color: #1e3242;
-      }
 
       p {
         font-weight: 300;
@@ -57,6 +44,7 @@ const Resources = () => (
 
 export default () => (
   <div>
+    <GlobalStyle/>
     <Header />
     <Resources />
     <Footer />
