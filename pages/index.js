@@ -9,7 +9,7 @@ import Hero from "../components/Hero"
 const Home = () => (
   <div id="content">
     <div id="outils">
-      <h2>Les outils à votre disposition</h2>
+      <h2>Tout ce que vous pouvez faire avec OpenFisca</h2>
       <ul className="flex-container">
         <li className="flex-item">
           <h3>API Web</h3>
@@ -98,13 +98,6 @@ const Home = () => (
         padding: 0 3em 0 3em;
         font-size: 120%;
         font-family: "Helvetica Neue",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-      }
-
-      h2 {
-        margin-top: 2em;
-        margin-bottom: 1em;
-        font-weight: normal;
-        color: #1e3242;
       }
 
       ul {
