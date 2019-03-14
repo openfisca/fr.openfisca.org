@@ -1,10 +1,12 @@
 import asset from 'next/asset'
 import Link from 'next/link'
-
+import GlobalStyle from './GlobalStyle'
 
 const Footer = () => (
-	<div>
+	<div> 
 		<footer>
+		<a className="CTA">Commencer <img src={asset('/images/icon_rocket.svg')} /></a>
+
 			<ul>
 				<li><Link href="/status" passHref><a>Etat des services</a></Link></li>
 				<li><Link href="/cookies" passHref><a>Informatique & libertés</a></Link></li>
@@ -22,13 +24,9 @@ const Footer = () => (
 				background: -webkit-linear-gradient(-45deg, #6d69fb 0%,#00baaf 45%); /* Chrome10-25,Safari5.1-6 */
 				background: linear-gradient(135deg, #6d69fb 0%,#00baaf 45%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d69fb', endColorstr='#00baaf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */			
-				
-				color: #fff;
 				padding: 0 1em;
 				height: 320px;
 			}
-
-			
 			
 			ul {
 				font-size: 1em;
@@ -38,7 +36,6 @@ const Footer = () => (
 				display: flex;
 				flex-direction: row;
 				justify-content: space-around;
-
 			}
 
 			li + li {
@@ -55,17 +52,6 @@ const Footer = () => (
 			li img {
 				max-width: 1em;
 				margin-right: 5px;
-			}
-
-			a {
-				color: #ffffff;
-				display: inline-block;
-				padding: 6px 12px;
-				line-height: 1.5;
-				text-align: center;
-				white-space: nowrap;
-				vertical-align: middle;
-				text-decoration: none;
 			}
 
 			@media (max-width: 720px) {
