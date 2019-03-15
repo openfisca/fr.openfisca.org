@@ -1,11 +1,32 @@
+import asset from 'next/asset'
+import Header from './Header'
+import Globalstyle from './GlobalStyle'
+import Link from 'next/link'
+
+
 const Hero = () => (
   <div className='hero'>
-    <div className='content'>
-      <div id='logo-large'>
+    <div>
+  <Link href="/index">
+    <img id="logo-small" src={asset('/images/logo_mini.svg')} />
+</Link>
+
+  <ul>
+    <li><Link href="/projects" passHref><a className="menu">Projets</a></Link></li>
+    <li><Link href="/resources" passHref><a className="menu">Ressources</a></Link></li>
+    <li><a className="menu" href="https://openfisca.org/doc/">Documentation</a></li>
+    <li><Link href="/community" passHref><a className="menu">Communauté</a></Link></li>
+    <li><a className="menu" href='https://github.com/openfisca/openfisca-france'>Code source <img src={asset('/images/GitHub-Mark-Light-64px.png')} alt=""/></a></li>
+    <li><Link href="/start" passHref><a className="CTA">Commencer <img src={asset('/images/icons/Rocket.svg')} /></a></Link></li>
+  </ul>
+</div> 
+<div className='content'>
+
+      <div className='logo-large'>
         <img src='static/images/logo_main.svg' />
       </div>
-      <div id='pitch'>
-      <h1>La plateforme Open Source qui transforme le code législatif en code informatique.</h1>
+      <div className="baseline">
+      <h3>La plateforme Open Source qui modélise <br /> le code législatif en code informatique.</h3>
       </div>
 			<div>
 			<a className="CTA" href='/start'>Commencer</a>
@@ -14,27 +35,52 @@ const Hero = () => (
     <style jsx>{`
 			
 			.hero {
-				background-image: linear-gradient(to top, #00baaf, #6d69fb 93%, #6d69fb);
+				background: #6d69fb; /* Old browsers */
+				background: -moz-linear-gradient(-45deg, #6d69fb 0%, #00baaf 45%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(-45deg, #6d69fb 0%,#00baaf 45%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(135deg, #6d69fb 0%,#00baaf 45%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d69fb', endColorstr='#00baaf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */			
+			}
+      
+			#logo-small {
+				max-width: 4em;
+				margin: 1em;
+				cursor:pointer;
+      }
+
+      .logo-large {
+        max-width: 400px;
+        display: flex;
+      }
+
+
+      ul {
+				list-style-type: none;
+				margin: 0em;
+				min-height: 3em;
+				display: flex;
+				align-items : flex-end;
+				float: right;
 			}
 
-			h1 {
-				text-align: center;
-				color: #ffffff;
-				font-size: 22px;
-				font-weight: 600;
+			li + li {
+				margin-left: 0.5em;
 			}
 
-			.content {
-				margin: 0px 3em;
+			li {
+				display: inline;
+				list-style: none;
+				margin: 1em;
 			}
 
-			#logo-large-img {
-				margin-bottom: 2em;
-				width: 450px;
+			li img {
+				max-width: 1em;
+				margin-right: 5px;
 			}
 
-			#pitch {
-				margin:1em;
+			h3 {
+        color: #ffffff;
+        text-align: center;
 			}
 			
       @media (max-width:1100px) {
@@ -50,7 +96,8 @@ const Hero = () => (
           margin-bottom: 1em;
         }
         #logo-large img {
-          width: 50%;
+          width: 400px;
+          display: flex;
         }
         #pitch {
           margin:1em;
