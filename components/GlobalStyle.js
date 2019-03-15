@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import asset from 'next/asset'
 
 const GlobalStyle = () => (
   <div>
@@ -6,7 +7,13 @@ const GlobalStyle = () => (
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/lato" type="text/css"/>
     <style jsx global>{`
 
-      #content{
+      body{
+        width: 100%;
+        margin: 0;
+      }
+
+      .content{
+        max-width: 95%;
         margin: auto;
         padding: 0 3em 1em 3em;
       }
@@ -23,7 +30,7 @@ const GlobalStyle = () => (
       
       /* Text styles */
       
-      menu {
+      .menu {
         font-family: Lato;
         font-size: 18px;
         font-weight: 500;
@@ -33,7 +40,24 @@ const GlobalStyle = () => (
         letter-spacing: normal;
         color: #ffffff;
       }
-      
+
+      .menu:after, .menu:hover, .menu:active {
+				display: block;
+				border-bottom: solid 2px #fff;
+      }
+
+      a {
+        font-family: Lato;
+        color: #ffffff;
+				display: inline-block;
+				padding: 6px 12px;
+				line-height: 1.5;
+				text-align: center;
+				white-space: nowrap;
+				vertical-align: middle;
+				text-decoration: none;
+			}
+   
       h1 {
         font-family: Lato;
         font-size: 48px;
@@ -154,34 +178,40 @@ const GlobalStyle = () => (
         letter-spacing: normal;
         color: #000000;
       }
-      // buttons
 
-      .CTA_start {
-        -moz-box-shadow: 0px 10px 20px 0px #00000026;
-        -webkit-box-shadow: 0px 10px 20px 0px #00000026;
-        box-shadow: 0px 10px 20px 0px #00000026;
+      // buttons
+      .CTA {
+        -moz-box-shadow: 0px 10px 10px 0px #00000026;
+        -webkit-box-shadow: 0px 10px 10px 0px #00000026;
+        box-shadow: 0px 10px 10px 0px #00000026;
         background-color:#ffffff;
         -moz-border-radius:25px;
         -webkit-border-radius:25px;
         border-radius:25px;
         display:inline-block;
         cursor:pointer;
-        color:#424242;
+        color: #6d69fb;
         font-family:"LatoBold";
         font-size:17px;
-        padding:16px 25px;
+        padding:10px 10px;
         text-decoration:none;
-        height: 70px;
       }
-      .CTA_start:hover {
-        background-color:#476e9e;
+      .CTA:hover {
+        -moz-box-shadow: 0px 10px 10px 0px #3F3D56;
+        -webkit-box-shadow: 0px 10px 10px 0px #3F3D56;
+        box-shadow: 0px 10px 10px 0px #3F3D56;      
       }
-      .CTA_start:active {
+
+      .CTA:active {
         position:relative;
         top:1px;
       }
-      
-        
+
+      .outline {
+        border-radius:25px;
+        border: #ffffff 1px solid;
+        color: #ffffff;
+      }
       
       // responsive
 
