@@ -5,15 +5,23 @@ import GlobalStyle from './GlobalStyle'
 const Footer = () => (
 	<div> 
 		<footer>
-		<a className="CTA">Commencer <img src={asset('/images/icon_rocket.svg')} /></a>
-
+		<div className="baseline">
+		<h3>Transformer le code législatif en code logiciel</h3>
+		<a className="CTA">Commencer <img src="../static/images/icons/Rocket.svg"></img></a>
+		</div>
 			<ul>
 				<li><Link href="/status" passHref><a>Etat des services</a></Link></li>
 				<li><Link href="/cookies" passHref><a>Informatique & libertés</a></Link></li>
 				<li><Link href="/legal" passHref><a>Mentions légales</a></Link></li>
 				<li><Link href="/contribute" passHref><a>Contribuer</a></Link></li>
 
-				<li><a href="mailto:contact@openfisca.org?Subject=openfisca.org">Contact</a></li>
+			</ul>
+			<ul className="social">
+				<li><a href="mailto:contact@openfisca.org?Subject=openfisca.org" passHref><img src="../static/images/icons/Email.svg"></img></a></li>
+				<li><a href="https://github.com/openfisca" passHref><img src="../static/images/icons/Github.svg"></img></a></li>
+				<li><a href="/status" passHref><img src="../static/images/icons/Slack.svg"></img></a></li>
+				<li><a href="https://twitter.com/openfisca" passHref><img src="../static/images/icons/Twitter.svg"></img></a></li>
+
 			</ul>
 		</footer>
 
@@ -24,34 +32,41 @@ const Footer = () => (
 				background: -webkit-linear-gradient(-45deg, #6d69fb 0%,#00baaf 45%); /* Chrome10-25,Safari5.1-6 */
 				background: linear-gradient(135deg, #6d69fb 0%,#00baaf 45%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d69fb', endColorstr='#00baaf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */			
-				padding: 0 1em;
+				padding-top: 4em;
 				height: 320px;
 			}
 			
-			ul {
-				font-size: 1em;
-				list-style-type: none;
-				margin: 0.4em;
-				min-height: 3em;
-				display: flex;
-				flex-direction: row;
-				justify-content: space-around;
+			.baseline {
+				text-align: center;
+			}
+			.CTA {
+				margin: auto; 
+				display: block;
+				max-width: 10em;
 			}
 
-			li + li {
-				margin-left: 0.5em;
+			.social {
+				float: right;
+			}
+
+			h3{
+				align-text: center;
+				color: #ffffff;}
+
+			ul {
+				list-style-type: none;
+				min-height: 3em;
+				float: left;
+				padding-right: 2em;
 			}
 
 			li {
 				display: inline;
 				list-style: none;
-				margin: 1em;
-
 			}
 
 			li img {
-				max-width: 1em;
-				margin-right: 5px;
+				max-width: 2em;
 			}
 
 			@media (max-width: 720px) {
