@@ -6,7 +6,7 @@ import Footer from "../components/Footer"
 import Piwik from "../components/Piwik"
 
 const Communaute = () => (
-  <div id='content'>
+  <div className='content'>
     <h1>Communauté</h1>
     <h2>Qui sommes-nous ?</h2>
     <p>
