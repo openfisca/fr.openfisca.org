@@ -1,13 +1,12 @@
 import asset from 'next/asset'
 import GlobalStyle from '../components/GlobalStyle'
 import Piwik from "../components/Piwik"
-import Header from "../components/Header"
 import Partners from "../components/Partners"
 import Footer from "../components/Footer"
 import Hero from "../components/Hero"
 
 const Home = () => (
-  <div id="content">
+  <div className="content">
     <div id="outils">
       <h2>Tout ce que vous pouvez faire avec OpenFisca</h2>
       <ul className="flex-container">
@@ -192,7 +191,6 @@ const Home = () => (
 export default () => (
   <div>
     <GlobalStyle/>
-    <Header page="HomePage"/>
     <Hero/>
     <Home />
     <Partners />
