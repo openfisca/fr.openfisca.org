@@ -5,7 +5,7 @@ import Footer from "../components/Footer"
 import Piwik from "../components/Piwik"
 
 const Legal = () => (
-  <div id='content'>
+  <div className='content'>
     <h1>Mentions légales</h1>
     <h2>Responsable de la publication</h2>
     <p>
