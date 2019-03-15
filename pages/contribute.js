@@ -6,7 +6,7 @@ import Footer from "../components/Footer"
 import Piwik from "../components/Piwik"
 
 const Contribuer = () => (
-  <div id='content'>
+  <div className='content'>
     <h1>Contribuer</h1>
     <h2>Suggérer ou ajouter des contenus</h2>
     <h3>Ce site - tout comme ce projet - est contributif !</h3>
