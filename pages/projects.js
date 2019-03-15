@@ -66,7 +66,6 @@ const Projects = () => (
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d69fb', endColorstr='#00baaf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */			
       }
 
-
       .flex-container {
         display: flex;
         justify-content: left;
