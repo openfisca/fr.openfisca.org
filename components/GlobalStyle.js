@@ -4,7 +4,6 @@ import asset from 'next/asset'
 const GlobalStyle = () => (
   <div>
     <Head></Head>
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/lato" type="text/css"/>
     <style jsx global>{`
 
       body{
@@ -18,15 +17,11 @@ const GlobalStyle = () => (
         padding: 0 3em 1em 3em;
       }
 
-      /* Color palette */
-
-      :root {
-        --turquoise: #00baaf;
-        --light-purple: #b7b5ff;
-        --dark: #424242;
-        --light-grey: #eaeaea;
-        --purple: #6d69fb;
-      }
+      @font-face {
+        font-family: "Lato-Regular";
+        src: url("css/fonts/Lato-Regular.otf") format("opentype"),
+ 
+        }
       
       /* Text styles */
       
