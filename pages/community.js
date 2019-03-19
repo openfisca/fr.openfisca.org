@@ -8,26 +8,32 @@ import Piwik from "../components/Piwik"
 const Communaute = () => (
   <div className='content'>
     <h1>Communauté</h1>
-    <h2>Qui sommes-nous ?</h2>
-    <p>
+    <section className='qui'>
+     <h2>Qui sommes-nous ?</h2>
+      <p>
      OpenFisca est une communauté Open Source soutenue par Beta Gouv & Etalab, deux équipes d’innovation au sein du gouvernement français. 
      En 2019, OpenFisca est utilisée par 10 pays dans le monde (France, Côte d’Ivoire, Espagne, Italie, Mali, Nouvelle Zélande, Sénégal & Tunisie). 
      Plus de 70 personnes ont rejoint cette aventure. Ils contribuent, s’entraident et participent chaque jour à améliorer le code d’OpenFisca.    
-    </p>
-
-    <h2>Echanger avec la communauté</h2>
+      </p>
+    </section>
+    <section className='echanger'>
+     <h2>Echanger avec la sommes-nous ?</h2>
+      <p>
+     OpenFisca est une communauté Open Source soutenue par Beta Gouv & Etalab, deux équipes d’innovation au sein du gouvernement français. 
+     En 2019, OpenFisca est utilisée par 10 pays dans le monde (France, Côte d’Ivoire, Espagne, Italie, Mali, Nouvelle Zélande, Sénégal & Tunisie). 
+     Plus de 70 personnes ont rejoint cette aventure. Ils contribuent, s’entraident et participent chaque jour à améliorer le code d’OpenFisca.    
+      </p>
+    </section>
+    <section className='contact'>
+    <h2>Ecrivez-nous</h2>
     <p>
-      Vous souhaitez présenter OpenFisca à quelqu’un ? 
-      Vous voulez convaincre quelqu’un de l’utiliser ? 
-      Vous écrivez un article à propos d’OpenFisca ? 
-      Utilisez ce document de présentation.
     </p>
-    
-    <h2>Réutiliser OpenFisca</h2>
+    </section>
+    <section className='news'>
+    <h2>Restez informés</h2>
     <p>
-OpenFisca utilise la licence AGPL. 
-Vous pouvez utilisez ces éléments pour citer OpenFisca dans le produit que vous avez créé. 
-    </p>
+    Vous pouvez vous abonner à notre newsletter mensuelle pour recevoir les actualités et les changements majeurs opérés sur OpenFisca.    </p>
+    </section>
 
     <style jsx>{`
       #iframe-container {
