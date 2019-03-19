@@ -22,14 +22,14 @@ const Projects = () => (
           <div className="card-background">
             <img src="../static/images/projects/mesaides.png" />
           </div>
-             <p className="Medium">Mes Aides</p>
+             <p className="Medium">LexImpact</p>
              <p className="Small">L'API REST et ses endpoints permet de consulter les données OpenFisca ou d'effectuer des calculs sur la legislation Française.</p>
         </li>
         <li className="card-project">
           <div className="card-background">
             <img src="../static/images/projects/mesaides.png" />
           </div>
-             <p className="Medium">Mes Aides</p>
+             <p className="Medium">TaxIPP</p>
              <p className="Small">L'API REST et ses endpoints permet de consulter les données OpenFisca ou d'effectuer des calculs sur la legislation Française.</p>
         </li>
 
