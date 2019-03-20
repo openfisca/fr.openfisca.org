@@ -6,7 +6,6 @@ import Piwik from "../components/Piwik"
 
 const Projects = () => (
   <div className='content'>
-    <h1>Projets</h1>
 
     <section>
      
@@ -84,7 +83,7 @@ const Projects = () => (
 export default () => (
   <div>
     <GlobalStyle/>
-    <Header />
+    <Header title='Projets-test' />
     <Projects />
     <Footer />
     <Piwik page='projects'/>
