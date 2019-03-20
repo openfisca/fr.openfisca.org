@@ -17,7 +17,12 @@ const Header = (props) => (
 				<li><a className="menu" href='https://github.com/openfisca/openfisca-france'>Code source <img src={asset('/images/GitHub-Mark-Light-64px.png')} alt=""/></a></li>
 				<li><Link href="/start" passHref><a className="CTA">Commencer <img src={asset('/images/icons/Rocket.svg')} /></a></Link></li>
 			</ul>
+			
+			<h1>{console.log(props),props.title}</h1>
+
 			</div>
+
+
 
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
