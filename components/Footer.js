@@ -10,17 +10,17 @@ const Footer = () => (
 		<a className="CTA">Commencer <img src="../static/images/icons/Rocket.svg"></img></a>
 		</div>
 			<ul>
-				<li><Link href="/status" passHref><a>Etat des services</a></Link></li>
-				<li><Link href="/cookies" passHref><a>Informatique & libertés</a></Link></li>
-				<li><Link href="/legal" passHref><a>Mentions légales</a></Link></li>
-				<li><Link href="/contribute" passHref><a>Contribuer</a></Link></li>
+				<li><Link href="/status" passHref>Etat des services</Link></li>
+				<li><Link href="/cookies" passHref>Informatique & libertés</Link></li>
+				<li><Link href="/legal" passHref>Mentions légales</Link></li>
+				<li><Link href="/contribute" passHref>Contribuer</Link></li>
 
 			</ul>
 			<ul className="social">
-				<li><a href="mailto:contact@openfisca.org?Subject=openfisca.org" passHref><img src="../static/images/icons/Email.svg"></img></a></li>
-				<li><a href="https://github.com/openfisca" passHref><img src="../static/images/icons/Github.svg"></img></a></li>
-				<li><a href="/status" passHref><img src="../static/images/icons/Slack.svg"></img></a></li>
-				<li><a href="https://twitter.com/openfisca" passHref><img src="../static/images/icons/Twitter.svg"></img></a></li>
+				<li><Link href="mailto:contact@openfisca.org?Subject=openfisca.org" passHref><img src="../static/images/icons/Email.svg"></img></Link></li>
+				<li><Link href="https://github.com/openfisca" passHref><img src="../static/images/icons/Github.svg"></img></Link></li>
+				<li><Link href="/status" passHref><img src="../static/images/icons/Slack.svg"></img></Link></li>
+				<li><Link href="https://twitter.com/openfisca" passHref><img src="../static/images/icons/Twitter.svg"></img></Link></li>
 
 			</ul>
 		</footer>
