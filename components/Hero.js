@@ -12,7 +12,7 @@ const Hero = () => (
 </Link>
 
   <ul>
-    <li><Link href="/projects" passHref><a className="menu">Projets</a></Link></li>
+    <li><Link href="/showcase" passHref><a className="menu">Projets</a></Link></li>
     <li><Link href="/resources" passHref><a className="menu">Ressources</a></Link></li>
     <li><a className="menu" href="https://openfisca.org/doc/">Documentation</a></li>
     <li><Link href="/community" passHref><a className="menu">Communauté</a></Link></li>
