@@ -9,6 +9,7 @@ const Home = () => (
   <div className="content">
     <section className="what">
       <h2>Tout ce que vous pouvez faire avec OpenFisca !</h2>
+      
     </section>
     <section className="what">
      <h2>Comment ça marche ?</h2>
@@ -17,13 +18,12 @@ const Home = () => (
     <section className="what">
      <h2>Une communauté open source internationale</h2>
     </section>
+
     <style jsx>{`
 
 
       @media (max-width: 720px) {
-        #content {
-          padding: 0 1em 0 1em;
-        }
+
         .cta {
           padding-left: 1em;
           padding-right: 1em;
