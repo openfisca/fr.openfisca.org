@@ -10,7 +10,7 @@ const Header = (props) => (
 				</Link>
 			
 			<ul>
-				<li><Link href="/projects" passHref><a className="menu">Projets</a></Link></li>
+				<li><Link href="/showcase" passHref><a className="menu">Projets</a></Link></li>
 				<li><Link href="/resources" passHref><a className="menu">Ressources</a></Link></li>
 				<li><a className="menu" href="https://openfisca.org/doc/">Documentation</a></li>
 				<li><Link href="/community" passHref><a className="menu">Communauté</a></Link></li>
@@ -21,8 +21,6 @@ const Header = (props) => (
 			<h1>{props.title}</h1>
 
 			</div>
-
-
 
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
