@@ -1,11 +1,10 @@
 import asset from 'next/asset'
 import GlobalStyle from '../components/GlobalStyle'
 import Header from "../components/Header"
-import Partners from "../components/Partners"
 import Footer from "../components/Footer"
 import Piwik from "../components/Piwik"
 
-const fastoche = () => (
+const Fastoche = () => (
     <div className='content'>
     </div>
 )
@@ -14,7 +13,6 @@ export default () => (
       <GlobalStyle/>
       <Header />
       <Fastoche />
-      <Partners/>
       <Footer />
       <Piwik page='fastoche'/>
     </div>
