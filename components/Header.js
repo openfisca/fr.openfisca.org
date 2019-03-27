@@ -18,7 +18,7 @@ const Header = (props) => (
 				<li><Link href="/start" passHref><a className="CTA">Commencer <img src={asset('/images/icons/Rocket.svg')} /></a></Link></li>
 			</ul>
 			
-			<h1>{console.log(props),props.title}</h1>
+			<h1>{props.title}</h1>
 
 			</div>
 
