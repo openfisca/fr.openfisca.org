@@ -6,7 +6,6 @@ import Piwik from "../components/Piwik"
 
 const Cookies = () => (
   <div className='content'>
-    <h1>Cookies et option de retrait</h1>
     <p>
       Lorsque vous visitez ce site web, nous laissons un petit fichier texte (un "cookie") sur votre ordinateur.
       Cela nous permet de mesurer combien de visites nous avons et quelles sont les pages les plus regardées.
@@ -42,7 +41,7 @@ const Cookies = () => (
 
 export default () => (
   <div>
-    <Header />
+    <Header page="cookies" title='Informatique & libertés' />
     <Cookies />
     <Footer />
     <GlobalStyle />
