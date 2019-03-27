@@ -5,8 +5,6 @@ import Piwik from "../components/Piwik"
 
 const Start = () => (
   <div className='content'>
-    <h1>Commencer</h1>
-
 
     <style jsx>{`
 
@@ -28,7 +26,7 @@ const Start = () => (
 export default () => (
   <div>
     <GlobalStyle/>
-    <Header />
+    <Header page="start" title='Commencer' />
     <Start />
     <Footer />
     <Piwik page='start'/>
