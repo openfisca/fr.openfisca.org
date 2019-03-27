@@ -7,7 +7,7 @@ const Footer = () => (
 		<footer>
 		<div className="baseline">
 		<h3>Transformer le code législatif en code logiciel</h3>
-		<a className="CTA">Commencer <img src="../static/images/icons/Rocket.svg"></img></a>
+		<a href="start" className="CTA">Commencer <img src="../static/images/icons/Rocket.svg"></img></a>
 		</div>
 			<ul>
 				<li><Link href="/status" passHref>Etat des services</Link></li>
