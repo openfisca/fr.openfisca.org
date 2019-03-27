@@ -7,7 +7,6 @@ import Piwik from "../components/Piwik"
 
 const Communaute = () => (
   <div className='content'>
-    <h1>Communauté</h1>
     <section className='qui'>
      <h2>Qui sommes-nous ?</h2>
       <p>
@@ -48,7 +47,7 @@ const Communaute = () => (
 export default () => (
   <div>
     <GlobalStyle/>
-    <Header />
+    <Header page="community" title='Communauté' />
     <Communaute />
     <Partners/>
     <Footer />
