@@ -5,7 +5,7 @@ import GlobalStyle from './GlobalStyle'
 const CardProject = (props) => (
     <div className="card-project">
         <div className="card-background">
-            <img className="card-project" src={props.img} />
+            <img src={props.img} />
         </div>
         <p className="Medium">{props.title}</p>
         <p className="Small">{props.desc}</p>
@@ -23,7 +23,7 @@ const CardProject = (props) => (
                 box-shadow: 0px 0px 6px #BCBCC6;
             }
             img{
-                max:width: 20%;
+                max-width: 100%;
             }
             .card-background {
                 width: 100%;
