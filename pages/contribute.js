@@ -7,7 +7,6 @@ import Piwik from "../components/Piwik"
 
 const Contribuer = () => (
   <div className='content'>
-    <h1>Contribuer</h1>
     <h2>Suggérer ou ajouter des contenus</h2>
     <h3>Ce site - tout comme ce projet - est contributif !</h3>
     <p>
@@ -43,10 +42,10 @@ Vous pouvez utilisez ces éléments pour citer OpenFisca dans le produit que vou
 export default () => (
   <div>
     <GlobalStyle/>
-    <Header />
+    <Header page="contribute" title='Contribuer' />
     <Contribuer />
     <Partners />
     <Footer />
-    <Piwik page='contribuer'/>
+    <Piwik page='contribute'/>
   </div>
 )
