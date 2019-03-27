@@ -229,9 +229,9 @@ const GlobalStyle = () => (
         -webkit-box-shadow: 0px 10px 10px 0px #42424226;
         box-shadow: 0px 10px 10px 0px #42424226;
         background-color:#ffffff;
-        -moz-border-radius:25px;
-        -webkit-border-radius:25px;
-        border-radius:25px;
+        -moz-border-radius:4px;
+        -webkit-border-radius:4px;
+        border-radius:4px;
         display:inline-block;
         cursor:pointer;
         color: #6d69fb;
