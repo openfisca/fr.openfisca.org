@@ -8,15 +8,10 @@ import CardResources from "../components/CardResources";
 
 const Resources = () => (
   <div className='content'>
-    <section>
-     
-     <ul className="container">
-       <li><a href="../projects/mesAides" ><CardResources img="../static/images/projects/mesaides.png" title="MesAides" desc="sort desc"  /></a> </li>
-       <li><a href="../projects/mesAides" ><CardResources img="../static/images/projects/leximpact.png" title="LexImpact" desc="sort desc"   /></a></li>
+     <ul className="flex-container">
+       <li><a href="../projects/mesAides" ><CardResources img="../static/images/projects/mesaides.png" title="MesAides" desc="sort desc" /></a> </li>
+       <li><a href="../projects/mesAides" ><CardResources img="../static/images/projects/leximpact.png" title="LexImpact" desc="sort desc" /></a></li>
      </ul>
-
-    </section>
-
 
     <style jsx>{`
 
