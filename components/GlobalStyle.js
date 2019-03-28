@@ -9,6 +9,8 @@ const GlobalStyle = () => (
       body{
         width: 100%;
         margin: 0;
+        font-family: 'asapregular';
+
       }
 
       .content{
@@ -283,7 +285,7 @@ const GlobalStyle = () => (
 
       // sections
 
-      .container{
+      .flex-container{
         display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
