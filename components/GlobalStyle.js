@@ -17,6 +17,7 @@ const GlobalStyle = () => (
         padding: 0 3em 1em 3em;
       }
 
+
     @font-face {
         font-family: 'asapbold';
         src: url('../static/fonts/asap-bold-webfont.woff2') format('woff2'),
@@ -96,6 +97,10 @@ const GlobalStyle = () => (
       .menu:after, .menu:hover, .menu:active {
 				display: block;
 				border-bottom: solid 2px #fff;
+      }
+
+      p{
+        font-family: 'asapregular';
       }
 
       a {
@@ -223,6 +228,12 @@ const GlobalStyle = () => (
         color: #424242;
       }
 
+      .Caption {
+        text-transform: uppercase;
+        font-size: 18px;
+        text-align: center;
+      }
+
       // buttons
       .CTA {
         -moz-box-shadow: 0px 10px 10px 0px #42424226;
@@ -252,11 +263,62 @@ const GlobalStyle = () => (
       }
 
       .outline {
-        border-radius:25px;
+        border-radius: 25px;
         border: #ffffff 1px solid;
         color: #ffffff;
       }
-      
+  
+      .btn-medium {
+        background-color:#6d69fb;
+        -moz-border-radius:4px;
+        -webkit-border-radius:4px;
+        border-radius:4px;
+        font-family: 'asapregular';
+        font-size: 24px;
+        font-color: #000000;
+        padding: ;
+        border: none;
+        height: 60px;
+      }
+
+      // sections
+
+      .container{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        
+        -webkit-flex-flow: row wrap;
+        justify-content: wrap;
+      }
+      .attributes {
+        background-color: #EAEAEA;
+        margin: 1em;
+        list-style: none;
+  
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        
+        -webkit-flex-flow: row wrap;
+        justify-content: wrap;
+      }
+
+      .flex-item3{
+          width:33.33%;
+      }
+      .flex-item2{
+        width: 50%
+      }
+
+      .flex-item1{
+        width: 100%;
+      }
+
       // responsive
 
       #iframe-container {
