@@ -20,9 +20,9 @@ const Hero = () => (
     <li><Link href="/start" passHref><a className="CTA">Commencer <img src={asset('/images/icons/Rocket.svg')} /></a></Link></li>
   </ul>
 </div> 
-<div className='content'>
 
-      <div className='logo-large'>
+  <div className='content'>
+      <div className='flex-container'>
         <img src='static/images/logo_main.svg' />
       </div>
       <div className="baseline">
