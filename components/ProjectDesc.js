@@ -4,17 +4,20 @@ import GlobalStyle from './GlobalStyle'
 
 
 const ProjectDesc = (props) => (
-    <div className="container">
+    <div className="flex-container">
         <div className="flex-item2">
             <img src={props.img} />
         </div>
         <div className="flex-item2">
             <h2>{props.baseline}</h2>
-            <p className="Small">{props.desc}</p>
+            <ul>
+                <li>{props.desc1}</li>
+                <li>{props.desc1}</li>
+                <li>{props.desc1}</li>
+            </ul>
             <a className="btn-medium" href={props.url}>{props.textlink}</a>           
         </div>
     <style jsx>{`
-
 
     `}</style>
 
