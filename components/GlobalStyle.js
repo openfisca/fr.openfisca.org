@@ -228,7 +228,6 @@ const GlobalStyle = () => (
         padding:10px 10px;
         text-decoration:none;
         background-color:#ffffff;
-
       }
 
       .btn{
