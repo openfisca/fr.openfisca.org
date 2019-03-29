@@ -17,21 +17,18 @@ const Hero = () => (
     <li><a className="menu" href="https://openfisca.org/doc/">Documentation</a></li>
     <li><Link href="/community" passHref><a className="menu">Communauté</a></Link></li>
     <li><a className="menu" href='https://github.com/openfisca/openfisca-france'>Code source <img src={asset('/images/GitHub-Mark-Light-64px.png')} alt=""/></a></li>
-    <li><Link href="/start" passHref><a className="CTA">Commencer <img src={asset('/images/icons/Rocket.svg')} /></a></Link></li>
+    <li><Link href="/start" passHref><a className="btn CTA">Commencer <img src={asset('/images/icons/Rocket.svg')} /></a></Link></li>
   </ul>
 </div> 
 
   <div className='content'>
-      <div className='flex-container'>
+      <div className='flex-baseline'>
         <img src='static/images/logo_main.svg' />
-      </div>
-      <div className="baseline">
-      <h3>La plateforme Open Source qui modélise <br /> le code législatif en code informatique.</h3>
-      </div>
-			<div>
-			<a className="CTA" href='/start'>Commencer</a>
+        <p className="baseline" >La plateforme Open Source qui modélise <br /> le code législatif en code informatique.</p>
+        <Link href="/start" passHref><a className="btn CTA">Commencer <img src={asset('/images/icons/Rocket.svg')} /></a></Link>
       </div>
     </div>
+
     <style jsx>{`
 			
 			.hero {
@@ -40,19 +37,37 @@ const Hero = () => (
 				background: -webkit-linear-gradient(163.99deg, #00BAAF -21.24%, #6D69FB 76.56%, #6D69FB 83.4%); /* Chrome10-25,Safari5.1-6 */
 				background: linear-gradient(163.99deg, #00BAAF -21.24%, #6D69FB 76.56%, #6D69FB 83.4%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d69fb', endColorstr='#00baaf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */			
-      	}
-      
+        }
+        
+        .flex-baseline{
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+  
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          
+          justify-content: center;
+        }
+
 			#logo-small {
 				max-width: 4em;
 				margin: 1em;
 				cursor:pointer;
       }
 
+      .baseline{
+        text-align: center;
+        font-color: #ffffff;
+      }
+
       .logo-large {
         max-width: 400px;
         display: flex;
       }
-
 
       ul {
 				list-style-type: none;
@@ -99,9 +114,6 @@ const Hero = () => (
           width: 400px;
           display: flex;
         }
-        #pitch {
-          margin:1em;
-				}
 			}
     `}</style>
   </div>
