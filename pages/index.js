@@ -11,25 +11,24 @@ const Home = () => (
       <h2>Tout ce que vous pouvez faire avec OpenFisca !</h2>
         <ul className="flex-container">
           <li className="flex-item3">
-            <img src='../static/images/icons/economistes.svg' />
-            <h3>Economistes & chercheurs</h3>
+            <h3>            <img src='../static/images/icons/economistes.svg' />
+Economistes & chercheurs</h3>
             Utilisez des systèmes socio-fiscaux déjà modélisés et codez vos réformes.
             Faites des simulations individuelles et sur des populations en important vos propres données.
           </li>
           <li className="flex-item3">
-            <img src='../static/images/icons/admin.svg' />
-            <h3>Administrations publiques</h3>
+            <h3>            <img src='../static/images/icons/admin.svg' />
+Administrations publiques</h3>
             Mutualisez vos efforts de mise à jour grâce au modèle contributif d’OpenFisca. 
             Echangez sur une même base avec d’autres administrations publiques.
           </li>
           <li className="flex-item3">
-           <img src='../static/images/icons/dev.svg' />
-            <h3>Développeurs & équipes d'innovation</h3>
+            <h3><img src='../static/images/icons/dev.svg' />Développeurs & équipes d'innovation</h3>
             Interrogez l’API sans installation ou hébergez votre propre instance.
             Créez des produits qui interrogent l’ensemble des règles socio-fiscales avec Python3.
           </li>
         </ul>
-        <a className="btn-medium" href="showcase">Voir des projets</a>
+        <a className="btn medium" href="showcase">Voir des projets</a>
     </section>
 
 
@@ -48,7 +47,7 @@ const Home = () => (
           <li>Utilisez un système socio-fiscal existant</li>
           <li>Codez votre propre système</li>
           <li>Améliorez le code d’un système existant</li>
-          <a className="btn-medium">Qu'est-ce qu'un système socio-fiscal ?</a>
+          <a className="btn medium">Qu'est-ce qu'un système socio-fiscal ?</a>
         </ul>
       </div>
      </div>
@@ -60,7 +59,7 @@ const Home = () => (
             <li>Calculez une situation ou écrivez et simulez une réforme</li>
             <li>Codez des extensions</li>
           </ul>
-          <a className="btn-medium" href="http://openfisca.org/doc">Lire la documentation</a>
+          <a className="btn medium" href="http://openfisca.org/doc">Lire la documentation</a>
         </div>
         <div className="flex-item2">
           <img src="../static/images/api.png" />
@@ -82,9 +81,7 @@ Rejoignez une communauté d’économistes, de chercheurs, de développeurs et d
     <style jsx>{`
       li{
         list-style: none;
-        padding: 1%;
       }
-
 
     `}</style>
   </div>

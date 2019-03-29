@@ -10,15 +10,7 @@ const GlobalStyle = () => (
         width: 100%;
         margin: 0;
         font-family: 'asapregular';
-
       }
-
-      .content{
-        max-width: 95%;
-        margin: auto;
-        padding: 0 3em 1em 3em;
-      }
-
 
     @font-face {
         font-family: 'asapbold';
@@ -26,7 +18,6 @@ const GlobalStyle = () => (
              url('../static/fonts/asap-bold-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
-    
     }
 
     @font-face {
@@ -35,7 +26,6 @@ const GlobalStyle = () => (
              url('../static/fonts/asap-bolditalic-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
-    
     }
 
     @font-face {
@@ -44,7 +34,6 @@ const GlobalStyle = () => (
              url('../static/fonts/asap-italic-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
-    
     }
     
     @font-face {
@@ -53,7 +42,6 @@ const GlobalStyle = () => (
              url('../static/fonts/asap-medium-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
-    
     }
     
     @font-face {
@@ -62,7 +50,6 @@ const GlobalStyle = () => (
              url('../static/fonts/asap-mediumitalic-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
-    
     }
 
     @font-face {
@@ -71,7 +58,6 @@ const GlobalStyle = () => (
              url('../static/fonts/asap-regular-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
-    
     }    
     
     @font-face {
@@ -80,7 +66,6 @@ const GlobalStyle = () => (
              url('../static/fonts/asap-symbol-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
-    
     }
       
       /* Text styles */
@@ -103,6 +88,7 @@ const GlobalStyle = () => (
 
       p{
         font-family: 'asapregular';
+        font-size: 1.125em;
       }
 
       a {
@@ -130,7 +116,7 @@ const GlobalStyle = () => (
       
       h2 {
         font-family: 'asapmedium';
-        font-size: 36px;
+        font-size: 2em;
         font-style: normal;
         font-stretch: normal;
         line-height: 50.6px;
@@ -140,7 +126,7 @@ const GlobalStyle = () => (
       
       h3 {
         font-family: 'asapmedium';
-        font-size: 28px;
+        font-size: 1.5em;
         font-style: normal;
         font-stretch: normal;
         line-height: 39.4px;
@@ -150,7 +136,7 @@ const GlobalStyle = () => (
       
       h4 {
         font-family: 'asapmedium';
-        font-size: 24px;
+        font-size: 1.5em;
         font-style: normal;
         font-stretch: normal;
         line-height: 33.8px;
@@ -160,7 +146,7 @@ const GlobalStyle = () => (
       
       .Large {
         font-family: 'asapregular';
-        font-size: 24px;
+        font-size: 1.5em;
         font-style: normal;
         font-stretch: normal;
         line-height: 36.6px;
@@ -170,7 +156,7 @@ const GlobalStyle = () => (
       
       .Large-semibold {
         font-family: 'asapmedium';
-        font-size: 24px;
+        font-size: 1.5em;
         font-style: normal;
         font-stretch: normal;
         line-height: 36.6px;
@@ -180,7 +166,7 @@ const GlobalStyle = () => (
       
       .Medium {
         font-family: asapregular;
-        font-size: 20px;
+        font-size: 1.25em;
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
@@ -191,8 +177,7 @@ const GlobalStyle = () => (
       
       .Medium-SemiBold {
         font-family: asapmedium;
-        font-size: 20px;
-        font-weight: 600;
+        font-size: 1.25em;
         font-style: normal;
         font-stretch: normal;
         line-height: 30.5px;
@@ -202,7 +187,7 @@ const GlobalStyle = () => (
       
       .Menu {
         font-family: 'asapregular';
-        font-size: 18px;
+        font-size: 1.25em;
         font-style: normal;
         font-stretch: normal;
         line-height: 27.4px;
@@ -212,7 +197,7 @@ const GlobalStyle = () => (
 
       .Small {
         font-family: 'asapregular';
-        font-size: 12px;
+        font-size: 1em;
         font-style: normal;
         font-stretch: normal;
         line-height: 18.3px;
@@ -222,7 +207,7 @@ const GlobalStyle = () => (
       
       .Regular {
         font-family: 'asapregular';
-        font-size: 16px;
+        font-size: 1.125;
         font-style: normal;
         font-stretch: normal;
         line-height: 24.4px;
@@ -232,45 +217,49 @@ const GlobalStyle = () => (
 
       .Caption {
         text-transform: uppercase;
-        font-size: 18px;
+        font-size: 1em;
         text-align: center;
       }
 
       // buttons
       .CTA {
+        color: #424242;
+        font-family:'asapregular';
+        padding:10px 10px;
+        text-decoration:none;
+        background-color:#ffffff;
+
+      }
+
+      .btn{
         -moz-box-shadow: 0px 10px 10px 0px #42424226;
         -webkit-box-shadow: 0px 10px 10px 0px #42424226;
         box-shadow: 0px 10px 10px 0px #42424226;
-        background-color:#ffffff;
         -moz-border-radius:4px;
         -webkit-border-radius:4px;
         border-radius:4px;
         display:inline-block;
         cursor:pointer;
-        color: #6d69fb;
-        font-family:'asapregular';
-        font-size:17px;
-        padding:10px 10px;
-        text-decoration:none;
+        font-size:1.25em;
       }
-      .CTA:hover {
+
+      .btn:hover {
         -moz-box-shadow: 0px 10px 10px 0px #3F3D56;
         -webkit-box-shadow: 0px 10px 10px 0px #3F3D56;
         box-shadow: 0px 10px 10px 0px #3F3D56;      
       }
 
-      .CTA:active {
+      .btn:active {
         position:relative;
         top:1px;
       }
 
       .outline {
-        border-radius: 25px;
         border: #ffffff 1px solid;
         color: #ffffff;
       }
   
-      .btn-medium {
+      .medium {
         background-color:#6d69fb;
         -moz-border-radius:4px;
         -webkit-border-radius:4px;
@@ -279,25 +268,30 @@ const GlobalStyle = () => (
         font-size: 24px;
         font-color: #000000;
         padding: ;
-        border: none;
-        height: 60px;
+        height: 1.5em;
       }
 
       // sections
-
+      .content{
+        padding: 0 3em 1em 3em;
+      }
+      
       .flex-container{
         display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
+
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
         
         -webkit-flex-flow: row wrap;
-        justify-content: wrap;
+        justify-content: flex-start;
       }
       .attributes {
         background-color: #EAEAEA;
-        margin: 1em;
         list-style: none;
   
         display: -webkit-box;
@@ -311,7 +305,7 @@ const GlobalStyle = () => (
       }
 
       .flex-item3{
-          width:33.33%;
+        width:33.33%;
       }
       .flex-item2{
         width: 50%
@@ -322,18 +316,6 @@ const GlobalStyle = () => (
       }
 
       // responsive
-
-      #iframe-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-      }
-
-      @media (max-width: 720px) {
-        #content {
-          padding: 0 1em 1em 1em;
-        }
-        
 			}
     `}</style>
   </div>
