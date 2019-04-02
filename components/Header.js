@@ -8,7 +8,7 @@ const Header = (props) => (
         		<Link href="/index">
         			<img id="logo-small" src={asset('/images/logo_mini.svg')} />
 				</Link>
-			
+
 				<ul>
 					<li><Link href="/showcase" passHref><a className="menu">Projets</a></Link></li>
 					<li><Link href="/resources" passHref><a className="menu">Ressources</a></Link></li>
@@ -17,7 +17,7 @@ const Header = (props) => (
 					<li><a className="btn outline" href='https://github.com/openfisca/openfisca-france'>Code source <img src={asset('/images/icons/github.svg')} alt=""/></a></li>
 					<li><Link href="/start" passHref><a className="btn CTA">Commencer <img src={asset('/images/icons/Rocket.svg')} /></a></Link></li>
 				</ul>
-			
+
 				<h1>{props.title}</h1>
 
 			</div>
@@ -31,12 +31,12 @@ const Header = (props) => (
 				cursor:pointer;
 			}
 
-			header {				
+			header {
 				background: #6d69fb; /* Old browsers */
 				background: -moz-linear-gradient(163.99deg, #00BAAF -21.24%, #6D69FB 76.56%, #6D69FB 83.4%); /* FF3.6-15 */
 				background: -webkit-linear-gradient(163.99deg, #00BAAF -21.24%, #6D69FB 76.56%, #6D69FB 83.4%); /* Chrome10-25,Safari5.1-6 */
 				background: linear-gradient(163.99deg, #00BAAF -21.24%, #6D69FB 76.56%, #6D69FB 83.4%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d69fb', endColorstr='#00baaf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */			
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d69fb', endColorstr='#00baaf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 			}
 
 			ul {

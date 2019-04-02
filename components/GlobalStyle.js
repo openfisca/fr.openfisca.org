@@ -261,6 +261,13 @@ const GlobalStyle = () => (
       // sections
       .content{
         padding: 0 3em 1em 3em;
+        margin: 0 auto;
+      }
+
+      @media(min-width: 56rem) {
+        .content {
+          max-width: 80%;
+        }
       }
 
       .flex__container{
@@ -292,17 +299,13 @@ const GlobalStyle = () => (
         padding: 1rem;
       }
 
-      .flex__item:first-child {
-        padding-left: 0;
-      }
-
       @media(min-width: 40rem) {
-        .flex__item {
-          width: 50%;
+        .flex__item:first-child {
+          padding-left: 0;
         }
       }
 
-      @media(min-width: 56rem) {
+      @media(min-width: 40rem) {
         .flex__item {
           width: 33.3333%;
         }
