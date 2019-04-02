@@ -22,7 +22,7 @@ const CardProject = (props) => (
                 border-radius: 4px;
                 display: flex;
                 flex-direction: column;
-                width: 18em;
+                width: 100%;
             }
 
             img {
@@ -37,19 +37,22 @@ const CardProject = (props) => (
                 border-radius: 4px;
             }
 
-            .card-shortdesc{ 
+            .card-shortdesc {
                 text-align: left;
                 padding: 4%;
-                display: flex;
-                flex-wrap: wrap;
+            }
+
+            .card-shortdesc > p {
+                white-space: normal;
             }
 
             .card-background {
+                background-size: cover:
                 background: #6d69fb; /* Old browsers */
                 background: -moz-linear-gradient(164deg, rgba(0,186,175,.7) -21.24%, rgba(105,109,261,0.7) 76.5%, rgba(105,109,261,0.7) 84.5%); /* FF3.6-15 */
                 background: -webkit-linear-gradient(164deg, rgba(0,186,175,.7) -21.24%, rgba(105,109,261,0.7) 76.5%, rgba(105,109,261,0.7) 84.5%); /* Chrome10-25,Safari5.1-6 */
                 background: linear-gradient(164deg, rgba(0,186,175,.7) -21.24%, rgba(105,109,261,0.7) 76.5%, rgba(105,109,261,0.7) 84.5%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d69fb', endColorstr='#00baaf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */			
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d69fb', endColorstr='#00baaf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
             }
     `}</style>
       </div>
