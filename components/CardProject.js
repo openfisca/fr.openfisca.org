@@ -1,34 +1,49 @@
 import asset from 'next/asset'
 import Link from 'next/link'
-import GlobalStyle from './GlobalStyle'
 
 const CardProject = (props) => (
     <div className="card-project">
         <div className="card-background">
-        <img src={props.img} />
+            <img src={props.img} />
         </div>
-        <p className="Medium">{props.title}</p>
-        <p className="Small">{props.desc}</p>
+        <div className="card-shortdesc">
+            <p className="Medium">{props.title}</p>
+            <p className="Small">{props.desc}</p>
+            <button>{props.attribute1}</button>
+            <button>{props.attribute2}</button>
+            <button>{props.attribute3}</button>
+        </div>
 
         <style jsx>{`
+
             .card-project {
                 background-color: #ffffff;
-                display: flex;
-                flex-flow: column;
-                text-align: left;
-                padding: 0.5em;
-                margin: 1em;
-                max-width: 20%;
-                min-width: 20em;
                 box-shadow: 0px 0px 6px #BCBCC6;
                 border-radius: 4px;
+                display: flex;
+                flex-direction: column;
+                width: 18em;
             }
-            
-            img{
-                max-width: 100%;
-            }
-            .card-background {
+
+            img {
                 width: 100%;
+            }
+
+            button{
+                background-color: #E5E5E5;
+                margin-right: 1%;
+                border: solid 0px;
+                padding: 0.25%;
+                border-radius: 4px;
+            }
+
+            .card-shortdesc{ 
+                text-align: left;
+                padding: 4%;
+            }
+
+            .card-background {
+                background-size: cover:
                 background: #6d69fb; /* Old browsers */
                 background: -moz-linear-gradient(164deg, rgba(0,186,175,.7) -21.24%, rgba(105,109,261,0.7) 76.5%, rgba(105,109,261,0.7) 84.5%); /* FF3.6-15 */
                 background: -webkit-linear-gradient(164deg, rgba(0,186,175,.7) -21.24%, rgba(105,109,261,0.7) 76.5%, rgba(105,109,261,0.7) 84.5%); /* Chrome10-25,Safari5.1-6 */
