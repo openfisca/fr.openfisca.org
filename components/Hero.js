@@ -7,27 +7,23 @@ import Link from 'next/link'
 const Hero = () => (
   <div className='hero'>
     <div>
-  <Link href="/index">
-    <img id="logo-small" src={asset('/images/logo_mini.svg')} />
-</Link>
+    <Link href="/index"><img id="logo-small" src={asset('/images/logo_mini.svg')} /></Link>
 
-  <ul>
-    <li><Link href="/showcase" passHref><a className="menu">Projets</a></Link></li>
-    <li><Link href="/resources" passHref><a className="menu">Ressources</a></Link></li>
-    <li><a className="menu" href="https://openfisca.org/doc/">Documentation</a></li>
-    <li><Link href="/community" passHref><a className="menu">Communauté</a></Link></li>
-    <li><a className="btn outline" href='https://github.com/openfisca/openfisca-france'>Code source <img src={asset('/images/icons/github.svg')} alt=""/></a></li>
-    <li><Link href="/start" passHref><a className="btn CTA">Commencer <img src={asset('/images/icons/Rocket.svg')} /></a></Link></li>
-  </ul>
-</div> 
+      <ul>
+        <li><Link href="/showcase" passHref><a className="menu">Projets</a></Link></li>
+        <li><Link href="/resources" passHref><a className="menu">Ressources</a></Link></li>
+        <li><a className="menu" href="https://openfisca.org/doc/">Documentation</a></li>
+        <li><Link href="/community" passHref><a className="menu">Communauté</a></Link></li>
+        <li><a className="btn outline" href='https://github.com/openfisca/openfisca-france'>Code source <img src={asset('/images/icons/github.svg')} alt=""/></a></li>
+        <li><Link href="/start" passHref><a className="btn CTA">Commencer <img src={asset('/images/icons/Rocket.svg')} /></a></Link></li>
+      </ul>
+    </div> 
 
-  <div className='content'>
-      <div className='flex-baseline'>
+      <div className='content flex-baseline'>
         <img src='static/images/logo_main.svg' />
         <p className="baseline" >La plateforme Open Source qui modélise <br /> le code législatif en code informatique.</p>
-        <Link href="/start" passHref><a className="btn CTA">Commencer <img className="logo" src={asset('/images/icons/Rocket.svg')} /></a></Link>
+        <Link href="/start" passHref><a className="btn CTA">Commencer <img src={asset('/images/icons/Rocket.svg')} /></a></Link>
       </div>
-    </div>
 
     <style jsx>{`
 			
@@ -57,6 +53,7 @@ const Hero = () => (
 				margin: 1em;
 				cursor:pointer;
       }
+
       img{
         max-width: 30em;
       } 

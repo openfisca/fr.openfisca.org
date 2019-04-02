@@ -10,6 +10,8 @@ const GlobalStyle = () => (
         width: 100%;
         margin: 0;
         font-family: 'asapregular';
+        text-align: left;
+        line-height: 130%;
       }
 
     @font-face {
@@ -101,10 +103,7 @@ const GlobalStyle = () => (
       h1 {
         font-family: 'asapbold';
         font-size: 3em;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 67.5px;
-        letter-spacing: normal;
+        line-height: 130%;
         text-align: center;
         color: #ffffff;
       }
@@ -112,40 +111,28 @@ const GlobalStyle = () => (
       h2 {
         font-family: 'asapmedium';
         font-size: 2em;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 50.6px;
-        letter-spacing: normal;
+        line-height: 130%;
         color: #6d69fb;
       }
       
       h3 {
         font-family: 'asapmedium';
         font-size: 1.5em;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 39.4px;
-        letter-spacing: normal;
+        line-height: 130%;
         color: #424242;
       }
       
       h4 {
         font-family: 'asapmedium';
         font-size: 1.5em;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 33.8px;
-        letter-spacing: normal;
+        line-height: 130%;
         color: #424242;
       }
       
       .Large {
         font-family: 'asapregular';
         font-size: 1.5em;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 36.6px;
-        letter-spacing: normal;
+        line-height: 130%;
         color: #424242;
       }
       
@@ -154,7 +141,7 @@ const GlobalStyle = () => (
         font-size: 1.5em;
         font-style: normal;
         font-stretch: normal;
-        line-height: 36.6px;
+        line-height: 130%;
         letter-spacing: normal;
         color: #424242;
       }
@@ -165,7 +152,7 @@ const GlobalStyle = () => (
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
-        line-height: 30.5px;
+        line-height: 130%;
         letter-spacing: normal;
         color: #424242;
       }
@@ -279,7 +266,7 @@ const GlobalStyle = () => (
 
         -webkit-flex-direction: row;
         -ms-flex-direction: row;
-        flex-direction: row;
+        flex-flow: row wrap;
         
         -webkit-flex-flow: row wrap;
         justify-content: flex-start;
@@ -299,7 +286,7 @@ const GlobalStyle = () => (
       }
 
       .flex-item3{
-        width:33.33%;
+        width-max:33.33%;
       }
       .flex-item2{
         width: 50%
