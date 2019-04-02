@@ -20,19 +20,17 @@ const Hero = () => (
     </div> 
 
       <div className='content flex-baseline'>
-        <img src='static/images/logo_main.svg' />
-        <p className="baseline" >La plateforme Open Source qui modélise <br /> le code législatif en code informatique.</p>
-        <Link href="/start" passHref><a className="btn CTA">Commencer <img src={asset('/images/icons/Rocket.svg')} /></a></Link>
+          <img src='static/images/logo_main.svg' />
+          <p className="baseline" >La plateforme Open Source qui modélise <br /> le code législatif en code informatique.</p>
+          <Link href="/start" passHref><a className="btn CTA">Commencer <img src={asset('/images/icons/Rocket.svg')} /></a></Link>
       </div>
 
     <style jsx>{`
 			
 			.hero {
-        background: #6d69fb; /* Old browsers */
-				background: -moz-linear-gradient(163.99deg, #00BAAF -21.24%, #6D69FB 76.56%, #6D69FB 83.4%); /* FF3.6-15 */
-				background: -webkit-linear-gradient(163.99deg, #00BAAF -21.24%, #6D69FB 76.56%, #6D69FB 83.4%); /* Chrome10-25,Safari5.1-6 */
-				background: linear-gradient(163.99deg, #00BAAF -21.24%, #6D69FB 76.56%, #6D69FB 83.4%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d69fb', endColorstr='#00baaf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */			
+        background-image: url(static/images/wave.svg);
+        background-repeat: no-repeat;
+        padding-bottom: 10%;
         }
         
         .flex-baseline{
