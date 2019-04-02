@@ -29,6 +29,7 @@ const Hero = () => (
 			
 			.hero {
         background-image: url(static/images/wave.svg);
+        background-size: cover;
         background-repeat: no-repeat;
         padding-bottom: 10%;
         }
