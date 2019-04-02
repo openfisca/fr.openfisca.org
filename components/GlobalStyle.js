@@ -72,7 +72,6 @@ const GlobalStyle = () => (
       
       .menu {
         font-family: 'asapregular';
-        font-size: 18px;
         font-weight: 500;
         font-style: normal;
         font-stretch: normal;
@@ -238,6 +237,7 @@ const GlobalStyle = () => (
         -webkit-border-radius:4px;
         border-radius:4px;
         display:inline-block;
+        text-align: center;
         cursor:pointer;
         font-size:1em;
       }
