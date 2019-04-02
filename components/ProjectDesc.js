@@ -12,8 +12,8 @@ const ProjectDesc = (props) => (
             <h2>{props.baseline}</h2>
             <ul>
                 <li>{props.desc1}</li>
-                <li>{props.desc1}</li>
-                <li>{props.desc1}</li>
+                <li>{props.desc2}</li>
+                <li>{props.desc3}</li>
             </ul>
             <a className="btn-medium" href={props.url}>{props.textlink}</a>           
         </div>
