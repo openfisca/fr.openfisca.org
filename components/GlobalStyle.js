@@ -96,7 +96,8 @@ const GlobalStyle = () => (
         color: #ffffff;
 				display: inline-block;
 				padding: 6px 12px;
-				line-height: 1.5;
+        line-height: 1.5;
+        font-size: 1em;
 				text-align: center;
 				white-space: nowrap;
 				vertical-align: middle;
@@ -225,7 +226,6 @@ const GlobalStyle = () => (
       .CTA {
         color: #424242;
         font-family:'asapregular';
-        padding:10px 10px;
         text-decoration:none;
         background-color:#ffffff;
       }
@@ -239,7 +239,7 @@ const GlobalStyle = () => (
         border-radius:4px;
         display:inline-block;
         cursor:pointer;
-        font-size:1.25em;
+        font-size:1em;
       }
 
       .btn:hover {
