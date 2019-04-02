@@ -71,12 +71,7 @@ const GlobalStyle = () => (
       /* Text styles */
       
       .menu {
-        font-family: 'asapregular';
-        font-weight: 500;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
-        letter-spacing: normal;
+        font-family:'asapmedium';
         color: #ffffff;
       }
 
@@ -96,7 +91,7 @@ const GlobalStyle = () => (
 				display: inline-block;
 				padding: 6px 12px;
         line-height: 1.5;
-        font-size: 1em;
+        font-size: 1.125em;
 				text-align: center;
 				white-space: nowrap;
 				vertical-align: middle;
@@ -121,7 +116,7 @@ const GlobalStyle = () => (
         font-stretch: normal;
         line-height: 50.6px;
         letter-spacing: normal;
-        color: #424242;
+        color: #6d69fb;
       }
       
       h3 {
@@ -224,9 +219,9 @@ const GlobalStyle = () => (
       // buttons
       .CTA {
         color: #424242;
-        font-family:'asapregular';
         text-decoration:none;
         background-color:#ffffff;
+        border: #ffffff 1px solid;
       }
 
       .btn{
@@ -237,9 +232,9 @@ const GlobalStyle = () => (
         -webkit-border-radius:4px;
         border-radius:4px;
         display:inline-block;
-        text-align: center;
+        vertical-align: middle;
+        font-family:'asapmedium';
         cursor:pointer;
-        font-size:1em;
       }
 
       .btn:hover {

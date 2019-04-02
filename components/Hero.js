@@ -25,7 +25,7 @@ const Hero = () => (
       <div className='flex-baseline'>
         <img src='static/images/logo_main.svg' />
         <p className="baseline" >La plateforme Open Source qui modélise <br /> le code législatif en code informatique.</p>
-        <Link href="/start" passHref><a className="btn CTA">Commencer <img src={asset('/images/icons/Rocket.svg')} /></a></Link>
+        <Link href="/start" passHref><a className="btn CTA">Commencer <img className="logo" src={asset('/images/icons/Rocket.svg')} /></a></Link>
       </div>
     </div>
 
@@ -45,12 +45,11 @@ const Hero = () => (
           display: -ms-flexbox;
           display: -webkit-flex;
           display: flex;
-  
           -webkit-flex-direction: column;
           -ms-flex-direction: column;
           flex-direction: column;
-          
           justify-content: center;
+          margin-top: 10%;
         }
 
 			#logo-small {
@@ -58,15 +57,17 @@ const Hero = () => (
 				margin: 1em;
 				cursor:pointer;
       }
+      img{
+        max-width: 30em;
+      } 
 
       .baseline{
         text-align: center;
-        font-color: #ffffff;
-      }
-
-      .logo-large {
-        max-width: 400px;
-        display: flex;
+        color: #ffffff;
+        font-size: 1.5em;
+        line-height: 1.75em;
+        font-family: "asapmedium";
+        font-style: normal;
       }
 
       ul {
@@ -89,14 +90,18 @@ const Hero = () => (
 			}
 
 			li img {
-				max-width: 1em;
-				margin-right: 5px;
+				max-width: 1.5em;
+        vertical-align: middle;
 			}
 
 			h3 {
         color: #ffffff;
         text-align: center;
-			}
+      }
+      
+      .CTA {
+        max-width: 10em;
+      }
 			
       @media (max-width:1100px) {
         .content {
