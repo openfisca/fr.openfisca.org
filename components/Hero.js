@@ -17,7 +17,7 @@ const Hero = () => (
         <li><a className="btn outline" href='https://github.com/openfisca/openfisca-france'>Code source <img src={asset('/images/icons/github.svg')} alt=""/></a></li>
         <li><Link href="/start" passHref><a className="btn CTA">Commencer <img src={asset('/images/icons/Rocket.svg')} /></a></Link></li>
       </ul>
-    </div> 
+    </div>
 
       <div className='content flex-baseline'>
           <img src='static/images/logo_main.svg' />
@@ -26,14 +26,14 @@ const Hero = () => (
       </div>
 
     <style jsx>{`
-			
+
 			.hero {
         background-image: url(static/images/wave.svg);
         background-size: cover;
         background-repeat: no-repeat;
         padding-bottom: 10%;
         }
-        
+
         .flex-baseline{
           display: -webkit-box;
           display: -moz-box;
@@ -44,6 +44,7 @@ const Hero = () => (
           -ms-flex-direction: column;
           flex-direction: column;
           justify-content: center;
+          align-items: center;
           margin-top: 10%;
         }
 
@@ -55,10 +56,9 @@ const Hero = () => (
 
       img{
         max-width: 30em;
-      } 
+      }
 
       .baseline{
-        text-align: center;
         color: #ffffff;
         font-size: 1.5em;
         line-height: 1.75em;
@@ -94,11 +94,11 @@ const Hero = () => (
         color: #ffffff;
         text-align: center;
       }
-      
+
       .CTA {
         max-width: 10em;
       }
-			
+
       @media (max-width:1100px) {
         .content {
           margin: 0 auto;
