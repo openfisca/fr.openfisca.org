@@ -4,25 +4,22 @@ import GlobalStyle from './GlobalStyle'
 
 const Header = (props) => (
     <header>
-		  <div>
-        		<Link href="/index">
-        			<img id="logo-small" src={asset('/images/logo_mini.svg')} />
-				</Link>
+		<div>
+			<Link href="/index">
+				<img id="logo-small" src={asset('/images/logo_mini.svg')} />
+			</Link>
+			<ul>
+				<li><Link href="/showcase" passHref><a className="menu">Projets</a></Link></li>
+				<li><Link href="/resources" passHref><a className="menu">Ressources</a></Link></li>
+				<li><a className="menu" href="https://openfisca.org/doc/">Documentation</a></li>
+				<li><Link href="/community" passHref><a className="menu">Communauté</a></Link></li>
+				<li><a className="btn outline" href='https://github.com/openfisca/openfisca-france'>Code source <img src={asset('/images/icons/github.svg')} alt=""/></a></li>
+				<li><Link href="/start" passHref><a className="btn CTA">Commencer <img src={asset('/images/icons/Rocket.svg')} /></a></Link></li>
+			</ul>
+			<h1>{props.title}</h1>
+		</div>
 
-				<ul>
-					<li><Link href="/showcase" passHref><a className="menu">Projets</a></Link></li>
-					<li><Link href="/resources" passHref><a className="menu">Ressources</a></Link></li>
-					<li><a className="menu" href="https://openfisca.org/doc/">Documentation</a></li>
-					<li><Link href="/community" passHref><a className="menu">Communauté</a></Link></li>
-					<li><a className="btn outline" href='https://github.com/openfisca/openfisca-france'>Code source <img src={asset('/images/icons/github.svg')} alt=""/></a></li>
-					<li><Link href="/start" passHref><a className="btn CTA">Commencer <img src={asset('/images/icons/Rocket.svg')} /></a></Link></li>
-				</ul>
-
-				<h1>{props.title}</h1>
-
-			</div>
-
-			<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 		<style jsx>{`
 			#logo-small {
@@ -39,7 +36,17 @@ const Header = (props) => (
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d69fb', endColorstr='#00baaf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 			}
 
-			ul {
+			#logo-small {
+				max-width: 4em;
+				margin: 1em;
+				cursor:pointer;
+      }
+
+      img{
+        max-width: 30em;
+      }
+
+      ul {
 				list-style-type: none;
 				margin: 0em;
 				min-height: 3em;
@@ -59,9 +66,10 @@ const Header = (props) => (
 			}
 
 			li img {
-				max-width: 1em;
-				margin-right: 5px;
+				max-width: 1.5em;
+        vertical-align: middle;
 			}
+
 
 
 			@media (max-width: 720px) {

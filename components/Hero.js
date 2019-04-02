@@ -105,16 +105,22 @@ const Hero = () => (
           flex-direction: column;
           align-items: center;
         }
-        #logo-large {
+        
+        #logo-small {
           display: flex;
           flex-direction: column;
           align-items: center;
           margin-bottom: 1em;
         }
-        #logo-large img {
-          width: 400px;
+        #logo-small img {
           display: flex;
         }
+        ul {
+          display: block;
+          padding: 0;
+          flex-direction: column;
+          align-items: center;
+}
 			}
     `}</style>
   </div>
