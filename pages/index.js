@@ -7,8 +7,9 @@ import Hero from "../components/Hero"
 
 const Home = () => (
   <div className="content">
-    <section className="who">
+    <section>
       <h2>Tout ce que vous pouvez faire avec OpenFisca !</h2>
+       <div>
         <ul className="flex-container">
           <li className="flex-item3">
             <h3>            <img src='../static/images/icons/economistes.svg' />
@@ -29,10 +30,11 @@ Administrations publiques</h3>
           </li>
         </ul>
         <a className="btn medium" href="showcase">Voir des projets</a>
+        </div>
     </section>
 
 
-    <section className="how">
+    <section>
       <h2>Comment ça marche ?</h2>
       <div className="flex-container">
       <p>OpenFisca est un projet Open Source libre et gratuit, modulable et réutilisable. Il permet de modéliser le code législatif en code informatique, pour améliorer la transparence et l’accès à la loi.</p>
