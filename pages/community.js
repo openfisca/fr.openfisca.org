@@ -8,12 +8,12 @@ import Piwik from "../components/Piwik"
 const Communaute = () => (
   <div className='content'>
 
-    <div className="flex-container">
+    <div className="flex__container">
      <h2>Qui sommes-nous ?</h2>
       <div classname="flex-item2">
-        OpenFisca est une communauté Open Source soutenue par Beta Gouv & Etalab, deux équipes d’innovation au sein du gouvernement français. 
-        En 2019, OpenFisca est utilisée par 10 pays dans le monde (France, Côte d’Ivoire, Espagne, Italie, Mali, Nouvelle Zélande, Sénégal & Tunisie). 
-        Plus de 70 personnes ont rejoint cette aventure. Ils contribuent, s’entraident et participent chaque jour à améliorer le code d’OpenFisca.    
+        OpenFisca est une communauté Open Source soutenue par Beta Gouv & Etalab, deux équipes d’innovation au sein du gouvernement français.
+        En 2019, OpenFisca est utilisée par 10 pays dans le monde (France, Côte d’Ivoire, Espagne, Italie, Mali, Nouvelle Zélande, Sénégal & Tunisie).
+        Plus de 70 personnes ont rejoint cette aventure. Ils contribuent, s’entraident et participent chaque jour à améliorer le code d’OpenFisca.
         <a className="btn medium">Rejoindre le Slack</a>
       </div>
       <div classname="flex-item2">
@@ -22,12 +22,12 @@ const Communaute = () => (
     </div>
 
 
-    <div className='flex-container'>
+    <div className='flex__container'>
      <h2>Echanger la communauté</h2>
       <div classname="flex-item1">
-      OpenFisca est une communauté Open Source soutenue par Beta Gouv & Etalab, deux équipes d’innovation au sein du gouvernement français. 
-      En 2019, OpenFisca est utilisée par 10 pays dans le monde (France, Côte d’Ivoire, Espagne, Italie, Mali, Nouvelle Zélande, Sénégal & Tunisie). 
-      Plus de 70 personnes ont rejoint cette aventure. Ils contribuent, s’entraident et participent chaque jour à améliorer le code d’OpenFisca.    
+      OpenFisca est une communauté Open Source soutenue par Beta Gouv & Etalab, deux équipes d’innovation au sein du gouvernement français.
+      En 2019, OpenFisca est utilisée par 10 pays dans le monde (France, Côte d’Ivoire, Espagne, Italie, Mali, Nouvelle Zélande, Sénégal & Tunisie).
+      Plus de 70 personnes ont rejoint cette aventure. Ils contribuent, s’entraident et participent chaque jour à améliorer le code d’OpenFisca.
       <a className="btn medium">Voir le GitHub</a>
       </div>
     </div>
@@ -40,7 +40,7 @@ const Communaute = () => (
     <div className='news'>
     <h2>Restez informés</h2>
       <p>
-    Vous pouvez vous abonner à notre newsletter mensuelle pour recevoir les actualités et les changements majeurs opérés sur OpenFisca.    
+    Vous pouvez vous abonner à notre newsletter mensuelle pour recevoir les actualités et les changements majeurs opérés sur OpenFisca.
       </p>
       <a className="btn medium">Recevoir la Newsletter</a>
 

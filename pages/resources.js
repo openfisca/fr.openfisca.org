@@ -8,7 +8,7 @@ import CardResources from "../components/CardResources";
 
 const Resources = () => (
   <div className='content'>
-     <ul className="flex-container">
+     <ul className="flex__container">
        <li><a href="../projects/mesAides" ><CardResources img="../static/images/projects/mesaides.png" title="MesAides" desc="sort desc" /></a> </li>
        <li><a href="../projects/mesAides" ><CardResources img="../static/images/projects/leximpact.png" title="LexImpact" desc="sort desc" /></a></li>
      </ul>

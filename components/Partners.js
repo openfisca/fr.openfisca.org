@@ -5,7 +5,7 @@ import Link from 'next/link'
 const Partners = () => (
   <div>
     <h2>Nos partenaires</h2>
-    <ul className="flex-container">
+    <ul className="flex__container">
       <li className="flex-item logo"><img alt='IPP' src={asset('/images/logo-ipp.png')} /></li>
       <li className="flex-item logo"><img alt='Etalab' src={asset('/images/logo-etalab.png')} /></li>
       <li className="flex-item logo"><img alt='MSA' src={asset('/images/logo-msa.svg')} /></li>
@@ -40,7 +40,7 @@ const Partners = () => (
         min-width: 10em;
       }
 
-      .flex-container {
+      .flex__container {
         display: flex;
         justify-content: center;
         margin: auto;
@@ -50,7 +50,7 @@ const Partners = () => (
       }
 
       @media (max-width: 720px) {
-        .flex-container{
+        .flex__container{
           flex-direction: column;
           align-items: center;
         }

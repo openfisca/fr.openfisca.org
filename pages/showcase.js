@@ -10,14 +10,14 @@ import Link from 'next/link'
 const Showcase = () => (
   <div className='content'>
 
-      <ul className="flex-container">
+      <ul className="flex__container">
         <li className="flex-item3"><a href="showcase/mesAides" ><CardProject img="../static/images/projects/mesaides.png" title="MesAides" desc="sort desc"  /></a></li>
         <li className="flex-item3"><a href="showcase/lexImpact" ><CardProject img="../static/images/projects/leximpact.png" title="LexImpact" desc="sort desc"   /></a></li>
         <li className="flex-item3"><a href="showcase/taxIpp" ><CardProject img="../static/images/projects/taxipp.png" title="Tax IPP" desc="sort desc"   /></a></li>
         <li className="flex-item3"><a href="showcase/ratesRebates" ><CardProject img="../static/images/projects/ratesrebates.png" title="Rates Rebates" desc="sort desc"   /></a></li>
         <li className="flex-item3"><a href="showcase/fastoche" ><CardProject img="../static/images/projects/fastoche.png" title="Fastoch€" desc="sort desc"   /></a></li>
       </ul>
-    
+
     <style jsx>{`
 
 li {
