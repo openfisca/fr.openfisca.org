@@ -40,10 +40,11 @@ const CardProject = (props) => (
             .card-shortdesc{ 
                 text-align: left;
                 padding: 4%;
+                display: flex;
+                flex-wrap: wrap;
             }
 
             .card-background {
-                background-size: cover:
                 background: #6d69fb; /* Old browsers */
                 background: -moz-linear-gradient(164deg, rgba(0,186,175,.7) -21.24%, rgba(105,109,261,0.7) 76.5%, rgba(105,109,261,0.7) 84.5%); /* FF3.6-15 */
                 background: -webkit-linear-gradient(164deg, rgba(0,186,175,.7) -21.24%, rgba(105,109,261,0.7) 76.5%, rgba(105,109,261,0.7) 84.5%); /* Chrome10-25,Safari5.1-6 */
