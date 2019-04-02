@@ -14,8 +14,8 @@ const Home = () => (
           <li className="flex__item">
             <div className="card">
               <div className="card__content">
-                <h3><img src='../static/images/icons/economistes.svg' />
-    Economistes & chercheurs</h3>
+              <img src='../static/images/icons/economistes.svg' />
+                <h3>Economistes & chercheurs</h3>
                 Utilisez des systèmes socio-fiscaux déjà modélisés et codez vos réformes.
                 Faites des simulations individuelles et sur des populations en important vos propres données.
               </div>
@@ -24,8 +24,8 @@ const Home = () => (
           <li className="flex__item">
             <div className="card">
               <div className="card__content">
-                <h3><img src='../static/images/icons/admin.svg' />
-    Administrations publiques</h3>
+              <img src='../static/images/icons/admin.svg' />
+                <h3>Administrations publiques</h3>
                 Mutualisez vos efforts de mise à jour grâce au modèle contributif d’OpenFisca.
                 Echangez sur une même base avec d’autres administrations publiques.
               </div>
@@ -34,7 +34,8 @@ const Home = () => (
           <li className="flex__item">
             <div className="card">
               <div className="card__content">
-                <h3><img src='../static/images/icons/dev.svg' />Développeurs & équipes d'innovation</h3>
+              <img src='../static/images/icons/dev.svg' />
+                <h3>Développeurs & équipes d'innovation</h3>
                 Interrogez l’API sans installation ou hébergez votre propre instance.
                 Créez des produits qui interrogent l’ensemble des règles socio-fiscales avec Python3.
               </div>
@@ -104,6 +105,10 @@ Rejoignez une communauté d’économistes, de chercheurs, de développeurs et d
 
       h3{
         line-height: 120%;
+      }
+
+      .card__content img{
+      width: 3em;
       }
 
     `}</style>
