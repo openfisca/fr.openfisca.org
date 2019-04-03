@@ -7,7 +7,7 @@ const Footer = () => (
 		<footer>
 		<div className="baseline">
 			<h3>Transformer le code législatif en code logiciel</h3>
-			<a href="start" className="btn CTA">Commencer <img src="../static/images/icons/Rocket.svg"></img></a>
+			<a href="start" className="btn CTA">Commencer <img src="../static/icons/Rocket.svg"></img></a>
 		</div>
 		<ul>
 				<li><Link href="/status" passHref>Etat des services</Link></li>
@@ -16,10 +16,10 @@ const Footer = () => (
 				<li><Link href="/contribute" passHref>Contribuer</Link></li>
 		</ul>
 		<ul className="social">
-				<li><Link href="mailto:contact@openfisca.org?Subject=openfisca.org" passHref><img src="../static/images/icons/Email.svg"></img></Link></li>
-				<li><Link href="https://github.com/openfisca" passHref><img src="../static/images/icons/Github.svg"></img></Link></li>
-				<li><Link href="/status" passHref><img src="../static/images/icons/Slack.svg"></img></Link></li>
-				<li><Link href="https://twitter.com/openfisca" passHref><img src="../static/images/icons/Twitter.svg"></img></Link></li>
+				<li><Link href="mailto:contact@openfisca.org?Subject=openfisca.org" passHref><img src="../static/icons/Email.svg"></img></Link></li>
+				<li><Link href="https://github.com/openfisca" passHref><img src="../static/icons/Github.svg"></img></Link></li>
+				<li><Link href="/status" passHref><img src="../static/icons/Slack.svg"></img></Link></li>
+				<li><Link href="https://twitter.com/openfisca" passHref><img src="../static/icons/Twitter.svg"></img></Link></li>
 		</ul>
 
 		</footer>

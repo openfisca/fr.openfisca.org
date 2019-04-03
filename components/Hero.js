@@ -14,21 +14,21 @@ const Hero = () => (
         <li><Link href="/resources" passHref><a className="menu">Ressources</a></Link></li>
         <li><a className="menu" href="https://openfisca.org/doc/">Documentation</a></li>
         <li><Link href="/community" passHref><a className="menu">Communauté</a></Link></li>
-        <li><a className="btn outline" href='https://github.com/openfisca/openfisca-france'>Code source <img src={asset('/images/icons/github.svg')} alt=""/></a></li>
-        <li><Link href="/start" passHref><a className="btn CTA">Commencer <img src={asset('/images/icons/Rocket.svg')} /></a></Link></li>
+        <li><a className="btn outline" href='https://github.com/openfisca/openfisca-france'>Code source <img src={asset('/icons/github.svg')} alt=""/></a></li>
+        <li><Link href="/start" passHref><a className="btn CTA">Commencer <img src={asset('/icons/Rocket.svg')} /></a></Link></li>
       </ul>
     </div>
 
       <div className='content flex-baseline'>
           <img src='static/images/logo_main.svg' />
           <p className="baseline" >La plateforme Open Source qui modélise <br /> le code législatif en code informatique.</p>
-          <Link href="/start" passHref><a className="btn CTA">Commencer <img src={asset('/images/icons/Rocket.svg')} /></a></Link>
+          <Link href="/start" passHref><a className="btn CTA">Commencer <img src={asset('/icons/Rocket.svg')} /></a></Link>
       </div>
 
     <style jsx>{`
 
 			.hero {
-        background-image: url(static/images/wave.svg);
+        background-image: url(static/items/wave.svg);
         background-size: cover;
         background-repeat: no-repeat;
         padding-bottom: 10%;

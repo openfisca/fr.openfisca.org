@@ -7,9 +7,8 @@ import ProjectDesc from "../../components/ProjectDesc"
 import ProjectAttribute from "../../components/ProjectAttribute"
 
 const Ratesrebates = () => (
-  <div className='content'>
-      
-      <ProjectDesc img="../static/images/projects/ratesrebates.png" 
+  <div className='content'> 
+      <ProjectDesc img="../static/projects/ratesrebates.png" 
       baseline="Prototyper le versement automatique d’une aide sociale." 
       desc1="Produit par Lab Inno NZ, l’équipe d’innovation du gouvernement néo-zélandais, ce prototype vise à faciliter le versement automatique de l’aide Rates Rebates pour le public senior." 
       desc2="L’équipe a intégralement modélisé le système socio-fiscal néo-zélandais."
@@ -19,15 +18,14 @@ const Ratesrebates = () => (
 
     <section>
       <h2>Caractéristiques du projet</h2>
-      <ProjectAttribute 
-      imgapi="../static/images/api.png" api="API Web"
-      imgcountry="../static/images/icons/circle/nz.svg" country="interroge le système néo-zélandais"
-      imgsimulation="../static/images/icons/circle/simindividuelle.svg" simulation="Simulation individuelle"
-      imgperimetre="../static/images/icons/circle/perimetre.svg" perimetre=" Web"
-      imgpoweredby="../static/images/icons/circle/admin.svg" poweredby="API Web"
-      />
+        <ProjectAttribute 
+        imgapi="../static/icons/circle/api.svg" api="API Web"
+        imgcountry="../static/icons/circle/nz.svg" country="interroge le système néo-zélandais"
+        imgsimulation="../static/icons/circle/simindividuelle.svg" simulation="Simulation individuelle"
+        imgperimetre="../static/icons/circle/perimetre.svg" perimetre=" Web"
+        imgpoweredby="../static/icons/circle/admin.svg" poweredby="API Web"
+        />
     </section>
-
 </div>
 )
 export default () => (

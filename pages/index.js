@@ -14,7 +14,7 @@ const Home = () => (
           <li className="flex__item">
             <div className="card">
               <div className="card__content">
-              <img src='../static/images/icons/economistes.svg' />
+              <img src='../static/icons/economistes.svg' />
                 <h3>Economistes & chercheurs</h3>
                 Utilisez des systèmes socio-fiscaux déjà modélisés et codez vos réformes.
                 Faites des simulations individuelles et sur des populations en important vos propres données.
@@ -24,7 +24,7 @@ const Home = () => (
           <li className="flex__item">
             <div className="card">
               <div className="card__content">
-              <img src='../static/images/icons/admin.svg' />
+              <img src='../static/icons/admin.svg' />
                 <h3>Administrations publiques</h3>
                 Mutualisez vos efforts de mise à jour grâce au modèle contributif d’OpenFisca.
                 Echangez sur une même base avec d’autres administrations publiques.
@@ -34,7 +34,7 @@ const Home = () => (
           <li className="flex__item">
             <div className="card">
               <div className="card__content">
-              <img src='../static/images/icons/dev.svg' />
+              <img src='../static/icons/dev.svg' />
                 <h3>Développeurs & équipes d'innovation</h3>
                 Interrogez l’API sans installation ou hébergez votre propre instance.
                 Créez des produits qui interrogent l’ensemble des règles socio-fiscales avec Python3.
@@ -49,23 +49,22 @@ const Home = () => (
 
     <section>
       <h2>Comment ça marche ?</h2>
-      <div className="flex__container">
-      <p>OpenFisca est un projet Open Source libre et gratuit, modulable et réutilisable. Il permet de modéliser le code législatif en code informatique, pour améliorer la transparence et l’accès à la loi.</p>
-
-      <div className="flex-item2">
+        <div className="flex__container">
+         <p>OpenFisca est un projet Open Source libre et gratuit, modulable et réutilisable. Il permet de modéliser le code législatif en code informatique, pour améliorer la transparence et l’accès à la loi.</p>
+        <div className="flex-item2">
        <img src="../static/images/openlaw.png" />
      </div>
 
       <div className="flex-item2">
-
         <ul>
           <li>Utilisez un système socio-fiscal existant</li>
           <li>Codez votre propre système</li>
           <li>Améliorez le code d’un système existant</li>
-          <a className="btn medium">Qu'est-ce qu'un système socio-fiscal ?</a>
+          <a className="btn medium" href="resources/countrypackages">Voir les systèmes socio-fiscaux</a>
         </ul>
       </div>
      </div>
+    </section>
 
      <section className="flex__container">
         <div className="flex-item2">
@@ -80,7 +79,6 @@ const Home = () => (
           <img src="../static/images/api.png" />
         </div>
       </section>
-    </section>
 
     <section className="flex__container">
       <div className="flex-item2">
@@ -100,7 +98,8 @@ Rejoignez une communauté d’économistes, de chercheurs, de développeurs et d
       }
 
       .flex-item2 li{
-      list-style-image : url(../static/images/bullet.svg);
+      list-style-image : url(../static/items/bullet.svg);
+      padding-bottom: 10%;
       }
 
       h3{

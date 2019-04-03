@@ -2,25 +2,25 @@ import asset from 'next/asset'
 import Link from 'next/link'
 
 const ProjectAttribute = (props) => (
-    <div>
+    <div className="attribute">
         <ul className='flex__container'>
-            <li className="flex-item3">
+            <li className="flex__item">
                 <img src={props.imgapi} />
                 <p className="Medium">{props.api}</p>
             </li>
-            <li className="flex-item3">
+            <li className="flex__item">
                 <img src={props.imgcountry} />
                 <p className="Medium">{props.country}</p>
             </li>
-            <li className="flex-item3">
+            <li className="flex__item">
                 <img src={props.imgsimulation} />
                 <p className="Medium">{props.simulation}</p>
             </li>
-            <li className="flex-item3">
+            <li className="flex__item">
                 <img src={props.imgperimetre} />
                 <p className="Medium">{props.perimetre}</p>
             </li>
-            <li className="flex-item3">
+            <li className="flex__item">
                 <img src={props.imgpoweredby} />
                 <p className="Medium">{props.poweredby}</p>
             </li>
@@ -28,16 +28,6 @@ const ProjectAttribute = (props) => (
 
 
         <style jsx>{`
-
-            .card-container {
-                background-color: #ffffff;
-                box-shadow: 0px 0px 6px #BCBCC6;
-                border-radius: 2%;
-                display: flex;
-                flex-direction: column;
-                text-align: left;
-                width: 100%;
-            }
 
             .card-desc {
                 text-align: left;
@@ -48,11 +38,14 @@ const ProjectAttribute = (props) => (
                 white-space: normal;
             }
 
-            .card-attribute {
+            .attribute {
                 padding: 4%;
                 background-color: #6d69fb;
-                border-radius: 0% 0% 2% 2%;
-            
+                border-radius: 4px;
+            }
+
+            li {
+                list-style: none;
             }
     `}</style>
       </div>
