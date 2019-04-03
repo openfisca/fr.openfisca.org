@@ -10,7 +10,7 @@ import Link from 'next/link'
 const Showcase = () => (
   <div className='content'>
       <ul className="flex__container">
-        <li className="flex__item"><a href="showcase/mesAides" ><CardProject img="../static/images/mesaides.png" title="MesAides" desc="MesAides renseignent les citoyens français sur leur éligibilité à 29 prestations sociales. " attribute1="API Web" attribute2="API Web" attribute3="France" /></a></li>
+        <li className="flex__item"><a href="showcase/mesAides" ><CardProject img="../static/projects/mesaides.png" title="MesAides" desc="MesAides renseignent les citoyens français sur leur éligibilité à 29 prestations sociales. " attribute1="API Web" attribute2="API Web" attribute3="France" /></a></li>
 
         <li className="flex__item"><a href="showcase/lexImpact" ><CardProject img="../static/projects/leximpact.png" title="LexImpact" desc="Ce projet en cours vise à équiper les administrateurs de l’assemblée nationale avec un outil de simulation d’impact de réformes." attribute1="API Python" attribute2="API Python" attribute3="France"  /></a></li>
 
