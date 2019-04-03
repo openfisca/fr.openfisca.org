@@ -20,6 +20,17 @@ const GlobalStyle = () => (
       line-height: 130%;
     }
 
+    .content{
+      padding: 0 3em 1em 3em;
+      margin: 0 auto;
+    }
+
+    @media(min-width: 56rem) {
+      .content {
+        max-width: 1100px;
+      }
+    }
+
     @font-face {
         font-family: 'asapbold';
         src: url('../static/fonts/asap-bold-webfont.woff2') format('woff2'),
@@ -97,13 +108,12 @@ const GlobalStyle = () => (
         font-family: 'asapregular';
         color: #ffffff;
 				display: inline-block;
-				padding: 6px 12px;
         line-height: 1.5;
         font-size: 1.125em;
 				text-align: center;
 				white-space: nowrap;
-				vertical-align: middle;
-				text-decoration: none;
+        text-decoration: none;
+        padding: 0.25em;;
 			}
 
       h1 {
@@ -155,30 +165,7 @@ const GlobalStyle = () => (
       .Medium {
         font-family: asapregular;
         font-size: 1.25em;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
         line-height: 130%;
-        letter-spacing: normal;
-        color: #424242;
-      }
-
-      .Medium-SemiBold {
-        font-family: asapmedium;
-        font-size: 1.25em;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 30.5px;
-        letter-spacing: normal;
-        color: #424242;
-      }
-
-      .Menu {
-        font-family: 'asapregular';
-        font-size: 1.25em;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 27.4px;
         letter-spacing: normal;
         color: #424242;
       }
@@ -189,16 +176,6 @@ const GlobalStyle = () => (
         font-style: normal;
         font-stretch: normal;
         line-height: 18.3px;
-        letter-spacing: normal;
-        color: #424242;
-      }
-
-      .Regular {
-        font-family: 'asapregular';
-        font-size: 1.125;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 24.4px;
         letter-spacing: normal;
         color: #424242;
       }
@@ -224,7 +201,6 @@ const GlobalStyle = () => (
         -moz-border-radius:4px;
         -webkit-border-radius:4px;
         border-radius:4px;
-        display:inline-block;
         vertical-align: middle;
         font-family:'asapmedium';
         cursor:pointer;
@@ -252,23 +228,13 @@ const GlobalStyle = () => (
         -webkit-border-radius:4px;
         border-radius:4px;
         font-family: 'asapregular';
-        font-size: 24px;
+        font-size: 1.125em;
         font-color: #000000;
-        padding: ;
-        height: 1.5em;
+        padding: 2%;
       }
 
       // sections
-      .content{
-        padding: 0 3em 1em 3em;
-        margin: 0 auto;
-      }
 
-      @media(min-width: 56rem) {
-        .content {
-          max-width: 80%;
-        }
-      }
 
       .flex__container{
         // display: -webkit-box;
