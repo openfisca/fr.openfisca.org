@@ -4,6 +4,7 @@ import Header from "../../components/Header"
 import Footer from "../../components/Footer"
 import Piwik from "../../components/Piwik"
 import ProjectDesc from "../../components/ProjectDesc"
+import ProjectAttribute from "../../components/ProjectAttribute"
 
 const Ratesrebates = () => (
   <div className='content'>
@@ -18,19 +19,13 @@ const Ratesrebates = () => (
 
     <section>
       <h2>Caractéristiques du projet</h2>
-      
-      <ul className='attributes'>
-        <li className="flex-item3"><img src="../../static/images/icons/python.svg" /><p className="Caption">Utilise l'API Python</p>
-        </li>
-        <li className="flex-item3"><img src="../../static/images/icons/python.svg" /><p className="Caption">Utilise l'API Python</p>
-        </li>
-        <li className="flex-item3"><img src="../../static/images/icons/python.svg" /><p className="Caption">Utilise l'API Python</p>
-        </li>
-        <li className="flex-item3"><img src="../../static/images/icons/python.svg" /><p className="Caption">Utilise l'API Python</p>
-        </li>
-        <li ><img src="../../static/images/icons/python.svg" /><p className="Caption">Utilise l'API Python</p>
-        </li>
-      </ul>
+      <ProjectAttribute 
+      imgapi="../static/images/api.png" api="API Web"
+      imgcountry="../static/images/world.svg" country="interroge le système néo-zélandais"
+      imgsimulation="../static/images/api.png" simulation="API Web"
+      imgperimetre="../static/images/api.png" perimetre="API Web"
+      imgpoweredby="../static/images/api.png" poweredby="API Web"
+      />
     </section>
 
 </div>
