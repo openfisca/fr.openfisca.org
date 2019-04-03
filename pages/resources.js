@@ -8,11 +8,13 @@ import CardResources from "../components/CardResources";
 
 const Resources = () => (
   <div className='content'>
-     <ul className="flex__container">
-       <li><a href="../projects/mesAides" ><CardResources img="../static/images/projects/mesaides.png" title="MesAides" desc="sort desc" /></a> </li>
-       <li><a href="../projects/mesAides" ><CardResources img="../static/images/projects/leximpact.png" title="LexImpact" desc="sort desc" /></a></li>
-     </ul>
+    <ul className="flex__container">
+      <li className="flex__item"><a href="resources/countrypackages" ><CardResources img="../static/images/icons/world.svg" title="Système socio-fiscal" desc="Accédez aux systèmes déjà modélisés ou créez votre propre système socio-fiscal." attribute="Voir les 10 modèles"  /></a></li>
+    
+      <li className="flex__item"><a href="resources/legex" ><CardResources img="../static/images/icons/dev.svg" title="Explorateur de législation" desc="Naviguez parmi les variables et paramètres d’un système, obtenez la formule associée et la référence de loi."  attribute="Explorer"/></a></li>
 
+    </ul>
+  
     <style jsx>{`
 
       @media (max-width: 720px) {
