@@ -47,6 +47,8 @@ const ProjectAttribute = (props) => (
             li {
                 list-style: none;
             }
+
+            
     `}</style>
       </div>
       )

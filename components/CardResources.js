@@ -4,14 +4,13 @@ import Link from 'next/link'
 const CardResources = (props) => (
     <div className="card-container">
         <div className="card-desc">
-            <p className="Medium">{props.title}</p>
-            <img src={props.img} />
-            <p className="Small">
-{props.desc}</p>
+            <p className="Medium">{props.title}</p> 
+            <p className="Small"><img src={props.img} />{props.desc}</p>
         </div>
-        <div className="card-attribute">
-            <p>{props.attribute}</p>
-        </div>
+        <div className="card-links">
+            <a className="btn medium" href={props.linkexplorer}>Explorer</a>
+            <a className="btn medium" href={props.linkgit}>Voir sur GitHub</a>
+            </div>
 
         <style jsx>{`
 
@@ -27,23 +26,18 @@ const CardResources = (props) => (
 
             .card-desc {
                 text-align: left;
-                padding: 4%;
-            }
-
-            img{
-                color: #6d69fb;
-                width: 40%;
+                padding-left: 4%;
             }
 
             .card-desc > p {
                 white-space: normal;
             }
 
-            .card-attribute {
+            .card-links {
                 padding: 4%;
-                background-color: #6d69fb;
-                border-radius: 0% 0% 2% 2%;
-            
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
             }
     `}</style>
       </div>

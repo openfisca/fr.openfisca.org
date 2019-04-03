@@ -9,9 +9,8 @@ import CardResources from "../components/CardResources";
 const Resources = () => (
   <div className='content'>
     <ul className="flex__container">
-      <li className="flex__item"><a href="resources/countrypackages" ><CardResources img="../static/icons/world.svg" title="Système socio-fiscal" desc="Accédez aux systèmes déjà modélisés ou créez votre propre système socio-fiscal." attribute="Voir les 10 modèles"  /></a></li>
-    
-      <li className="flex__item"><a href="resources/legex" ><CardResources img="../static/icons/dev.svg" title="Explorateur de législation" desc="Naviguez parmi les variables et paramètres d’un système, obtenez la formule associée et la référence de loi."  attribute="Explorer"/></a></li>
+      <li className="flex__item"><CardResources img="../static/icons/france.svg" title="France" desc="Le système contient la majorité des impôts et des prestations sociales. 1567 paramètres - 456 variables." linkexplorer="https://fr.openfisca.org/legislation"  linkgit="https://github.com/openfisca/openfisca-france"/></li>
+      <li className="flex__item"><CardResources img="../static/icons/nz.svg" title="Nouvelle-Zélande" desc="Accédez aux systèmes déjà modélisés ou créez votre propre système socio-fiscal." linkexplorer="https://fr.openfisca.org/legislation"  linkgit="https://github.com/openfisca/openfisca-france"/></li>
 
     </ul>
   
