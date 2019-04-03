@@ -36,16 +36,6 @@ const Header = (props) => (
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d69fb', endColorstr='#00baaf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 			}
 
-			#logo-small {
-				max-width: 4em;
-				margin: 1em;
-				cursor:pointer;
-      }
-
-      img{
-        max-width: 30em;
-      }
-
       ul {
 				list-style-type: none;
 				margin: 0em;
@@ -75,11 +65,11 @@ const Header = (props) => (
 			@media (max-width: 720px) {
 				header{
 					flex-direction: column;
+					justyfy-content: stretch;
 				}
 				ul {
-                    padding: 0;
-                    flex-direction: column;
-                    align-items: center;
+          flex-direction: column;
+          align-items: center;
 				}
 			}
 		`}</style>
