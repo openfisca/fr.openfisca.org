@@ -40,7 +40,7 @@ const CardResources = (props) => (
             }
 
             .card-attribute {
-                padding: 2%;
+                padding: 4%;
                 background-color: #6d69fb;
                 border-radius: 0% 0% 2% 2%;
             

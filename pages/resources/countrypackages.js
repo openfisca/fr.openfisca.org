@@ -17,7 +17,7 @@ S’appuie également sur des extensions sur-mesure développées par l’équip
 export default () => (
     <div>
       <GlobalStyle/>
-      <Header page='countrypackage' title='Systèmes socio-fiscaux' />
+      <Header page='countrypackage' title='Système socio-fiscal' />
       <Countrypackage />
       <Footer />
       <Piwik page='countrypackage'/>
