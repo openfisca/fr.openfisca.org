@@ -6,23 +6,22 @@ const Footer = () => (
 	<div> 
 		<footer>
 		<div className="baseline">
-		<h3>Transformer le code législatif en code logiciel</h3>
-		<a href="start" className="btn CTA">Commencer <img src="../static/images/icons/Rocket.svg"></img></a>
+			<h3>Transformer le code législatif en code logiciel</h3>
+			<a href="start" className="btn CTA">Commencer <img src="../static/images/icons/Rocket.svg"></img></a>
 		</div>
-			<ul>
+		<ul>
 				<li><Link href="/status" passHref>Etat des services</Link></li>
 				<li><Link href="/cookies" passHref>Informatique & libertés</Link></li>
 				<li><Link href="/legal" passHref>Mentions légales</Link></li>
 				<li><Link href="/contribute" passHref>Contribuer</Link></li>
-
-			</ul>
-			<ul className="social">
+		</ul>
+		<ul className="social">
 				<li><Link href="mailto:contact@openfisca.org?Subject=openfisca.org" passHref><img src="../static/images/icons/Email.svg"></img></Link></li>
 				<li><Link href="https://github.com/openfisca" passHref><img src="../static/images/icons/Github.svg"></img></Link></li>
 				<li><Link href="/status" passHref><img src="../static/images/icons/Slack.svg"></img></Link></li>
 				<li><Link href="https://twitter.com/openfisca" passHref><img src="../static/images/icons/Twitter.svg"></img></Link></li>
+		</ul>
 
-			</ul>
 		</footer>
 
 		<style jsx>{`
@@ -57,12 +56,15 @@ const Footer = () => (
 				list-style-type: none;
 				min-height: 3em;
 				float: left;
-				padding-right: 2em;
+				padding-right: 3em;
+				padding-top: 3em;
 			}
 
 			li {
 				display: inline;
+				cursor: pointer;
 				list-style: none;
+				padding-right: 1em;
 			}
 
 			li img {
