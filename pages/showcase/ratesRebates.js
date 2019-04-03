@@ -21,10 +21,10 @@ const Ratesrebates = () => (
       <h2>Caractéristiques du projet</h2>
       <ProjectAttribute 
       imgapi="../static/images/api.png" api="API Web"
-      imgcountry="../static/images/world.svg" country="interroge le système néo-zélandais"
-      imgsimulation="../static/images/api.png" simulation="API Web"
-      imgperimetre="../static/images/api.png" perimetre="API Web"
-      imgpoweredby="../static/images/api.png" poweredby="API Web"
+      imgcountry="../static/images/icons/circle/nz.svg" country="interroge le système néo-zélandais"
+      imgsimulation="../static/images/icons/circle/simindividuelle.svg" simulation="Simulation individuelle"
+      imgperimetre="../static/images/icons/circle/perimetre.svg" perimetre=" Web"
+      imgpoweredby="../static/images/icons/circle/admin.svg" poweredby="API Web"
       />
     </section>
 
