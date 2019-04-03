@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 
 const Partners = () => (
-  <div>
+  <div className="content">
     <h2>Nos partenaires</h2>
     <ul className="flex__container">
       <li className="flex-item logo"><img alt='IPP' src={asset('/images/logo-ipp.png')} /></li>
@@ -33,7 +33,6 @@ const Partners = () => (
         display: flex;
         flex-flow: column;
         justify-content: space-between;
-        align-items: center;
         border: 1px solid transparent;
         margin: 1em 0;
         max-width: 15%;
@@ -42,17 +41,17 @@ const Partners = () => (
 
       .flex__container {
         display: flex;
-        justify-content: center;
         margin: auto;
         padding: 1em;
         display: flex;
         flex-wrap: wrap;
+        justify-content: flex-start;
       }
 
       @media (max-width: 720px) {
         .flex__container{
           flex-direction: column;
-          align-items: center;
+          justify-content: flex-start;
         }
 
         .flex-item{
