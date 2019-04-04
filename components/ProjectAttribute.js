@@ -28,10 +28,12 @@ const ProjectAttribute = (props) => (
 
 
         <style jsx>{`
-
-            .card-desc {
-                text-align: left;
-                padding: 4%;
+            .flex__item {
+                // display: -webkit-flex;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding: 1rem;
             }
 
             .card-desc > p {
@@ -39,8 +41,8 @@ const ProjectAttribute = (props) => (
             }
 
             .attribute {
-                padding: 4%;
-                background-color: #6d69fb;
+                padding: 2%;
+                background-color: #EAEAEA;
                 border-radius: 4px;
             }
 
