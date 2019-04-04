@@ -4,6 +4,7 @@ import GlobalStyle from './GlobalStyle'
 
 
 const ProjectDesc = (props) => (
+
     <div className="flex__container">
         <div className="flex-item2">
             <img src={props.img} />
@@ -18,7 +19,11 @@ const ProjectDesc = (props) => (
             <a className="btn-medium" href={props.url}>{props.textlink}</a>
         </div>
     <style jsx>{`
-
+li{
+    list-style-image : url(../static/items/bullet.svg);
+    padding-bottom: 8%;
+    list-style-position: outside;
+    }
     `}</style>
 
     </div>
