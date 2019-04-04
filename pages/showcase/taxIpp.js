@@ -4,23 +4,47 @@ import Header from "../../components/Header"
 import Footer from "../../components/Footer"
 import Piwik from "../../components/Piwik"
 import ProjectDesc from "../../components/ProjectDesc"
+import ProjectAttribute from "../../components/ProjectAttribute"
 
 const Taxipp = () => (
   <div className='content'>
-    <section className="desc">
-  <ProjectDesc img="../static/projects/taxipp.png" baseline="MesAides est un simulateur de droit aux aides sociales." desc="Développé par BetaGouv, l’équipe d’innovation du gouvernement français
-Mes Aides informe les citoyens français de leur éligibilité aux aides sociales nationales et régionales. En moins de 7 minutes, le service donne une réponse sur l’éligibilité à 30 aides.
-S’appuie également sur des extensions sur-mesure développées par l’équipe : implémentation d’aides locales (Paris, Brest), création d’outils comme le traceur, outil de debug qui permet de naviguer plus facilement dans un calcul OpenFisca." button="voir le site"/>
- </section>
- <div className='row'>
- </div>
+      <a className="outline" href="../showcase" >Retour</a>
+
+      <ProjectDesc img="../static/projects/taxipp.png" 
+      baseline="TaxIPP est un modèle de microsimulation" 
+      desc1="Le modèle TaxIPP réalise l'appariement de données administratives et de données d'enquête pour réaliser un échantillon représentatif des ménages français. Il est injecté dans  par openfisca pour simuler l'impact de réformes du système socio-fiscal sur les ménages." 
+desc2="TAXIPP outille l’IPP (l’Institut des Politiques Publiques) dans sa mission d’animation du débat public depuis 2012. "
+desc3="Il est notamment utilisé pour évaluer les effets des projets de loi de finances."
+button="voir le site"/>
+
+ <section>
+      <h2>Caractéristiques du projet</h2>
+        <ProjectAttribute 
+        imgapi="../static/icons/circle/api.svg" api="API Web"
+        imgcountry="../static/icons/circle/nz.svg" country="interroge le système néo-zélandais"
+        imgsimulation="../static/icons/circle/simindividuelle.svg" simulation="Simulation individuelle"
+        imgperimetre="../static/icons/circle/perimetre.svg" perimetre=" Web"
+        imgpoweredby="../static/icons/circle/admin.svg" poweredby="API Web"
+        />
+    </section>
+
+  <style jsx>{`
+
+.outline {
+  color: #656565;
+  padding: 0 1% 0 1%;
+  border-color: #656565;
+  border-radius: 25px;
+}
+
+`}</style>
 
 </div>
 )
 export default () => (
     <div>
       <GlobalStyle/>
-      <Header />
+      <Header page='tafipp' title='TaxIPP'/>
       <Taxipp />
       <Footer />
       <Piwik page='taxipp'/>
