@@ -9,14 +9,14 @@ const Communaute = () => (
   <div className='content'>
     <div className="flex__container">
      <h2>Qui sommes-nous ?</h2>
-      <div classname="card">
+      <div classname="flex__item">
         <p>OpenFisca est une communauté Open Source soutenue par Beta Gouv & Etalab, deux équipes d’innovation au sein du gouvernement français.
         En 2019, OpenFisca est utilisée par 10 pays dans le monde (France, Côte d’Ivoire, Espagne, Italie, Mali, Nouvelle Zélande, Sénégal & Tunisie).
         Plus de 70 personnes ont rejoint cette aventure. Ils contribuent, s’entraident et participent chaque jour à améliorer le code d’OpenFisca.
         </p>
         <a className="btn medium">Rejoindre le Slack</a>
+        <img className="flex__item" src={asset('/images/community.png')} />
       </div>
-        <img className="card" src={asset('/images/community.png')} />
     </div>
 
     <div className='flex__container'>
@@ -54,7 +54,7 @@ const Communaute = () => (
       height: auto;
     }
 
-    .flex__row{
+    .flex__{
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
