@@ -5,10 +5,9 @@ import Link from 'next/link'
 
 
 const Hero = () => (
-  <div className='hero'>
+  <div className="hero" >
     <nav>
-    <Link href="/index"><img id="logo-small" src={asset('/images/logo_mini.svg') } alt="Accueil"/></Link>
-
+    <Link href="/index"><img className="logo" src={asset('/images/logo_mini.svg') } alt="Accueil"/></Link>
       <ul>
         <li><Link href="/showcase" passHref><a className="menu">Projets</a></Link></li>
         <li><Link href="/resources" passHref><a className="menu">Ressources</a></Link></li>
@@ -48,7 +47,7 @@ const Hero = () => (
           margin-top: 10%;
         }
 
-			#logo-small {
+			.logo {
 				max-width: 4em;
 				margin: 1em;
 				cursor:pointer;
@@ -75,10 +74,6 @@ const Hero = () => (
 				float: right;
 			}
 
-			li + li {
-				margin-left: 0.5em;
-			}
-
 			li {
 				display: inline;
 				list-style: none;
@@ -99,28 +94,20 @@ const Hero = () => (
         max-width: 10em;
       }
 
-      @media (max-width:1100px) {
-        .content {
-          margin: 0 auto;
-          flex-direction: column;
-          align-items: center;
-        }
-        
-        #logo-small {
+      @media (max-width:880px) {
+
+        .logo {
           display: flex;
           flex-direction: column;
           align-items: center;
-          margin-bottom: 1em;
         }
-        #logo-small img {
-          display: flex;
-        }
+
         ul {
-          display: block;
-          padding: 0;
+          display: flex;
+          padding: 0.2rem;
           flex-direction: column;
           align-items: center;
-}
+        }
 			}
     `}</style>
   </div>
