@@ -22,7 +22,7 @@ const Home = () => (
         <li className="flex-item">
           <h3>Documentation</h3>
           <p>Entièrement en anglais, elle explique comment modéliser un ajout à la législation ou une réforme. </p>
-          <a className="cta" href="http://openfisca.org/doc">Découvrir</a>
+          <a className="cta" href="https://openfisca.org/doc">Découvrir</a>
         </li>
         <li className="flex-item">
           <h3>Code source</h3>
@@ -74,7 +74,7 @@ const Home = () => (
         <li className="flex-item">
           <h3>Publication du MFRB</h3>
           <img alt='MFRB' src={asset("/images/logo_mfrb.png")}/>
-          <a href="http://www.revenudebase.info/2017/04/07/apprehender-cout-dun-revenu-de-base">Lire la publication</a>
+          <a href="https://www.revenudebase.info/2017/04/07/apprehender-cout-dun-revenu-de-base">Lire la publication</a>
         </li>
       </ul>
     </section>

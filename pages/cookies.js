@@ -22,7 +22,7 @@ const Cookies = () => (
     </p>
     <h2>Je contribue à vos données. Puis-je y accéder ?</h2>
     <p>
-      Bien sûr ! Les données d'analyse d'OpenFisca sont librement disponible ici : <a href='http://stats.data.gouv.fr/index.php?module=CoreHome&action=index&idSite=4&period=range&date=previous30#?module=Dashboard&action=embeddedIndex&idSite=4&period=range&date=previous30&idDashboard=1'>stats.data.gouv.fr</a>
+      Bien sûr ! Les données d'analyse d'OpenFisca sont librement disponible ici : <a href='https://stats.data.gouv.fr/index.php?module=CoreHome&action=index&idSite=4&period=range&date=previous30#?module=Dashboard&action=embeddedIndex&idSite=4&period=range&date=previous30&idDashboard=1'>stats.data.gouv.fr</a>
     </p>
  
     <style jsx>{` 

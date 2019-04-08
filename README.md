@@ -2,13 +2,13 @@
 
 ## [FR] Introduction
 
-[OpenFisca](http://openfisca.org/fr) est un logiciel libre de micro-simulation.
-Ceci est le code source du [site web](http://fr.openfisca.org) de la communauté traitant du modèle socio-fiscal français.
+[OpenFisca](https://openfisca.org/fr) est un logiciel libre de micro-simulation.
+Ceci est le code source du [site web](https://fr.openfisca.org) de la communauté traitant du modèle socio-fiscal français.
 
 ## [EN] Introduction
 
-[OpenFisca](http://openfisca.org/en) is a versatile microsimulation free software.
-This is the source code of the [web site](http://fr.openfisca.org) for the community working on the french tax and benefit system.
+[OpenFisca](https://openfisca.org/en) is a versatile microsimulation free software.
+This is the source code of the [web site](https://fr.openfisca.org) for the community working on the french tax and benefit system.
 
 ## Install
 
@@ -62,7 +62,7 @@ java -version
 # Expected answer example: java version "1.8.0_40"
 ```
 
-If you get an error, download Java last `JRE` version on the [Oracle website](http://www.oracle.com/technetwork/java/javase/downloads/jre9-downloads-3848532.html).
+If you get an error, download Java last `JRE` version on the [Oracle website](https://www.oracle.com/technetwork/java/javase/downloads/jre9-downloads-3848532.html).
 
 #### Install Selenium
 
