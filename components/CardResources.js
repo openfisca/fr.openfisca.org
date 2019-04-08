@@ -5,7 +5,7 @@ const CardResources = (props) => (
     <div className="card-container">
         <div className="card-desc">
             <p className="Medium">{props.title}</p> 
-            <p className="Small"><img src={props.img} />{props.desc}</p>
+            <p className="Small"><img src={props.img} alt="" />{props.desc}</p>
         </div>
         <div className="card-links">
             <a className="btn medium" href={props.linkexplorer}>Explorer</a>

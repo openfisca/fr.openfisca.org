@@ -4,7 +4,8 @@ import GlobalStyle from './GlobalStyle'
 
 const Header = (props) => (
     <header>
-		<div>
+		<title>{props.title}</title>
+		<nav>
 			<Link href="/index">
 				<img id="logo-small" src={asset('/images/logo_mini.svg')} />
 			</Link>
@@ -17,7 +18,7 @@ const Header = (props) => (
 				<li><Link href="/start" passHref><a className="btn CTA">Commencer <img src={asset('/icons/Rocket.svg')} /></a></Link></li>
 			</ul>
 			<h1>{props.title}</h1>
-		</div>
+		</nav>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 

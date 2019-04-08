@@ -5,23 +5,23 @@ const ProjectAttribute = (props) => (
     <div className="attribute">
         <ul className='flex__container'>
             <li className="flex__item">
-                <img src={props.imgapi} />
+                <img src={props.imgapi} alt=""/>
                 <p className="Medium">{props.api}</p>
             </li>
             <li className="flex__item">
-                <img src={props.imgcountry} />
+                <img src={props.imgcountry} alt=""/>
                 <p className="Medium">{props.country}</p>
             </li>
             <li className="flex__item">
-                <img src={props.imgsimulation} />
+                <img src={props.imgsimulation} alt=""/>
                 <p className="Medium">{props.simulation}</p>
             </li>
             <li className="flex__item">
-                <img src={props.imgperimetre} />
+                <img src={props.imgperimetre} alt=""/>
                 <p className="Medium">{props.perimetre}</p>
             </li>
             <li className="flex__item">
-                <img src={props.imgpoweredby} />
+                <img src={props.imgpoweredby} alt=""/>
                 <p className="Medium">{props.poweredby}</p>
             </li>
         </ul>

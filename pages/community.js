@@ -15,7 +15,7 @@ const Communaute = () => (
         Plus de 70 personnes ont rejoint cette aventure. Ils contribuent, s’entraident et participent chaque jour à améliorer le code d’OpenFisca.
         </p>
         <a className="btn medium">Rejoindre le Slack</a>
-        <img className="flex__item" src={asset('/images/community.png')} />
+        <img className="flex__item" src={asset('/images/community.png')} alt=""/>
       </div>
     </div>
 

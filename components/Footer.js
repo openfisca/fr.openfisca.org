@@ -16,10 +16,10 @@ const Footer = () => (
 				<li><Link href="/contribute" passHref>Contribuer</Link></li>
 		</ul>
 		<ul className="social">
-				<li><Link href="mailto:contact@openfisca.org?Subject=openfisca.org" passHref><img src="../static/icons/Email.svg"></img></Link></li>
-				<li><Link href="https://github.com/openfisca" passHref><img src="../static/icons/Github.svg"></img></Link></li>
-				<li><Link href="/status" passHref><img src="../static/icons/Slack.svg"></img></Link></li>
-				<li><Link href="https://twitter.com/openfisca" passHref><img src="../static/icons/Twitter.svg"></img></Link></li>
+				<li><a href="mailto:contact@openfisca.org?Subject=openfisca.org" passHref><img src="../static/icons/Email.svg" alt="Envoyer un email"></img></a></li>
+				<li><a href="https://github.com/openfisca" passHref><img src="../static/icons/Github.svg" alt="GitHub"></img></a></li>
+				<li><a href="/status" passHref><img src="../static/icons/Slack.svg" alt="Slack"></img></a></li>
+				<li><a href="https://twitter.com/openfisca" passHref><img src="../static/icons/Twitter.svg" alt="Twitter"></img></a></li>
 		</ul>
 
 		</footer>

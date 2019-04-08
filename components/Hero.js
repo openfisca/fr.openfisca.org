@@ -6,23 +6,23 @@ import Link from 'next/link'
 
 const Hero = () => (
   <div className='hero'>
-    <div>
-    <Link href="/index"><img id="logo-small" src={asset('/images/logo_mini.svg')} /></Link>
+    <nav>
+    <Link href="/index"><img id="logo-small" src={asset('/images/logo_mini.svg') } alt="Accueil"/></Link>
 
       <ul>
         <li><Link href="/showcase" passHref><a className="menu">Projets</a></Link></li>
         <li><Link href="/resources" passHref><a className="menu">Ressources</a></Link></li>
         <li><a className="menu" href="https://openfisca.org/doc/">Documentation</a></li>
         <li><Link href="/community" passHref><a className="menu">Communauté</a></Link></li>
-        <li><a className="btn outline" href='https://github.com/openfisca/openfisca-france'>Code source <img src={asset('/icons/github.svg')} alt=""/></a></li>
-        <li><Link href="/start" passHref><a className="btn CTA">Commencer <img src={asset('/icons/Rocket.svg')} /></a></Link></li>
+        <li><a className="btn outline" href='https://github.com/openfisca/openfisca-france'>Code source <img src={asset('/icons/github.svg')} alt="GitHub"/></a></li>
+        <li><Link href="/start" passHref><a className="btn CTA">Commencer <img src={asset('/icons/Rocket.svg')}  alt=""/></a></Link></li>
       </ul>
-    </div>
+    </nav>
 
       <div className='content flex-baseline'>
-          <img src='static/images/logo_main.svg' />
+          <img src='static/images/logo_main.svg' alt="OpenFisca"/>
           <p className="baseline" >La plateforme Open Source qui modélise <br /> le code législatif en code informatique.</p>
-          <Link href="/start" passHref><a className="btn CTA">Commencer <img src={asset('/icons/Rocket.svg')} /></a></Link>
+          <Link href="/start" passHref><a className="btn CTA">Commencer <img src={asset('/icons/Rocket.svg') } alt="" /></a></Link>
       </div>
 
     <style jsx>{`

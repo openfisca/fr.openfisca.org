@@ -7,7 +7,7 @@ const ProjectDesc = (props) => (
 
     <div className="flex__container">
         <div className="flex-item2">
-            <img src={props.img} />
+            <img src={props.img} alt=""/>
         </div>
         <div className="flex-item2">
             <h2>{props.baseline}</h2>
