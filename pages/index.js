@@ -48,45 +48,45 @@ const Home = () => (
 
 
     <section>
-      <h2>Comment ça marche ?</h2>
+        <h2>Comment ça marche ?</h2>
         <div className="flex__container">
-         <p>OpenFisca est un projet Open Source libre et gratuit, modulable et réutilisable. Il permet de modéliser le code législatif en code informatique, pour améliorer la transparence et l’accès à la loi.</p>
-        <div className="flex-item2">
-       <img src="../static/images/openlaw.png" alt=""/>
-     </div>
+          <p>OpenFisca est un projet Open Source libre et gratuit, modulable et réutilisable. Il permet de modéliser le code législatif en code informatique, pour améliorer la transparence et l’accès à la loi.</p>
+          <div className="flex__item50">
+            <img src="../static/images/openlaw.png" alt=""/>
+          </div>
 
-      <div className="flex-item2">
-        <ul>
-          <li>Utilisez un système socio-fiscal existant</li>
-          <li>Codez votre propre système</li>
-          <li>Améliorez le code d’un système existant</li>
-          <a className="btn medium" href="resources/countrypackages">Voir les systèmes socio-fiscaux</a>
-        </ul>
-      </div>
-     </div>
+          <div className="flex__item50">
+            <ul>
+              <li>Utilisez un système socio-fiscal existant</li>
+              <li>Codez votre propre système</li>
+              <li>Améliorez le code d’un système existant</li>
+              <a className="btn medium" href="resources/countrypackages">Voir les systèmes socio-fiscaux</a>
+            </ul>
+          </div>
+         </div>
     </section>
 
      <section className="flex__container">
-        <div className="flex-item2">
-          <ul>
-            <li>Importez des données</li>
-            <li>Calculez une situation ou écrivez et simulez une réforme</li>
-            <li>Codez des extensions</li>
-          </ul>
-          <a className="btn medium" href="http://openfisca.org/doc">Lire la documentation</a>
+        <div className="flex__item50">
+          <div className="flex__column">
+            <ul>
+              <li>Importez des données</li>
+              <li>Calculez une situation ou écrivez et simulez une réforme</li>
+              <li>Codez des extensions</li>
+            </ul>
+            <a className="btn medium" href="http://openfisca.org/doc">Lire la documentation</a>
+          </div>
         </div>
-        <div className="flex-item2">
-          <img src="../static/images/api.png" alt="" />
-        </div>
+        <img className="flex__item50" src="../static/images/api.png" alt="" />
       </section>
 
     <section className="flex__container">
-      <div className="flex-item2">
-       <h2>Une communauté open source internationale</h2>
+    <h2>Une communauté open source internationale</h2>
+      <div className="flex__item50">
         <p>OpenFisca a des contributeurs dans 8 pays !
 Rejoignez une communauté d’économistes, de chercheurs, de développeurs et d’experts des droits sociaux qui s’engagent dans la transformation de la loi en code informatique !</p>
       </div>
-      <div className="flex-item2">
+      <div className="flex__item50">
         <img src="../static/images/community.png" alt=""/>
       </div>
     </section>
@@ -97,17 +97,36 @@ Rejoignez une communauté d’économistes, de chercheurs, de développeurs et d
         list-style: none;
       }
 
-      .flex-item2 li{
+      .flex__item50 li{
       list-style-image : url(../static/items/bullet.svg);
-      padding-bottom: 10%;
+      padding: 1rem;
       }
 
+      .flex__column{
+        display: flex;
+        flex-direction: column;
+        padding-left: 1rem;
+      }
+
+      .flex__container{ 
+        margin-bottom: 2rem;
+      }
+       
       h3{
         line-height: 120%;
       }
 
       .card__content img{
       width: 3em;
+      }
+
+      @media(min-width: 40rem) {
+        .flex__item50 {
+          width: 50%;
+          padding-left: 1rem;
+          display: flex;
+
+        }
       }
 
     `}</style>
