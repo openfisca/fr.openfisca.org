@@ -8,8 +8,8 @@ const CardResources = (props) => (
             <p className="Small"><img src={props.img} alt="" />{props.desc}</p>
         </div>
         <div className="card-links">
-            <a className="btn medium" href={props.linkexplorer}>Explorer</a>
-            <a className="btn medium" href={props.linkgit}>Voir sur GitHub</a>
+            <a href={props.linkexplorer}>Explorer</a>
+            <a href={props.linkgit}>Voir sur GitHub</a>
             </div>
 
         <style jsx>{`
@@ -38,6 +38,7 @@ const CardResources = (props) => (
                 display: flex;
                 justify-content: space-between;
                 flex-direction: row;
+                background-color: #6d69fb;
             }
     `}</style>
       </div>
