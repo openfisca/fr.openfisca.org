@@ -12,7 +12,7 @@ const Leximpact = () => (
 
   <a className="outline" href="../showcase/" >Retour</a>
 
-  <ProjectDesc img="../static/projects/leximpact.png" 
+  <ProjectDesc img="/static/projects/leximpact.png" 
   baseline="Simuler l’impact des projets de réformes socio-fiscales sur les citoyens" 
   desc1="Soutenu par Etalab dans le cadre du programme EIG (Entrepreneur d’Intérêt Général), l’équipe travaille en collaboration avec les administrateurs de l’Assemblée Nationale."
 
@@ -24,11 +24,11 @@ const Leximpact = () => (
  <section>
     <h2>Caractéristiques du projet</h2>
       <ProjectAttribute 
-      imgapi="../static/icons/circle/api.svg" api="API Web"
-      imgcountry="../static/icons/circle/nz.svg" country="interroge le système néo-zélandais"
-      imgsimulation="../static/icons/circle/simindividuelle.svg" simulation="Simulation individuelle"
-      imgperimetre="../static/icons/circle/perimetre.svg" perimetre="Impôts"
-      imgpoweredby="../static/icons/circle/admin.svg" poweredby="API Web"
+      imgapi="/static/icons/circle/api.svg" api="API Web"
+      imgcountry="/static/icons/circle/nz.svg" country="interroge le système néo-zélandais"
+      imgsimulation="/static/icons/circle/simindividuelle.svg" simulation="Simulation individuelle"
+      imgperimetre="/static/icons/circle/perimetre.svg" perimetre="Impôts"
+      imgpoweredby="/static/icons/circle/admin.svg" poweredby="API Web"
       />
   </section>
 

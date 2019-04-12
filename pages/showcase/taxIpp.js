@@ -10,7 +10,7 @@ const Taxipp = () => (
   <div className='content'>
       <a className="outline" href="../showcase/" >Retour</a>
 
-      <ProjectDesc img="../static/projects/taxipp.png" 
+      <ProjectDesc img="/static/projects/taxipp.png" 
       baseline="TaxIPP est un modèle de microsimulation" 
       desc1="Le modèle TaxIPP réalise l'appariement de données administratives et de données d'enquête pour réaliser un échantillon représentatif des ménages français. Il est injecté dans  par openfisca pour simuler l'impact de réformes du système socio-fiscal sur les ménages." 
 desc2="TAXIPP outille l’IPP (l’Institut des Politiques Publiques) dans sa mission d’animation du débat public depuis 2012. "
@@ -20,11 +20,11 @@ button="voir le site"/>
  <section>
       <h2>Caractéristiques du projet</h2>
         <ProjectAttribute 
-        imgapi="../static/icons/circle/api.svg" api="API Web"
-        imgcountry="../static/icons/circle/nz.svg" country="interroge le système néo-zélandais"
-        imgsimulation="../static/icons/circle/simindividuelle.svg" simulation="Simulation individuelle"
-        imgperimetre="../static/icons/circle/perimetre.svg" perimetre=" Web"
-        imgpoweredby="../static/icons/circle/admin.svg" poweredby="API Web"
+        imgapi="/static/icons/circle/api.svg" api="API Web"
+        imgcountry="/static/icons/circle/nz.svg" country="interroge le système néo-zélandais"
+        imgsimulation="/static/icons/circle/simindividuelle.svg" simulation="Simulation individuelle"
+        imgperimetre="/static/icons/circle/perimetre.svg" perimetre=" Web"
+        imgpoweredby="/static/icons/circle/admin.svg" poweredby="API Web"
         />
     </section>
 

@@ -10,7 +10,7 @@ const Ratesrebates = () => (
   <div className='content'> 
       <a className="outline" href="../showcase/" >Retour</a>
 
-      <ProjectDesc img="../static/projects/ratesrebates.png" 
+      <ProjectDesc img="/static/projects/ratesrebates.png" 
       baseline="Prototyper le versement automatique d’une aide sociale." 
       desc1="Produit par Lab Inno NZ, l’équipe d’innovation du gouvernement néo-zélandais, ce prototype vise à faciliter le versement automatique de l’aide Rates Rebates pour le public senior." 
       desc2="L’équipe a intégralement modélisé le système socio-fiscal néo-zélandais."
@@ -21,11 +21,11 @@ const Ratesrebates = () => (
     <section>
       <h2>Caractéristiques du projet</h2>
         <ProjectAttribute 
-        imgapi="../static/icons/circle/api.svg" api="API Web"
-        imgcountry="../static/icons/circle/nz.svg" country="interroge le système néo-zélandais"
-        imgsimulation="../static/icons/circle/simindividuelle.svg" simulation="Simulation individuelle"
-        imgperimetre="../static/icons/circle/perimetre.svg" perimetre=" Web"
-        imgpoweredby="../static/icons/circle/admin.svg" poweredby="API Web"
+        imgapi="/static/icons/circle/api.svg" api="API Web"
+        imgcountry="/static/icons/circle/nz.svg" country="interroge le système néo-zélandais"
+        imgsimulation="/static/icons/circle/simindividuelle.svg" simulation="Simulation individuelle"
+        imgperimetre="/static/icons/circle/perimetre.svg" perimetre=" Web"
+        imgpoweredby="/static/icons/circle/admin.svg" poweredby="API Web"
         />
     </section>
 

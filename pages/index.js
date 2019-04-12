@@ -14,7 +14,7 @@ const Home = () => (
           <li className="flex__item">
             <div className="card">
               <div className="card__content">
-              <img src='../static/icons/economistes.svg' alt=""/>
+              <img src='/static/icons/economistes.svg' alt=""/>
                 <h3>Economistes & chercheurs</h3>
                 Utilisez des systèmes socio-fiscaux déjà modélisés et codez vos réformes.
                 Faites des simulations individuelles et sur des populations en important vos propres données.
@@ -24,7 +24,7 @@ const Home = () => (
           <li className="flex__item">
             <div className="card">
               <div className="card__content">
-              <img src='../static/icons/admin.svg' alt=""/>
+              <img src='/static/icons/admin.svg' alt=""/>
                 <h3>Administrations publiques</h3>
                 Mutualisez vos efforts de mise à jour grâce au modèle contributif d’OpenFisca.
                 Echangez sur une même base avec d’autres administrations publiques.
@@ -34,7 +34,7 @@ const Home = () => (
           <li className="flex__item">
             <div className="card">
               <div className="card__content">
-              <img src='../static/icons/dev.svg' alt=""/>
+              <img src='/static/icons/dev.svg' alt=""/>
                 <h3>Développeurs & équipes d'innovation</h3>
                 Interrogez l’API sans installation ou hébergez votre propre instance.
                 Créez des produits qui interrogent l’ensemble des règles socio-fiscales avec Python3.
@@ -52,7 +52,7 @@ const Home = () => (
         <div className="flex__container">
           <p>OpenFisca est un projet Open Source libre et gratuit, modulable et réutilisable. Il permet de modéliser le code législatif en code informatique, pour améliorer la transparence et l’accès à la loi.</p>
           <div className="flex__item50">
-            <img src="../static/images/openlaw.png" alt=""/>
+            <img src="/static/images/openlaw.png" alt=""/>
           </div>
 
           <div className="flex__item50">
@@ -77,7 +77,7 @@ const Home = () => (
             <a className="btn medium" href="http://openfisca.org/doc">Lire la documentation</a>
           </div>
         </div>
-        <img className="flex__item50" src="../static/images/api.png" alt="" />
+        <img className="flex__item50" src="/static/images/api.png" alt="" />
       </section>
 
     <section className="flex__container">
@@ -87,7 +87,7 @@ const Home = () => (
 Rejoignez une communauté d’économistes, de chercheurs, de développeurs et d’experts des droits sociaux qui s’engagent dans la transformation de la loi en code informatique !</p>
       </div>
       <div className="flex__item50">
-        <img src="../static/images/community.png" alt=""/>
+        <img src="/static/images/community.png" alt=""/>
       </div>
     </section>
 
@@ -98,7 +98,7 @@ Rejoignez une communauté d’économistes, de chercheurs, de développeurs et d
       }
 
       .flex__item50 li{
-      list-style-image : url(../static/items/bullet.svg);
+      list-style-image : url(/static/items/bullet.svg);
       padding: 1rem;
       }
 
