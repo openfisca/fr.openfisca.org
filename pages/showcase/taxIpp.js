@@ -8,7 +8,7 @@ import ProjectAttribute from "../../components/ProjectAttribute"
 
 const Taxipp = () => (
   <div className='content'>
-      <a className="outline" href="../showcase/" >Retour</a>
+      <a className="outline" href="/showcase/" >Retour</a>
 
       <ProjectDesc img="/static/projects/taxipp.png" 
       baseline="TaxIPP est un modèle de microsimulation" 

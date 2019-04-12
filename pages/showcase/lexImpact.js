@@ -10,7 +10,7 @@ import ProjectAttribute from "../../components/ProjectAttribute"
 const Leximpact = () => (
   <div className='content'>
 
-  <a className="outline" href="../showcase/" >Retour</a>
+  <a className="outline" href="/showcase/" >Retour</a>
 
   <ProjectDesc img="/static/projects/leximpact.png" 
   baseline="Simuler l’impact des projets de réformes socio-fiscales sur les citoyens" 
