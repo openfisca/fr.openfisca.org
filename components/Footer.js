@@ -18,7 +18,7 @@ const Footer = () => (
 		<ul className="social">
 				<li><a href="mailto:contact@openfisca.org?Subject=openfisca.org" passHref><img src="/static/icons/Email.svg" alt="Envoyer un email"></img></a></li>
 				<li><a href="https://github.com/openfisca" passHref><img src="/static/icons/Github.svg" alt="GitHub"></img></a></li>
-				<li><a href="/status" passHref><img src="/static/icons/Slack.svg" alt="Slack"></img></a></li>
+				<li><a href="https://forms.gle/XFxiFvfaAa6w7LGy7" passHref><img src="/static/icons/Slack.svg" alt="Slack"></img></a></li>
 				<li><a href="https://twitter.com/openfisca" passHref><img src="/static/icons/Twitter.svg" alt="Twitter"></img></a></li>
 		</ul>
 
