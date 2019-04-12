@@ -7,7 +7,7 @@ import Link from 'next/link'
 const Hero = () => (
   <div className="hero" >
     <nav>
-    <Link href="/index"><img className="logo" src={asset('/images/logo_mini.svg') } alt="Accueil"/></Link>
+    <Link href="/"><img className="logo" src={asset('/images/logo_mini.svg') } alt="Accueil"/></Link>
       <ul>
         <li><Link href="/showcase" passHref><a className="menu">Projets</a></Link></li>
         <li><Link href="/resources" passHref><a className="menu">Ressources</a></Link></li>
