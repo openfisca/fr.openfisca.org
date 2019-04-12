@@ -72,7 +72,7 @@ const Home = () => (
               <li>Importez des données</li>
               <li>Calculez une situation ou écrivez et simulez une réforme</li>
               <li>Codez des extensions</li>
-              <a className="btn medium" href="http://openfisca.org/doc">Lire la documentation</a>
+              <a className="btn medium" href="https://fr.openfisca.org/legislation/swagger">Tester l'API web</a>
 
             </ul>
           </div>
