@@ -33,56 +33,56 @@ const GlobalStyle = () => (
 
     @font-face {
         font-family: 'asapbold';
-        src: url('../static/fonts/asap-bold-webfont.woff2') format('woff2'),
-             url('../static/fonts/asap-bold-webfont.woff') format('woff');
+        src: url('/static/fonts/asap-bold-webfont.woff2') format('woff2'),
+             url('/static/fonts/asap-bold-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
     }
 
     @font-face {
         font-family: 'asapbolditalic';
-        src: url('../static/fonts/asap-bolditalic-webfont.woff2') format('woff2'),
-             url('../static/fonts/asap-bolditalic-webfont.woff') format('woff');
+        src: url('/static/fonts/asap-bolditalic-webfont.woff2') format('woff2'),
+             url('/static/fonts/asap-bolditalic-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
     }
 
     @font-face {
         font-family: 'asapitalic';
-        src: url('../static/fonts/asap-italic-webfont.woff2') format('woff2'),
-             url('../static/fonts/asap-italic-webfont.woff') format('woff');
+        src: url('/static/fonts/asap-italic-webfont.woff2') format('woff2'),
+             url('/static/fonts/asap-italic-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
     }
 
     @font-face {
         font-family: 'asapmedium';
-        src: url('../static/fonts/asap-medium-webfont.woff2') format('woff2'),
-             url('../static/fonts/asap-medium-webfont.woff') format('woff');
+        src: url('/static/fonts/asap-medium-webfont.woff2') format('woff2'),
+             url('/static/fonts/asap-medium-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
     }
 
     @font-face {
         font-family: 'asapmediumitalic';
-        src: url('../static/fonts/asap-mediumitalic-webfont.woff2') format('woff2'),
-             url('../static/fonts/asap-mediumitalic-webfont.woff') format('woff');
+        src: url('/static/fonts/asap-mediumitalic-webfont.woff2') format('woff2'),
+             url('/static/fonts/asap-mediumitalic-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
     }
 
     @font-face {
         font-family: 'asapregular';
-        src: url('../static/fonts/asap-regular-webfont.woff2') format('woff2'),
-             url('../static/fonts/asap-regular-webfont.woff') format('woff');
+        src: url('/static/fonts/asap-regular-webfont.woff2') format('woff2'),
+             url('/static/fonts/asap-regular-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
     }
 
     @font-face {
         font-family: 'asapsymbol';
-        src: url('../static/fonts/asap-symbol-webfont.woff2') format('woff2'),
-             url('../static/fonts/asap-symbol-webfont.woff') format('woff');
+        src: url('/static/fonts/asap-symbol-webfont.woff2') format('woff2'),
+             url('/static/fonts/asap-symbol-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
     }
