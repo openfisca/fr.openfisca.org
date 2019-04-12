@@ -85,7 +85,7 @@ const Home = () => (
     <section className="flex__container">
     <h2>Une communauté open source internationale</h2>
       <div className="flex__item50">
-        <p>OpenFisca a des contributeurs dans 8 pays !
+        <p>OpenFisca a des contributeurs partout dans le monde !
 Rejoignez une communauté d’économistes, de chercheurs, de développeurs et d’experts des droits sociaux qui s’engagent dans la transformation de la loi en code informatique !</p>
       </div>
       <div className="flex__item50">
