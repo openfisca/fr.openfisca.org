@@ -26,7 +26,6 @@ const Showcase = () => (
 li {
   list-style: none;
 }
-
       @media (max-width: 720px) {
         #content {
           padding: 0 1em 1em 1em;
