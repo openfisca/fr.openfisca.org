@@ -14,7 +14,7 @@ const Communaute = () => (
         En 2019, OpenFisca est utilisée par 10 pays dans le monde (France, Côte d’Ivoire, Espagne, Italie, Mali, Nouvelle Zélande, Sénégal & Tunisie).
         Plus de 70 personnes ont rejoint cette aventure. Ils contribuent, s’entraident et participent chaque jour à améliorer le code d’OpenFisca.
         </p>
-        <a className="btn medium">Rejoindre le Slack</a>
+        <a className="btn medium" href="https://forms.gle/XFxiFvfaAa6w7LGy7">Rejoindre le Slack</a>
         <img className="flex__item" src={asset('/images/community.png')} alt=""/>
       </div>
     </div>
@@ -33,9 +33,7 @@ const Communaute = () => (
 
     <div className='flex__container'>
     <h2>Ecrivez-nous</h2>
-    <p>
-      form to come
-    </p>
+      Pour toute question ou pour toute demande de collaboration, vous pouvez nous écrire à contact @ openfisca.org 
     </div>
     <div className='flex__container'>
       <h2>Restez informés</h2>
