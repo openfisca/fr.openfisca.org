@@ -42,7 +42,7 @@ const Home = () => (
             </div>
           </li>
         </ul>
-        <a className="btn medium" href="showcase">Voir des projets</a>
+        <a className="btn medium" href="/showcase/">Voir des projets</a>
         </div>
     </section>
 
