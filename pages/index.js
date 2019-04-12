@@ -46,7 +46,6 @@ const Home = () => (
         </div>
     </section>
 
-
     <section>
         <h2>Comment ça marche ?</h2>
         <div className="flex__container">
@@ -60,7 +59,7 @@ const Home = () => (
               <li>Utilisez un système socio-fiscal existant</li>
               <li>Codez votre propre système</li>
               <li>Améliorez le code d’un système existant</li>
-              <a className="btn medium" href="resources/countrypackages">Voir les systèmes socio-fiscaux</a>
+              <a className="btn medium" href="resources">Voir les systèmes socio-fiscaux</a>
             </ul>
           </div>
          </div>
@@ -73,11 +72,14 @@ const Home = () => (
               <li>Importez des données</li>
               <li>Calculez une situation ou écrivez et simulez une réforme</li>
               <li>Codez des extensions</li>
+              <a className="btn medium" href="http://openfisca.org/doc">Lire la documentation</a>
+
             </ul>
-            <a className="btn medium" href="http://openfisca.org/doc">Lire la documentation</a>
           </div>
         </div>
-        <img className="flex__item50" src="/static/images/api.png" alt="" />
+        <div className="flex__item50" >
+         <img src="/static/images/api.png" alt="" />
+        </div>
       </section>
 
     <section className="flex__container">
@@ -118,6 +120,10 @@ Rejoignez une communauté d’économistes, de chercheurs, de développeurs et d
 
       .card__content img{
       width: 3em;
+      }
+
+      section{
+        margin-bottom: 6em;
       }
 
       @media(min-width: 40rem) {

@@ -93,6 +93,9 @@ const GlobalStyle = () => (
         font-family:'asapmedium';
         color: #ffffff;
         margin-right: 1em;
+        display: flex;
+        padding: 0.5em;
+        margin: 0.75em 0.5em 0 0;
       }
 
       .menu:after, .menu:hover, .menu:active {
@@ -192,6 +195,9 @@ const GlobalStyle = () => (
         text-decoration:none;
         background-color:#ffffff;
         border: #ffffff 1px solid;
+        display: flex;
+        padding: 0.5em;
+        margin: 0.75em 0.5em 0 0;
       }
 
       .btn{
@@ -204,9 +210,6 @@ const GlobalStyle = () => (
         vertical-align: middle;
         font-family:'asapmedium';
         cursor:pointer;
-        display: flex;
-        padding: 0.5em;
-        margin: 0.75em 0.5em 0 0;
       }
 
       .btn:hover {
@@ -223,6 +226,9 @@ const GlobalStyle = () => (
       .outline {
         border: #ffffff 1px solid;
         color: #ffffff;
+        display: flex;
+        padding: 0.5em;
+        margin: 0.75em 0.5em 0 0;
       }
 
       .medium {
@@ -233,7 +239,8 @@ const GlobalStyle = () => (
         font-family: 'asapregular';
         font-size: 1.125em;
         font-color: #000000;
-        padding: 2%;
+        padding: 0.4em;
+        
       }
 
       // sections
