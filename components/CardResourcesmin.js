@@ -21,6 +21,7 @@ const CardResourcesmin = (props) => (
                 flex-direction: column;
                 text-align: left;
                 width: 100%;
+                justify-content: space-between;
             }
 
             .card-desc {
