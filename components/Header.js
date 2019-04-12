@@ -24,7 +24,7 @@ const Header = (props) => (
 
 		<style jsx>{`
 			#logo-small {
-				max-width: 4em;
+				max-width: 3em;
 				margin: 1em;
 				cursor:pointer;
 			}
@@ -39,29 +39,22 @@ const Header = (props) => (
 
       ul {
 				list-style-type: none;
-				margin: 0em;
+				margin:0em;
 				min-height: 3em;
 				display: flex;
-				align-items : flex-end;
+				align-items : first baseline;
 				float: right;
-			}
-
-			li + li {
-				margin-left: 0.5em;
 			}
 
 			li {
 				display: inline;
 				list-style: none;
-				margin: 1em;
 			}
 
 			li img {
 				max-width: 1.5em;
         vertical-align: middle;
 			}
-
-
 
 			@media (max-width: 720px) {
 				header{

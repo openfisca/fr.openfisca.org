@@ -31,17 +31,19 @@ const Footer = () => (
 				background: -webkit-linear-gradient(163.99deg, #00BAAF -21.24%, #6D69FB 76.56%, #6D69FB 83.4%); /* Chrome10-25,Safari5.1-6 */
 				background: linear-gradient(163.99deg, #00BAAF -21.24%, #6D69FB 76.56%, #6D69FB 83.4%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d69fb', endColorstr='#00baaf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */			
-				padding-top: 4em;
-				height: 320px;
+				padding-top: 2em;
+				height: 18em;
 			}
 			
 			.baseline {
+				flex-direction: column;
+				justify-content: center;
+				display: flex;
 				text-align: center;
+				align-items: center;
 			}
 			.CTA {
-				margin: auto; 
-				display: block;
-				max-width: 10em;
+				max-width: 8em;
 			}
 
 			.social {

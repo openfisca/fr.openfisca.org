@@ -67,17 +67,16 @@ const Hero = () => (
 
       ul {
 				list-style-type: none;
-				margin: 0em;
+				margin:0em;
 				min-height: 3em;
 				display: flex;
-				align-items : flex-end;
+				align-items : first baseline;
 				float: right;
 			}
 
 			li {
 				display: inline;
 				list-style: none;
-				margin: 1em;
 			}
 
 			li img {

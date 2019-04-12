@@ -92,6 +92,7 @@ const GlobalStyle = () => (
       .menu {
         font-family:'asapmedium';
         color: #ffffff;
+        margin-right: 1em;
       }
 
       .menu:after, .menu:hover, .menu:active {
@@ -113,7 +114,6 @@ const GlobalStyle = () => (
 				text-align: center;
 				white-space: nowrap;
         text-decoration: none;
-        padding: 0.25em;;
 			}
 
       h1 {
@@ -204,12 +204,15 @@ const GlobalStyle = () => (
         vertical-align: middle;
         font-family:'asapmedium';
         cursor:pointer;
+        display: flex;
+        padding: 0.5em;
+        margin: 0.75em 0.5em 0 0;
       }
 
       .btn:hover {
-        -moz-box-shadow: 0px 10px 10px 0px #3F3D56;
-        -webkit-box-shadow: 0px 10px 10px 0px #3F3D56;
-        box-shadow: 0px 10px 10px 0px #3F3D56;
+        -moz-box-shadow: 0px 10px 10px 0px #42424260;
+        -webkit-box-shadow: 0px 10px 10px 0px #42424260;
+        box-shadow: 0px 10px 10px 0px #42424260;
       }
 
       .btn:active {
