@@ -20,7 +20,7 @@ const ProjectDesc = (props) => (
         </div>
     <style jsx>{`
 li{
-    list-style-image : url(../static/items/bullet.svg);
+    list-style-image : url(/static/items/bullet.svg);
     padding-bottom: 8%;
     list-style-position: outside;
     }
