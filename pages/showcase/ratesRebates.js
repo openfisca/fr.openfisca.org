@@ -8,7 +8,7 @@ import ProjectAttribute from "../../components/ProjectAttribute"
 
 const Ratesrebates = () => (
   <div className='content'> 
-      <a className="outline" href="../showcase" >Retour</a>
+      <a className="outline" href="../showcase/" >Retour</a>
 
       <ProjectDesc img="../static/projects/ratesrebates.png" 
       baseline="Prototyper le versement automatique d’une aide sociale." 
