@@ -25,10 +25,18 @@ li{
     list-style-position: outside;}
 
 .flex__item50 {
-    width: 50%;
+    width: 48%;
     padding-left: 1rem;
     display: flex;
+    justify-content: space-between;
+    align-items: start;
 }
+
+.flex__item 50 img{
+    width: 100%;
+    height: auto;
+}
+
     `}</style>
 
     </div>
