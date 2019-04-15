@@ -15,7 +15,7 @@ const Fastoche = () => (
   desc2="Fastoch€ est une application qui joue le rôle d’un coach d’épargne en reliant les comptes bancaires et en informant l’utilisateur sur son reste à vivre. 
   Il permet aussi d’indiquer à l’utilisateur qu’il a droit à certaines aides sociales et à le diriger vers les administrations responsables du versement de ces aides. "
 
-desc3="Fastoch€ a été lancé en 2018." button="voir le site"/>
+desc3="Fastoch€ a été lancé en 2018." url="https://www.fastoche.fr/" textlink="Visiter Fastoch€"/>
 
  <section>
     <h2>Caractéristiques du projet</h2>
@@ -36,6 +36,8 @@ desc3="Fastoch€ a été lancé en 2018." button="voir le site"/>
     padding: 0 1% 0 1%;
     border-color: #656565;
     border-radius: 25px;
+    max-width: 4em;
+
   }
 
 `}</style>

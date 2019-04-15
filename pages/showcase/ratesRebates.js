@@ -15,7 +15,7 @@ const Ratesrebates = () => (
       desc1="Produit par Lab Inno NZ, l’équipe d’innovation du gouvernement néo-zélandais, ce prototype vise à faciliter le versement automatique de l’aide Rates Rebates pour le public senior." 
       desc2="L’équipe a intégralement modélisé le système socio-fiscal néo-zélandais."
       desc3="Rates Rebates a été prototypé en 2018."
-      href="https://www.digital.govt.nz/blog/making-it-easier-the-rates-rebates-story-so-far/"
+      url="https://www.digital.govt.nz/blog/making-it-easier-the-rates-rebates-story-so-far/"
       textlink="Lire l'étude"/>
 
     <section>
@@ -37,6 +37,8 @@ const Ratesrebates = () => (
   padding: 0 1% 0 1%;
   border-color: #656565;
   border-radius: 25px;
+  max-width: 4em;
+
 }
 
 `}</style>

@@ -19,7 +19,7 @@ const Leximpact = () => (
   desc2="Le projet vise à outiller les administrateurs de l’Assemblée Nationale et les députés pour simuler l’impact de réforme avant de procéder à son vote. "
   
   desc3="LexImpact a débuté en 2019 et est en construction."
-  button="Visiter LexImpact"/>
+  url="https://beta.gouv.fr/startups/leximpact.html" textlink="Visiter LexImpact"/>
   
  <section>
     <h2>Caractéristiques du projet</h2>
@@ -40,6 +40,7 @@ const Leximpact = () => (
     padding: 0 1% 0 1%;
     border-color: #656565;
     border-radius: 25px;
+    max-width: 4em;
   }
 
 `}</style>
