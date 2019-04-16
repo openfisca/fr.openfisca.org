@@ -21,19 +21,24 @@ const Contribuer = () => (
       Vous souhaitez présenter OpenFisca à quelqu’un ? 
       Vous voulez convaincre quelqu’un de l’utiliser ? 
       Vous écrivez un article à propos d’OpenFisca ? 
-      Utilisez ce document de présentation.
+      Utilisez notre <a href="https://drive.google.com/open?id=1eGa4PphlDCSzhGSTFDhG6CGRafJi6cAj3vlD7wNw2NM">document de présentation.</a>
     </p>
     
     <h2>Réutiliser OpenFisca</h2>
     <p>
-OpenFisca utilise la licence AGPL. 
-Vous pouvez utilisez ces éléments pour citer OpenFisca dans le produit que vous avez créé. 
+OpenFisca utilise la licence AGPL 3.0. 
+Merci de citer OpenFisca lors de vos réutilisations !
+Vous pouvez avoir le détail de nos règles de réutilisations sur <a href="https://openfisca.org/doc/publishing.html">la documentation</a>. 
     </p>    
     <style jsx>{`
       #iframe-container {
         display: flex;
         flex-direction: row;
         justify-content: center;
+      }
+
+      a{
+        color: #6d69fb;
       }
     `}</style>
   </div>
