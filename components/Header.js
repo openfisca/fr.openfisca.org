@@ -6,7 +6,7 @@ const Header = (props) => (
     <header>
 		<title>{props.title}</title>
 		<nav>
-			<Link href="/index">
+			<Link href="/">
 				<img id="logo-small" src={asset('/images/logo_mini.svg')} />
 			</Link>
 			<ul>
