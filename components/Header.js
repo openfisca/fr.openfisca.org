@@ -1,90 +1,69 @@
 import asset from 'next/asset'
 import Link from 'next/link'
-
+import GlobalStyle from './GlobalStyle'
 
 const Header = (props) => (
     <header>
-		  <div>
-				{(props.page == 'HomePage')? (
-            		<div></div>
-            		) : (
-            		<Link href="/index">
-            			<img id="logo-small" src='https://openfisca.org/img/logo-openfisca.svg' />
-					</Link>
-				)}
-			</div>
+		<title>{props.title}</title>
+		<nav>
+			<Link href="/">
+				<img id="logo-small" src={asset('/images/logo_mini.svg')} />
+			</Link>
 			<ul>
-				<li><a href='https://github.com/openfisca/openfisca-france'><img src={asset('/images/GitHub-Mark-Light-64px.png')} alt=""/>Code source</a></li>
-				<li><a href="https://openfisca.org/doc/">Documentation</a></li>
+				<li><Link href="/showcase/" passHref><a className="menu">Projets</a></Link></li>
+				<li><Link href="/resources" passHref><a className="menu">Ressources</a></Link></li>
+				<li><Link href="/community" passHref><a className="menu">Communauté</a></Link></li>
+				<li><a className="btn outline" href='https://github.com/openfisca/openfisca-france'>Code source <img src={asset('/icons/github.svg')} alt=""/></a></li>
+				<li><Link href="https://openfisca.org/doc/" passHref><a className="btn CTA">Commencer <img src={asset('/icons/Rocket.svg')} /></a></Link></li>
 			</ul>
+			<h1>{props.title}</h1>
+		</nav>
 
-			<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 		<style jsx>{`
 			#logo-small {
-				max-width: 4em;
+				max-width: 3em;
 				margin: 1em;
 				cursor:pointer;
 			}
 
 			header {
-				font-family: "Helvetica Neue",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-				background: #1d3242;
-				color: #fff;
-				padding: 0 1em;
-				display: flex;
-				flex-direction: row;
-				align-items: center;
-				justify-content: space-between;
+				background: #6d69fb; /* Old browsers */
+				background: -moz-linear-gradient(163.99deg, #00BAAF -21.24%, #6D69FB 76.56%, #6D69FB 83.4%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(163.99deg, #00BAAF -21.24%, #6D69FB 76.56%, #6D69FB 83.4%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(163.99deg, #00BAAF -21.24%, #6D69FB 76.56%, #6D69FB 83.4%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d69fb', endColorstr='#00baaf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 			}
 
-			ul {
-				font-size: 1em;
+      ul {
 				list-style-type: none;
-				margin: 0.4em;
+				margin:0em;
 				min-height: 3em;
 				display: flex;
-				align-items : flex-end;
-			}
-
-			li + li {
-				margin-left: 0.5em;
+				align-items : first baseline;
+				float: right;
 			}
 
 			li {
 				display: inline;
 				list-style: none;
-				margin: 1em;
 			}
 
 			li img {
-				max-width: 1em;
-				margin-right: 5px;
+				max-width: 1.5em;
+        vertical-align: middle;
 			}
-
-			a {
-				color: #ffffff;
-				border: 1px solid #ffffff;
-				border-radius: 4px;
-				display: inline-block;
-				padding: 6px 12px;
-				font-weight: 600;
-				line-height: 1.5;
-				text-align: center;
-				white-space: nowrap;
-				vertical-align: middle;
-				text-decoration: none;	
-			}
-
 
 			@media (max-width: 720px) {
 				header{
 					flex-direction: column;
+					justyfy-content: stretch;
 				}
 				ul {
-                    padding: 0;
-                    flex-direction: column;
-                    align-items: center;
+       		padding: 0;
+          flex-direction: column;
+          align-items: center;
 				}
 			}
 		`}</style>

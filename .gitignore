@@ -2,3 +2,5 @@
 /.next/*
 yarn.lock
 .DS_Store
+/out/*
+report.*.json
