@@ -17,10 +17,9 @@ const Legal = () => (
 
     <h2>Hébergeur</h2>
     <p>
-      GitHub, Inc<br />
-      88 Colin P Kelly Jr St<br />
-      San Francisco, CA 94107 - United States<br />
-      +1 (877) 448-4820
+      Netlify<br />
+      2325 3rd St Suite 215<br />
+      San Francisco, CA 94107, États-Unis<br />
     </p>
 
     <style jsx>{`
