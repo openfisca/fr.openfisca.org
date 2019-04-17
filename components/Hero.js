@@ -26,7 +26,7 @@ const Hero = () => (
     <style jsx>{`
 
 			.hero {
-        background-image: url(static/items/wave.svg);
+        background-image: url(/static/items/wave.svg);
         background-size: cover;
         background-repeat: no-repeat;
         padding-bottom: 10%;
