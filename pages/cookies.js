@@ -30,10 +30,10 @@ const Cookies = () => (
         justify-content: center;
       }
 
-      @media (max-width: 720px) {
-        #content {
-          padding: 0 1em 1em 1em;
-        }
+      a{
+        color: #6d69fb;
+      }
+
       }
     `}</style>
   </div>
