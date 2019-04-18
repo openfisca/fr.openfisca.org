@@ -24,7 +24,7 @@ const Communaute = () => (
     <section>
      <h2>Echanger la communauté</h2>
      <div className='flex__container'>
-      <div classname="flex__item50">
+      <div className="flex__item50">
         <p>Lorsque vous travaillez sur un projet utilisant OpenFisca, vous êtes le bienvenue sur notre Slack ! Vous pourrez y demander de l’aide, des conseils et rencontrer les autres membres de la communauté.  
         Avant de vous inviter sur le Slack, nous vous demandons simplement de répondre à quelques questions sur votre projet.
         </p>
@@ -36,7 +36,7 @@ const Communaute = () => (
     <section>
       <h2>Ecrivez-nous</h2>
       <div className='flex__column'>
-        <div classname="flex__item50">
+        <div className="flex__item50">
           <p>Pour toute question ou pour toute demande de collaboration, n'hésitez pas à nous joindre par email.</p>
         </div>
         <div>
@@ -47,7 +47,7 @@ const Communaute = () => (
 
     <div className='flex__container'>
       <h2>Restez informés</h2>
-        <div classname="flex__item50">
+        <div className="flex__item50">
             <p>Vous pouvez vous abonner à notre newsletter mensuelle pour recevoir les actualités et les changements majeurs opérés sur OpenFisca.
             </p>
         </div>
