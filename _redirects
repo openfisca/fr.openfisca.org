@@ -1,2 +1,5 @@
-/api/* https://api.fr.openfisca.org/api/:splat 200
-/legislation/* https://api.fr.openfisca.org/legislation/:splat 200
+/api/v21/* https://v21.api.fr.openfisca.org/:splat 200
+/api/v24/* https://v24.api.fr.openfisca.org/:splat 200
+/api/latest/* https://latest.api.fr.openfisca.org/:splat 200
+/api/ https://api.fr.openfisca.org/api/ 200
+/legislation/* https://legislation.fr.openfisca.org/:splat 200
