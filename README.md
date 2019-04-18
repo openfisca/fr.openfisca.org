@@ -152,6 +152,36 @@ npm run test:integration
 # ✔  La page d'accueil doit indiquer les informations de documentation.
 ```
 
+## Style
+
+This repository adheres to a certain coding style, and we invite you to follow it for your contributions to be integrated promptly.
+
+To run the style checker:
+
+```sh
+npm run style:check
+```
+
+To automatically style-format your code changes:
+
+```sh
+npm run style:format
+```
+
+To automatically style-format your code changes each time you commit:
+
+```sh
+touch .git/hooks/pre-commit
+chmod +x .git/hooks/pre-commit
+
+tee -a .git/hooks/pre-commit << END
+#!/bin/sh
+#
+# Automatically format your code before committing.
+exec npm run style:format
+END
+```
+
 ## Tracking
 
 fr.openfisca.org uses [Matomo](https://matomo.org/) (formerly Piwik) to track visits. The tracking is configured in `piwik.config.json`. Change the information there if you are running a seperate Piwik or Matomo instance.
