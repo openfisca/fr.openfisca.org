@@ -1,10 +1,9 @@
 import Head from 'next/head'
-import asset from 'next/asset'
 
 const GlobalStyle = () => (
-  <div>
-    <Head></Head>
-    <style jsx global>{`
+    <div>
+        <Head></Head>
+        <style jsx global>{`
 
     *,
     *::before,
@@ -240,7 +239,7 @@ const GlobalStyle = () => (
         font-size: 1.125em;
         font-color: #000000;
         padding: 0.4em;
-        
+
       }
 
       // sections
@@ -332,7 +331,7 @@ const GlobalStyle = () => (
       // responsive
 			}
     `}</style>
-  </div>
+    </div>
 )
 
 export default GlobalStyle

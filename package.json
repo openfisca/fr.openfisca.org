@@ -12,7 +12,7 @@
     "start": "next start",
     "export": "next export",
     "deploy": "npm run build && npm run export",
-    "style:check": "eslint -c .eslintrc --ext .js --ignore-path .gitignore .",
+    "style:check": "eslint -c .eslintrc --ext .js --ext .jsx --ignore-path .gitignore .",
     "style:format": "npm run style:check -- --fix",
     "postexport": "node post-export.js"
   },

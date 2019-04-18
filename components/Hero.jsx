@@ -1,29 +1,26 @@
 import asset from 'next/asset'
-import Header from './Header'
-import Globalstyle from './GlobalStyle'
 import Link from 'next/link'
 
-
 const Hero = () => (
-  <div className="hero" >
-    <nav>
-    <Link href="/"><img className="logo" src={asset('/images/logo_mini.svg') } alt="Accueil"/></Link>
-      <ul>
-        <li><Link href="/showcase/" passHref><a className="menu">Projets</a></Link></li>
-        <li><Link href="/resources" passHref><a className="menu">Ressources</a></Link></li>
-        <li><Link href="/community" passHref><a className="menu">Communauté</a></Link></li>
-        <li><a className="btn outline" href='https://github.com/openfisca/openfisca-france'>Code source <img src={asset('/icons/github.svg')} alt="GitHub"/></a></li>
-        <li><Link href="https://openfisca.org/doc/" passHref><a className="btn CTA">Commencer <img src={asset('/icons/Rocket.svg')}  alt=""/></a></Link></li>
-      </ul>
-    </nav>
+    <div className="hero" >
+        <nav>
+            <Link href="/"><img className="logo" src={asset('/images/logo_mini.svg') } alt="Accueil"/></Link>
+            <ul>
+                <li><Link href="/showcase/" passHref><a className="menu">Projets</a></Link></li>
+                <li><Link href="/resources" passHref><a className="menu">Ressources</a></Link></li>
+                <li><Link href="/community" passHref><a className="menu">Communauté</a></Link></li>
+                <li><a className="btn outline" href="https://github.com/openfisca/openfisca-france">Code source <img src={asset('/icons/github.svg')} alt="GitHub"/></a></li>
+                <li><Link href="https://openfisca.org/doc/" passHref><a className="btn CTA">Commencer <img src={asset('/icons/Rocket.svg')}  alt=""/></a></Link></li>
+            </ul>
+        </nav>
 
-      <div className='content flex-baseline'>
-          <img src='static/images/logo_main.svg' alt="OpenFisca"/>
-          <p className="baseline" >La plateforme Open Source qui modélise <br /> le code législatif en code informatique.</p>
-          <Link href="https://openfisca.org/doc/" passHref><a className="btn CTA">Commencer <img src={asset('/icons/Rocket.svg') } alt="" /></a></Link>
-      </div>
+        <div className="content flex-baseline">
+            <img src="static/images/logo_main.svg" alt="OpenFisca"/>
+            <p className="baseline" >La plateforme Open Source qui modélise <br /> le code législatif en code informatique.</p>
+            <Link href="https://openfisca.org/doc/" passHref><a className="btn CTA">Commencer <img src={asset('/icons/Rocket.svg') } alt="" /></a></Link>
+        </div>
 
-    <style jsx>{`
+        <style jsx>{`
 
 			.hero {
         background-image: url(/static/items/wave.svg);
@@ -108,7 +105,7 @@ const Hero = () => (
         }
 			}
     `}</style>
-  </div>
-  )
+    </div>
+)
 
 export default Hero

@@ -1,9 +1,6 @@
-import asset from 'next/asset'
-import Link from 'next/link'
-
 const ProjectAttribute = (props) => (
     <div className="attribute">
-        <ul className='flex__container'>
+        <ul className="flex__container">
             <li className="flex__item">
                 <img src={props.imgapi} alt=""/>
                 <p className="Medium">{props.api}</p>
@@ -50,9 +47,9 @@ const ProjectAttribute = (props) => (
                 list-style: none;
             }
 
-            
+
     `}</style>
-      </div>
-      )
+    </div>
+)
 
 export default ProjectAttribute

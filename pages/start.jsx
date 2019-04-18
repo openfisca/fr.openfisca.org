@@ -1,12 +1,12 @@
-import GlobalStyle from "../components/GlobalStyle"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
-import Piwik from "../components/Piwik"
+import GlobalStyle from '../components/GlobalStyle'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import Piwik from '../components/Piwik'
 
 const Start = () => (
-  <div className='content'>
+    <div className="content">
 
-    <style jsx>{`
+        <style jsx>{`
 
       #iframe-container {
         display: flex;
@@ -20,15 +20,15 @@ const Start = () => (
         }
       }
     `}</style>
-  </div>
-  )
+    </div>
+)
 
 export default () => (
-  <div>
-    <GlobalStyle/>
-    <Header page="start" title='Commencer' />
-    <Start />
-    <Footer />
-    <Piwik page='start'/>
-  </div>
+    <div>
+        <GlobalStyle/>
+        <Header page="start" title="Commencer" />
+        <Start />
+        <Footer />
+        <Piwik page="start"/>
+    </div>
 )

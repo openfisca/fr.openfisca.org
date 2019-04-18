@@ -1,15 +1,12 @@
-import asset from 'next/asset'
-import Link from 'next/link'
-
 const CardResourcesmin = (props) => (
     <div className="card-container">
         <div className="card-desc">
-            <p className="Medium">{props.title}</p> 
+            <p className="Medium">{props.title}</p>
             <p className="Small"><img src={props.img} alt="" />{props.desc}</p>
         </div>
         <div className="card-links">
             <a href={props.linkgit}>Voir sur GitHub</a>
-            </div>
+        </div>
 
         <style jsx>{`
 
@@ -41,7 +38,7 @@ const CardResourcesmin = (props) => (
                 background-color: #6d69fb;
             }
     `}</style>
-      </div>
-      )
+    </div>
+)
 
 export default CardResourcesmin
