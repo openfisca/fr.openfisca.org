@@ -1,6 +1,3 @@
-import asset from 'next/asset'
-import Link from 'next/link'
-
 const CardProject = (props) => (
     <div className="card-project">
         <div className="card-background">
@@ -55,7 +52,7 @@ const CardProject = (props) => (
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d69fb', endColorstr='#00baaf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
             }
     `}</style>
-      </div>
-      )
+    </div>
+)
 
 export default CardProject

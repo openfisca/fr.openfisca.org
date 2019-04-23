@@ -1,27 +1,26 @@
 import asset from 'next/asset'
 import Link from 'next/link'
-import GlobalStyle from './GlobalStyle'
 
 const Header = (props) => (
     <header>
-		<title>{props.title}</title>
-		<nav>
-			<Link href="/">
-				<img id="logo-small" src={asset('/images/logo_mini.svg')} />
-			</Link>
-			<ul>
-				<li><Link href="/showcase/" passHref><a className="menu">Projets</a></Link></li>
-				<li><Link href="/resources" passHref><a className="menu">Ressources</a></Link></li>
-				<li><Link href="/community" passHref><a className="menu">Communauté</a></Link></li>
-				<li><a className="btn outline" href='https://github.com/openfisca/openfisca-france'>Code source <img src={asset('/icons/github.svg')} alt=""/></a></li>
-				<li><Link href="https://openfisca.org/doc/" passHref><a className="btn CTA">Commencer <img src={asset('/icons/Rocket.svg')} /></a></Link></li>
-			</ul>
-			<h1>{props.title}</h1>
-		</nav>
+        <title>{props.title}</title>
+        <nav>
+            <Link href="/">
+                <img id="logo-small" src={asset('/images/logo_mini.svg')} />
+            </Link>
+            <ul>
+                <li><Link href="/showcase/" passHref><a className="menu">Projets</a></Link></li>
+                <li><Link href="/resources" passHref><a className="menu">Ressources</a></Link></li>
+                <li><Link href="/community" passHref><a className="menu">Communauté</a></Link></li>
+                <li><a className="btn outline" href="https://github.com/openfisca/openfisca-france">Code source <img src={asset('/icons/github.svg')} alt=""/></a></li>
+                <li><Link href="https://openfisca.org/doc/" passHref><a className="btn CTA">Commencer <img src={asset('/icons/Rocket.svg')} /></a></Link></li>
+            </ul>
+            <h1>{props.title}</h1>
+        </nav>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-		<style jsx>{`
+        <style jsx>{`
 			#logo-small {
 				max-width: 3em;
 				margin: 1em;
@@ -67,7 +66,7 @@ const Header = (props) => (
 				}
 			}
 		`}</style>
-	</header>
-	)
+    </header>
+)
 
 export default Header
