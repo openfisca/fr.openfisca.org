@@ -12,33 +12,24 @@ const Home = () => (
             <div>
                 <ul className="flex__container">
                     <li className="flex__item">
-                        <div className="card">
-                            <div className="card__content">
-                                <img src="/static/icons/economistes.svg" alt=""/>
-                                <h3>Économistes & chercheurs</h3>
-                Utilisez des systèmes socio-fiscaux déjà modélisés et codez vos réformes.
-                Faites des simulations individuelles et sur des populations en important vos propres données.
-                            </div>
+                        <div className="card__content">
+                            <h3><img src="/static/icons/economistes.svg" alt=""/>Économistes & chercheurs</h3>
+                            Utilisez des systèmes socio-fiscaux déjà modélisés et codez vos réformes.
+                            Faites des simulations individuelles et sur des populations en important vos propres données.
                         </div>
                     </li>
                     <li className="flex__item">
-                        <div className="card">
-                            <div className="card__content">
-                                <img src="/static/icons/admin.svg" alt=""/>
-                                <h3>Administrations publiques</h3>
-                Mutualisez vos efforts de mise à jour grâce au modèle contributif d’OpenFisca.
-                Echangez sur une même base avec d’autres administrations publiques.
-                            </div>
+                        <div className="card__content">
+                            <h3><img src="/static/icons/admin.svg" alt=""/>Administrations publiques</h3>
+                            Mutualisez vos efforts de mise à jour grâce au modèle contributif d’OpenFisca.
+                            Échangez sur une même base avec d’autres administrations publiques.
                         </div>
                     </li>
                     <li className="flex__item">
-                        <div className="card">
-                            <div className="card__content">
-                                <img src="/static/icons/dev.svg" alt=""/>
-                                <h3>Développeurs & équipes d'innovation</h3>
-                Interrogez l’API sans installation ou hébergez votre propre instance.
-                Créez des produits qui interrogent l’ensemble des règles socio-fiscales avec Python3.
-                            </div>
+                        <div className="card__content">
+                            <h3><img src="/static/icons/dev.svg" alt=""/>Développeurs & équipes d'innovation</h3>
+                            Interrogez l’API sans installation ou hébergez votre propre instance.
+                            Créez des produits qui interrogent l’ensemble des règles socio-fiscales avec Python3.
                         </div>
                     </li>
                 </ul>
