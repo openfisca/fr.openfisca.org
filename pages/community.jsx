@@ -22,7 +22,7 @@ const Communaute = () => (
         </section>
 
         <section>
-            <h2>Echanger la communauté</h2>
+            <h2>Échanger avec la communauté</h2>
             <div className="flex__container">
                 <div className="flex__item50">
                     <p>Lorsque vous travaillez sur un projet utilisant OpenFisca, vous êtes le bienvenue sur notre Slack ! Vous pourrez y demander de l’aide, des conseils et rencontrer les autres membres de la communauté.
