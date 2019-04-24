@@ -10,11 +10,11 @@ const Communaute = () => (
     <div className="content">
         <section>
             <h2>Qui sommes-nous ?</h2>
-            <div className="flex__container">
+            <div className="flex__column">
                 <div className="flex__item50">
-            OpenFisca est une communauté Open Source soutenue par Beta Gouv & Etalab, deux équipes d’innovation au sein du gouvernement français.
-            En 2019, OpenFisca est utilisée par 7 pays dans le monde (France, Espagne, Italie, Nouvelle Zélande, Sénégal & Tunisie).
-            Plus de 70 personnes ont rejoint cette aventure. Ils contribuent, s’entraident et participent chaque jour à améliorer le code d’OpenFisca.
+                    OpenFisca est une communauté Open Source soutenue par Beta Gouv & Etalab, deux équipes d’innovation au sein du gouvernement français.
+                    En 2019, OpenFisca est utilisée par 7 pays dans le monde (France, Espagne, Italie, Nouvelle Zélande, Sénégal & Tunisie).
+                    Plus de 70 personnes ont rejoint cette aventure. Ils contribuent, s’entraident et participent chaque jour à améliorer le code d’OpenFisca.
                 </div>
                 <div className="flex__item50">
                     <img src={asset('/images/community.png')} alt=""/>
@@ -24,7 +24,7 @@ const Communaute = () => (
 
         <section>
             <h2>Échanger avec la communauté</h2>
-            <div className="flex__container">
+            <div className="flex__column">
                 <div className="flex__item50">
                     <p>Lorsque vous travaillez sur un projet utilisant OpenFisca, vous êtes le bienvenue sur notre Slack ! Vous pourrez y demander de l’aide, des conseils et rencontrer les autres membres de la communauté.
         Avant de vous inviter sur le Slack, nous vous demandons simplement de répondre à quelques questions sur votre projet.
@@ -46,14 +46,16 @@ const Communaute = () => (
             </div>
         </section>
 
-        <div className="flex__container">
+        <section>
             <h2>Restez informés</h2>
-            <div className="flex__item50">
-                <p>Vous pouvez vous abonner à notre newsletter mensuelle pour recevoir les actualités et les changements majeurs opérés sur OpenFisca.
-                </p>
+            <div className="flex__column">
+                <div className="flex__item50">
+                    <p>Vous pouvez vous abonner à notre newsletter mensuelle pour recevoir les actualités et les changements majeurs opérés sur OpenFisca.
+                    </p>
+                </div>
+                <a className="btn medium">Recevoir la Newsletter</a>
             </div>
-            <a className="btn medium">Recevoir la Newsletter</a>
-        </div>
+        </section>
 
         <style jsx>{`
 
