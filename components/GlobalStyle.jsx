@@ -246,17 +246,10 @@ const GlobalStyle = () => (
 
 
       .flex__container{
-        // display: -webkit-box;
-        // display: -moz-box;
-        // display: -ms-flexbox;
-        // display: -webkit-flex;
         display: flex;
 
-        // -webkit-flex-direction: row;
-        // -ms-flex-direction: row;
         // flex-direction: row;
 
-        // -webkit-flex-flow: row wrap;
         // flex-flow: row wrap;
 
         flex-wrap: wrap;
@@ -287,11 +280,8 @@ const GlobalStyle = () => (
       }
 
       .card {
-        // display: -webkit-flex;
         display: flex;
 
-        // -webkit-flex-direction: column;
-        // -ms-flex-direction: column;
         flex-direction: column;
 
         overflow: hidden;
