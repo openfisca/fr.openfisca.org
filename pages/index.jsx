@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import GlobalStyle from '../components/GlobalStyle'
 import Piwik from '../components/Piwik'
 import Partners from '../components/Partners'
@@ -14,7 +15,7 @@ const Home = () => (
                         <div className="card">
                             <div className="card__content">
                                 <img src="/static/icons/economistes.svg" alt=""/>
-                                <h3>Economistes & chercheurs</h3>
+                                <h3>Économistes & chercheurs</h3>
                 Utilisez des systèmes socio-fiscaux déjà modélisés et codez vos réformes.
                 Faites des simulations individuelles et sur des populations en important vos propres données.
                             </div>
@@ -140,6 +141,10 @@ Rejoignez une communauté d’économistes, de chercheurs, de développeurs et d
 
 export default () => (
     <div>
+        <Head>
+            <title>Accueil</title>
+            <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
         <GlobalStyle/>
         <Hero/>
         <Home />

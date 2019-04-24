@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import asset from 'next/asset'
 import GlobalStyle from '../components/GlobalStyle'
 import Header from '../components/Header'
@@ -22,7 +23,7 @@ const Communaute = () => (
         </section>
 
         <section>
-            <h2>Echanger la communauté</h2>
+            <h2>Échanger avec la communauté</h2>
             <div className="flex__container">
                 <div className="flex__item50">
                     <p>Lorsque vous travaillez sur un projet utilisant OpenFisca, vous êtes le bienvenue sur notre Slack ! Vous pourrez y demander de l’aide, des conseils et rencontrer les autres membres de la communauté.
@@ -34,7 +35,7 @@ const Communaute = () => (
         </section>
 
         <section>
-            <h2>Ecrivez-nous</h2>
+            <h2>Écrivez-nous</h2>
             <div className="flex__column">
                 <div className="flex__item50">
                     <p>Pour toute question ou pour toute demande de collaboration, n'hésitez pas à nous joindre par email.</p>
@@ -73,6 +74,10 @@ const Communaute = () => (
 
 export default () => (
     <div>
+        <Head>
+            <title>Communauté</title>
+            <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
         <GlobalStyle/>
         <Header page="community" title="Communauté" />
         <Communaute />

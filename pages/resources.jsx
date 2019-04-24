@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import GlobalStyle from '../components/GlobalStyle'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -44,6 +45,10 @@ const Resources = () => (
 
 export default () => (
     <div>
+        <Head>
+          <title>Ressources</title>
+          <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
         <GlobalStyle/>
         <Header page="resources" title="Ressources" />
         <Resources />

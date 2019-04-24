@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import GlobalStyle from '../components/GlobalStyle'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -29,6 +30,10 @@ const Legal = () => (
 
 export default () => (
     <div>
+        <Head>
+            <title>Mentions légales</title>
+            <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
         <GlobalStyle/>
         <Header title="Mentions légales" page="legal" />
         <Legal />
