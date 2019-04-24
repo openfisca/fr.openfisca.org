@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import GlobalStyle from '../components/GlobalStyle'
 import Header from '../components/Header'
 import Partners from '../components/Partners'
@@ -45,6 +46,10 @@ Vous pouvez avoir le détail de nos règles de réutilisations sur <a href="http
 
 export default () => (
     <div>
+        <Head>
+            <title>Contribuer</title>
+            <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
         <GlobalStyle/>
         <Header page="contribute" title="Contribuer" />
         <Contribuer />

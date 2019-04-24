@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import GlobalStyle from '../components/GlobalStyle'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -40,6 +41,10 @@ const Cookies = () => (
 
 export default () => (
     <div>
+        <Head>
+          <title>Informatique & libertés</title>
+          <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
         <Header page="cookies" title="Informatique & libertés" />
         <Cookies />
         <Footer />

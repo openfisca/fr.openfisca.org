@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import GlobalStyle from '../components/GlobalStyle'
 import Piwik from '../components/Piwik'
 import Partners from '../components/Partners'
@@ -140,6 +141,10 @@ Rejoignez une communauté d’économistes, de chercheurs, de développeurs et d
 
 export default () => (
     <div>
+        <Head>
+            <title>Accueil</title>
+            <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
         <GlobalStyle/>
         <Hero/>
         <Home />

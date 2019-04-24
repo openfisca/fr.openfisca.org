@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import GlobalStyle from '../components/GlobalStyle'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -17,6 +18,10 @@ const Status = () => (
 
 export default () => (
     <div>
+        <Head>
+            <title>État des services</title>
+            <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
         <GlobalStyle/>
         <Header page="status" title="État des services" />
         <Status />
