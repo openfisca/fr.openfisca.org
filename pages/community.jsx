@@ -10,11 +10,13 @@ const Communaute = () => (
     <div className="content">
         <section>
             <h2>Qui sommes-nous ?</h2>
-            <div className="flex__column">
+            <div className="flex__container">
                 <div className="flex__item50">
-                    OpenFisca est une communauté Open Source soutenue par Beta Gouv & Etalab, deux équipes d’innovation au sein du gouvernement français.
-                    En 2019, OpenFisca est utilisée par 7 pays dans le monde (France, Espagne, Italie, Nouvelle Zélande, Sénégal & Tunisie).
-                    Plus de 70 personnes ont rejoint cette aventure. Ils contribuent, s’entraident et participent chaque jour à améliorer le code d’OpenFisca.
+                    <p>
+                        OpenFisca est une communauté Open Source soutenue par Beta Gouv & Etalab, deux équipes d’innovation au sein du gouvernement français.
+                        En 2019, OpenFisca est utilisée par 7 pays dans le monde (France, Espagne, Italie, Nouvelle Zélande, Sénégal & Tunisie).
+                        Plus de 70 personnes ont rejoint cette aventure. Ils contribuent, s’entraident et participent chaque jour à améliorer le code d’OpenFisca.
+                    </p>
                 </div>
                 <div className="flex__item50">
                     <img src={asset('/images/community.png')} alt=""/>
@@ -26,8 +28,9 @@ const Communaute = () => (
             <h2>Échanger avec la communauté</h2>
             <div className="flex__column">
                 <div className="flex__item50">
-                    <p>Lorsque vous travaillez sur un projet utilisant OpenFisca, vous êtes le bienvenue sur notre Slack ! Vous pourrez y demander de l’aide, des conseils et rencontrer les autres membres de la communauté.
-        Avant de vous inviter sur le Slack, nous vous demandons simplement de répondre à quelques questions sur votre projet.
+                    <p>
+                        Lorsque vous travaillez sur un projet utilisant OpenFisca, vous êtes le bienvenue sur notre Slack ! Vous pourrez y demander de l’aide, des conseils et rencontrer les autres membres de la communauté.
+                        Avant de vous inviter sur le Slack, nous vous demandons simplement de répondre à quelques questions sur votre projet.
                     </p>
                 </div>
                 <a className="btn medium" href="https://forms.gle/XFxiFvfaAa6w7LGy7">Rejoindre le Slack</a>
