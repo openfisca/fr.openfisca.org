@@ -14,7 +14,7 @@ const Home = () => (
                         <div className="card">
                             <div className="card__content">
                                 <img src="/static/icons/economistes.svg" alt=""/>
-                                <h3>Economistes & chercheurs</h3>
+                                <h3>Économistes & chercheurs</h3>
                 Utilisez des systèmes socio-fiscaux déjà modélisés et codez vos réformes.
                 Faites des simulations individuelles et sur des populations en important vos propres données.
                             </div>

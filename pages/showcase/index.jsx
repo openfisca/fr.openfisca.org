@@ -9,7 +9,7 @@ const Showcase = () => (
         <ul className="flex__container">
             <li className="flex__item"><a href="mesAides" ><CardProject img="/static/projects/mesaides.png" title="MesAides" desc="MesAides renseignent les citoyens français sur leur éligibilité à 32 prestations sociales. " attribute1="France" attribute2="API Web" attribute3="Prestations sociales" /></a></li>
 
-            <li className="flex__item"><a href="lexImpact" ><CardProject img="/static/projects/leximpact.png" title="LexImpact" desc="Ce projet en cours vise à équiper les administrateurs de l’assemblée nationale avec un outil de simulation d’impact de réformes." attribute1="France" attribute2="API Python" attribute3="Simulation de réformes"  /></a></li>
+            <li className="flex__item"><a href="lexImpact" ><CardProject img="/static/projects/leximpact.png" title="LexImpact" desc="Ce projet en cours vise à équiper les administrateurs de l’Assemblée Nationale avec un outil de simulation d’impact de réformes." attribute1="France" attribute2="API Python" attribute3="Simulation de réformes"  /></a></li>
 
             <li className="flex__item"><a href="taxIpp" ><CardProject img="/static/projects/taxipp.png" title="Tax IPP" desc="Ce modèle apparie données administratives et données d'enquête pour les injectées dans openfisca afin d'analyser les effets du système socio-fiscal sur les ménages." attribute1="France" attribute2="API Python" attribute3="Simulation de réformes"  /></a></li>
 

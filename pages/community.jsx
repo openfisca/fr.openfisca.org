@@ -34,7 +34,7 @@ const Communaute = () => (
         </section>
 
         <section>
-            <h2>Ecrivez-nous</h2>
+            <h2>Écrivez-nous</h2>
             <div className="flex__column">
                 <div className="flex__item50">
                     <p>Pour toute question ou pour toute demande de collaboration, n'hésitez pas à nous joindre par email.</p>
