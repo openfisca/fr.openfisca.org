@@ -27,9 +27,9 @@ const Home = () => (
                     </li>
                     <li className="flex__item">
                         <div className="card__content">
-                            <h3><img src="/static/icons/dev.svg" alt=""/>Développeurs & équipes d'innovation</h3>
-                            Interrogez l’API sans installation ou hébergez votre propre instance.
-                            Créez des produits qui interrogent l’ensemble des règles socio-fiscales avec Python3.
+                            <h3><img src="/static/icons/dev.svg" alt=""/>Développeurs & équipes d&#39;innovation</h3>
+                            Interrogez l&#39;API sans installation ou hébergez votre propre instance.
+                            Créez des produits qui interrogent l&#39;ensemble des règles socio-fiscales avec Python3.
                         </div>
                     </li>
                 </ul>
@@ -40,7 +40,10 @@ const Home = () => (
         <section>
             <h2>Comment ça marche ?</h2>
             <div className="flex__container">
-                <p>OpenFisca est un projet Open Source libre et gratuit, modulable et réutilisable. Il permet de modéliser le code législatif en code informatique, pour améliorer la transparence et l’accès à la loi.</p>
+                <p>
+                    OpenFisca est un projet Open Source libre et gratuit, modulable et réutilisable. 
+                    Il permet de modéliser le code législatif en code informatique, pour améliorer la transparence et l’accès à la loi.
+                </p>
                 <div className="flex__item50">
                     <img src="/static/images/openlaw.png" alt=""/>
                 </div>
@@ -63,7 +66,7 @@ const Home = () => (
                         <li>Importez des données</li>
                         <li>Calculez une situation ou écrivez et simulez une réforme</li>
                         <li>Codez des extensions</li>
-                        <a className="btn medium" href="https://fr.openfisca.org/legislation/swagger">Tester l'API web</a>
+                        <a className="btn medium" href="https://fr.openfisca.org/legislation/swagger">Tester l&#39;API web</a>
 
                     </ul>
                 </div>
@@ -76,8 +79,10 @@ const Home = () => (
         <section className="flex__container">
             <h2>Une communauté open source internationale</h2>
             <div className="flex__item50">
-                <p>OpenFisca a des contributeurs partout dans le monde !
-Rejoignez une communauté d’économistes, de chercheurs, de développeurs et d’experts des droits sociaux qui s’engagent dans la transformation de la loi en code informatique !</p>
+                <p>
+                    OpenFisca a des contributeurs partout dans le monde !
+                    Rejoignez une communauté d&#39;économistes, de chercheurs, de développeurs et d’experts des droits sociaux qui s&#39;engagent dans la transformation de la loi en code informatique !
+                </p>
             </div>
             <div className="flex__item50">
                 <img src="/static/images/community.png" alt=""/>
