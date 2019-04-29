@@ -247,13 +247,7 @@ const GlobalStyle = () => (
 
       .flex__container{
         display: flex;
-
-        // flex-direction: row;
-
-        // flex-flow: row wrap;
-
         flex-wrap: wrap;
-
         justify-content: flex-start;
 
         margin: 0;
@@ -261,9 +255,7 @@ const GlobalStyle = () => (
       }
 
       .flex__item {
-        // display: -webkit-flex;
         display: flex;
-
         padding: 1rem;
       }
 
