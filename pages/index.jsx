@@ -81,6 +81,10 @@ const Home = () => (
 
     <style jsx>{`
 
+      section {
+        margin-bottom: 6em;
+      }
+
       li {
         list-style: none;
       }
@@ -88,25 +92,23 @@ const Home = () => (
       .cards-showroom { // Old .flex__container with margin-bottom: 2rem;
         display: flex;
         //flex-wrap: wrap;
+        //flex-flow: row wrap;
         justify-content: flex-start;
+        margin: 0;
+        padding: 0;
       }
 
       .card {
         display: flex;
-        flex-flow: row wrap; 
         padding: 1rem;  
       }
 
       .card img {
-          //display: inline-block;
-          width: 3em;
-          //width: 20%;
+        width: 3em;
       }
 
-      .card h3{
-        //line-height: 120%;
+      .card h3 {
         display: flex;
-        //display: inline;
       }
 
       .flex__item50 li {
@@ -120,16 +122,6 @@ const Home = () => (
         padding-left: 1rem;
       }
 
-      .flex__item img {
-        width: 3em;
-        //box-sizing: border-box;
-      }
-      .card__content img {
-        width: 3em;
-      }
-      section{
-        margin-bottom: 6em;
-      }
       @media(min-width: 40rem) {
         .flex__item50 {
           width: 50%;
@@ -137,6 +129,7 @@ const Home = () => (
           display: flex;
         }
       }
+
     `}</style>
   </div>
 )
