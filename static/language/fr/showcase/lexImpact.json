@@ -1,0 +1,20 @@
+LexImpact
+
+Retour
+
+Simuler l’impact des projets de réformes socio-fiscales sur les citoyens.
+
+Soutenu par Etalab dans le cadre du programme EIG (Entrepreneur d’Intérêt Général), l’équipe travaille en collaboration avec les administrateurs de l’Assemblée Nationale.
+
+Le projet vise à outiller les administrateurs de l’Assemblée Nationale et les députés pour simuler l’impact de réforme avant de procéder à son vote.
+
+LexImpact a débuté en 2019 et est en construction.
+
+Visiter LexImpact
+
+Caractéristiques du projet
+utilise l'API Python
+interroge le système France
+produit une simulation sur une population
+utilise l'intégralité du système socio-fiscal
+porté par une administration publique
