@@ -28,7 +28,7 @@ const Leximpact = () => (
       imgcountry="/static/icons/circle/france.svg" country="interroge le système France"
       imgsimulation="/static/icons/circle/simindividuelle.svg" simulation="produit une simulation sur une population"
       imgperimetre="/static/icons/circle/perimetre.svg" perimetre="utilise l'intégralité du système socio-fiscal"
-      imgpoweredby="/static/icons/circle/admin.svg" poweredby="porté par une administration publiques"
+      imgpoweredby="/static/icons/circle/admin.svg" poweredby="porté par une administration publique"
       />
   </section>
 
