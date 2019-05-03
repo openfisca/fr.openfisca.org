@@ -11,7 +11,7 @@ const Fastoche = () => (
   <div className='content'>
     <a className="outline" href="/showcase/" >Retour</a>
 
-  <ProjectDesc img="/static/projects/fastoche.png" baseline="Fastoch€ est un coach d'épargne." desc1="Développé par PayBoost, un acteur privé du paiement en ligne."
+  <ProjectDesc img="/static/projects/fastoche.png" baseline="MesAides est un simulateur de droit aux aides sociales." desc1="Développé par PayBoost, un acteur privé du paiement en ligne."
   desc2="Fastoch€ est une application qui joue le rôle d’un coach d’épargne en reliant les comptes bancaires et en informant l’utilisateur sur son reste à vivre. 
   Il permet aussi d’indiquer à l’utilisateur qu’il a droit à certaines aides sociales et à le diriger vers les administrations responsables du versement de ces aides. "
 
