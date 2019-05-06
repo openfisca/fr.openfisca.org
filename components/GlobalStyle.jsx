@@ -247,7 +247,6 @@ const GlobalStyle = () => (
 
       .flex__container{
         display: flex;
-        flex-wrap: wrap;
         justify-content: flex-start;
 
         margin: 0;
@@ -264,7 +263,7 @@ const GlobalStyle = () => (
           padding-left: 0;
         }
       }
-
+      
       @media(min-width: 40rem) {
         .flex__item {
           width: 33.3333%;
@@ -273,10 +272,10 @@ const GlobalStyle = () => (
 
       .card {
         display: flex;
-
         flex-direction: column;
-
         overflow: hidden;
+
+        padding: 1rem
       }
 
       .card__content {

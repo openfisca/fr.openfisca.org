@@ -10,7 +10,7 @@ const Home = () => (
     <section>
         <h2>Tout ce que vous pouvez faire avec OpenFisca !</h2>
         <div>
-            <ul className="cards-showroom">
+            <ul className="flex__container">
                 <li className="card">
                     <h3><img src="/static/icons/economistes.svg" alt=""/>Économistes & chercheurs</h3>
                     Utilisez des systèmes socio-fiscaux déjà modélisés et codez vos réformes.
@@ -32,11 +32,11 @@ const Home = () => (
     </section>
     <section>
         <h2>Comment ça marche ?</h2>
+        <p>
+            OpenFisca est un projet Open Source libre et gratuit, modulable et réutilisable. 
+            Il permet de modéliser le code législatif en code informatique, pour améliorer la transparence et l’accès à la loi.
+        </p>
         <div className="flex__container">
-            <p>
-                OpenFisca est un projet Open Source libre et gratuit, modulable et réutilisable. 
-                Il permet de modéliser le code législatif en code informatique, pour améliorer la transparence et l’accès à la loi.
-            </p>
             <div className="flex__item50">
                 <img src="/static/images/openlaw.png" alt=""/>
             </div>
@@ -66,16 +66,18 @@ const Home = () => (
         </div>
     </section>
 
-    <section className="flex__container">
+    <section>
         <h2>Une communauté open source internationale</h2>
-        <div className="flex__item50">
-            <p>
-                OpenFisca a des contributeurs partout dans le monde !
-                Rejoignez une communauté d&#39;économistes, de chercheurs, de développeurs et d’experts des droits sociaux qui s&#39;engagent dans la transformation de la loi en code informatique !
-            </p>
-        </div>
-        <div className="flex__item50">
-            <img src="/static/images/community.png" alt=""/>
+        <div className="flex__container"> 
+          <div className="flex__item50">
+              <p>
+                  OpenFisca a des contributeurs partout dans le monde !
+                  Rejoignez une communauté d&#39;économistes, de chercheurs, de développeurs et d’experts des droits sociaux qui s&#39;engagent dans la transformation de la loi en code informatique !
+              </p>
+          </div>
+          <div className="flex__item50">
+              <img src="/static/images/community.png" alt=""/>
+          </div>
         </div>
     </section>
 
@@ -87,18 +89,6 @@ const Home = () => (
 
       li {
         list-style: none;
-      }
-
-      .cards-showroom {
-        display: flex;
-        justify-content: flex-start;
-        margin: 0;
-        padding: 0;
-      }
-
-      .card {
-        display: flex;
-        padding: 1rem;  
       }
 
       .card img {

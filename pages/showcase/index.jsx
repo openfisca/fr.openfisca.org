@@ -21,9 +21,15 @@ const Showcase = () => (
 
         <style jsx>{`
 
-li {
-  list-style: none;
-}
+      li {
+        list-style: none;
+      }
+      
+      .flex__container{
+        display: flex;
+        flex-wrap: wrap;
+      }
+
       @media (max-width: 720px) {
         #content {
           padding: 0 1em 1em 1em;
