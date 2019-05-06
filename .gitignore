@@ -4,3 +4,4 @@ yarn.lock
 .DS_Store
 /out/*
 report.*.json
+npm-debug.log
