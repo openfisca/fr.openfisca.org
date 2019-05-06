@@ -41,7 +41,7 @@ const Communaute = () => (
             <h2>Écrivez-nous</h2>
             <div className="flex__column">
                 <div className="flex__item50">
-                    <p>Pour toute question ou pour toute demande de collaboration, n'hésitez pas à nous joindre par email.</p>
+                    <p>Pour toute question ou pour toute demande de collaboration, n&#39;hésitez pas à nous joindre par email.</p>
                 </div>
                 <div>
                     <a className="btn medium" href="mailto:%63%6fn&#116;&#97;%63%74&#64;%6f%70%65%6efi&#115;&#99;a%2e&#111;&#114;&#103;">Contact</a>
@@ -53,7 +53,8 @@ const Communaute = () => (
             <h2>Restez informés</h2>
             <div className="flex__column">
                 <div className="flex__item50">
-                    <p>Vous pouvez vous abonner à notre newsletter mensuelle pour recevoir les actualités et les changements majeurs opérés sur OpenFisca.
+                    <p>
+                        Vous pouvez vous abonner à notre newsletter mensuelle pour recevoir les actualités et les changements majeurs opérés sur OpenFisca.
                     </p>
                 </div>
                 <a className="btn medium">Recevoir la Newsletter</a>
@@ -61,19 +62,17 @@ const Communaute = () => (
         </section>
 
         <style jsx>{`
+            medium {
+              display: flex;
+            }
 
-    medium {
-      display: flex;
-    }
-
-    @media(min-width: 40rem) {
-      .flex__item50 {
-        width: 50%;
-        padding-left: 1rem;
-        display: flex;
-      }
-
-    `}</style>
+            @media(min-width: 40rem) {
+              .flex__item50 {
+                width: 50%;
+                padding-left: 1rem;
+                display: flex;
+            }
+        `}</style>
     </div>
 )
 

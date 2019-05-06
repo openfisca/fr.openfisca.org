@@ -102,7 +102,7 @@ const GlobalStyle = () => (
 				border-bottom: solid 2px #fff;
       }
 
-      p{
+      p {
         font-family: 'asapregular';
         font-size: 1.125em;
       }

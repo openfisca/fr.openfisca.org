@@ -12,27 +12,27 @@ const ProjectDesc = (props) => (
                 <a className="btn medium" href={props.url}>{props.textlink}</a>
             </ul>
         </div>
+
         <style jsx>{`
-li{
-    list-style-image : url(/static/items/bullet.svg);
-    padding-bottom: 8%;
-    list-style-position: outside;}
+            li{
+                list-style-image : url(/static/items/bullet.svg);
+                padding-bottom: 8%;
+                list-style-position: outside;
+            }
 
-.flex__item50 {
-    width: 48%;
-    padding-left: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-}
+            .flex__item50 {
+                width: 48%;
+                padding-left: 1rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: start;
+            }
 
-.flex__item 50 img{
-    width: 100%;
-    height: auto;
-}
-
-    `}</style>
-
+            .flex__item 50 img{
+                width: 100%;
+                height: auto;
+            }
+        `}</style>
     </div>
 )
 

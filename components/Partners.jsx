@@ -1,18 +1,18 @@
 import asset from 'next/asset'
 
 const Partners = () => (
-    <div className="content">
-        <h2>Nos partenaires</h2>
-        <ul className="flex__container">
-            <li className="flex-item logo"><img alt="IPP" src={asset('/images/logo-ipp.png')} /></li>
-            <li className="flex-item logo"><img alt="Etalab" src={asset('/images/logo-etalab.png')} /></li>
-            <li className="flex-item logo"><img alt="MSA" src={asset('/images/logo-msa.svg')} /></li>
-            <li className="flex-item logo"><img alt="beta.gouv.fr" src={asset('/images/logo-betagouv-url.svg')} /></li>
-            <li className="flex-item logo"><img alt="IDEP" src={asset('/images/logo-idep.png')} /></li>
-            <li className="flex-item logo"><img alt="France Stratégie" src={asset('/images/logo-france-strategie.jpg')} /></li>
-        </ul>
+  <div className="content">
+    <h2>Nos partenaires</h2>
+    <ul className="flex__container">
+      <li className="flex-item logo"><img alt="IPP" src={asset('/images/logo-ipp.png')} /></li>
+      <li className="flex-item logo"><img alt="Etalab" src={asset('/images/logo-etalab.png')} /></li>
+      <li className="flex-item logo"><img alt="MSA" src={asset('/images/logo-msa.svg')} /></li>
+      <li className="flex-item logo"><img alt="beta.gouv.fr" src={asset('/images/logo-betagouv-url.svg')} /></li>
+      <li className="flex-item logo"><img alt="IDEP" src={asset('/images/logo-idep.png')} /></li>
+      <li className="flex-item logo"><img alt="France Stratégie" src={asset('/images/logo-france-strategie.jpg')} /></li>
+    </ul>
 
-        <style jsx>{`
+    <style jsx>{`
       div {
         padding: 0 3em 0 3em;
       }
@@ -59,7 +59,7 @@ const Partners = () => (
         }
       }
     `}</style>
-    </div>
+  </div>
 )
 
 export default Partners

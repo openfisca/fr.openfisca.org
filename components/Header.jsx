@@ -35,7 +35,7 @@ const Header = (props) => (
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d69fb', endColorstr='#00baaf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 			}
 
-      ul {
+      		ul {
 				list-style-type: none;
 				margin:0em;
 				min-height: 3em;
@@ -51,7 +51,7 @@ const Header = (props) => (
 
 			li img {
 				max-width: 1.5em;
-        vertical-align: middle;
+        		vertical-align: middle;
 			}
 
 			@media (max-width: 720px) {
@@ -60,9 +60,9 @@ const Header = (props) => (
 					justyfy-content: stretch;
 				}
 				ul {
-       		padding: 0;
-          flex-direction: column;
-          align-items: center;
+       				padding: 0;
+          			flex-direction: column;
+          			align-items: center;
 				}
 			}
 		`}</style>
