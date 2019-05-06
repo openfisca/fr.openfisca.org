@@ -89,10 +89,8 @@ const Home = () => (
         list-style: none;
       }
 
-      .cards-showroom { // Old .flex__container with margin-bottom: 2rem;
+      .cards-showroom {
         display: flex;
-        //flex-wrap: wrap;
-        //flex-flow: row wrap;
         justify-content: flex-start;
         margin: 0;
         padding: 0;
@@ -122,7 +120,13 @@ const Home = () => (
         padding-left: 1rem;
       }
 
-      @media(min-width: 40rem) {
+      @media(max-width: 50rem) { //small screen (50rem = 600px with font 12)
+        .cards-showroom {
+          flex-flow: row wrap;
+        }
+      } 
+
+      @media(min-width: 75rem) { //wide screen (75rem = 900px with font 12)
         .flex__item50 {
           width: 50%;
           padding-left: 1rem;
