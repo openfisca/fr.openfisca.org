@@ -102,7 +102,7 @@ const GlobalStyle = () => (
 				border-bottom: solid 2px #fff;
       }
 
-      p{
+      p {
         font-family: 'asapregular';
         font-size: 1.125em;
       }
@@ -246,21 +246,7 @@ const GlobalStyle = () => (
 
 
       .flex__container{
-        // display: -webkit-box;
-        // display: -moz-box;
-        // display: -ms-flexbox;
-        // display: -webkit-flex;
         display: flex;
-
-        // -webkit-flex-direction: row;
-        // -ms-flex-direction: row;
-        // flex-direction: row;
-
-        // -webkit-flex-flow: row wrap;
-        // flex-flow: row wrap;
-
-        flex-wrap: wrap;
-
         justify-content: flex-start;
 
         margin: 0;
@@ -268,9 +254,7 @@ const GlobalStyle = () => (
       }
 
       .flex__item {
-        // display: -webkit-flex;
         display: flex;
-
         padding: 1rem;
       }
 
@@ -279,7 +263,7 @@ const GlobalStyle = () => (
           padding-left: 0;
         }
       }
-
+      
       @media(min-width: 40rem) {
         .flex__item {
           width: 33.3333%;
@@ -287,14 +271,11 @@ const GlobalStyle = () => (
       }
 
       .card {
-        // display: -webkit-flex;
         display: flex;
-
-        // -webkit-flex-direction: column;
-        // -ms-flex-direction: column;
         flex-direction: column;
-
         overflow: hidden;
+
+        padding: 1rem
       }
 
       .card__content {

@@ -37,7 +37,7 @@ const CardResourcesmin = (props) => (
                 flex-direction: row;
                 background-color: #6d69fb;
             }
-    `}</style>
+        `}</style>
     </div>
 )
 
