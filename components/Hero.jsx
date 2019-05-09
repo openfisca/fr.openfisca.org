@@ -50,6 +50,7 @@ const Hero = () => (
 
       img {
         max-width: 30em;
+        vertical-align: middle;
       }
 
       ul {

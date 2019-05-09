@@ -193,7 +193,6 @@ const GlobalStyle = () => (
         color: #424242;
         background-color:#ffffff;
         border: #ffffff 1px solid;
-        display: flex;
         padding: 0.5em;
         margin: 0.75em 0.5em 0 0;
       }
