@@ -191,7 +191,6 @@ const GlobalStyle = () => (
       // buttons
       .CTA {
         color: #424242;
-        text-decoration:none;
         background-color:#ffffff;
         border: #ffffff 1px solid;
         display: flex;
@@ -199,7 +198,7 @@ const GlobalStyle = () => (
         margin: 0.75em 0.5em 0 0;
       }
 
-      .btn{
+      .btn {
         -moz-box-shadow: 0px 10px 10px 0px #42424226;
         -webkit-box-shadow: 0px 10px 10px 0px #42424226;
         box-shadow: 0px 10px 10px 0px #42424226;
@@ -223,8 +222,8 @@ const GlobalStyle = () => (
       }
 
       .outline {
-        border: #ffffff 1px solid;
         color: #ffffff;
+        border: #ffffff 1px solid;
         display: flex;
         padding: 0.5em;
         margin: 0.75em 0.5em 0 0;
