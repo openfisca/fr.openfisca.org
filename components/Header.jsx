@@ -49,6 +49,10 @@ const Header = (props) => (
 				list-style: none;
 			}
 
+			li img {
+        		max-height: 1.5em;
+			}
+
 			@media (max-width: 720px) {
 				header{
 					flex-direction: column;
