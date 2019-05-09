@@ -37,6 +37,7 @@ const Hero = () => (
 
       .content {
         text-align: center;
+        margin-top: 10%;
       }
 
       .baseline {
