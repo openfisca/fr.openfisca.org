@@ -19,7 +19,7 @@ const GlobalStyle = () => (
       line-height: 130%;
     }
 
-    .content{
+    .content {
       padding: 0 3em 1em 3em;
       margin: 0 auto;
     }
