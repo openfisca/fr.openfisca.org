@@ -111,7 +111,7 @@ const Home = () => (
       }
 
       @media(max-width: 50rem) { //small screen (50rem = 600px with font 12)
-        .cards-showroom {
+        .flex__container {
           flex-flow: row wrap;
         }
       } 
