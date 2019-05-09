@@ -8,10 +8,10 @@ const Footer = () => (
                 <a href="https://openfisca.org/doc/" className="btn CTA">Commencer <img src="/static/icons/Rocket.svg"></img></a>
             </div>
             <ul>
-                <li><Link href="/status" passHref>Etat des services</Link></li>
-                <li><Link href="/cookies" passHref>Informatique & libertés</Link></li>
-                <li><Link href="/legal" passHref>Mentions légales</Link></li>
-                <li><Link href="/contribute" passHref>Contribuer</Link></li>
+                <li><Link href="/status" passHref><a>Etat des services</a></Link></li>
+                <li><Link href="/cookies" passHref><a>Informatique & libertés</a></Link></li>
+                <li><Link href="/legal" passHref><a>Mentions légales</a></Link></li>
+                <li><Link href="/contribute" passHref><a>Contribuer</a></Link></li>
             </ul>
             <ul className="social">
                 <li><a href="mailto:contact@openfisca.org?Subject=openfisca.org" passHref><img src="/static/icons/Email.svg" alt="Envoyer un email"></img></a></li>
