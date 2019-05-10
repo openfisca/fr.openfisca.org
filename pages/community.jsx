@@ -1,10 +1,10 @@
-import Head from 'next/head'
-import asset from 'next/asset'
-import GlobalStyle from '../components/GlobalStyle'
-import Header from '../components/Header'
-import Partners from '../components/Partners'
-import Footer from '../components/Footer'
-import Piwik from '../components/Piwik'
+import Head from "next/head"
+import asset from "next/asset"
+import GlobalStyle from "../components/GlobalStyle"
+import Header from "../components/Header"
+import Partners from "../components/Partners"
+import Footer from "../components/Footer"
+import Piwik from "../components/Piwik"
 
 // the hoc
 import { withNamespaces } from 'react-i18next';
@@ -29,7 +29,7 @@ const Communaute =  withNamespaces("community")(
                     </p>
                 </div>
                 <div className="flex__item50">
-                    <img src={asset('/images/community.png')} alt=""/>
+                    <img src={asset("/images/community.png")} alt="" />
                 </div>
             </div>
         </section>
@@ -59,23 +59,25 @@ const Communaute =  withNamespaces("community")(
         </section>
 
 
-        <style jsx>{`
-            p a {
-                color: #6d69fb;
-                margin: 0;
-            }
+        <style jsx>
+            {`
+                p a {
+                    color: #6d69fb;
+                    margin: 0;
+                }
 
-            medium {
-              display: flex;
-            }
+                medium {
+                  display: flex;
+                }
 
-            @media(min-width: 40rem) {
-              .flex__item50 {
-                width: 50%;
-                padding-left: 1rem;
-                display: flex;
-            }
-        `}</style>
+                @media(min-width: 40rem) {
+                  .flex__item50 {
+                    width: 50%;
+                    padding-left: 1rem;
+                    display: flex;
+                }
+            `}
+        </style>
     </div>
     )
 )
@@ -86,12 +88,12 @@ export default withNamespaces("community")(({t}) => (
             <title>{t('title')}</title>
             <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
-        <GlobalStyle/>
+        <GlobalStyle />
         <Header page="community" title={t('title')} />
         <Communaute />
-        <Partners/>
+        <Partners />
         <Footer />
-        <Piwik page="community"/>
+        <Piwik page="community" />
     </div>
     )
 )

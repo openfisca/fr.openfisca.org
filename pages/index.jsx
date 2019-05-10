@@ -1,12 +1,11 @@
-import Head from 'next/head'
-import GlobalStyle from '../components/GlobalStyle'
-import Piwik from '../components/Piwik'
-import Partners from '../components/Partners'
-import Footer from '../components/Footer'
-import Hero from '../components/Hero'
+import Head from "next/head"
+import { withNamespaces } from "react-i18next"
 
-// the hoc
-import { withNamespaces } from 'react-i18next';
+import GlobalStyle from "../components/GlobalStyle"
+import Piwik from "../components/Piwik"
+import Partners from "../components/Partners"
+import Footer from "../components/Footer"
+import Hero from "../components/Hero"
 
 
 const Home =  withNamespaces()(
@@ -79,51 +78,52 @@ const Home =  withNamespaces()(
       </div>
     </section>
 
+    <style jsx>
+      {`
 
-    <style jsx>{`
-
-      section {
-        margin-bottom: 6em;
-      }
-
-      li {
-        list-style: none;
-      }
-
-      .card img {
-        width: 3em;
-      }
-
-      .card h3 {
-        display: flex;
-      }
-
-      .flex__item50 li {
-        list-style-image : url(/static/items/bullet.svg);
-        padding: 1rem;
-      }
-
-      .flex__column {
-        display: flex;
-        flex-direction: column;
-        padding-left: 1rem;
-      }
-
-      @media(max-width: 50rem) { //small screen (50rem = 600px with font 12)
-        .flex__container {
-          flex-flow: row wrap;
+        section {
+          margin-bottom: 6em;
         }
-      } 
 
-      @media(min-width: 75rem) { //wide screen (75rem = 900px with font 12)
-        .flex__item50 {
-          width: 50%;
-          padding-left: 1rem;
+        li {
+          list-style: none;
+        }
+
+        .card img {
+          width: 3em;
+        }
+
+        .card h3 {
           display: flex;
         }
-      }
 
-    `}</style>
+        .flex__item50 li {
+          list-style-image : url(/static/items/bullet.svg);
+          padding: 1rem;
+        }
+
+        .flex__column {
+          display: flex;
+          flex-direction: column;
+          padding-left: 1rem;
+        }
+
+        @media(max-width: 50rem) { //small screen (50rem = 600px with font 12)
+          .flex__container {
+            flex-flow: row wrap;
+          }
+        }
+
+        @media(min-width: 75rem) { //wide screen (75rem = 900px with font 12)
+          .flex__item50 {
+            width: 50%;
+            padding-left: 1rem;
+            display: flex;
+          }
+        }
+
+      `}
+      </style>
     </div>  
   )
 )

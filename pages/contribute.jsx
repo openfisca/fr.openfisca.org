@@ -1,10 +1,11 @@
-import Head from 'next/head'
-import GlobalStyle from '../components/GlobalStyle'
-import Header from '../components/Header'
-import Partners from '../components/Partners'
-import Footer from '../components/Footer'
-import Piwik from '../components/Piwik'
-import { withNamespaces } from 'react-i18next';
+import Head from "next/head"
+import { withNamespaces } from "react-i18next"
+
+import GlobalStyle from "../components/GlobalStyle"
+import Header from "../components/Header"
+import Partners from "../components/Partners"
+import Footer from "../components/Footer"
+import Piwik from "../components/Piwik"
 
 
 const Contribuer =  withNamespaces("contribute")(
@@ -16,11 +17,13 @@ const Contribuer =  withNamespaces("contribute")(
       <h2>{t('title-share')}</h2>
       <p>
       {t('content-share')}
+      <a href="https://drive.google.com/open?id=1eGa4PphlDCSzhGSTFDhG6CGRafJi6cAj3vlD7wNw2NM">{t('content-share-link')}</a>
       </p>
 
       <h2>{t('title-reuse')}</h2>
       <p>
-      {t('content-share')}
+        {t('content-share')}
+        <a href="https://openfisca.org/doc/publishing.html">{t('content-share-link')}</a>
       </p>
 
 
@@ -45,12 +48,11 @@ export default withNamespaces("contribute")(({t}) => (
             <title>{t('title')}</title>
             <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
-        <GlobalStyle/>
+        <GlobalStyle />
         <Header page="contribute" title={t('title')} />
         <Contribuer />
         <Partners />
         <Footer />
-        <Piwik page="contribute"/>
+        <Piwik page="contribute" />
     </div>
-  )
 )

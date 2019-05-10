@@ -1,30 +1,31 @@
-const ProjectAttribute = (props) => (
+const ProjectAttribute = props => (
     <div className="attribute">
         <ul className="flex__container">
             <li className="flex__item">
-                <img src={props.imgapi} alt=""/>
+                <img src={props.imgapi} alt="" />
                 <p className="Medium">{props.api}</p>
             </li>
             <li className="flex__item">
-                <img src={props.imgcountry} alt=""/>
+                <img src={props.imgcountry} alt="" />
                 <p className="Medium">{props.country}</p>
             </li>
             <li className="flex__item">
-                <img src={props.imgsimulation} alt=""/>
+                <img src={props.imgsimulation} alt="" />
                 <p className="Medium">{props.simulation}</p>
             </li>
             <li className="flex__item">
-                <img src={props.imgperimetre} alt=""/>
+                <img src={props.imgperimetre} alt="" />
                 <p className="Medium">{props.perimetre}</p>
             </li>
             <li className="flex__item">
-                <img src={props.imgpoweredby} alt=""/>
+                <img src={props.imgpoweredby} alt="" />
                 <p className="Medium">{props.poweredby}</p>
             </li>
         </ul>
 
 
-        <style jsx>{`
+        <style jsx>
+            {`
             .flex__item {
                 // display: -webkit-flex;
                 display: flex;
@@ -46,7 +47,8 @@ const ProjectAttribute = (props) => (
             li {
                 list-style: none;
             }
-        `}</style>
+        `}
+        </style>
     </div>
 )
 

@@ -1,7 +1,7 @@
-const ProjectDesc = (props) => (
+const ProjectDesc = props => (
     <div className="flex__container">
         <div className="flex__item50">
-            <img src={props.img} alt=""/>
+            <img src={props.img} alt="" />
         </div>
         <div className="flex__item50">
             <ul>
@@ -13,7 +13,8 @@ const ProjectDesc = (props) => (
             </ul>
         </div>
 
-        <style jsx>{`
+        <style jsx>
+            {`
             li{
                 list-style-image : url(/static/items/bullet.svg);
                 padding-bottom: 8%;
@@ -32,7 +33,8 @@ const ProjectDesc = (props) => (
                 width: 100%;
                 height: auto;
             }
-        `}</style>
+        `}
+        </style>
     </div>
 )
 

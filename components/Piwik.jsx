@@ -1,7 +1,7 @@
-import React from 'react'
-import Head from 'next/head'
+import React from "react"
+import Head from "next/head"
 
-const PiwikConfig = require('../piwik.config')
+const PiwikConfig = require("../piwik.config")
 
 class Piwik extends React.Component {
     componentDidMount() {

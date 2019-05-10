@@ -1,7 +1,12 @@
 {
     "title": "Legal notice",
     "director":"Publication owner",
-    "director-address":"Laure Lucchesi - Etalab Director - 20, avenue de Ségur - 75007 Paris - https//www.etalab.gouv.fr",
+    "director-address-1":"Laure Lucchesi",
+    "director-address-2": "Etalab Director",
+    "director-address-3": "20, avenue de Ségur",
+    "director-address-4": "75007 Paris",
     "host":"Host",
-    "host-address":"Netlify - 2325 3rd St Suite 215 - San Francisco, CA 94107, USA"
+    "host-address-1":"Netlify",
+    "host-address-2": "2325 3rd St Suite 215",
+    "host-address-3": "San Francisco, CA 94107, USA"
 }

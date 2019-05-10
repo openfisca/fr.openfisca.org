@@ -1,10 +1,12 @@
-import { french } from '../i18n'
-import Head from 'next/head'
-import GlobalStyle from '../components/GlobalStyle'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import Piwik from '../components/Piwik'
-import { withNamespaces } from 'react-i18next';
+import Head from "next/head"
+
+import { withNamespaces } from "react-i18next"
+import { french } from "../i18n"
+
+import GlobalStyle from "../components/GlobalStyle"
+import Header from "../components/Header"
+import Footer from "../components/Footer"
+import Piwik from "../components/Piwik"
 
 
 const Cookies =  withNamespaces("cookies")(
@@ -57,14 +59,14 @@ const Cookies =  withNamespaces("cookies")(
 export default withNamespaces("cookies")(({t}) => (
   <div>
         <Head>
-          <title>{t('title')}</title>
-          <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
+            <title>{t('title')}</title>
+            <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <Header page="cookies" title={t('title')} />
         <Cookies />
         <Footer />
         <GlobalStyle />
-        <Piwik page="cookies"/>
+        <Piwik page="cookies" />
     </div>
   )
 )
