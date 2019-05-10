@@ -5,7 +5,6 @@ import Header from "../../components/Header"
 import Footer from "../../components/Footer"
 import Piwik from "../../components/Piwik"
 import CardProject from "../../components/CardProject"
-import "styles/theme.scss"
 
 
 const Showcase =  withNamespaces("showcase")(

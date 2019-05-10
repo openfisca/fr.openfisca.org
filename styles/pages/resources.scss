@@ -1,9 +1,0 @@
-                    .flex__container {
-                        flex-wrap: wrap;
-                    }
-
-                    @media (min-width: 40rem) {
-                        .flex__item:nth-child(3n + 1) {
-                            padding-left: 0;
-                        }
-                    }

@@ -14,8 +14,8 @@
     "deploy": "npm run build && npm run export",
     "code:check": "eslint -c .eslintrc --ext .js,.jsx --ignore-path .gitignore .",
     "code:format": "prettier-eslint --write '**/*.{js,jsx}' --ignore-path .gitignore",
-    "scss:check": "stylelint --config .stylelintrc --ignore-path .gitignore {**/*,*}.scss",
-    "scss:format": "prettier-stylelint --write **/*.scss --ignore-path .gitignore --syntax scss --quiet",
+    "scss:check": "stylelint --config .stylelintrc --ignore-path .gitignore styles/**/*.scss",
+    "scss:format": "prettier-stylelint --write styles/**/*.scss --ignore-path .gitignore --syntax scss --quiet",
     "style:check": "npm run code:check && npm run scss:check",
     "style:format": "npm run code:format && npm run scss:format",
     "postexport": "node post-export.js"

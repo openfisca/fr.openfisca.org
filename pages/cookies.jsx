@@ -5,7 +5,6 @@ import {french} from "../i18n"
 import Header from "components/Header"
 import Footer from "components/Footer"
 import Piwik from "components/Piwik"
-import "styles/theme.scss"
 
 
 const Cookies = withNamespaces ("cookies") (

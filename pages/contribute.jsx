@@ -5,7 +5,6 @@ import Header from "components/Header"
 import Partners from "components/Partners"
 import Footer from "components/Footer"
 import Piwik from "components/Piwik"
-import "styles/theme.scss"
 
 
 const Contribuer =  withNamespaces("contribute")(
