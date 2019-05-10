@@ -1,0 +1,290 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "asapregular";
+    line-height: 130%;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.content {
+    margin: 0 auto;
+    padding: 0 3em 1em;
+}
+
+@media (min-width: 56rem) {
+    .content {
+        max-width: 1100px;
+    }
+}
+
+@font-face {
+    font-family: "asapbold";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/static/fonts/asap-bold-webfont.woff2") format("woff2"),
+        url("/static/fonts/asap-bold-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "asapbolditalic";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/static/fonts/asap-bolditalic-webfont.woff2") format("woff2"),
+        url("/static/fonts/asap-bolditalic-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "asapitalic";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/static/fonts/asap-italic-webfont.woff2") format("woff2"),
+        url("/static/fonts/asap-italic-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "asapmedium";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/static/fonts/asap-medium-webfont.woff2") format("woff2"),
+        url("/static/fonts/asap-medium-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "asapmediumitalic";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/static/fonts/asap-mediumitalic-webfont.woff2") format("woff2"),
+        url("/static/fonts/asap-mediumitalic-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "asapregular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/static/fonts/asap-regular-webfont.woff2") format("woff2"),
+        url("/static/fonts/asap-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "asapsymbol";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/static/fonts/asap-symbol-webfont.woff2") format("woff2"),
+        url("/static/fonts/asap-symbol-webfont.woff") format("woff");
+}
+
+/* Text styles */
+
+.menu {
+    color: #fff;
+    display: flex;
+    font-family: "asapmedium";
+    margin: 0.75em 0.5em 0 0;
+    margin-right: 1em;
+    padding: 0.5em;
+
+    &::after,
+    &:hover,
+    &:active {
+        border-bottom: solid 2px #fff;
+        display: block;
+    }
+}
+
+p {
+    font-family: "asapregular";
+    font-size: 1.125em;
+}
+
+a {
+    color: #fff;
+    display: inline-block;
+    font-family: "asapregular";
+    font-size: 1.125em;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+h1 {
+    color: #fff;
+    font-family: "asapbold";
+    font-size: 3em;
+    line-height: 130%;
+    text-align: center;
+}
+
+h2 {
+    color: #6d69fb;
+    font-family: "asapmedium";
+    font-size: 2em;
+    line-height: 130%;
+}
+
+h3 {
+    color: #424242;
+    font-family: "asapmedium";
+    font-size: 1.5em;
+    line-height: 130%;
+}
+
+h4 {
+    color: #424242;
+    font-family: "asapmedium";
+    font-size: 1.5em;
+    line-height: 130%;
+}
+
+.large {
+    color: #424242;
+    font-family: "asapregular";
+    font-size: 1.5em;
+    line-height: 130%;
+}
+
+.large-semibold {
+    color: #424242;
+    font-family: "asapmedium";
+    font-size: 1.5em;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 130%;
+}
+
+.medium {
+    color: #424242;
+    font-family: "asapregular";
+    font-size: 1.25em;
+    letter-spacing: normal;
+    line-height: 130%;
+}
+
+.small {
+    color: #424242;
+    font-family: "asapregular";
+    font-size: 1em;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 18.3px;
+}
+
+.caption {
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+// buttons
+.cta {
+    background-color: #fff;
+    border: #fff 1px solid;
+    color: #424242;
+    display: flex;
+    margin: 0.75em 0.5em 0 0;
+    padding: 0.5em;
+    text-decoration: none;
+}
+
+.btn {
+    border-radius: 4px;
+    box-shadow: 0 10px 10px 0 #42424226;
+    cursor: pointer;
+    font-family: "asapmedium";
+    vertical-align: middle;
+
+    &:hover {
+        box-shadow: 0 10px 10px 0 #42424260;
+    }
+
+    &:active {
+        position: relative;
+        top: 1px;
+    }
+}
+
+.outline {
+    border: #fff 1px solid;
+    color: #fff;
+    display: flex;
+    margin: 0.75em 0.5em 0 0;
+    padding: 0.5em;
+}
+
+.medium {
+    background-color: #6d69fb;
+    border-radius: 4px;
+    color: #000;
+    font-family: "asapregular";
+    font-size: 1.125em;
+    padding: 0.4em;
+}
+
+// sections
+
+.flex__container {
+    display: flex;
+    justify-content: flex-start;
+
+    margin: 0;
+    padding: 0;
+}
+
+.flex__item {
+    display: flex;
+    padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+    .flex__item:first-child {
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 40rem) {
+    .flex__item {
+        width: 33.3333%;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    padding: 1rem;
+}
+
+.card__content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+}
+
+.attributes {
+    background-color: #eaeaea;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: wrap;
+    list-style: none;
+}
+
+.flex-item3 {
+    max-width: 33.33%;
+}
+
+.flex-item2 {
+    width: 50%;
+}
+
+.flex-item1 {
+    width: 100%;
+}

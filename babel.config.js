@@ -5,7 +5,8 @@ module.exports = (api) => {
 
     const plugins = [
         [
-            "module-resolver", {
+            "module-resolver",
+            {
                 alias: {
                     components: "./components",
                     pages: "./pages",

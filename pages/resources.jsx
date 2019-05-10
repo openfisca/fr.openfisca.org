@@ -11,88 +11,88 @@ import CardResourcesmin from "../components/CardResourcesmin"
 
 const Resources =  withNamespaces("resources")(
     ({t}, props) => (
-    <div className="content">
-        <ul className="flex__container">
-            <li className="flex__item">
-                <CardResources 
-                    img="/static/icons/france.svg"
-                    title={t('system-fr')}
-                    desc={t('$t(content-fr) $t(desc-fr)')}
-                    linkexplorer="https://fr.openfisca.org/legislation"
-                    linkgit="https://github.com/openfisca/openfisca-france"
-                />
-            </li>
-            
-            <li className="flex__item">
-                <CardResources 
-                    img="/static/icons/nz.svg"
-                    title={t('system-nz')}
-                    desc={t('desc-nz')}
-                    linkexplorer="https://www.rules.nz"
-                    linkgit="https://github.com/ServiceInnovationLab/openfisca-aotearoa"
-                />
-            </li>
+        <div className="content">
+            <ul className="flex__container">
+                <li className="flex__item">
+                    <CardResources
+                        img="/static/icons/france.svg"
+                        title={t('system-fr')}
+                        desc={t('$t(content-fr) $t(desc-fr)')}
+                        linkexplorer="https://fr.openfisca.org/legislation"
+                        linkgit="https://github.com/openfisca/openfisca-france"
+                    />
+                </li>
 
-            <li className="flex__item">
-                <CardResourcesmin 
-                    img="/static/icons/barcelona.svg" 
-                    title={t('system-ba')} 
-                    desc={t('desc-ba')} 
-                    linkgit="https://github.com/lesmevesajudes/openfisca-barcelona"
-                />
-            </li>
-        </ul>
+                <li className="flex__item">
+                    <CardResources
+                        img="/static/icons/nz.svg"
+                        title={t('system-nz')}
+                        desc={t('desc-nz')}
+                        linkexplorer="https://www.rules.nz"
+                        linkgit="https://github.com/ServiceInnovationLab/openfisca-aotearoa"
+                    />
+                </li>
 
-        <ul className="flex__container">
-            <li className="flex__item">
-                <CardResourcesmin 
-                    img="/static/icons/tunisia.svg"
-                    title={t('system-tn')} 
-                    desc={t('desc-tn')}
-                    linkgit="https://github.com/openfisca/openfisca-tunisia"
-                />
-            </li>
+                <li className="flex__item">
+                    <CardResourcesmin
+                        img="/static/icons/barcelona.svg"
+                        title={t('system-ba')}
+                        desc={t('desc-ba')}
+                        linkgit="https://github.com/lesmevesajudes/openfisca-barcelona"
+                    />
+                </li>
+            </ul>
 
-            <li className="flex__item">
-                <CardResourcesmin
-                    img="/static/icons/italy.svg"
-                    title={t('system-it')}
-                    desc={t('desc-it')}
-                    linkgit="https://github.com/openfisca/openfisca-italy"
-                />
-            </li>
+            <ul className="flex__container">
+                <li className="flex__item">
+                    <CardResourcesmin
+                        img="/static/icons/tunisia.svg"
+                        title={t('system-tn')}
+                        desc={t('desc-tn')}
+                        linkgit="https://github.com/openfisca/openfisca-tunisia"
+                    />
+                </li>
 
-            <li className="flex__item">
-                <CardResourcesmin
-                    img="/static/icons/senegal.svg"
-                    title={t('system-sn')} 
-                    desc={t('desc-sn')}
-                    linkgit="https://github.com/openfisca/openfisca-senegal"
-                />
-            </li>
-        </ul>
+                <li className="flex__item">
+                    <CardResourcesmin
+                        img="/static/icons/italy.svg"
+                        title={t('system-it')}
+                        desc={t('desc-it')}
+                        linkgit="https://github.com/openfisca/openfisca-italy"
+                    />
+                </li>
 
-        <ul className="flex__container">
-            <li className="flex__item">
-                <CardResourcesmin
-                    img="/static/icons/galle.svg"
-                    title={t('system-au')} 
-                    desc={t('desc-au')}
-                    linkgit="https://github.com/digitalnsw/openfisca-nsw"
-                />
-            </li>
-        </ul>
+                <li className="flex__item">
+                    <CardResourcesmin
+                        img="/static/icons/senegal.svg"
+                        title={t('system-sn')}
+                        desc={t('desc-sn')}
+                        linkgit="https://github.com/openfisca/openfisca-senegal"
+                    />
+                </li>
+            </ul>
 
-        <style jsx>
-            {`
-                @media (max-width: 720px) {
-                  #content {
-                    padding: 0 1em 1em 1em;
-                  }
-                }
-            `}
-        </style>
-    </div>
+            <ul className="flex__container">
+                <li className="flex__item">
+                    <CardResourcesmin
+                        img="/static/icons/galle.svg"
+                        title={t('system-au')}
+                        desc={t('desc-au')}
+                        linkgit="https://github.com/digitalnsw/openfisca-nsw"
+                    />
+                </li>
+            </ul>
+
+            <style jsx>
+                {`
+                    @media (max-width: 720px) {
+                        #content {
+                            padding: 0 1em 1em 1em;
+                        }
+                    }
+                `}
+            </style>
+        </div>
     )
 )
 

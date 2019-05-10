@@ -5,8 +5,8 @@ const CardResourcesmin = withNamespaces("components")(
     ({t}, props) => (
         <div className="card-container">
             <div className="card-desc">
-                <p className="Medium">{props.title}</p>
-                <p className="Small">
+                <p className="medium">{props.title}</p>
+                <p className="small">
                     <img src={props.img} alt="" />
                     {props.desc}
                 </p>
@@ -50,6 +50,5 @@ const CardResourcesmin = withNamespaces("components")(
         </div>
     )
 }
-
 
 export default withNamespaces("components")(CardResourcesmin)

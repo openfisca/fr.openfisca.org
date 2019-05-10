@@ -7,7 +7,10 @@ class Piwik extends React.Component {
     componentDidMount() {
         setTimeout(() => {
             if (window.Piwik) {
-                const tracker = window.Piwik.getTracker(`${PiwikConfig.url}/piwik.php`, PiwikConfig.siteId)
+                const tracker = window.Piwik.getTracker(
+                    `${PiwikConfig.url}/piwik.php`,
+                    PiwikConfig.siteId,
+                )
                 tracker.trackPageView(`${PiwikConfig.website} - ${this.props.page}`)
             }
         }, 300)
@@ -25,5 +28,6 @@ class Piwik extends React.Component {
         )
     }
 }
+
 
 export default Piwik

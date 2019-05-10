@@ -8,18 +8,18 @@ const Start = () => (
     <div className="content">
         <style jsx>
             {`
-      #iframe-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-      }
+                #iframe-container {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                }
 
-      @media (max-width: 720px) {
-        #content {
-          padding: 0 1em 1em 1em;
-        }
-      }
-    `}
+                @media (max-width: 720px) {
+                    #content {
+                        padding: 0 1em 1em 1em;
+                    }
+                }
+            `}
         </style>
     </div>
 )

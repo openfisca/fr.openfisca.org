@@ -4,8 +4,8 @@ const CardProject = props => (
             <img src={props.img} />
         </div>
         <div className="card-shortdesc">
-            <p className="Medium">{props.title}</p>
-            <p className="Small">{props.desc}</p>
+            <p className="medium">{props.title}</p>
+            <p className="small">{props.desc}</p>
             <button>{props.attribute1}</button>
             <button>{props.attribute2}</button>
             <button>{props.attribute3}</button>
@@ -56,5 +56,6 @@ const CardProject = props => (
         </style>
     </div>
 )
+
 
 export default CardProject

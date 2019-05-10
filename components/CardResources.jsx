@@ -5,8 +5,8 @@ const CardResources = withNamespaces("components")(
 	({t}, props) => (
         <div className="card-container">
             <div className="card-desc">
-                <p className="Medium">{props.title}</p>
-                <p className="Small">
+                <p className="medium">{props.title}</p>
+                <p className="small">
                     <img src={props.img} alt="" />
                     {props.desc}
                 </p>
@@ -18,7 +18,6 @@ const CardResources = withNamespaces("components")(
 
             <style jsx>
                 {`
-
                     .card-container {
                         background-color: #ffffff;
                         box-shadow: 0px 0px 6px #BCBCC6;
