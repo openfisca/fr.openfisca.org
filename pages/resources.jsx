@@ -1,12 +1,12 @@
 import { withNamespaces } from "react-i18next"
 import Head from "next/head"
 
-import GlobalStyle from "../components/GlobalStyle"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
-import Piwik from "../components/Piwik"
-import CardResources from "../components/CardResources"
-import CardResourcesmin from "../components/CardResourcesmin"
+import Header from "components/Header"
+import Footer from "components/Footer"
+import Piwik from "components/Piwik"
+import CardResources from "components/CardResources"
+import CardResourcesmin from "components/CardResourcesmin"
+import "styles/global.scss"
 
 
 const Resources =  withNamespaces("resources")(
@@ -96,17 +96,17 @@ const Resources =  withNamespaces("resources")(
     )
 )
 
-export default withNamespaces("resources")(({t}) => (
-    <div>
-        <Head>
-            <title>{t('title')}</title>
-            <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
-        </Head>
-        <GlobalStyle />
-        <Header page="resources" title={t('title')} />
-        <Resources />
-        <Footer />
-        <Piwik page="resources" />
-    </div>
+export default withNamespaces("resources")(
+    ({t}) => (
+        <div>
+            <Head>
+                <title>{t('title')}</title>
+                <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
+            </Head>
+            <Header page="resources" title={t('title')} />
+            <Resources />
+            <Footer />
+            <Piwik page="resources" />
+        </div>
     )
 )

@@ -1,11 +1,11 @@
 import Head from "next/head"
 import { withNamespaces } from "react-i18next"
 
-import GlobalStyle from "../components/GlobalStyle"
-import Header from "../components/Header"
-import Partners from "../components/Partners"
-import Footer from "../components/Footer"
-import Piwik from "../components/Piwik"
+import Header from "components/Header"
+import Partners from "components/Partners"
+import Footer from "components/Footer"
+import Piwik from "components/Piwik"
+import "styles/global.scss"
 
 
 const Contribuer =  withNamespaces("contribute")(
@@ -53,7 +53,6 @@ export default withNamespaces("contribute")(({t}) => (
             <title>{t('title')}</title>
             <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
-        <GlobalStyle />
         <Header page="contribute" title={t('title')} />
         <Contribuer />
         <Partners />

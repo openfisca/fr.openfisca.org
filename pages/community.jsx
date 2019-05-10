@@ -1,13 +1,13 @@
 import Head from "next/head"
 import asset from "next/asset"
-import GlobalStyle from "../components/GlobalStyle"
-import Header from "../components/Header"
-import Partners from "../components/Partners"
-import Footer from "../components/Footer"
-import Piwik from "../components/Piwik"
+import { withNamespaces } from "react-i18next"
 
-// the hoc
-import { withNamespaces } from 'react-i18next';
+import Header from "components/Header"
+import Partners from "components/Partners"
+import Footer from "components/Footer"
+import Piwik from "components/Piwik"
+import "styles/global.scss"
+
 
 const Communaute =  withNamespaces("community")(
     ({t}, props) => (
@@ -86,6 +86,7 @@ const Communaute =  withNamespaces("community")(
     )
 )
 
+
 export default withNamespaces("community")(
     ({t}) => (
         <div>
@@ -93,7 +94,6 @@ export default withNamespaces("community")(
                 <title>{t('title')}</title>
                 <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
-            <GlobalStyle />
             <Header page="community" title={t('title')} />
             <Communaute />
             <Partners />

@@ -1,12 +1,12 @@
 import Head from "next/head"
-
 import {withNamespaces} from "react-i18next"
 import {french} from "../i18n"
 
-import GlobalStyle from "../components/GlobalStyle"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
-import Piwik from "../components/Piwik"
+import Header from "components/Header"
+import Footer from "components/Footer"
+import Piwik from "components/Piwik"
+import "styles/global.scss"
+
 
 const Cookies = withNamespaces ("cookies") (
     ({t}, props) => (
@@ -48,21 +48,24 @@ const Cookies = withNamespaces ("cookies") (
                 </a>
             </p>
 
-            <style jsx>{`
-                a {
-                    color: #6d69fb;
-                    margin: 0;
-                }
+            <style jsx>
+                {`
+                    a {
+                        color: #6d69fb;
+                        margin: 0;
+                    }
 
-                #iframe-container {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                }
-            `}</style>
+                    #iframe-container {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                    }
+                `}
+            </style>
         </div>
     )
 )
+
 
 export default withNamespaces ("cookies") (
     ({t}) => (
@@ -74,7 +77,6 @@ export default withNamespaces ("cookies") (
             <Header page="cookies" title={t('title')} />
             <Cookies />
             <Footer />
-            <GlobalStyle />
             <Piwik page="cookies" />
         </div>
     )

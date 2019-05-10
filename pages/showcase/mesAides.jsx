@@ -1,12 +1,12 @@
 import { withNamespaces } from "react-i18next"
 import Head from "next/head"
 
-import GlobalStyle from "../../components/GlobalStyle"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
 import ProjectDesc from "../../components/ProjectDesc"
 import ProjectAttribute from "../../components/ProjectAttribute"
 import Piwik from "../../components/Piwik"
+import "styles/global.scss"
 
 
 const Mesaides =  withNamespaces("mesaides")(
@@ -64,8 +64,7 @@ export default withNamespaces("mesaides")(
                 <title>{t('title')}</title>
                 <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
-            <GlobalStyle />
-            <Header page="mesaides" title="MesAides" />
+            <Header page="mesaides" title={t('mesaides:title')} />
             <Mesaides />
             <Footer />
             <Piwik page="mesaides" />

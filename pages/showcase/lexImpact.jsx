@@ -1,12 +1,12 @@
 import { withNamespaces } from "react-i18next"
 import Head from "next/head"
 
-import GlobalStyle from "../../components/GlobalStyle"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
 import Piwik from "../../components/Piwik"
 import ProjectDesc from "../../components/ProjectDesc"
 import ProjectAttribute from "../../components/ProjectAttribute"
+import "styles/global.scss"
 
 
 const Leximpact =  withNamespaces("leximpact")(
@@ -54,6 +54,7 @@ const Leximpact =  withNamespaces("leximpact")(
     )
 )
 
+
 export default withNamespaces("leximpact")(
     ({t}) => (
         <div>
@@ -61,7 +62,6 @@ export default withNamespaces("leximpact")(
                 <title>{t('title')}</title>
                 <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
-            <GlobalStyle />
             <Header page="leximpact" title={t('leximpact:title')} />
             <Leximpact />
             <Footer />

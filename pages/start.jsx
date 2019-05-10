@@ -1,8 +1,10 @@
 import Head from "next/head"
-import GlobalStyle from "../components/GlobalStyle"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
-import Piwik from "../components/Piwik"
+import { withNamespaces } from "react-i18next"
+
+import Header from "components/Header"
+import Footer from "components/Footer"
+import Piwik from "components/Piwik"
+import "styles/global.scss"
 
 const Start = () => (
     <div className="content">
@@ -24,16 +26,17 @@ const Start = () => (
     </div>
 )
 
-export default () => (
-    <div>
-        <Head>
-            <title>Commencer</title>
-            <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
-        </Head>
-        <GlobalStyle />
-        <Header page="start" title="Commencer" />
-        <Start />
-        <Footer />
-        <Piwik page="start" />
-    </div>
+export default withNamespaces()(
+    ({t}) => (
+        <div>
+            <Head>
+                <title>{t('start')}</title>
+                <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
+            </Head>
+            <Header page="start" title={t('start')} />
+            <Start />
+            <Footer />
+            <Piwik page="start" />
+        </div>
+    )
 )
