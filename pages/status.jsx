@@ -1,11 +1,13 @@
+
 import { withNamespaces } from "react-i18next"
-import Theme from "components/Theme"
+
+import Layout from "layouts/Layout"
 import "styles/theme.scss"
 
 
 const Status =  withNamespaces("status")(
     ({t}, props) => (
-        <Theme page={page} title={t('title')}>
+        <Layout page="status" title={t('title')}>
             <h1>{t('title')}</h1>
             <div id="iframe-container">
                 <iframe
@@ -20,9 +22,8 @@ const Status =  withNamespaces("status")(
                     }}
                 />
             </div>
-        </Theme>
+        </Layout>
     )
 )
-
 
 export default Status

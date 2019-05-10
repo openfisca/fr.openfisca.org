@@ -1,8 +1,8 @@
 import { withNamespaces } from "react-i18next"
 
 
-const CardResources = withNamespaces("components")(
-	({t}, props) => (
+const CardResource = withNamespaces("components")(
+    ({t}, props) => (
         <div className="card-container">
             <div className="card-desc">
                 <p className="medium">{props.title}</p>
@@ -12,9 +12,10 @@ const CardResources = withNamespaces("components")(
                 </p>
             </div>
             <div className="card-links">
-                <a href={props.linkexplorer}> {t('explore')} </a>
-                <a href={props.linkgit}> {t('see-github')} </a>
+                {props.linkexplorer && <a href={props.linkexplorer}>{t('explore')}</a>}
+                <a href={props.linkgit}>{t('see-github')}</a>
             </div>
+
 
             <style jsx>
                 {`
@@ -47,8 +48,9 @@ const CardResources = withNamespaces("components")(
                     }
                 `}
             </style>
-        </div>
+        </div>    
     )
-}
+)
 
-export default withNamespaces("components")(CardResources)
+
+export default CardResource

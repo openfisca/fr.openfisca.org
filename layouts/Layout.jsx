@@ -4,20 +4,18 @@ import Footer from "components/Footer"
 import Piwik from "components/Piwik"
 import "styles/theme.scss"
 
-function Theme({ page, title, children }) {
+function Layout({ page, title, children }) {
     return (
         <div>
             <Head>
                 <title>{title}</title>
             </Head>
             <Header title={title} />
-            <div className="content">
-                {children}
-            </div>
+            <div className="content">{children}</div>
             <Footer />
             <Piwik page={page} />
         </div>
     )
 }
 
-export default Theme
+export default Layout

@@ -209,23 +209,23 @@ h4 {
         position: relative;
         top: 1px;
     }
-}
 
-.outline {
-    border: #fff 1px solid;
-    color: #fff;
-    display: flex;
-    margin: 0.75em 0.5em 0 0;
-    padding: 0.5em;
-}
+    &.outline {
+        border: #fff 1px solid;
+        color: #fff;
+        display: flex;
+        margin: 0.75em 0.5em 0 0;
+        padding: 0.5em;
+    }
 
-.medium {
-    background-color: #6d69fb;
-    border-radius: 4px;
-    color: #000;
-    font-family: "asapregular";
-    font-size: 1.125em;
-    padding: 0.4em;
+    &.medium {
+        background-color: #6d69fb;
+        border-radius: 4px;
+        color: #000;
+        font-family: "asapregular";
+        font-size: 1.125em;
+        padding: 0.4em;
+    }
 }
 
 // sections
