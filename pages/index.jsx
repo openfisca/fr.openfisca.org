@@ -1,12 +1,12 @@
+import { withNamespaces } from "react-i18next"
+
 import Home from "layouts/Home"
 import Hero from "components/Hero"
 import Partners from "components/Partners"
 
-import { withNamespaces } from "react-i18next"
-
 
 function index() {
-    return (
+    return withNamespaces()(
         <Home page="home" title={t('title')}>
             <Hero />
             <div className="content">
@@ -23,7 +23,9 @@ function index() {
                                 {t('content-admin')}
                             </li>
                             <li className="card">
-                                <h3><img src="/static/icons/dev.svg" alt=""/>{t('title-dev')}</h3>
+                                <h3><img src="/static/icons/dev.svg" alt=""/>
+                                    {t('title-dev')}
+                                </h3>
                                 {t('content-dev')}
                             </li>
                         </ul>
@@ -56,7 +58,9 @@ function index() {
                                 <li>{t('feature2-list-a')}</li>
                                 <li>{t('feature2-list-b')}</li>
                                 <li>{t('feature2-list-c')}</li>
-                                <a className="btn medium" href="https://fr.openfisca.org/legislation/swagger">{t('feature2-cta')}</a>
+                                <a className="btn medium" href="https://fr.openfisca.org/legislation/swagger">
+                                    {t('feature2-cta')}
+                                </a>
                             </ul>
                         </div>
                     </div>
@@ -129,4 +133,5 @@ function index() {
     )
 }
 
-export default withNamespaces()(({t}) => index)
+
+export default index

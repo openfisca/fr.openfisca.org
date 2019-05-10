@@ -46,6 +46,7 @@ const Contribuer =  withNamespaces("contribute")(
     )
 )
 
+
 export default withNamespaces("contribute")(({t}) => (
     <div>
         <Head>
