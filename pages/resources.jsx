@@ -6,7 +6,7 @@ import Footer from "components/Footer"
 import Piwik from "components/Piwik"
 import CardResources from "components/CardResources"
 import CardResourcesmin from "components/CardResourcesmin"
-import "styles/global.scss"
+import "styles/theme.scss"
 
 
 const Resources =  withNamespaces("resources")(

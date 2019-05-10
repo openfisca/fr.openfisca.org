@@ -40,6 +40,7 @@
         "quotes": ["error", "double", { "avoidEscape": false }],
         "react/jsx-indent": ["error", 4, { checkAttributes: false, indentLogicalExpressions: true }],
         "react/jsx-indent-props": ["error", 4],
+        "react/prop-types": "off",
         "react/react-in-jsx-scope": "off",
         "semi": ["error", "never"],
     },

@@ -6,7 +6,7 @@ import Footer from "../../components/Footer"
 import ProjectDesc from "../../components/ProjectDesc"
 import ProjectAttribute from "../../components/ProjectAttribute"
 import Piwik from "../../components/Piwik"
-import "styles/global.scss"
+import "styles/theme.scss"
 
 
 const Mesaides =  withNamespaces("mesaides")(

@@ -5,7 +5,7 @@ import Piwik from "components/Piwik"
 import Partners from "components/Partners"
 import Footer from "components/Footer"
 import Hero from "components/Hero"
-import "styles/global.scss"
+import "styles/theme.scss"
 
 
 const Home =  withNamespaces()(

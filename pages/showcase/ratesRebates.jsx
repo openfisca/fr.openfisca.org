@@ -6,7 +6,7 @@ import Footer from "../../components/Footer"
 import Piwik from "../../components/Piwik"
 import ProjectDesc from "../../components/ProjectDesc"
 import ProjectAttribute from "../../components/ProjectAttribute"
-import "styles/global.scss"
+import "styles/theme.scss"
 
 
 const Ratesrebates =  withNamespaces("ratesrebates")(
