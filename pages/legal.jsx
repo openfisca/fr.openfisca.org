@@ -2,7 +2,7 @@ import { withNamespaces } from "react-i18next"
 import Layout from "layouts/Layout"
 
 
-function legal() {
+function Legal() {
     return (
         withNamespaces("legal")(
             <Layout page="legal" title={t('title')}>
@@ -34,4 +34,4 @@ function legal() {
 }
 
 
-export default legal
+export default Legal

@@ -4,7 +4,7 @@ import Layout from "layouts/Layout"
 import Partners from "components/Partners"
 
 
-function contribute() {
+function Contribute() {
     return withNamespaces("contribute")(
         <Layout page="contribute" title={t('title')}>
             <div className="content">
@@ -26,25 +26,19 @@ function contribute() {
                         {t('content-share-link')}
                     </a>
                 </p>
-
-                <style jsx>
-                    {`
-                        #iframe-container {
-                          display: flex;
-                          flex-direction: row;
-                          justify-content: center;
-                        }
-
-                        a {
-                          color: #6d69fb;
-                        }
-                    `}
-                </style>
             </div>
             <Partners />
+
+            <style jsx>
+                {`
+                    a {
+                        color: #6d69fb;
+                    }
+                `}
+            </style>
         </Layout>
     )
 }
 
 
-export default contribute
+export default Contribute

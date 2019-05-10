@@ -4,7 +4,7 @@ import Layout from "layouts/Layout"
 import CardResource from "components/CardResource"
 
 
-function resources() {
+function Resources() {
     const resourceList = [
         {
             img: "/static/icons/france.svg",
@@ -85,7 +85,7 @@ function resources() {
             </style>
         </Layout>
     )
-)
+}
 
 
-export default resources
+export default Resources

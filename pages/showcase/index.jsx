@@ -1,77 +1,78 @@
 import { withNamespaces } from "react-i18next"
-import Head from "next/head"
 
-import Header from "../../components/Header"
-import Footer from "../../components/Footer"
-import Piwik from "../../components/Piwik"
-import CardProject from "../../components/CardProject"
+import Layout from "layouts/Layout"
+import CardProject from "components/CardProject"
 
 
-const Showcase =  withNamespaces("showcase")(
-    ({t}, props) => (
-        <div className="content">
-            <ul className="flex__container">
-                <li className="flex__item">
-                    <a href="mesAides" >
-                        <CardProject
-                            img="/static/projects/mesaides.png"
-                            title={t('title-mesaides')}
-                            desc={t('desc-mesaides')} 
-                            attribute1={t('fr')}
-                            attribute2={t('apiweb')}
-                            attribute3={t('social')}
-                        />
-                    </a>
-                </li>
-                <li className="flex__item">
-                    <a href="lexImpact" >
-                        <CardProject
-                            img="/static/projects/leximpact.png"
-                            title={t('title-lex')}
-                            desc={t('desc-lex')} 
-                            attribute1={t('fr')}
-                            attribute2={t('apipython')}
-                            attribute3={t('reforms')}
-                        />
-                    </a>
-                </li>
-                <li className="flex__item">
-                    <a href="taxIpp" >
-                        <CardProject
-                            img="/static/projects/taxipp.png"
-                            title={t('title-tax')}
-                            desc={t('desc-tax')} 
-                            attribute1={t('fr')}
-                            attribute2={t('apipython')}
-                            attribute3={t('reforms')}
-                        />
-                    </a>
-                </li>
-                <li className="flex__item">
-                    <a href="ratesRebates" >
-                        <CardProject
-                            img="/static/projects/ratesrebates.png"
-                            title={t('title-rates')}
-                            desc={t('desc-rates')} 
-                            attribute1={t('nz')}
-                            attribute2={t('apiweb')}
-                            attribute3={t('social')}
-                        />
-                    </a>
-                </li>
-                <li className="flex__item">
-                    <a href="fastoche" >
-                        <CardProject
-                            img="/static/projects/fastoche.png"
-                            title={t('title-fastoche')}
-                            desc={t('desc-fastoche')} 
-                            attribute1={t('fr')}
-                            attribute2={t('apiweb')}
-                            attribute3={t('social')}
-                        />
-                    </a>
-                </li>
-            </ul>
+function Showcase() {
+    const projectList = [
+        {
+            href="mesAides",
+            img="/static/projects/mesaides.png",
+            title={t('title-mesaides')},
+            desc={t('desc-mesaides')}, 
+            attribute1={t('fr')},
+            attribute2={t('apiweb')},
+            attribute3={t('social')}
+        },
+        {
+            href="lexImpact",
+            img="/static/projects/leximpact.png",
+            title={t('title-lex')},
+            desc={t('desc-lex')}, 
+            attribute1={t('fr')},
+            attribute2={t('apipython')},
+            attribute3={t('reforms')}
+        },
+        {
+            href="taxIpp",
+            img="/static/projects/taxipp.png",
+            title={t('title-tax')},
+            desc={t('desc-tax')}, 
+            attribute1={t('fr')},
+            attribute2={t('apipython')},
+            attribute3={t('reforms')}
+        },
+        {
+            href="ratesRebates",
+            img="/static/projects/ratesrebates.png",
+            title={t('title-rates')},
+            desc={t('desc-rates')}, 
+            attribute1={t('nz')},
+            attribute2={t('apiweb')},
+            attribute3={t('social')}
+        },
+        {
+            href="fastoche",
+            img="/static/projects/fastoche.png",
+            title={t('title-fastoche')},
+            desc={t('desc-fastoche')}, 
+            attribute1={t('fr')},
+            attribute2={t('apiweb')},
+            attribute3={t('social')}
+        }
+    ]
+
+    return withNamespaces("showcase")(
+        <Layout page="showcase" title={t('title')}>
+            <div className="content">
+                <ul className="flex__container">
+                    {projectList.map(project => (
+                        <li className="flex__item" key={project.title}>
+                            <a href={project.href}>
+                                <CardProject
+                                    img={project.img}
+                                    title={project.title}
+                                    desc={project.desc}
+                                    attribute1={project.attribute1}
+                                    attribute2={project.attribute2}
+                                    attribute3={project.attribute3}
+                                />
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
 
 
             <style jsx>
@@ -80,7 +81,7 @@ const Showcase =  withNamespaces("showcase")(
                         list-style: none;
                     }
 
-                    .flex__container{
+                    .flex__container {
                         display: flex;
                         flex-wrap: wrap;
                     }
@@ -92,21 +93,9 @@ const Showcase =  withNamespaces("showcase")(
                     }
                 `}
             </style>
-        </div>
+        </Layout>
     )
-)
+}
 
-export default withNamespaces("showcase")(
-    ({t}) => (
-        <div>
-            <Head>
-                <title>{t('title')}</title>
-                <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
-            </Head>
-            <Header page="showcase" title={t('title')} />
-            <Showcase />
-            <Footer />
-            <Piwik page="showcase" />
-        </div>
-    )
-)
+
+export default Showcase

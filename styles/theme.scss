@@ -184,15 +184,6 @@ h4 {
 }
 
 // buttons
-.cta {
-    background-color: #fff;
-    border: #fff 1px solid;
-    color: #424242;
-    display: flex;
-    margin: 0.75em 0.5em 0 0;
-    padding: 0.5em;
-    text-decoration: none;
-}
 
 .btn {
     border-radius: 4px;
@@ -210,6 +201,7 @@ h4 {
         top: 1px;
     }
 
+
     &.outline {
         border: #fff 1px solid;
         color: #fff;
@@ -218,10 +210,20 @@ h4 {
         padding: 0.5em;
     }
 
+    &.cta {
+        background-color: #fff;
+        border: #fff 1px solid;
+        color: #424242;
+        display: flex;
+        margin: 0.75em 0.5em 0 0;
+        padding: 0.5em;
+        text-decoration: none;
+    }
+
     &.medium {
         background-color: #6d69fb;
         border-radius: 4px;
-        color: #000;
+        color: #fff;
         font-family: "asapregular";
         font-size: 1.125em;
         padding: 0.4em;

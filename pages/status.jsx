@@ -4,7 +4,7 @@ import { withNamespaces } from "react-i18next"
 import Layout from "layouts/Layout"
 
 
-function status(){
+function Status() {
     return withNamespaces("status")(
         <Layout page="status" title={t('title')}>
             <div className="content">
@@ -28,4 +28,4 @@ function status(){
 }
 
 
-export default status
+export default Status

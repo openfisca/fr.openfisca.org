@@ -4,7 +4,7 @@ import Layout from "layouts/Layout"
 import asset from "next/asset"
 
 
-function community() {
+function Community() {
     return withNamespaces("community")(
         <Layout page="community" title={t('title')}>
             <div className="content">
@@ -66,15 +66,12 @@ function community() {
                             margin: 0;
                         }
 
-                        medium {
-                          display: flex;
-                        }
-
                         @media(min-width: 40rem) {
-                          .flex__item50 {
-                            width: 50%;
-                            padding-left: 1rem;
-                            display: flex;
+                            .flex__item50 {
+                                width: 50%;
+                                padding-left: 1rem;
+                                display: flex;
+                            }
                         }
                     `}
                 </style>
@@ -84,4 +81,4 @@ function community() {
 }
 
 
-export default community
+export default Community

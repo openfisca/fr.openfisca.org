@@ -5,7 +5,7 @@ import Hero from "components/Hero"
 import Partners from "components/Partners"
 
 
-function index() {
+function Index() {
     return withNamespaces()(
         <Home page="home" title={t('title')}>
             <Hero />
@@ -29,7 +29,9 @@ function index() {
                                 {t('content-dev')}
                             </li>
                         </ul>
-                        <a className="btn medium" href="/showcase/">{t('everything-cta')}</a>
+                        <a className="btn medium" href="/showcase/">
+                            {t('everything-cta')}
+                        </a>
                     </div>
                 </section>
 
@@ -45,7 +47,9 @@ function index() {
                                 <li>{t('feature1-list-a')}</li>
                                 <li>{t('feature1-list-b')}</li>
                                 <li>{t('feature1-list-c')}</li>
-                                <a className="btn medium" href="resources">{t('feature1-cta')}</a>
+                                <a className="btn medium" href="resources">
+                                    {t('feature1-cta')}
+                                </a>
                             </ul>
                         </div>
                     </div>
@@ -102,7 +106,7 @@ function index() {
                     }
 
                     .flex__item50 li {
-                        list-style-image : url("/static/items/bullet.svg");
+                        list-style-image: url("/static/items/bullet.svg");
                         padding: 1rem;
                     }
 
@@ -112,14 +116,14 @@ function index() {
                         padding-left: 1rem;
                     }
 
-                    @media(max-width: 50rem) { 
+                    @media (max-width: 50rem) {
                         //small screen (50rem = 600px with font 12)
                         .flex__container {
                             flex-flow: row wrap;
                         }
                     }
 
-                    @media(min-width: 75rem) { 
+                    @media (min-width: 75rem) {
                         //wide screen (75rem = 900px with font 12)
                         .flex__item50 {
                             display: flex;
@@ -134,4 +138,4 @@ function index() {
 }
 
 
-export default index
+export default Index

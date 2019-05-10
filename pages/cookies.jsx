@@ -4,7 +4,7 @@ import {french} from "../i18n"
 import Layout from "layouts/Layout"
 
 
-function cookies() {
+function Cookies() {
     return withNamespaces ("cookies") (
         <Layout page="cookies" title={t('title')}>
             <div className="content">
@@ -65,4 +65,4 @@ function cookies() {
 }
 
 
-export default cookies
+export default Cookies
