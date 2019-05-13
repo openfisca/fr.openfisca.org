@@ -115,7 +115,7 @@ const GlobalStyle = () => (
 				text-align: center;
 				white-space: nowrap;
         text-decoration: none;
-        margin: 0.75em 0.5em 0 0;
+        margin: 0em 1em 0 0;
 			}
 
       h1 {
