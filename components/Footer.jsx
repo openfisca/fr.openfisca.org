@@ -39,6 +39,12 @@ const Footer = () => (
 				text-align: center;
 				align-items: center;
 			}
+
+			.baseline img {
+				max-height: 1.5em;
+        		vertical-align: bottom;
+			}
+
 			.CTA {
 				max-width: 8em;
 			}
@@ -72,7 +78,8 @@ const Footer = () => (
 
 			@media (max-width: 720px) {
 				ul {
-					padding: 0;
+					display: flex;
+					padding: 0.2rem;
 					flex-direction: column;
 					align-items: center;
 				}
