@@ -16,7 +16,7 @@ const Hero = () => (
 
     <div className="content">
       <img src="static/images/logo_main.svg" alt="OpenFisca"/>
-      <p className="baseline" >La plateforme Open Source qui modélise <br /> le code législatif en code informatique.</p>
+      <p className="baseline" >La plateforme Open Source qui modélise <br/> le code législatif en code informatique.</p>
       <Link href="https://openfisca.org/doc/" passHref><a className="btn CTA">Commencer <img src={asset('/icons/Rocket.svg')} alt="" /></a></Link>
     </div>
 
@@ -68,6 +68,7 @@ const Hero = () => (
 
 			li img {
         max-height: 1.5em;
+        vertical-align: bottom;
 			}
 
 			h3 {
@@ -80,7 +81,6 @@ const Hero = () => (
       }
 
       @media (max-width:880px) {
-
         .logo {
           display: flex;
           flex-direction: column;
