@@ -11,7 +11,7 @@ const GlobalStyle = () => (
       box-sizing: border-box;
     }
 
-    body{
+    body {
       width: 100%;
       margin: 0;
       font-family: 'asapregular';
@@ -94,7 +94,6 @@ const GlobalStyle = () => (
         margin-right: 1em;
         display: flex;
         padding: 0.5em;
-        margin: 0.75em 0.5em 0 0;
       }
 
       .menu:after, .menu:hover, .menu:active {
@@ -116,6 +115,7 @@ const GlobalStyle = () => (
 				text-align: center;
 				white-space: nowrap;
         text-decoration: none;
+        margin: 0.75em 0.5em 0 0;
 			}
 
       h1 {
@@ -194,7 +194,6 @@ const GlobalStyle = () => (
         background-color:#ffffff;
         border: #ffffff 1px solid;
         padding: 0.5em;
-        margin: 0.75em 0.5em 0 0;
       }
 
       .btn {
@@ -223,9 +222,7 @@ const GlobalStyle = () => (
       .outline {
         color: #ffffff;
         border: #ffffff 1px solid;
-        display: flex;
         padding: 0.5em;
-        margin: 0.75em 0.5em 0 0;
       }
 
       .medium {

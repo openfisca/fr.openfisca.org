@@ -17,7 +17,7 @@ const Hero = () => (
     <div className="content">
       <img src="static/images/logo_main.svg" alt="OpenFisca"/>
       <p className="baseline" >La plateforme Open Source qui modélise <br /> le code législatif en code informatique.</p>
-      <Link href="https://openfisca.org/doc/" passHref><a className="btn CTA">Commencer <img src={asset('/icons/Rocket.svg') } alt="" /></a></Link>
+      <Link href="https://openfisca.org/doc/" passHref><a className="btn CTA">Commencer <img src={asset('/icons/Rocket.svg')} alt="" /></a></Link>
     </div>
 
     <style jsx>{`
@@ -27,7 +27,7 @@ const Hero = () => (
         background-size: cover;
         background-repeat: no-repeat;
         padding-bottom: 10%;
-        }
+      }
 
 			.logo {
 				max-width: 4em;
@@ -55,7 +55,6 @@ const Hero = () => (
 
       ul {
 				list-style-type: none;
-				margin:0em;
 				min-height: 3em;
 				display: flex;
 				align-items : first baseline;

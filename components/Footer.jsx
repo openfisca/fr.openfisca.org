@@ -19,7 +19,6 @@ const Footer = () => (
                 <li><a href="https://forms.gle/XFxiFvfaAa6w7LGy7" passHref><img src="/static/icons/Slack.svg" alt="Slack"></img></a></li>
                 <li><a href="https://twitter.com/openfisca" passHref><img src="/static/icons/Twitter.svg" alt="Twitter"></img></a></li>
             </ul>
-
         </footer>
 
         <style jsx>{`
@@ -48,7 +47,7 @@ const Footer = () => (
 				float: right;
 			}
 
-			h3{
+			h3 {
 				align-text: center;
 				color: #ffffff;}
 
