@@ -12,6 +12,7 @@ import { withNamespaces } from 'react-i18next';
 
 
 const Home = () => (
+
   <div className="content">
     <section>
       <h2>Tout ce que vous pouvez faire avec OpenFisca !</h2>
@@ -36,6 +37,7 @@ const Home = () => (
         <a className="btn medium" href="/showcase/">Voir des projets</a>
       </div>
     </section>
+
     <section>
       <h2>Comment ça marche ?</h2>
       <p>
@@ -56,6 +58,7 @@ const Home = () => (
         </div>
       </div>
     </section>
+
     <section className="flex__container">
       <div className="flex__item50">
         <div className="flex__column">
@@ -86,6 +89,7 @@ const Home = () => (
         </div>
       </div>
     </section>
+
 
     <style jsx>{`
 
