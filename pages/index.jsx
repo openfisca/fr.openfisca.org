@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import GlobalStyle from '../components/GlobalStyle'
 import Piwik from '../components/Piwik'
-import './i18n';
+import i18n from './i18n';
+// import './i18n';
 
 import Partners from '../components/Partners'
 import Footer from '../components/Footer'
@@ -10,6 +11,9 @@ import Hero from '../components/Hero'
 // the hoc
 import { withNamespaces } from 'react-i18next';
 
+const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+}
 
 const Home = () => (
 
@@ -139,17 +143,23 @@ const Home = () => (
 )
 
 
-export default withNamespaces()(({t}) =>
-  <div>
-    <Head>
-      <title>{t('Accueil')}</title>
-      <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
-    </Head>
-    <GlobalStyle/>
-    <Hero/>
-    <Home />
-    <Partners />
-    <Footer />
-    <Piwik page="HomePage"/>
-  </div>
+export default withNamespaces()(({t}) => (
+        <div>
+            <Head>
+                <title>{t('Accueil')}</title>
+                <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
+            </Head>
+            <GlobalStyle/>
+            <Hero/>
+            <div>
+                <button onClick={() => changeLanguage('fr')}>fr</button>
+                <button onClick={() => changeLanguage('en')}>en</button>
+                <h3>{t('Accueil')}</h3>
+            </div>
+            <Home />
+            <Partners />
+            <Footer />
+            <Piwik page="HomePage"/>
+        </div>
+    )
 )
