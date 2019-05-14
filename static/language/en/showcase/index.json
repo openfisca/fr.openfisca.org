@@ -6,11 +6,11 @@ Mes Aides informs French citizens on their eligibility to 32 social benefits.
 
 LexImpact
 
-This on going project aims at creating a tool to simulate the impact of a reform on the French government’s budget and on a population’s standard of living.
+ An ongoing project that aims to create a simple tool to simulate the impact of tax reforms on the French government’s budget and on the population’s standard of living.
 
 Tax IPP
 
-This simulation model matches administrative data and survey data so they can be sent into OpenFisca, to analyse the effects of a tax and benefit system on households. 
+This simulation model matches administrative data and survey data so they can be plugged in OpenFisca, in ordrer to analyse the effects of a tax & benefit system on households. 
 
 Rates Rebates
 
@@ -18,4 +18,4 @@ This prototype digital service makes it easier for low-income homeowners to unde
 
 Fastoch€
 
-This mobile app is a social and money coach. It allows users to easily deal with the monthly budget and to get information on social benefits. 
+This mobile app is a social and money coach. It allows users to easily deal with their monthly budget and to get information on social benefits. 
