@@ -1,9 +1,15 @@
 import Head from 'next/head'
 import GlobalStyle from '../components/GlobalStyle'
 import Piwik from '../components/Piwik'
+import './i18n';
+
 import Partners from '../components/Partners'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
+
+// the hoc
+import { withNamespaces } from 'react-i18next';
+
 
 const Home = () => (
   <div className="content">
@@ -128,10 +134,11 @@ const Home = () => (
   </div>
 )
 
-export default () => (
+
+export default withNamespaces()(({t}) =>
   <div>
     <Head>
-      <title>Accueil</title>
+      <title>{t('Accueil')}</title>
       <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <GlobalStyle/>
