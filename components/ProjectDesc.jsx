@@ -32,6 +32,12 @@ const ProjectDesc = (props) => (
                 width: 100%;
                 height: auto;
             }
+
+            img {
+                max-width: 100%;
+                height: auto;
+                vertical-align: middle;
+            }
         `}</style>
     </div>
 )
