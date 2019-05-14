@@ -1,11 +1,12 @@
 const CardResourcesmin = (props) => (
     <div className="card-container">
         <div className="card-desc">
-            <p className="Medium">{props.title}</p>
-            <p className="Small"><img src={props.img} alt="" />{props.desc}</p>
+            <a className="categorie">{props.categorie}</a>
+            <p className="Medium"><img className="flag" src={props.img} alt="" />{props.title}</p>
+            <p className="Small">{props.desc}</p>
         </div>
         <div className="card-links">
-            <a href={props.linkgit}>Voir sur GitHub</a>
+            <a className="link" href={props.linkgit}>Voir sur GitHub</a>
         </div>
 
         <style jsx>{`
@@ -29,13 +30,28 @@ const CardResourcesmin = (props) => (
             .card-desc > p {
                 white-space: normal;
             }
-
             .card-links {
                 padding: 4%;
                 display: flex;
                 justify-content: space-between;
                 flex-direction: row;
                 background-color: #6d69fb;
+                font-size: 1em;
+            }
+
+            .flag{
+                width: 3em;
+                padding-right: 1em;
+            }
+            .categorie{
+                background-color: #E5E5E5;
+                font-family: asapmedium;
+                font-size: 0.75em;
+                color: #000;
+                border: solid 0px;
+                margin-top: 4%;
+                padding: 1%;
+                border-radius: 4px;
             }
         `}</style>
     </div>
