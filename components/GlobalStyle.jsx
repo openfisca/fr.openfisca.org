@@ -11,7 +11,7 @@ const GlobalStyle = () => (
       box-sizing: border-box;
     }
 
-    body{
+    body {
       width: 100%;
       margin: 0;
       font-family: 'asapregular';
@@ -19,7 +19,7 @@ const GlobalStyle = () => (
       line-height: 130%;
     }
 
-    .content{
+    .content {
       padding: 0 3em 1em 3em;
       margin: 0 auto;
     }
@@ -94,7 +94,6 @@ const GlobalStyle = () => (
         margin-right: 1em;
         display: flex;
         padding: 0.5em;
-        margin: 0.75em 0.5em 0 0;
       }
 
       .menu:after, .menu:hover, .menu:active {
@@ -116,6 +115,7 @@ const GlobalStyle = () => (
 				text-align: center;
 				white-space: nowrap;
         text-decoration: none;
+        margin: 0em 1em 0 0;
 			}
 
       h1 {
@@ -193,9 +193,7 @@ const GlobalStyle = () => (
         color: #424242;
         background-color:#ffffff;
         border: #ffffff 1px solid;
-        display: flex;
         padding: 0.5em;
-        margin: 0.75em 0.5em 0 0;
       }
 
       .btn {
@@ -224,9 +222,7 @@ const GlobalStyle = () => (
       .outline {
         color: #ffffff;
         border: #ffffff 1px solid;
-        display: flex;
         padding: 0.5em;
-        margin: 0.75em 0.5em 0 0;
       }
 
       .medium {

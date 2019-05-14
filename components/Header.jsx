@@ -22,7 +22,7 @@ const Header = (props) => (
 
         <style jsx>{`
 			#logo-small {
-				max-width: 3em;
+				max-width: 4em;
 				margin: 1em;
 				cursor:pointer;
 			}
@@ -37,7 +37,6 @@ const Header = (props) => (
 
       		ul {
 				list-style-type: none;
-				margin:0em;
 				min-height: 3em;
 				display: flex;
 				align-items : first baseline;
@@ -50,7 +49,8 @@ const Header = (props) => (
 			}
 
 			li img {
-        		max-height: 1.5em;
+				max-height: 1.5em;
+				vertical-align: bottom;
 			}
 
 			@media (max-width: 720px) {
@@ -58,8 +58,10 @@ const Header = (props) => (
 					flex-direction: column;
 					justyfy-content: stretch;
 				}
+
 				ul {
-       				padding: 0;
+       				display: flex;
+          			padding: 0.2rem;
           			flex-direction: column;
           			align-items: center;
 				}

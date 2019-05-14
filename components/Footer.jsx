@@ -19,7 +19,6 @@ const Footer = () => (
                 <li><a href="https://forms.gle/XFxiFvfaAa6w7LGy7" passHref><img src="/static/icons/Slack.svg" alt="Slack"></img></a></li>
                 <li><a href="https://twitter.com/openfisca" passHref><img src="/static/icons/Twitter.svg" alt="Twitter"></img></a></li>
             </ul>
-
         </footer>
 
         <style jsx>{`
@@ -40,6 +39,12 @@ const Footer = () => (
 				text-align: center;
 				align-items: center;
 			}
+
+			.baseline img {
+				max-height: 1.5em;
+        		vertical-align: bottom;
+			}
+
 			.CTA {
 				max-width: 8em;
 			}
@@ -48,7 +53,7 @@ const Footer = () => (
 				float: right;
 			}
 
-			h3{
+			h3 {
 				align-text: center;
 				color: #ffffff;}
 
@@ -73,7 +78,8 @@ const Footer = () => (
 
 			@media (max-width: 720px) {
 				ul {
-					padding: 0;
+					display: flex;
+					padding: 0.2rem;
 					flex-direction: column;
 					align-items: center;
 				}
