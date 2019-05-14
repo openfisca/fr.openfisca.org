@@ -1,3 +1,8 @@
 {
-    "Accueil": "Bonjour"
+    "title": "Accueil",
+    "projectsLink": "Projets",
+    "ressourcesLink": "Ressources",
+    "communityLink": "Communauté",
+    "githubLink": "Code source GitHub",
+    "startLink": "Commencer"
 }

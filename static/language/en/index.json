@@ -1,3 +1,8 @@
 {
-    "Accueil": "Home"
+    "title": "Home",
+    "projectsLink": "Showcase",
+    "ressourcesLink": "Resources",
+    "communityLink": "Community",
+    "githubLink": "Source code",
+    "startLink": "Getting started"
 }

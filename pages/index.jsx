@@ -146,7 +146,7 @@ const Home = () => (
 export default withNamespaces()(({t}) => (
         <div>
             <Head>
-                <title>{t('Accueil')}</title>
+                <title>{t('title')}</title>
                 <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
             <GlobalStyle/>
@@ -154,7 +154,7 @@ export default withNamespaces()(({t}) => (
             <div>
                 <button onClick={() => changeLanguage('fr')}>fr</button>
                 <button onClick={() => changeLanguage('en')}>en</button>
-                <h3>{t('Accueil')}</h3>
+                <h3>{t('title')}</h3>
             </div>
             <Home />
             <Partners />
