@@ -2,7 +2,6 @@ import Head from 'next/head'
 import GlobalStyle from '../components/GlobalStyle'
 import Piwik from '../components/Piwik'
 import i18n from './i18n';
-// import './i18n';
 
 import Partners from '../components/Partners'
 import Footer from '../components/Footer'
@@ -151,11 +150,6 @@ export default withNamespaces()(({t}) => (
             </Head>
             <GlobalStyle/>
             <Hero/>
-            <div>
-                <button onClick={() => changeLanguage('fr')}>fr</button>
-                <button onClick={() => changeLanguage('en')}>en</button>
-                <h3>{t('title')}</h3>
-            </div>
             <Home />
             <Partners />
             <Footer />

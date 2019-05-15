@@ -1,7 +1,15 @@
 import asset from 'next/asset'
 import Link from 'next/link'
+import i18n from '../pages/i18n';
+import { withNamespaces } from 'react-i18next';
 
-const Header = (props) => (
+
+const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+}
+
+const Header =  withNamespaces()(
+  ({t}, props) => (
     <header>
         <title>{props.title}</title>
         <nav>
@@ -68,6 +76,7 @@ const Header = (props) => (
 			}
 		`}</style>
     </header>
+  )
 )
 
 export default Header

@@ -1,8 +1,11 @@
 {
     "title": "Home",
-    "projectsLink": "Showcase",
-    "ressourcesLink": "Resources",
-    "communityLink": "Community",
-    "githubLink": "Source code",
-    "startLink": "Getting started"
+    "projects": "Showcase",
+    "ressources": "Resources",
+    "community": "Community",
+    "github": "Source code",
+    "start": "Getting started",
+
+    "pitch1": "The open source platform",
+    "pitch2": "that turns law into software."
 }

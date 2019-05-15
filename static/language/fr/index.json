@@ -1,8 +1,11 @@
 {
     "title": "Accueil",
-    "projectsLink": "Projets",
-    "ressourcesLink": "Ressources",
-    "communityLink": "Communauté",
-    "githubLink": "Code source GitHub",
-    "startLink": "Commencer"
+    "projects": "Projets",
+    "ressources": "Ressources",
+    "community": "Communauté",
+    "github": "Code source GitHub",
+    "start": "Commencer",
+
+    "pitch1": "La plateforme Open Source qui modélise",
+    "pitch2": "le code législatif en code informatique."
 }

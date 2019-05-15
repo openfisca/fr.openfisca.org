@@ -1,6 +1,13 @@
 import asset from 'next/asset'
 import Link from 'next/link'
+import {i18n, switchLanguage} from '../pages/i18n';
 import { withNamespaces } from 'react-i18next';
+import i18next from 'i18next';
+
+
+const changeLanguage = (lng) => {
+  i18n.changeLanguage(lng);
+}
 
 const Hero = withNamespaces()(
   ({t}) => (
@@ -13,12 +20,15 @@ const Hero = withNamespaces()(
         <li><Link href="/community" passHref><a className="menu">{t('community')}</a></Link></li>
         <li><a className="btn outline" href="https://github.com/openfisca/openfisca-france">{t('github')} <img src={asset('/icons/github.svg')} alt="GitHub"/></a></li>
         <li><Link href="https://openfisca.org/doc/" passHref><a className="btn CTA">{t('start')} <img src={asset('/icons/Rocket.svg')}  alt=""/></a></Link></li>
+        <li>
+          <button onClick={(e) => changeLanguage(switchLanguage())}>{switchLanguage()}</button>
+        </li>
       </ul>
     </nav>
 
     <div className="content">
       <img src="static/images/logo_main.svg" alt="OpenFisca"/>
-      <p className="baseline" >La plateforme Open Source qui modélise <br/> le code législatif en code informatique.</p>
+      <p className="baseline" >{t('pitch1')}<br/>{t('pitch2')}</p>
       <Link href="https://openfisca.org/doc/" passHref><a className="btn CTA">{t('start')} <img src={asset('/icons/Rocket.svg')} alt="" /></a></Link>
     </div>
 

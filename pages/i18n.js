@@ -16,6 +16,10 @@ const resources = {
   }
 };
 
+const switchLanguage = () => {
+  return (i18n.language == 'fr') ? 'en' : 'fr'
+}
+
 i18n
   .use(detector)
   .use(backend)
@@ -32,4 +36,4 @@ i18n
     }
   });
 
-export default i18n;
+export {i18n, switchLanguage}
