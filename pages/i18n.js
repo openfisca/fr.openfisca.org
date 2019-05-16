@@ -3,8 +3,8 @@ import detector from "i18next-browser-languagedetector";
 import backend from "i18next-xhr-backend";
 import { reactI18nextModule } from "react-i18next";
 
-import indexFR from '../static/language/fr/index.json';
-import indexEN from '../static/language/en/index.json';
+import indexFR from '../public/locales/fr/index.json';
+import indexEN from '../public/locales/en/index.json';
 
 // the translations
 const resources = {
