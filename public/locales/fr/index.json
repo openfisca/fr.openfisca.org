@@ -3,7 +3,7 @@
     "projects": "Projets",
     "ressources": "Ressources",
     "community": "Communauté",
-    "github": "Code source GitHub",
+    "github": "Code source",
     "start": "Commencer",
 
     "pitch1": "La plateforme Open Source qui modélise",
@@ -31,5 +31,6 @@
     "feature2-cta":"Tester l'API web",
     
     "title-community":"Une communauté open source internationale",
-    "content-community":"OpenFisca a des contributeurs partout dans le monde ! Rejoignez une communauté d’économistes, de chercheurs, de développeurs et d’experts des droits sociaux qui s’engagent dans la transformation de la loi en code informatique !"
+    "content-community":"OpenFisca a des contributeurs partout dans le monde ! Rejoignez une communauté d’économistes, de chercheurs, de développeurs et d’experts des droits sociaux qui s’engagent dans la transformation de la loi en code informatique !",
+    "error":"fichier de traduction non trouvé"
 }

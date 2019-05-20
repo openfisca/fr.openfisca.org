@@ -19,8 +19,7 @@ const Communaute =  withNamespaces()(
             <h2>{t('title-who')}</h2>
             <div className="flex__container">
                 <div className="flex__item50">
-                    <p>{t('content-who')}
-                    </p>
+                    <p>{t('content-who')}</p>
                 </div>
                 <div className="flex__item50">
                     <img src={asset('/images/community.png')} alt=""/>
@@ -29,23 +28,20 @@ const Communaute =  withNamespaces()(
         </section>
 
         <section>
-            <h2>Échanger avec la communauté</h2>
+            <h2>{t('title-reach')}</h2>
             <div className="flex__column">
                 <div className="flex__item50">
-                    <p>
-                        Lorsque vous travaillez sur un projet utilisant OpenFisca, vous êtes le bienvenue sur notre Slack ! Vous pourrez y demander de l’aide, des conseils et rencontrer les autres membres de la communauté.
-                        Avant de vous inviter sur le Slack, nous vous demandons simplement de répondre à quelques questions sur votre projet.
-                    </p>
+                    <p>{t('content-reach')}</p>
                 </div>
                 <a className="btn medium" href="https://forms.gle/XFxiFvfaAa6w7LGy7">Rejoindre le Slack</a>
             </div>
         </section>
 
         <section>
-            <h2>Écrivez-nous</h2>
+            <h2>{t('title-contact')}</h2>
             <div className="flex__column">
                 <div className="flex__item50">
-                    <p>Pour toute question ou pour toute demande de collaboration, n&#39;hésitez pas à nous joindre par email.</p>
+                    <p>{t('content-contact')}</p>
                 </div>
                 <div>
                     <a className="btn medium" href="mailto:%63%6fn&#116;&#97;%63%74&#64;%6f%70%65%6efi&#115;&#99;a%2e&#111;&#114;&#103;">Contact</a>
@@ -65,6 +61,7 @@ const Communaute =  withNamespaces()(
             </div>
         </section>
 
+
         <style jsx>{`
             medium {
               display: flex;
@@ -78,7 +75,7 @@ const Communaute =  withNamespaces()(
             }
         `}</style>
     </div>
-)
+    )
 )
 
 export default withNamespaces()(({t}) => (
@@ -94,5 +91,5 @@ export default withNamespaces()(({t}) => (
         <Footer />
         <Piwik page="community"/>
     </div>
-)
+    )
 )

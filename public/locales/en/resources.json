@@ -1,9 +1,9 @@
-Resources
-
-System: France
+{
+    "title": "Resources",
+"system-france": "System: France
 45 contributors on the project
 Explore
-See on GitHub
+See on GitHub",
 
 System: Aotearoa New Zealand
 15 contributors on the project
@@ -29,3 +29,4 @@ See on GitHub
 System: New Gale of South
 4 contributors on the project
 See on GitHub
+}
