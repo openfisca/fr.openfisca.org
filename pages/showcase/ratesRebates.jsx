@@ -15,7 +15,7 @@ const changeLanguage = (lng) => {
 const Ratesrebates =  withNamespaces()(
     ({t}, props) => (
     <div className="content">
-        <a className="outline" href="/showcase/" >Retour</a>
+        <a className="back" href="/showcase/" >Retour</a>
 
         <ProjectDesc img="/static/projects/ratesrebates.png"
             baseline="Prototyper le versement automatique d’une aide sociale."
@@ -35,23 +35,7 @@ const Ratesrebates =  withNamespaces()(
                 imgpoweredby="/static/icons/circle/admin.svg" poweredby="porté par une administration publique"
             />
         </section>
-
-
-        <style jsx>{`
-
-.outline {
-  color: #656565;
-  padding: 0 1% 0 1%;
-  border-color: #656565;
-  border-radius: 25px;
-  max-width: 4em;
-
-}
-
-`}</style>
-
     </div>
-
 )
 )
 export default withNamespaces()(({t}) => (
