@@ -4,10 +4,15 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Piwik from '../../components/Piwik'
 import CardProject from '../../components/CardProject'
-import i18n from '../i18n'
+import { withNamespaces } from 'react-i18next';
 
 
-const Showcase = () => (
+const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+}
+
+const Showcase =  withNamespaces()(
+  ({t}, props) => (
   <div className="content">
     <ul className="flex__container">
       <li className="flex__item">
@@ -47,6 +52,7 @@ const Showcase = () => (
       </li>
     </ul>
 
+
     <style jsx>{`
       li {
         list-style: none;
@@ -64,18 +70,21 @@ const Showcase = () => (
       }
     `}</style>
   </div>
+  )
 )
 
-export default () => (
-  <div>
-    <Head>
-      <title>{t('title')}</title>
-      <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
-    </Head>
-    <GlobalStyle/>
-    <Header page="showcase" title="Projets" />
-    <Showcase />
-    <Footer />
-    <Piwik page="showcase"/>
-  </div>
+
+export default withNamespaces()(({t}) => (
+    <div>
+        <Head>
+          <title>{t('title')}</title>
+          <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
+        <GlobalStyle/>
+        <Header page="showcase" title="Projets" />
+        <Showcase />
+        <Footer />
+        <Piwik page="showcase"/>
+    </div>
+  )
 )

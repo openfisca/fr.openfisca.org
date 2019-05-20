@@ -6,16 +6,20 @@ import Partners from '../components/Partners'
 import Footer from '../components/Footer'
 import Piwik from '../components/Piwik'
 
-const Communaute = () => (
+// the hoc
+import { withNamespaces } from 'react-i18next';
+
+const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+}
+const Communaute =  withNamespaces()(
+    ({t}, props) => (
     <div className="content">
         <section>
-            <h2>Qui sommes-nous ?</h2>
+            <h2>{t('title-who')}</h2>
             <div className="flex__container">
                 <div className="flex__item50">
-                    <p>
-                        OpenFisca est une communauté Open Source soutenue par Beta Gouv & Etalab, deux équipes d’innovation au sein du gouvernement français.
-                        En 2019, OpenFisca est utilisée par 7 pays dans le monde (France, Espagne, Italie, Nouvelle Zélande, Sénégal & Tunisie).
-                        Plus de 70 personnes ont rejoint cette aventure. Ils contribuent, s’entraident et participent chaque jour à améliorer le code d’OpenFisca.
+                    <p>{t('content-who')}
                     </p>
                 </div>
                 <div className="flex__item50">
@@ -75,18 +79,20 @@ const Communaute = () => (
         `}</style>
     </div>
 )
+)
 
-export default () => (
+export default withNamespaces()(({t}) => (
     <div>
         <Head>
-            <title>Communauté</title>
+            <title>{t('title')}</title>
             <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <GlobalStyle/>
-        <Header page="community" title="Communauté" />
+        <Header page="community" title="{t('title')}" />
         <Communaute />
         <Partners/>
         <Footer />
         <Piwik page="community"/>
     </div>
+)
 )

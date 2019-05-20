@@ -4,8 +4,15 @@ import Header from '../components/Header'
 import Partners from '../components/Partners'
 import Footer from '../components/Footer'
 import Piwik from '../components/Piwik'
+import { withNamespaces } from 'react-i18next';
 
-const Contribuer = () => (
+
+const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+}
+
+const Contribuer =  withNamespaces()(
+  ({t}, props) => (
   <div className="content">
     <h2>Suggérer ou ajouter des contenus</h2>
     <h3>Ce site - tout comme ce projet - est contributif !</h3>
@@ -42,20 +49,21 @@ const Contribuer = () => (
         color: #6d69fb;
       }
     `}</style>
-  </div>
+    </div>
+  )
 )
 
-export default () => (
+export default withNamespaces()(({t}) => (
   <div>
-    <Head>
-      <title>Contribuer</title>
-      <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
-    </Head>
-    <GlobalStyle/>
-    <Header page="contribute" title="Contribuer" />
-    <Contribuer />
-    <Partners />
-    <Footer />
-    <Piwik page="contribute"/>
-  </div>
+        <Head>
+            <title>{t('title')}</title>
+            <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
+        <GlobalStyle/>
+        <Header page="contribute" title="Contribuer" />
+        <Contribuer />
+        <Partners />
+        <Footer />
+        <Piwik page="contribute"/>
+    </div>
 )

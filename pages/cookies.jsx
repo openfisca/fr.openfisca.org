@@ -4,7 +4,16 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Piwik from '../components/Piwik'
 
-const Cookies = () => (
+import i18n from './i18n';
+import { withNamespaces } from 'react-i18next';
+
+
+const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+}
+
+const Cookies =  withNamespaces()(
+  ({t}, props) => (
   <div className="content">
     <p>
       Lorsque vous visitez ce site web, nous laissons un petit fichier texte (un "cookie") sur votre ordinateur.
@@ -26,6 +35,7 @@ const Cookies = () => (
       <a href="https://stats.data.gouv.fr/index.php?module=CoreHome&action=index&idSite=4&period=range&date=previous30#?module=Dashboard&action=embeddedIndex&idSite=4&period=range&date=previous30&idDashboard=1">stats.data.gouv.fr</a>
     </p>
 
+
     <style jsx>{`
       #iframe-container {
         display: flex;
@@ -38,12 +48,13 @@ const Cookies = () => (
       }
     `}</style>
   </div>
+  )
 )
 
-export default () => (
-    <div>
+export default withNamespaces()(({t}) => (
+  <div>
         <Head>
-          <title>Informatique & libertés</title>
+          <title>{t('title')}</title>
           <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <Header page="cookies" title="Informatique & libertés" />

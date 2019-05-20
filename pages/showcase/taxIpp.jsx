@@ -6,7 +6,15 @@ import Piwik from '../../components/Piwik'
 import ProjectDesc from '../../components/ProjectDesc'
 import ProjectAttribute from '../../components/ProjectAttribute'
 
+// the hoc
+import { withNamespaces } from 'react-i18next';
+
+const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+}
 const Taxipp = () => (
+    const Communaute =  withNamespaces()(
+    ({t}, props) => (
     <div className="content">
         <a className="outline" href="/showcase/" >Retour</a>
 
@@ -27,7 +35,6 @@ const Taxipp = () => (
                 imgpoweredby="/static/icons/circle/economistes.svg" poweredby="porté par des économistes"
             />
         </section>
-
         <style jsx>{`
 
 .outline {
@@ -36,17 +43,18 @@ const Taxipp = () => (
   border-color: #656565;
   border-radius: 25px;
   max-width: 4em;
-
 }
-
-`}</style>
+        `}</style>
 
     </div>
 )
-export default () => (
-    <div>
+)
+)
+
+export default withNamespaces()(({t}) => (
+        <div>
         <Head>
-            <title>TaxIPP</title>
+            <title>{t('title')}</title>
             <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <GlobalStyle/>
@@ -55,4 +63,5 @@ export default () => (
         <Footer />
         <Piwik page="taxipp"/>
     </div>
+)
 )

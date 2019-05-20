@@ -6,7 +6,14 @@ import Piwik from '../../components/Piwik'
 import ProjectDesc from '../../components/ProjectDesc'
 import ProjectAttribute from '../../components/ProjectAttribute'
 
-const Fastoche = () => (
+// the hoc
+import { withNamespaces } from 'react-i18next';
+
+const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+}
+const Fastoche =  withNamespaces()(
+    ({t}, props) => (
     <div className="content">
         <a className="outline" href="/showcase/" >Retour</a>
 
@@ -43,10 +50,12 @@ const Fastoche = () => (
 
     </div>
 )
-export default () => (
+)
+
+export default withNamespaces()(({t}) => (
     <div>
         <Head>
-            <title>Fastoch€</title>
+            <title>{t('title')}</title>
             <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <GlobalStyle/>
@@ -55,4 +64,5 @@ export default () => (
         <Footer />
         <Piwik page="fastoche"/>
     </div>
+)
 )

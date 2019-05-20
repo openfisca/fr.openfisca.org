@@ -6,7 +6,14 @@ import ProjectDesc from '../../components/ProjectDesc'
 import ProjectAttribute from '../../components/ProjectAttribute'
 import Piwik from '../../components/Piwik'
 
-const Mesaides = () => (
+// the hoc
+import { withNamespaces } from 'react-i18next';
+
+const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+}
+const Mesaides =  withNamespaces()(
+    ({t}, props) => (
     <div className="content">
         <a className="outline" href="/showcase/" >Retour</a>
         <ProjectDesc img="/static/projects/mesaides.png" baseline="MesAides est un simulateur de droit aux aides sociales." desc1="Développé par BetaGouv, l’équipe d’innovation du gouvernement français"
@@ -39,10 +46,12 @@ const Mesaides = () => (
     </div>
 
 )
-export default () => (
+)
+
+export default withNamespaces()(({t}) => (
     <div>
         <Head>
-          <title>MesAides</title>
+          <title>{t('title')}</title>
           <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <GlobalStyle/>
@@ -51,4 +60,5 @@ export default () => (
         <Footer />
         <Piwik page="mesaides"/>
     </div>
+)
 )

@@ -7,7 +7,14 @@ import ProjectDesc from '../../components/ProjectDesc'
 import ProjectAttribute from '../../components/ProjectAttribute'
 
 
-const Leximpact = () => (
+// the hoc
+import { withNamespaces } from 'react-i18next';
+
+const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+}
+const Leximpact =  withNamespaces()(
+    ({t}, props) => (
     <div className="content">
 
         <a className="outline" href="/showcase/" >Retour</a>
@@ -47,10 +54,12 @@ const Leximpact = () => (
 
     </div>
 )
-export default () => (
+)
+
+export default withNamespaces()(({t}) => (
     <div>
         <Head>
-          <title>LexImpact</title>
+          <title>{t('title')}</title>
           <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <GlobalStyle/>
@@ -59,4 +68,5 @@ export default () => (
         <Footer />
         <Piwik page="leximpact"/>
     </div>
+)
 )

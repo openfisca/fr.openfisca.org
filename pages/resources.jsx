@@ -6,8 +6,15 @@ import Piwik from '../components/Piwik'
 import CardResources from '../components/CardResources'
 import CardResourcesmin from '../components/CardResourcesmin'
 
+// the hoc
+import { withNamespaces } from 'react-i18next';
 
-const Resources = () => (
+const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+}
+
+const Resources =  withNamespaces()(
+    ({t}, props) => (
     <div className="content">
         <ul className="flex__container">
             <li className="flex__item">
@@ -62,17 +69,19 @@ const Resources = () => (
         `}</style>
     </div>
 )
+)
 
-export default () => (
+export default withNamespaces()(({t}) => (
     <div>
         <Head>
-          <title>Ressources</title>
+          <title>{t('title')}</title>
           <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <GlobalStyle/>
-        <Header page="resources" title="Ressources" />
+        <Header page="resources" title="{t('title')}" />
         <Resources />
         <Footer />
         <Piwik page="resources"/>
     </div>
+)
 )
