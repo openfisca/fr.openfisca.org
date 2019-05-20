@@ -15,7 +15,7 @@ const changeLanguage = (lng) => {
 const Fastoche =  withNamespaces()(
     ({t}, props) => (
     <div className="content">
-        <a className="outline" href="/showcase/" >Retour</a>
+        <a className="back" href="/showcase/" >Retour</a>
 
         <ProjectDesc img="/static/projects/fastoche.png" baseline="Fastoch€ est un coach d'épargne." desc1="Développé par PayBoost, un acteur privé du paiement en ligne."
             desc2="Fastoch€ est une application qui joue le rôle d’un coach d’épargne en reliant les comptes bancaires et en informant l’utilisateur sur son reste à vivre.
@@ -33,21 +33,6 @@ const Fastoche =  withNamespaces()(
                 imgpoweredby="/static/icons/circle/startup.svg" poweredby="porté par une start-up privée"
             />
         </section>
-
-
-        <style jsx>{`
-
-  .outline {
-    color: #656565;
-    padding: 0 1% 0 1%;
-    border-color: #656565;
-    border-radius: 25px;
-    max-width: 4em;
-
-  }
-
-`}</style>
-
     </div>
 )
 )

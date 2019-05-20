@@ -5,3 +5,5 @@ yarn.lock
 /out/*
 report.*.json
 npm-debug.log
+pages/Sans titre.code-workspace
+

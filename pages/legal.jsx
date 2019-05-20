@@ -23,13 +23,7 @@ const Legal =  withNamespaces()(
         </p>
 
         <h2>{t('host')}</h2>
-        <p>
-            {t('host-address')}
-        </p>
-
-        <style jsx>{`
-
-        `}</style>
+        <p>{t('host-address')}</p>
     </div>
     )
 )
