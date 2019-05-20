@@ -4,6 +4,15 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Piwik from '../components/Piwik'
 
+import i18n from './i18n';
+
+// the hoc
+import { withNamespaces } from 'react-i18next';
+
+const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+}
+
 const Status = () => (
     <div className="content">
         <h1>État des services</h1>
@@ -17,10 +26,10 @@ const Status = () => (
     </div>
 )
 
-export default () => (
+export default withNamespaces()(({t}) => (
     <div>
         <Head>
-            <title>État des services</title>
+            <title>{t('title')}</title>
             <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <GlobalStyle/>
@@ -29,4 +38,5 @@ export default () => (
         <Footer />
         <Piwik page="status"/>
     </div>
+    )
 )
