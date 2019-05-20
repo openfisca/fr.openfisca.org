@@ -20,9 +20,7 @@ const Hero = withNamespaces()(
         <li><Link href="/community" passHref><a className="menu">{t('community')}</a></Link></li>
         <li><a className="btn outline" href="https://github.com/openfisca/openfisca-france">{t('github')} <img src={asset('/icons/github.svg')} alt="GitHub"/></a></li>
         <li><Link href="https://openfisca.org/doc/" passHref><a className="btn CTA">{t('start')} <img src={asset('/icons/Rocket.svg')}  alt=""/></a></Link></li>
-        <li>
-          <button onClick={(e) => changeLanguage(switchLanguage())}>{switchLanguage()}</button>
-        </li>
+        <li><button onClick={(e) => changeLanguage(switchLanguage())}>{switchLanguage()}</button></li>
       </ul>
     </nav>
 

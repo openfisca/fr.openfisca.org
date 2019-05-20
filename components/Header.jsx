@@ -1,29 +1,31 @@
 import asset from 'next/asset'
 import Link from 'next/link'
-import i18n from '../pages/i18n';
+import {i18n, switchLanguage} from '../pages/i18n';
 import { withNamespaces } from 'react-i18next';
+import i18next from 'i18next';
 
 
 const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
+  i18n.changeLanguage(lng);
 }
 
-const Header =  withNamespaces()(
-  ({t}, props) => (
+const Header = withNamespaces()(
+  ({t}) => (
     <header>
-        <title>{props.title}</title>
+        <title>{t('title')}</title>
         <nav>
             <Link href="/">
-                <img id="logo-small" src={asset('/images/logo_mini.svg')} />
+                <img id="logo-small" src={asset('/images/logo_mini.svg')} alt={t('title')} />
             </Link>
             <ul>
-                <li><Link href="/showcase/" passHref><a className="menu">Projets</a></Link></li>
-                <li><Link href="/resources" passHref><a className="menu">Ressources</a></Link></li>
-                <li><Link href="/community" passHref><a className="menu">Communauté</a></Link></li>
-                <li><a className="btn outline" href="https://github.com/openfisca/openfisca-france">Code source <img src={asset('/icons/github.svg')} alt="github.com"/></a></li>
-                <li><Link href="https://openfisca.org/doc/" passHref><a className="btn CTA">Commencer <img src={asset('/icons/Rocket.svg')} /></a></Link></li>
+                <li><Link href="/showcase/" passHref><a className="menu">{t('projects')}</a></Link></li>
+                <li><Link href="/resources" passHref><a className="menu">{t('ressources')}</a></Link></li>
+                <li><Link href="/community" passHref><a className="menu">{t('community')}</a></Link></li>
+                <li><a className="btn outline" href="https://github.com/openfisca/openfisca-france">{t('github')} <img src={asset('/icons/github.svg')} alt="github.com"/></a></li>
+                <li><Link href="https://openfisca.org/doc/" passHref><a className="btn CTA">{t('start')} <img src={asset('/icons/Rocket.svg')} /></a></Link></li>
+                <li><button onClick={(e) => changeLanguage(switchLanguage())}>{switchLanguage()}</button></li>
             </ul>
-            <h1>{props.title}</h1>
+            <h1>{t('title')}</h1>
         </nav>
 
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
