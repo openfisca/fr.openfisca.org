@@ -4,6 +4,8 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Piwik from '../../components/Piwik'
 import CardProject from '../../components/CardProject'
+import i18n from '../i18n'
+
 
 const Showcase = () => (
   <div className="content">
@@ -67,7 +69,7 @@ const Showcase = () => (
 export default () => (
   <div>
     <Head>
-      <title>Projets</title>
+      <title>{t('title')}</title>
       <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <GlobalStyle/>

@@ -7,5 +7,29 @@
     "start": "Getting started",
 
     "pitch1": "The open source platform",
-    "pitch2": "that turns law into software."
+    "pitch2": "that turns law into software.",
+
+    "everything": "Everything you can do with OpenFisca",
+    "title-economists":"For economists",
+    "content-economists":"OpenFisca allows you to use survey data to simulate the impact of a reform on a given government’s budget and on a population’s standard of living.",
+    "title-dev":"For developers",
+    "content-dev":"OpenFisca allows you to easily create web applications based on your simulation results, thanks to the web API. You can build a great variety of other services by coding formulas, hosting your own instance or building your own extensions.",
+    "title-admin":"For public administrations",
+    "content-admin":"OpenFisca allows you to stop building your micro-simulation software and tax & benefit calculators on your own. Instead, contribute to OpenFisca, collaborate with other administrations and reduce the bill for the taxpayer.",
+    "everything-cta":"See showcase",
+
+    "title-how":"How does it work?",
+    "content-how":"OpenFisca is a free, reusable, modular open source project. Il permet de modéliser le code législatif en code informatique, pour améliorer la transparence et l’accès à la loi.",
+    
+    "feature1-list-a":"Use an existing tax & benefit system existant",
+    "feature1-list-b": "Build your own system",
+    "feature1-list-c": "Improve an existing system",
+    "feature1-cta": "See the existing systems",
+    "feature2-list-a":"Import input data",
+    "feature2-list-b":"Calculate a sitation, write new laws or simulate reforms",
+    "feature2-list-c":"Code custom extensions",
+    "feature2-cta":"Test the web API",
+
+    "title-community":"An international open source community",
+    "content-community":"OpenFisca has contributors worldwide! Join a community of economists, researchers, developers and law expert who get involved in turning law into code."
 }

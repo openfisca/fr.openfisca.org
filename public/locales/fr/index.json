@@ -7,5 +7,29 @@
     "start": "Commencer",
 
     "pitch1": "La plateforme Open Source qui modélise",
-    "pitch2": "le code législatif en code informatique."
+    "pitch2": "le code législatif en code informatique.",
+
+    "title-everything": "Tout ce que vous pouvez faire avec OpenFisca !",
+    "title-economists": "Économistes & chercheurs",
+    "content-economists": "Utilisez des systèmes socio-fiscaux déjà modélisés et codez vos réformes. Faites des simulations individuelles et sur des populations en important vos propres données.",
+    "title-dev": "Développeurs & équipes d'innovation",
+    "content-dev":"Interrogez l’API sans installation ou hébergez votre propre instance. Créez des produits qui interrogent l’ensemble des règles socio-fiscales avec Python3.", 
+    "title-admin": "Administrations publiques",
+    "content-admin": "Mutualisez vos efforts de mise à jour grâce au modèle contributif d’OpenFisca. Echangez sur une même base avec d’autres administrations publiques.",
+    "everything-cta":"Voir les projets",
+
+
+    "title-how":"Comment ça marche ?",
+    "content-how":"OpenFisca est un projet Open Source libre et gratuit, modulable et réutilisable. Il permet de modéliser le code législatif en code informatique, pour améliorer la transparence et l’accès à la loi.",
+    "feature1-list-a":"Utilisez un système socio-fiscal existant",
+    "feature1-list-b":"Codez votre propre système",
+    "feature1-list-c":"Améliorez le code d’un système existant",
+    "feature1-cta":"Voir les systèmes socio-fiscaux",
+    "feature2-list-a":"Importez des données",
+    "feature2-list-a":"Calculez une situation ou écrivez et simulez une réforme",
+    "feature2-list-b":"Codez des extensions",
+    "feature2-cta":"Tester l'API web",
+    
+    "title-community":"Une communauté open source internationale",
+    "content-community":"OpenFisca a des contributeurs partout dans le monde ! Rejoignez une communauté d’économistes, de chercheurs, de développeurs et d’experts des droits sociaux qui s’engagent dans la transformation de la loi en code informatique !"
 }
