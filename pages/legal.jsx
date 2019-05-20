@@ -3,17 +3,17 @@ import GlobalStyle from '../components/GlobalStyle'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Piwik from '../components/Piwik'
-
-// the hoc
 import { withNamespaces } from 'react-i18next';
+
 
 const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
 }
+
 const Legal =  withNamespaces()(
     ({t}, props) => (
     <div className="content">
-        <h2>Responsable de la publication</h2>
+        <h2>{t('director')}</h2>
         <p>
             Laure Lucchesi<br />
             Directrice d’Etalab<br />
@@ -22,21 +22,19 @@ const Legal =  withNamespaces()(
             <a href="https://www.etalab.gouv.fr">https://www.etalab.gouv.fr</a>
         </p>
 
-        <h2>Hébergeur</h2>
+        <h2>{t('host')}</h2>
         <p>
-            Netlify<br />
-            2325 3rd St Suite 215<br />
-            San Francisco, CA 94107, États-Unis<br />
+            {t('host-address')}
         </p>
 
         <style jsx>{`
 
         `}</style>
     </div>
-)
+    )
 )
 
-export default () => (
+export default withNamespaces()(({t}) => (
     <div>
         <Head>
             <title>{t('title')}</title>
@@ -48,4 +46,5 @@ export default () => (
         <Footer />
         <Piwik page="legal"/>
     </div>
+    )
 )
