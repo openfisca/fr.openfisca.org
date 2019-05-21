@@ -9,7 +9,7 @@ import CardResourcesmin from '../components/CardResourcesmin'
 // the hoc
 import { withNamespaces } from 'react-i18next';
 
-const Resources =  withNamespaces()(
+const Resources =  withNamespaces("resources")(
     ({t}, props) => (
     <div className="content">
         <ul className="flex__container">
@@ -67,14 +67,14 @@ const Resources =  withNamespaces()(
 )
 )
 
-export default withNamespaces()(({t}) => (
+export default withNamespaces("resources")(({t}) => (
     <div>
         <Head>
           <title>{t('title')}</title>
           <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <GlobalStyle/>
-        <Header page="resources" title="{t('title')}" />
+        <Header page="resources" title="{t('resources:title')}" />
         <Resources />
         <Footer />
         <Piwik page="resources"/>
