@@ -7,7 +7,7 @@ import Piwik from '../components/Piwik'
 // the hoc
 import { withNamespaces } from 'react-i18next';
 
-const Status =  withNamespaces()(
+const Status =  withNamespaces("status")(
     ({t}, props) => (
     <div className="content">
         <h1>{t('title')}</h1>
@@ -22,14 +22,14 @@ const Status =  withNamespaces()(
     )
 )
 
-export default withNamespaces()(({t}) => (
+export default withNamespaces("status")(({t}) => (
     <div>
         <Head>
             <title>{t('title')}</title>
             <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <GlobalStyle/>
-        <Header page="status" title="{t('title')}" />
+        <Header page="status" title="{t('status:title')}" />
         <Status />
         <Footer />
         <Piwik page="status"/>
