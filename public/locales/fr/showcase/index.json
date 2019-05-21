@@ -9,5 +9,11 @@
     "title-rates":"Rates Rebates",
     "desc-rates":"Ce prototype réalisé par l’équipe d’innovation gouvernementale de Nouvelle-Zélande teste le versement automatique d’une prestation sociale.",
     "title-fastoche":"Fastoch€",
-    "desc-fastoche":"Une application pour éviter les fins de mois difficiles. Suivez votre budget sans effort en connectant votre compte courant."
+    "desc-fastoche":"Une application pour éviter les fins de mois difficiles. Suivez votre budget sans effort en connectant votre compte courant.",
+    "apiweb":"API web",
+    "apipython":"API Python",
+    "social":"Prestations sociales",
+    "reforms":"Simulation de réformes",
+    "france":"France",
+    "nz": "Nouvelle-Zélande"
 }

@@ -1,33 +1,18 @@
 {
     "title": "Ressources",
-
-Système : France
-45 contributeurs au projet
-Explorer
-Voir sur GitHub
-
-Système : Nouvelle-Zélande & Aotearoa
-15 contributeurs au projet
-Explorer
-Voir sur GitHub
-
-Système : Barcelone
-4 contributerrs au projet
-Voir sur GitHub
-
-Système : Tunisie
-8 contributeurs au projet
-Voir sur GitHub
-
-Système : Italie
-3 contributeurs au projet
-Voir sur GitHub
-
-Système : Sénégal
-13 contributeurs au projet
-Voir sur GitHub
-
-Système : Nouvelle-Galle du Sud
-4 contributeurs au projet
-Voir sur GitHub
+    "system-fr": "Système : France",
+    "desc-fr":"Le système contient la majorité des impôts et des prestations sociales. <br />45 contributeurs au projet",
+    "system-nz": "Système : Aotearoa Nouvelle-Zélande",
+    "desc-nz":"15 contributeurs au projet",
+    "system-ba": "Système : Barcelone",
+    "desc-ba":"4 contributeurs au projet",
+    "system-it": "Système : Italie",
+    "desc-it":"3 contributeurs au projet",
+    "system-tn": "Système : Tunisie",
+    "desc-tn":"8 contributeurs au projet",
+    "system-sn": "Système : Sénégal",
+    "desc-sn":"13 contributeurs au projet",
+    "system-au": "Système : Nouvelle-Galle du sud",
+    "desc-au":"4 contributeurs au projet"
 }
+

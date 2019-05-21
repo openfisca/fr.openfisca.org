@@ -1,32 +1,17 @@
 {
     "title": "Resources",
-"system-france": "System: France
-45 contributors on the project
-Explore
-See on GitHub",
-
-System: Aotearoa New Zealand
-15 contributors on the project
-Explore
-See on GitHub
-
-System: Barcelona
-4 contributors on the project
-See on GitHub
-
-System: Tunisia
-8 contributors on the project
-See on GitHub
-
-System: Italy
-3 contributors on the project
-See on GitHub
-
-System: Senegal
-13 contributors on the project
-See on GitHub
-
-System: New Gale of South
-4 contributors on the project
-See on GitHub
+    "system-fr": "System: France",
+    "desc-fr":"45 contributors on the project",
+    "system-nz": "System: Aotearoa New Zealand",
+    "desc-nz":"15 contributors on the project",
+    "system-ba": "System: Barcelona",
+    "desc-ba":"4 contributors on the project",
+    "system-it": "System: Italy",
+    "desc-it":"3 contributors on the project",
+    "system-tn": "System: Tunisia",
+    "desc-tn":"8 contributors on the project",
+    "system-sn": "System: Senegal",
+    "desc-sn":"13 contributors on the project",
+    "system-au": "System: New South Wales",
+    "desc-au":"4 contributors on the project"
 }

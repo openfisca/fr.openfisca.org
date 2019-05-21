@@ -1,22 +1,15 @@
 {
     "title": "LexImpact",
-
-Back
-
-Simulate the impact of tax reforms on citizens. 
-
-Powered by Etalab and part of the EIG program (General Interest Entrepreneur), the team works with admninistrator within the French National Assembly.
-
-This project aims at helping administrators and deputees to simulate the impact of reforms on the government budget before its vote. 
-
-LexImpact started in 2019 and is still in progress.
-
-Visit LexImpact
-
-Project attributes
-uses the Python API
-questions the French system
-runs a simulation on a population
-uses all of the tax & benefit system
-powered by a public administration
+    "back":"Back",
+    "baseline" : "Simulate the impact of tax reforms on citizens.",
+    "desc1":"Powered by Etalab and part of the EIG program (General Interest Entrepreneur), the team works with admninistrator within the French National Assembly.",
+    "desc2":"This project aims at helping administrators and deputees to simulate the impact of reforms on the government budget before its vote. ",
+    "desc3":"LexImpact started in 2019 and is still in progress.",
+    "textlink":"Visit LexImpact",
+    "car":"Project attributes",
+    "api":"uses the Python API",
+    "country":"questions the French system",
+    "simulation":"runs a simulation on a population",
+    "perimetre":"uses all of the tax & benefit system",
+    "poweredby":"powered by a public administration"
 }
