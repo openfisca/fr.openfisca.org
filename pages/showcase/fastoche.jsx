@@ -9,9 +9,6 @@ import ProjectAttribute from '../../components/ProjectAttribute'
 // the hoc
 import { withNamespaces } from 'react-i18next';
 
-const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-}
 const Fastoche =  withNamespaces()(
     ({t}, props) => (
     <div className="content">

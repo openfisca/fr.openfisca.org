@@ -7,10 +7,6 @@ import Piwik from '../components/Piwik'
 // the hoc
 import { withNamespaces } from 'react-i18next';
 
-const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-}
-
 const Status =  withNamespaces()(
     ({t}, props) => (
     <div className="content">

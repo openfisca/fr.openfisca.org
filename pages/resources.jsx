@@ -9,10 +9,6 @@ import CardResourcesmin from '../components/CardResourcesmin'
 // the hoc
 import { withNamespaces } from 'react-i18next';
 
-const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-}
-
 const Resources =  withNamespaces()(
     ({t}, props) => (
     <div className="content">

@@ -8,10 +8,6 @@ import i18n from './i18n';
 import { withNamespaces } from 'react-i18next';
 
 
-const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-}
-
 const Cookies =  withNamespaces()(
   ({t}, props) => (
   <div className="content">

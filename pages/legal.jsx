@@ -6,10 +6,6 @@ import Piwik from '../components/Piwik'
 import { withNamespaces } from 'react-i18next';
 
 
-const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-}
-
 const Legal =  withNamespaces()(
     ({t}, props) => (
     <div className="content">

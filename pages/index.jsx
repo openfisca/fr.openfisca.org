@@ -8,9 +8,6 @@ import Hero from '../components/Hero'
 // the hoc
 import { withNamespaces } from 'react-i18next';
 
-const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-}
 
 const Home =  withNamespaces()(
   ({t}, props) => (
