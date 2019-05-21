@@ -1,11 +1,15 @@
-const CardResourcesmin = (props) => (
+import { withNamespaces } from 'react-i18next';
+
+function CardResourcesmin(props){
+    const {t} = props;
+    return (
     <div className="card-container">
         <div className="card-desc">
             <p className="Medium">{props.title}</p>
             <p className="Small"><img src={props.img} alt="" />{props.desc}</p>
         </div>
         <div className="card-links">
-            <a href={props.linkgit}>Voir sur GitHub</a>
+            <a href={props.linkgit}>{t('see-github')}</a>
         </div>
 
         <style jsx>{`
@@ -39,6 +43,8 @@ const CardResourcesmin = (props) => (
             }
         `}</style>
     </div>
-)
+    )
+}
 
-export default CardResourcesmin
+
+export default withNamespaces("components")(CardResourcesmin)

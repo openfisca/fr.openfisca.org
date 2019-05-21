@@ -1,17 +1,20 @@
 import Link from 'next/link'
+import { withNamespaces } from 'react-i18next';
 
-const Footer = () => (
+
+const Footer= withNamespaces("components")(
+	({t}) => (
     <div>
         <footer>
             <div className="baseline">
-                <h3>Transformer le code législatif en code logiciel</h3>
-                <a href="https://openfisca.org/doc/" className="btn CTA">Commencer <img src="/static/icons/Rocket.svg"></img></a>
+                <h3>{t('The open source platform that turns law into software.')}</h3>
+                <a href="https://openfisca.org/doc/" className="btn CTA">{t('Getting started')} <img src="/static/icons/Rocket.svg" /></a>
             </div>
             <ul>
-                <li><Link href="/status" passHref><a>Etat des services</a></Link></li>
-                <li><Link href="/cookies" passHref><a>Informatique & libertés</a></Link></li>
-                <li><Link href="/legal" passHref><a>Mentions légales</a></Link></li>
-                <li><Link href="/contribute" passHref><a>Contribuer</a></Link></li>
+                <li><Link href="/status" passHref>{t('Service status')}</Link></li>
+                <li><Link href="/cookies" passHref>{t('Privacy Policy')}</Link></li>
+                <li><Link href="/legal" passHref>{t('Legal')}</Link></li>
+                <li><Link href="/contribute" passHref>{t('Contribute')}</Link></li>
             </ul>
             <ul className="social">
                 <li><a href="mailto:contact@openfisca.org?Subject=openfisca.org" passHref><img src="/static/icons/Email.svg" alt="Envoyer un email"></img></a></li>
@@ -86,7 +89,7 @@ const Footer = () => (
 			}
 		`}</style>
     </div>
+	)
 )
 
 export default Footer
-

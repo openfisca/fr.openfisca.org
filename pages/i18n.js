@@ -27,6 +27,8 @@ import ratesrebatesFR from '../public/locales/fr/showcase/ratesRebates.json';
 import ratesrebatesEN from '../public/locales/en/showcase/ratesRebates.json';
 import mesaidesFR from '../public/locales/fr/showcase/mesAides.json';
 import mesaidesEN from '../public/locales/en/showcase/mesAides.json';
+import componentsFR from '../public/locales/fr/components.json';
+import componentsEN from '../public/locales/en/components.json';
 
 // the translations
 const resources = {
@@ -42,7 +44,8 @@ const resources = {
     leximpact: leximpactEN,
     taxipp: taxippEN,
     ratesrebates: ratesrebatesEN,
-    mesaides: mesaidesEN    
+    mesaides: mesaidesEN,
+    components: componentsEN    
   },
 
   fr: {
@@ -57,7 +60,8 @@ const resources = {
     leximpact: leximpactFR,
     taxipp: taxippFR,
     ratesrebates: ratesrebatesFR,
-    mesaides: mesaidesFR    
+    mesaides: mesaidesFR,
+    components: componentsFR,
   }
 };
 
