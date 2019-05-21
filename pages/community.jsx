@@ -9,7 +9,7 @@ import Piwik from '../components/Piwik'
 // the hoc
 import { withNamespaces } from 'react-i18next';
 
-const Communaute =  withNamespaces()(
+const Communaute =  withNamespaces("community")(
     ({t}, props) => (
     <div className="content">
         <section>
@@ -75,14 +75,14 @@ const Communaute =  withNamespaces()(
     )
 )
 
-export default withNamespaces()(({t}) => (
+export default withNamespaces("community")(({t}) => (
     <div>
         <Head>
             <title>{t('title')}</title>
             <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <GlobalStyle/>
-        <Header page="community" title="{t('title')}" />
+        <Header page="community" title="{t('community:title')}" />
         <Communaute />
         <Partners/>
         <Footer />
