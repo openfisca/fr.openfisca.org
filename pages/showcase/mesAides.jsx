@@ -5,11 +5,10 @@ import Footer from '../../components/Footer'
 import ProjectDesc from '../../components/ProjectDesc'
 import ProjectAttribute from '../../components/ProjectAttribute'
 import Piwik from '../../components/Piwik'
-
-// the hoc
 import { withNamespaces } from 'react-i18next';
 
-const Mesaides =  withNamespaces()(
+
+const Mesaides =  withNamespaces("mesaides")(
     ({t}, props) => (
     <div className="content">
         <a className="outline" href="/showcase/" >{t('back')}</a>
@@ -30,22 +29,22 @@ const Mesaides =  withNamespaces()(
 
         <style jsx>{`
 
-  .outline {
-    color: #656565;
-    padding: 0 1% 0 1%;
-    border-color: #656565;
-    border-radius: 25px;
-    max-width: 4em;
-  }
+            .outline {
+              color: #656565;
+              padding: 0 1% 0 1%;
+              border-color: #656565;
+              border-radius: 25px;
+              max-width: 4em;
+            }
 
-`}</style>
+        `}</style>
 
     </div>
-
+    )
 )
-)
 
-export default withNamespaces()(({t}) => (
+
+export default withNamespaces("mesaides")(({t}) => (
     <div>
         <Head>
           <title>{t('title')}</title>
@@ -57,5 +56,5 @@ export default withNamespaces()(({t}) => (
         <Footer />
         <Piwik page="mesaides"/>
     </div>
-)
+    )
 )
