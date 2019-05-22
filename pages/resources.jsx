@@ -71,7 +71,7 @@ export default withNamespaces("resources")(({t}) => (
           <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <GlobalStyle/>
-        <Header page="resources" title="{t('resources:title')}" />
+        <Header page="resources" title={t('title')} />
         <Resources />
         <Footer />
         <Piwik page="resources"/>

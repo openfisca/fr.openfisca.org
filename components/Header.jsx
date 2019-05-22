@@ -4,10 +4,11 @@ import {i18n, switchLanguage, changeLanguage} from '../pages/i18n';
 import { withNamespaces } from 'react-i18next';
 import i18next from 'i18next';
 
-const Header = withNamespaces()(
-  ({t}) => (
+function Header(props){
+	const {t} = props;
+	const currentPageTitle = t('title')
+  return (
     <header>
-        <title>{t('title')}</title>
         <nav>
             <Link href="/">
                 <img id="logo-small" src={asset('/images/logo_mini.svg')} alt={t('title')} />
@@ -20,7 +21,7 @@ const Header = withNamespaces()(
                 <li><Link href="https://openfisca.org/doc/" passHref><a className="btn CTA">{t('start')} <img src={asset('/icons/Rocket.svg')} /></a></Link></li>
                 <li><button onClick={(e) => changeLanguage(switchLanguage())}>{switchLanguage()}</button></li>
             </ul>
-            <h1>{t('title')}</h1>
+            <h1>{props.title}</h1>
         </nav>
 
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -74,6 +75,6 @@ const Header = withNamespaces()(
 		`}</style>
     </header>
   )
-)
+}
 
-export default Header
+export default withNamespaces()(Header)
