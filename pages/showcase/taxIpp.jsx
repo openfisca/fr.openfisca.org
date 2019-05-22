@@ -9,7 +9,7 @@ import ProjectAttribute from '../../components/ProjectAttribute'
 // the hoc
 import { withNamespaces } from 'react-i18next';
 
-const Taxipp =  withNamespaces("taxIpp")(
+const Taxipp =  withNamespaces("taxipp")(
     ({t}, props) => (
     <div className="content">
         <a className="{t('back')}" href="/showcase/" >Retour</a>
@@ -35,14 +35,14 @@ const Taxipp =  withNamespaces("taxIpp")(
     )
 )
 
-export default withNamespaces("taxIpp")(({t}) => (
+export default withNamespaces("taxipp")(({t}) => (
     <div>
         <Head>
             <title>{t('title')}</title>
             <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <GlobalStyle/>
-        <Header page="taxipp" title={t('taxipp:title')}/>
+        <Header page="taxipp" title={t('title')}/>
         <Taxipp />
         <Footer />
         <Piwik page="taxipp"/>
