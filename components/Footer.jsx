@@ -2,19 +2,19 @@ import Link from 'next/link'
 import { withNamespaces } from 'react-i18next';
 
 
-const Footer= withNamespaces("components")(
+const Footer = withNamespaces(["index", "components"])(
 	({t}) => (
     <div>
         <footer>
             <div className="baseline">
-                <h3>{t('The open source platform that turns law into software.')}</h3>
-                <a href="https://openfisca.org/doc/" className="btn CTA">{t('Getting started')} <img src="/static/icons/Rocket.svg" /></a>
+                <h3>{t('pitch1')} {t('pitch2')}</h3>
+                <a href="https://openfisca.org/doc/" className="btn CTA">{t('start')} <img src="/static/icons/Rocket.svg" /></a>
             </div>
             <ul>
-                <li><Link href="/status" passHref>{t('Service status')}</Link></li>
-                <li><Link href="/cookies" passHref>{t('Privacy Policy')}</Link></li>
-                <li><Link href="/legal" passHref>{t('Legal')}</Link></li>
-                <li><Link href="/contribute" passHref>{t('Contribute')}</Link></li>
+                <li><Link href="/status" passHref>{t('components:status')}</Link></li>
+                <li><Link href="/cookies" passHref>{t('components:privacy')}</Link></li>
+                <li><Link href="/legal" passHref>{t('components:legal')}</Link></li>
+                <li><Link href="/contribute" passHref>{t('components:contribute')}</Link></li>
             </ul>
             <ul className="social">
                 <li><a href="mailto:contact@openfisca.org?Subject=openfisca.org" passHref><img src="/static/icons/Email.svg" alt="Envoyer un email"></img></a></li>

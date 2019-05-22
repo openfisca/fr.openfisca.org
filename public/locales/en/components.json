@@ -2,13 +2,10 @@
     "explore":"Explore",
     "see-github":"See on GitHub",
 
-    "The open source platform that turns law into software.":"The open source platform that turns law into software.",
-
-    "Getting started":"Getting started",
-    "Service status":"Service status",
-    "Privacy Policy":"Privacy Policy",
+    "status":"Service status",
+    "privacy":"Privacy Policy",
     "legal":"Legal notice",
-    "Contribute":"Contribute",
+    "contribute":"Contribute",
 
-    "Our partners":"Our partners"
+    "partners":"Our partners"
 }

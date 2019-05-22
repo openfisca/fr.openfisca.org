@@ -5,7 +5,7 @@ import { withNamespaces } from 'react-i18next';
 const Partners = withNamespaces("components")(
   ({t}) => (
     <div className="content">
-        <h2>{t('our partners')}</h2>
+        <h2>{t('partners')}</h2>
         <ul className="flex__container">
             <li className="flex-item logo"><img alt="IPP" src={asset('/images/logo-ipp.png')} /></li>
             <li className="flex-item logo"><img alt="Etalab" src={asset('/images/logo-etalab.png')} /></li>

@@ -2,13 +2,10 @@
     "explore":"Explorer",
     "see-github":"Voir sur GitHub",
 
-    "The open source platform that turns law into software.":"Transformer le code législatif en code logiciel",
-
-    "Getting started":"Commencer",
-    "Service status":"Etat des services",
-    "Privacy policy":"Informatique & libertés",
+    "status":"État des services",
+    "privacy":"Informatique & libertés",
     "legal":"Mentions légales",
-    "Contribute":"Contribuer",
+    "contribute":"Contribuer",
 
-    "Our partners":"Nos partenaires"
+    "partners":"Nos partenaires"
 }
