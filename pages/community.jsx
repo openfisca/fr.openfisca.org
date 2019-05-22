@@ -82,7 +82,7 @@ export default withNamespaces("community")(({t}) => (
             <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <GlobalStyle/>
-        <Header page="community" title="{t('community:title')}" />
+        <Header page="community" title={t('title')} />
         <Communaute />
         <Partners/>
         <Footer />
