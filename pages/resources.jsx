@@ -5,8 +5,6 @@ import Footer from '../components/Footer'
 import Piwik from '../components/Piwik'
 import CardResources from '../components/CardResources'
 import CardResourcesmin from '../components/CardResourcesmin'
-
-// the hoc
 import { withNamespaces } from 'react-i18next';
 
 
@@ -15,10 +13,10 @@ const Resources =  withNamespaces("resources")(
     <div className="content">
         <ul className="flex__container">
             <li className="flex__item">
-                <CardResources img="/static/icons/france.svg" title={t('system-fr')} desc={t('desc-fr')} 
+                <CardResources img="/static/icons/france.svg" title={t('system-fr')} desc={t('$t(content-fr) $t(desc-fr)')} 
                     linkexplorer="https://fr.openfisca.org/legislation"  linkgit="https://github.com/openfisca/openfisca-france"/>
             </li>
-
+            
             <li className="flex__item">
                 <CardResources img="/static/icons/nz.svg" title={t('system-nz')} desc={t('desc-nz')} 
                     linkexplorer="https://www.rules.nz"  linkgit="https://github.com/ServiceInnovationLab/openfisca-aotearoa"/>

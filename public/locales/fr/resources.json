@@ -1,7 +1,8 @@
 {
     "title": "Ressources",
     "system-fr": "Système : France",
-    "desc-fr":"Le système contient la majorité des impôts et des prestations sociales. <br />45 contributeurs au projet",
+    "content-fr":"Le système contient la majorité des impôts et des prestations sociales.",
+    "desc-fr": "45 contributeurs au projet",
     "system-nz": "Système : Aotearoa Nouvelle-Zélande",
     "desc-nz":"15 contributeurs au projet",
     "system-ba": "Système : Barcelone",
