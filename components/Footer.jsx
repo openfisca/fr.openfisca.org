@@ -48,10 +48,6 @@ const Footer = withNamespaces(["index", "components"])(
         		vertical-align: bottom;
 			}
 
-			.CTA {
-				max-width: 8em;
-			}
-
 			.social {
 				float: right;
 			}
