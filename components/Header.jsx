@@ -41,7 +41,7 @@ function Header(props){
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d69fb', endColorstr='#00baaf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 			}
 
-      		ul {
+      ul {
 				list-style-type: none;
 				min-height: 3em;
 				display: flex;

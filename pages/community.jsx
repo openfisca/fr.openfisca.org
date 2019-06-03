@@ -30,7 +30,7 @@ const Communaute =  withNamespaces("community")(
                 <div className="flex__item50">
                     <p>{t('content-reach')}</p>
                 </div>
-                <a className="btn medium" href="https://forms.gle/XFxiFvfaAa6w7LGy7">Rejoindre le Slack</a>
+                <a className="btn medium" href="https://forms.gle/XFxiFvfaAa6w7LGy7">{t('btn-slack')}</a>
             </div>
         </section>
 
@@ -43,18 +43,6 @@ const Communaute =  withNamespaces("community")(
                 <div>
                     <a className="btn medium" href="mailto:%63%6fn&#116;&#97;%63%74&#64;%6f%70%65%6efi&#115;&#99;a%2e&#111;&#114;&#103;">Contact</a>
                 </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Restez informés</h2>
-            <div className="flex__column">
-                <div className="flex__item50">
-                    <p>
-                        Vous pouvez vous abonner à notre newsletter mensuelle pour recevoir les actualités et les changements majeurs opérés sur OpenFisca.
-                    </p>
-                </div>
-                <a className="btn medium">Recevoir la Newsletter</a>
             </div>
         </section>
 

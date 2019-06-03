@@ -29,7 +29,7 @@ export default withNamespaces("status")(({t}) => (
             <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <GlobalStyle/>
-        <Header page="status" title="{t('status:title')}" />
+        <Header page="status" title={t('title')} />
         <Status />
         <Footer />
         <Piwik page="status"/>

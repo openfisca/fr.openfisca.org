@@ -15,17 +15,12 @@ const Contribuer =  withNamespaces("contribute")(
 
       <h2>{t('title-share')}</h2>
       <p>
-        Vous souhaitez présenter OpenFisca à quelqu’un ?
-        Vous voulez convaincre quelqu’un de l’utiliser ?
-        Vous écrivez un article à propos d’OpenFisca ?
-        Utilisez notre <a href="https://drive.google.com/open?id=1eGa4PphlDCSzhGSTFDhG6CGRafJi6cAj3vlD7wNw2NM">document de présentation.</a>
+      {t('content-share')}
       </p>
 
       <h2>{t('title-reuse')}</h2>
       <p>
-        OpenFisca utilise la licence AGPL 3.0.
-        Merci de citer OpenFisca lors de vos réutilisations !
-        Vous pouvez avoir le détail de nos règles de réutilisations sur <a href="https://openfisca.org/doc/publishing.html">la documentation</a>.
+      {t('content-share')}
       </p>
 
 
@@ -51,7 +46,7 @@ export default withNamespaces("contribute")(({t}) => (
             <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <GlobalStyle/>
-        <Header page="contribute" title="{t('contribute:title')}" />
+        <Header page="contribute" title={t('title')} />
         <Contribuer />
         <Partners />
         <Footer />

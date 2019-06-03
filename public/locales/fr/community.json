@@ -7,5 +7,7 @@
     "title-contact": "Écrivez-nous",
     "content-contact":"Pour toute question ou pour toute demande de collaboration, n'hésitez pas à nous joindre par email.",
     "title-partners": "Nos partenaires",
-    "error":"fichier de traduction introuvable"
+    "error":"fichier de traduction introuvable",
+    "btn-slack":"Rejoindre le Slack"
+
 }

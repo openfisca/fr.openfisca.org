@@ -3,8 +3,6 @@ import GlobalStyle from '../components/GlobalStyle'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Piwik from '../components/Piwik'
-
-import i18n from './i18n';
 import { withNamespaces } from 'react-i18next';
 
 
@@ -50,7 +48,7 @@ export default withNamespaces("cookies")(({t}) => (
           <title>{t('title')}</title>
           <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
-        <Header page="cookies" title={t('cookies:title')} />
+        <Header page="cookies" title={t('title')} />
         <Cookies />
         <Footer />
         <GlobalStyle />

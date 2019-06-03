@@ -11,11 +11,7 @@ const Legal =  withNamespaces("legal")(
     <div className="content">
         <h2>{t('director')}</h2>
         <p>
-            Laure Lucchesi<br />
-            Directrice d’Etalab<br />
-            20, avenue de Ségur<br />
-            75007 Paris<br />
-            <a href="https://www.etalab.gouv.fr">https://www.etalab.gouv.fr</a>
+            {t('director-address')}
         </p>
 
         <h2>{t('host')}</h2>
@@ -31,7 +27,7 @@ export default withNamespaces("legal")(({t}) => (
             <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <GlobalStyle/>
-        <Header title="Mentions légales" page={t('legal:title')} />
+        <Header page="legal" title={t('title')}  />
         <Legal />
         <Footer />
         <Piwik page="legal"/>

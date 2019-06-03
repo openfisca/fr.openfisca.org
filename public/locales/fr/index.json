@@ -32,5 +32,7 @@
     
     "title-community":"Une communauté open source internationale",
     "content-community":"OpenFisca a des contributeurs partout dans le monde ! Rejoignez une communauté d’économistes, de chercheurs, de développeurs et d’experts des droits sociaux qui s’engagent dans la transformation de la loi en code informatique !",
-    "error":"fichier de traduction non trouvé"
+    "error":"fichier de traduction non trouvé",
+
+    "welcomeform":"https://forms.gle/XFxiFvfaAa6w7LGy7"
 }
