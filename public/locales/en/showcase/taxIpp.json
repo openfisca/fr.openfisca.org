@@ -8,7 +8,7 @@
     "textlink":"Visit TaxIPP",
     "car":"Project attributes",
     "api":"uses the Python API",
-    "country":"questions the French system",
+    "country":"queries the French system",
     "simulation":"runs a simulation on a population",
     "perimetre":"uses all of the tax & benefit system",
     "poweredby":"powered by economists"
