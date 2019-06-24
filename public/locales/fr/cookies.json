@@ -1,8 +1,9 @@
 {
     "title": "Informatique & libertés",
-    "content":"Lorsque vous visitez ce site web, nous laissons un petit fichier texte (un cookie) sur votre ordinateur. Cela nous permet de mesurer combien de visites nous avons et quelles sont les pages les plus regardées.",
-    "title-why":"Ce site web n'indique pas de bannière de consentement aux cookies. Pourquoi ?",
-    "content-why":"Matomo - notre service de suivi - est configuré en conformité avec les règles de gestion de Cookies de la CNIL des autorités françaises (Matomo anonymise votre adresse IP de façon à rendre impossible le lien entre votre visite et vous-même).",
-    "title-public":"Je contribue à vos données. Puis-je y accéder ?",
-    "content-public":"Bien sûr ! Les données d'analyse d'OpenFisca sont librement disponible ici :"
+    "content": "Lorsque vous visitez ce site web, nous laissons un petit fichier texte (un cookie) sur votre ordinateur. Cela nous permet de mesurer combien de visites nous avons et quelles sont les pages les plus regardées.",
+    "title-why": "Ce site web n'indique pas de bannière de consentement aux cookies. Pourquoi ?",
+    "content-why-1": " - notre service de suivi - est configuré en conformité avec les règles de gestion de Cookies de la ",
+    "content-why-2": " des autorités françaises (Matomo anonymise votre adresse IP de façon à rendre impossible le lien entre votre visite et vous-même).",
+    "title-public": "Je contribue à vos données. Puis-je y accéder ?",
+    "content-public": "Bien sûr ! Les données d'analyse d'OpenFisca sont librement disponible ici : "
 }

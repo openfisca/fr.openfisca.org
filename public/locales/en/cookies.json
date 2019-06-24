@@ -1,8 +1,9 @@
 {
     "title": "Privacy policy",
-    "content":"When you visit this website, we leave a small cookie file on your computer. It allows us to know how many visits we have and which pages are read the most.",
-    "title-why":"How comes the website has no disclaimer banner?",
-    "content-why":"Matomo - our tracking service - is complient with the European RGBD law by default.",
-    "title-public":"I am part of the data you collect. Can I see this data?",
-    "content-public":"Sure! OpenFisca audience data are freely accessible here:"
+    "content": "When you visit this website, we leave a small cookie file on your computer. It allows us to know how many visits we have and which pages are read the most.",
+    "title-why": "How comes the website has no disclaimer banner?",
+    "content-why-1": " - our tracking service - is complient with the European RGBD law by default.",
+    "content-why-2": "",
+    "title-public": "I am part of the data you collect. Can I see this data?",
+    "content-public": "Sure! OpenFisca audience data are freely accessible here: "
 }

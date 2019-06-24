@@ -1,3 +1,4 @@
+import { english } from '../pages/i18n'
 import Head from 'next/head'
 import GlobalStyle from '../components/GlobalStyle'
 import Header from '../components/Header'
@@ -16,9 +17,14 @@ const Cookies =  withNamespaces("cookies")(
       </div>
       <h2>{t('title-why')}</h2>
       <p>
-        <a href="https://matomo.org/">Matomo</a> - notre service de suivi - est configuré en conformité 
-          avec les règles de gestion de "Cookies" de la <a href="https://www.cnil.fr/fr/solutions-pour-les-cookies-de-mesure-daudience">CNIL</a> 
-          des autorités françaises (Matomo anonymise votre adresse IP de façon à rendre impossible le lien entre votre visite et vous-même).
+        <a href="https://matomo.org/">Matomo</a>
+        {t('content-why-1')}
+        {
+          (! english())
+            ? <a href="https://www.cnil.fr/fr/solutions-pour-les-cookies-de-mesure-daudience">CNIL</a>
+            : ""
+        }
+        {t('content-why-2')}
       </p>
       <h2>{t('title-public')}</h2>
       <p>

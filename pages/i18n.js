@@ -77,6 +77,10 @@ const changeLanguage = (lng) => {
   i18n.changeLanguage(lng);
 }
 
+const english = () => {
+  return i18n.language == 'en'
+}
+
 i18n
   .use(detector)
   .use(backend)
@@ -100,4 +104,4 @@ i18n
     }
   });
 
-export {i18n, switchLanguage, changeLanguage}
+export {i18n, switchLanguage, changeLanguage, english}
