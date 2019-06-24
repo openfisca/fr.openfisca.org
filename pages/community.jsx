@@ -40,7 +40,9 @@ const Communaute =  withNamespaces("community")(
                 <div className="flex__item50">
                     <p>{t('content-reach')}</p>
                 </div>
-                <a className="btn medium" href="https://forms.gle/XFxiFvfaAa6w7LGy7">{t('btn-slack')}</a>
+                <a className="btn medium" href="https://forms.gle/XFxiFvfaAa6w7LGy7">
+                    {t('btn-slack')}
+                </a>
             </div>
         </section>
 

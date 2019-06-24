@@ -8,7 +8,7 @@ const Footer = withNamespaces(["index", "components"])(
         <footer>
             <div className="baseline">
                 <h3>{t('pitch1')} {t('pitch2')}</h3>
-                <a href="https://openfisca.org/doc/" className="btn CTA">{t('start')} <img src="/static/icons/Rocket.svg" /></a>
+                <a href="https://openfisca.org/doc/" className="btn CTA">{t('start')} <img src="/static/icons/rocket.svg" /></a>
             </div>
             <ul>
                 <li><Link href="/status" passHref>{t('components:status')}</Link></li>
