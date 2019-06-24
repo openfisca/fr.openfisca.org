@@ -1,7 +1,10 @@
 {
     "title": "Community",
     "title-who": "Who are we?",
-    "content-who": "OpenFisca is an Open Source community powered by Beta Gouv & Etalab, two innovation teams within the French government. As of 2019, OpenFisca is used by 11 countries over the world! More than 70 people have joined this adventure, helping each other and contributing by making great improvements to the code.",
+    "content-who-1": "OpenFisca is an Open Source community powered by ",
+    "content-who-2": ", two innovation teams within the French government. ",
+    "content-who-3": "As of 2019, OpenFisca is used by 11 countries over the world! ",
+    "content-who-4": "More than 70 people have joined this adventure, helping each other and contributing by making great improvements to the code.",
     "title-reach": "Reach the Community",
     "content-reach": "When you start working on a project using OpenFisca, you are welcome to join the Slack! You will find help, advice and meet the community. Before you join the Slack, we simply ask you to answer a few questions.",
     "title-contact": "Drop us a line",

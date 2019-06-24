@@ -16,7 +16,17 @@ const Communaute =  withNamespaces("community")(
             <h2>{t('title-who')}</h2>
             <div className="flex__container">
                 <div className="flex__item50">
-                    <p>{t('content-who')}</p>
+                    <p>
+                        {t('content-who-1')}
+                        <a href="https://beta.gouv.fr/">BetaGouv</a> & <a href="https://www.etalab.gouv.fr/">Etalab</a>
+                        {t('content-who-2')}
+                        <br/>
+                        <br/>
+                        {t('content-who-3')}
+                        <br/>
+                        <br/>
+                        {t('content-who-4')}
+                    </p>
                 </div>
                 <div className="flex__item50">
                     <img src={asset('/images/community.png')} alt=""/>
@@ -48,6 +58,11 @@ const Communaute =  withNamespaces("community")(
 
 
         <style jsx>{`
+            p a {
+                color: #6d69fb;
+                margin: 0;
+            }
+
             medium {
               display: flex;
             }
