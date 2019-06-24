@@ -1,4 +1,4 @@
-import { english } from '../pages/i18n'
+import { french } from '../pages/i18n'
 import Head from 'next/head'
 import GlobalStyle from '../components/GlobalStyle'
 import Header from '../components/Header'
@@ -13,14 +13,19 @@ const Cookies =  withNamespaces("cookies")(
       <p>{t('content')}</p>
       <div id="iframe-container">
         <iframe style={{backgroundColor: '#9a9a9a24', width: '70%', border: 'none', padding: '1em 2em 0 2em'}} 
-          src="https://stats.data.gouv.fr/index.php?module=CoreAdminHome&action=optOut&language=fr"></iframe>
+          src={
+            french() 
+            ? "https://stats.data.gouv.fr/index.php?module=CoreAdminHome&action=optOut&language=fr"
+            : "https://stats.data.gouv.fr/index.php?module=CoreAdminHome&action=optOut&language=en"
+          }
+        ></iframe>
       </div>
       <h2>{t('title-why')}</h2>
       <p>
         <a href="https://matomo.org/">Matomo</a>
         {t('content-why-1')}
         {
-          (! english())
+          (french())
             ? <a href="https://www.cnil.fr/fr/solutions-pour-les-cookies-de-mesure-daudience">CNIL</a>
             : ""
         }
@@ -33,14 +38,15 @@ const Cookies =  withNamespaces("cookies")(
       </p>
 
       <style jsx>{`
+        a {
+          color: #6d69fb;
+          margin: 0;
+        }
+
         #iframe-container {
           display: flex;
           flex-direction: row;
           justify-content: center;
-        }
-
-        a {
-          color: #6d69fb;
         }
       `}</style>
     </div>

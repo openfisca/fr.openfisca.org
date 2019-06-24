@@ -77,8 +77,8 @@ const changeLanguage = (lng) => {
   i18n.changeLanguage(lng);
 }
 
-const english = () => {
-  return i18n.language == 'en'
+const french = () => {
+  return i18n.language == 'fr'
 }
 
 i18n
@@ -104,4 +104,4 @@ i18n
     }
   });
 
-export {i18n, switchLanguage, changeLanguage, english}
+export {i18n, switchLanguage, changeLanguage, french}

@@ -6,7 +6,7 @@ import Piwik from '../components/Piwik'
 import { withNamespaces } from 'react-i18next';
 
 
-const Legal =  withNamespaces("legal")(
+const Legal = withNamespaces("legal")(
     ({t}, props) => (
     <div className="content">
         <h2>{t('director')}</h2>
