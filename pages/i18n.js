@@ -9,6 +9,8 @@ import communityFR from '../public/locales/fr/community.json';
 import communityEN from '../public/locales/en/community.json';
 import contributeFR from '../public/locales/fr/contribute.json';
 import contributeEN from '../public/locales/en/contribute.json';
+import cookiesFR from '../public/locales/fr/cookies.json';
+import cookiesEN from '../public/locales/en/cookies.json';
 import legalFR from '../public/locales/fr/legal.json';
 import legalEN from '../public/locales/en/legal.json';
 import resourcesFR from '../public/locales/fr/resources.json';
@@ -36,6 +38,7 @@ const resources = {
     index: indexEN,
     community: communityEN,
     contribute: contributeEN,
+    cookies: cookiesEN,
     legal: legalEN,
     resources: resourcesEN,
     status: statusEN,
@@ -52,6 +55,7 @@ const resources = {
     index: indexFR,
     community: communityFR,
     contribute: contributeFR,
+    cookies: cookiesFR,
     legal: legalFR,
     resources: resourcesFR,
     status: statusFR,
