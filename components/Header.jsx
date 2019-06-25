@@ -19,7 +19,7 @@ function Header(props){
                 <li><Link href="/community" passHref><a className="menu">{t('community')}</a></Link></li>
                 <li><a className="btn outline" href="https://github.com/openfisca/openfisca-france">{t('github')} <img src={asset('/icons/github.svg')} alt="github.com"/></a></li>
                 <li><Link href="https://openfisca.org/doc/" passHref><a className="btn CTA">{t('start')} <img src={asset('/icons/Rocket.svg')} /></a></Link></li>
-                <li><button onClick={(e) => changeLanguage(switchLanguage())}>{switchLanguage()}</button></li>
+                <li><a className="switch" onClick={(e) => changeLanguage(switchLanguage())}>{switchLanguage()}</a></li>
             </ul>
             <h1>{props.title}</h1>
         </nav>
@@ -58,6 +58,13 @@ function Header(props){
 				max-height: 1.5em;
 				vertical-align: bottom;
 			}
+			.switch{
+				border-radius: 25px;
+				background: white;
+				color: black;
+				font-size: 0.8em;
+				width: 3em;
+				}
 
 			@media (max-width: 720px) {
 				header{
