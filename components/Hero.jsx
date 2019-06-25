@@ -1,6 +1,6 @@
 import asset from 'next/asset'
 import Link from 'next/link'
-import {i18n, switchLanguage, changeLanguage} from '../pages/i18n';
+import {i18n, switchLanguage, changeLanguage} from '../i18n';
 import { withNamespaces } from 'react-i18next';
 import i18next from 'i18next';
 

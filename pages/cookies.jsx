@@ -1,4 +1,4 @@
-import { french } from '../pages/i18n'
+import { french } from '../i18n'
 import Head from 'next/head'
 import GlobalStyle from '../components/GlobalStyle'
 import Header from '../components/Header'
