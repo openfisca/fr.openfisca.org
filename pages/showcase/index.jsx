@@ -4,46 +4,45 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Piwik from '../../components/Piwik'
 import CardProject from '../../components/CardProject'
+import { withNamespaces } from 'react-i18next';
 
-const Showcase = () => (
+
+const Showcase =  withNamespaces("showcase")(
+  ({t}, props) => (
   <div className="content">
     <ul className="flex__container">
       <li className="flex__item">
         <a href="mesAides" >
-          <CardProject img="/static/projects/mesaides.png" title="MesAides" 
-            desc="MesAides renseignent les citoyens français sur leur éligibilité à 32 prestations sociales." 
-            attribute1="France" attribute2="API Web" attribute3="Prestations sociales" />
+          <CardProject img="/static/projects/mesaides.png" title={t('title-mesaides')} desc={t('desc-mesaides')} 
+            attribute1={t('fr')} attribute2={t('apiweb')} attribute3={t('social')} />
         </a>
       </li>
       <li className="flex__item">
         <a href="lexImpact" >
-          <CardProject img="/static/projects/leximpact.png" title="LexImpact" 
-            desc="Ce projet en cours vise à équiper les administrateurs de l’Assemblée Nationale avec un outil de simulation d’impact de réformes." 
-            attribute1="France" attribute2="API Python" attribute3="Simulation de réformes" />
+          <CardProject img="/static/projects/leximpact.png" title={t('title-lex')} desc={t('desc-lex')} 
+            attribute1={t('fr')} attribute2={t('apipython')} attribute3={t('reforms')} />
         </a>
       </li>
       <li className="flex__item">
         <a href="taxIpp" >
-          <CardProject img="/static/projects/taxipp.png" title="Tax IPP" 
-            desc="Ce modèle apparie données administratives et données d'enquête pour les injectées dans openfisca afin d'analyser les effets du système socio-fiscal sur les ménages." 
-            attribute1="France" attribute2="API Python" attribute3="Simulation de réformes" />
+          <CardProject img="/static/projects/taxipp.png" title={t('title-tax')} desc={t('desc-tax')} 
+            attribute1={t('fr')} attribute2={t('apipython')} attribute3={t('reforms')} />
         </a>
       </li>
       <li className="flex__item">
         <a href="ratesRebates" >
-          <CardProject img="/static/projects/ratesrebates.png" title="Rates Rebates" 
-            desc="Ce prototype réalisé par l’équipe d’innovation gouvernementale de Nouvelle-Zélande teste le versement automatique d’une prestation sociale." 
-            attribute1="Nouvelle-Zélande" attribute2="API Web" attribute3="Prestations sociales" />
+          <CardProject img="/static/projects/ratesrebates.png" title={t('title-rates')} desc={t('desc-rates')} 
+            attribute1={t('nz')} attribute2={t('apiweb')} attribute3={t('social')} />
         </a>
       </li>
       <li className="flex__item">
         <a href="fastoche" >
-          <CardProject img="/static/projects/fastoche.png" title="Fastoch€" 
-            desc="Une application pour éviter les fins de mois difficiles. Suivez votre budget sans effort en connectant votre compte courant. "  
-            attribute1="France" attribute2="API Web" attribute3="Prestations sociales" />
+          <CardProject img="/static/projects/fastoche.png" title={t('title-fastoche')} desc={t('desc-fastoche')} 
+            attribute1={t('fr')} attribute2={t('apiweb')} attribute3={t('social')} />
         </a>
       </li>
     </ul>
+
 
     <style jsx>{`
       li {
@@ -62,18 +61,21 @@ const Showcase = () => (
       }
     `}</style>
   </div>
+  )
 )
 
-export default () => (
-  <div>
-    <Head>
-      <title>Projets</title>
-      <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
-    </Head>
-    <GlobalStyle/>
-    <Header page="showcase" title="Projets" />
-    <Showcase />
-    <Footer />
-    <Piwik page="showcase"/>
-  </div>
+
+export default withNamespaces("showcase")(({t}) => (
+    <div>
+        <Head>
+          <title>{t('title')}</title>
+          <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
+        <GlobalStyle/>
+        <Header page="showcase" title={t('title')} />
+        <Showcase />
+        <Footer />
+        <Piwik page="showcase"/>
+    </div>
+  )
 )

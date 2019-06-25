@@ -6,16 +6,26 @@ import Partners from '../components/Partners'
 import Footer from '../components/Footer'
 import Piwik from '../components/Piwik'
 
-const Communaute = () => (
+// the hoc
+import { withNamespaces } from 'react-i18next';
+
+const Communaute =  withNamespaces("community")(
+    ({t}, props) => (
     <div className="content">
         <section>
-            <h2>Qui sommes-nous ?</h2>
+            <h2>{t('title-who')}</h2>
             <div className="flex__container">
                 <div className="flex__item50">
                     <p>
-                        OpenFisca est une communauté Open Source soutenue par Beta Gouv & Etalab, deux équipes d’innovation au sein du gouvernement français.
-                        En 2019, OpenFisca est utilisée par 7 pays dans le monde (France, Espagne, Italie, Nouvelle Zélande, Sénégal & Tunisie).
-                        Plus de 70 personnes ont rejoint cette aventure. Ils contribuent, s’entraident et participent chaque jour à améliorer le code d’OpenFisca.
+                        {t('content-who-1')}
+                        <a href="https://beta.gouv.fr/">BetaGouv</a> & <a href="https://www.etalab.gouv.fr/">Etalab</a>
+                        {t('content-who-2')}
+                        <br/>
+                        <br/>
+                        {t('content-who-3')}
+                        <br/>
+                        <br/>
+                        {t('content-who-4')}
                     </p>
                 </div>
                 <div className="flex__item50">
@@ -25,23 +35,22 @@ const Communaute = () => (
         </section>
 
         <section>
-            <h2>Échanger avec la communauté</h2>
+            <h2>{t('title-reach')}</h2>
             <div className="flex__column">
                 <div className="flex__item50">
-                    <p>
-                        Lorsque vous travaillez sur un projet utilisant OpenFisca, vous êtes le bienvenue sur notre Slack ! Vous pourrez y demander de l’aide, des conseils et rencontrer les autres membres de la communauté.
-                        Avant de vous inviter sur le Slack, nous vous demandons simplement de répondre à quelques questions sur votre projet.
-                    </p>
+                    <p>{t('content-reach')}</p>
                 </div>
-                <a className="btn medium" href="https://forms.gle/XFxiFvfaAa6w7LGy7">Rejoindre le Slack</a>
+                <a className="btn medium" href="https://forms.gle/XFxiFvfaAa6w7LGy7">
+                    {t('btn-slack')}
+                </a>
             </div>
         </section>
 
         <section>
-            <h2>Écrivez-nous</h2>
+            <h2>{t('title-contact')}</h2>
             <div className="flex__column">
                 <div className="flex__item50">
-                    <p>Pour toute question ou pour toute demande de collaboration, n&#39;hésitez pas à nous joindre par email.</p>
+                    <p>{t('content-contact')}</p>
                 </div>
                 <div>
                     <a className="btn medium" href="mailto:%63%6fn&#116;&#97;%63%74&#64;%6f%70%65%6efi&#115;&#99;a%2e&#111;&#114;&#103;">Contact</a>
@@ -49,19 +58,13 @@ const Communaute = () => (
             </div>
         </section>
 
-        <section>
-            <h2>Restez informés</h2>
-            <div className="flex__column">
-                <div className="flex__item50">
-                    <p>
-                        Vous pouvez vous abonner à notre newsletter mensuelle pour recevoir les actualités et les changements majeurs opérés sur OpenFisca.
-                    </p>
-                </div>
-                <a className="btn medium">Recevoir la Newsletter</a>
-            </div>
-        </section>
 
         <style jsx>{`
+            p a {
+                color: #6d69fb;
+                margin: 0;
+            }
+
             medium {
               display: flex;
             }
@@ -74,19 +77,21 @@ const Communaute = () => (
             }
         `}</style>
     </div>
+    )
 )
 
-export default () => (
+export default withNamespaces("community")(({t}) => (
     <div>
         <Head>
-            <title>Communauté</title>
+            <title>{t('title')}</title>
             <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <GlobalStyle/>
-        <Header page="community" title="Communauté" />
+        <Header page="community" title={t('title')} />
         <Communaute />
         <Partners/>
         <Footer />
         <Piwik page="community"/>
     </div>
+    )
 )

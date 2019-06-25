@@ -1,0 +1,19 @@
+{
+    "title": "Projets",
+    "title-mesaides":"Mes Aides",
+    "desc-mesaides": "MesAides renseignent les citoyens français sur leur éligibilité à 32 prestations sociales.",
+    "title-lex":"LexImpact",
+    "desc-lex":"Ce projet en cours vise à équiper les administrateurs de l’Assemblée Nationale avec un outil de simulation d’impact de réformes.",
+    "title-tax":"Tax IPP",
+    "desc-tax":"Ce modèle apparie données administratives et données d'enquête pour les injectées dans openfisca afin d'analyser les effets du système socio-fiscal sur les ménages.",
+    "title-rates":"Rates Rebates",
+    "desc-rates":"Ce prototype réalisé par l’équipe d’innovation gouvernementale de Nouvelle-Zélande teste le versement automatique d’une prestation sociale.",
+    "title-fastoche":"Fastoch€",
+    "desc-fastoche":"Une application pour éviter les fins de mois difficiles. Suivez votre budget sans effort en connectant votre compte courant.",
+    "apiweb":"API web",
+    "apipython":"API Python",
+    "social":"Prestations sociales",
+    "reforms":"Simulation de réformes",
+    "fr":"France",
+    "nz": "Nouvelle-Zélande"
+}

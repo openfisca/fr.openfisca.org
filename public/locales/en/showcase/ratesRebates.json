@@ -1,0 +1,15 @@
+{
+    "title": "Rates rebates",
+    "back":"back",
+    "baseline" : "Prototyping automated service for social benefits.",
+    "desc1":"Built by the Service Innovation Lab team (New Zealand), this prototype makes it easy for senior users to apply for the Rates rebates subsidy.",
+    "desc2":"The team entirely coded the New Zealand & Aotearoa tax & benefit system.",
+    "desc3":"Rates rebates was built in 2018.",
+    "textlink":"Read the report",
+    "car":"Project attributes",
+    "api":"uses the web API",
+    "country":"questions the New Zealand & Aotearoa system",
+    "simulation":"runs a simulation on individuals",
+    "perimetre":"uses all the social benefits",
+    "poweredby":"powered by public administration"
+}

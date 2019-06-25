@@ -1,0 +1,15 @@
+{
+    "title": "Mes Aides",
+    "back":"Back",
+    "baseline" : "Mes Aides is a social benefits simulator.",
+    "desc1":"Built by BetaGouv, the French government innovation team.",
+    "desc2":"Mes Aides informs French citizens on their eligibility to national and local social benefits. In less than 7 minutes, the service gives an answer on more than 30 benefits.",
+    "desc3":"Mes Aides also designed some custom-made extensions such as city local benefits or tools to trace the calculation details and navigate through it.",
+    "textlink":"Visit Mes Aides",
+    "car":"Project attributes",
+    "api":"uses the web API",
+    "country":"questions the French system",
+    "simulation":"runs a simulation on individuals",
+    "perimetre":"uses the social benefits",
+    "poweredby":"powered by a public administration"
+}

@@ -225,6 +225,14 @@ const GlobalStyle = () => (
         padding: 0.5em;
       }
 
+      .back {
+        color: #656565;
+        padding: 0 1% 0 1%;
+        border-color: #656565;
+        border-radius: 25px;
+        max-width: 4em;
+      }
+
       .medium {
         background-color:#6d69fb;
         -moz-border-radius:4px;

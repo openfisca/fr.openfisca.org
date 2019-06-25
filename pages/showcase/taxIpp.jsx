@@ -6,53 +6,46 @@ import Piwik from '../../components/Piwik'
 import ProjectDesc from '../../components/ProjectDesc'
 import ProjectAttribute from '../../components/ProjectAttribute'
 
-const Taxipp = () => (
+// the hoc
+import { withNamespaces } from 'react-i18next';
+
+const Taxipp =  withNamespaces("taxipp")(
+    ({t}, props) => (
     <div className="content">
-        <a className="outline" href="/showcase/" >Retour</a>
+        <a className="{t('back')}" href="/showcase/" >Retour</a>
 
         <ProjectDesc img="/static/projects/taxipp.png"
-            baseline="TaxIPP est un modèle de microsimulation"
-            desc1="Le modèle TaxIPP réalise l'appariement de données administratives et de données d'enquête pour réaliser un échantillon représentatif des ménages français. Il est injecté dans  par openfisca pour simuler l'impact de réformes du système socio-fiscal sur les ménages."
-            desc2="TAXIPP outille l’IPP (l’Institut des Politiques Publiques) dans sa mission d’animation du débat public depuis 2012. "
-            desc3="Il est notamment utilisé pour évaluer les effets des projets de loi de finances."
-            url="https://www.ipp.eu/outils/taxipp-outils/" textlink="Visiter TaxIPP"/>
+            baseline={t('baseline')}
+            desc1={t('desc1')}
+            desc2={t('desc2')}
+            desc3={t('desc3')}
+            url="https://www.ipp.eu/outils/taxipp-outils/" textlink={t('textlink')}/>
 
         <section>
-            <h2>Caractéristiques du projet</h2>
+            <h2>{t('car')}</h2>
             <ProjectAttribute
-                imgapi="/static/icons/circle/python.svg" api="utilise l'API Python"
-                imgcountry="/static/icons/circle/france.svg" country="interroge le système France"
-                imgsimulation="/static/icons/circle/simupopulation.svg" simulation="produit une simulation sur une population"
-                imgperimetre="/static/icons/circle/perimetre.svg" perimetre="utilise l'intégralité du système socio-fiscal"
-                imgpoweredby="/static/icons/circle/economistes.svg" poweredby="porté par des économistes"
+                imgapi="/static/icons/circle/python.svg" api={t('api')}
+                imgcountry="/static/icons/circle/france.svg" country={t('country')}
+                imgsimulation="/static/icons/circle/simupopulation.svg" simulation={t('simulation')}
+                imgperimetre="/static/icons/circle/perimetre.svg" perimetre={t('perimetre')}
+                imgpoweredby="/static/icons/circle/economistes.svg" poweredby={t('poweredby')}
             />
         </section>
-
-        <style jsx>{`
-
-.outline {
-  color: #656565;
-  padding: 0 1% 0 1%;
-  border-color: #656565;
-  border-radius: 25px;
-  max-width: 4em;
-
-}
-
-`}</style>
-
-    </div>
+    </div> 
+    )
 )
-export default () => (
+
+export default withNamespaces("taxipp")(({t}) => (
     <div>
         <Head>
-            <title>TaxIPP</title>
+            <title>{t('title')}</title>
             <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <GlobalStyle/>
-        <Header page="tafipp" title="TaxIPP"/>
+        <Header page="taxipp" title={t('title')}/>
         <Taxipp />
         <Footer />
         <Piwik page="taxipp"/>
     </div>
+)
 )

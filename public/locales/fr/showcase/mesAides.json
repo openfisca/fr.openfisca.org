@@ -1,0 +1,15 @@
+{
+    "title": "Mes Aides",
+    "back":"Retour",
+    "baseline" : "Mes Aides est un simulateur de droit aux aides sociales.",
+    "desc1":"Développé par BetaGouv, l’équipe d’innovation du gouvernement français.",
+    "desc2":"Mes Aides informe les citoyens français de leur éligibilité aux aides sociales nationales et régionales. En moins de 7 minutes, le service donne une réponse sur l’éligibilité à 30 aides.",
+    "desc3":"S’appuie également sur des extensions sur-mesure développées par l’équipe : implémentation d’aides locales (Paris, Brest), création d’outils comme le traceur, outil de debug qui permet de naviguer plus facilement dans un calcul OpenFisca.",
+    "textlink":"Visiter Mes Aides",
+    "car":"Caractéristiques du projet",
+    "api":"utilise l'API web",
+    "country":"interroge le système France",
+    "simulation":"produit une simulation individuelle",
+    "perimetre":"utilise le périmètre de la loi lié aux prestations sociales",
+    "poweredby":"porté par une administration publique"
+}

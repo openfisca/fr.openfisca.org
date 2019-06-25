@@ -1,22 +1,25 @@
 import Link from 'next/link'
+import { withNamespaces } from 'react-i18next';
 
-const Footer = () => (
+
+const Footer = withNamespaces(["index", "components"])(
+	({t}) => (
     <div>
         <footer>
             <div className="baseline">
-                <h3>Transformer le code législatif en code logiciel</h3>
-                <a href="https://openfisca.org/doc/" className="btn CTA">Commencer <img src="/static/icons/Rocket.svg"></img></a>
+                <h3>{t('pitch1')} {t('pitch2')}</h3>
+                <a href="https://openfisca.org/doc/" className="btn CTA">{t('start')} <img src="/static/icons/rocket.svg" /></a>
             </div>
             <ul>
-                <li><Link href="/status" passHref><a>Etat des services</a></Link></li>
-                <li><Link href="/cookies" passHref><a>Informatique & libertés</a></Link></li>
-                <li><Link href="/legal" passHref><a>Mentions légales</a></Link></li>
-                <li><Link href="/contribute" passHref><a>Contribuer</a></Link></li>
+                <li><Link href="/status" passHref>{t('components:status')}</Link></li>
+                <li><Link href="/cookies" passHref>{t('components:privacy')}</Link></li>
+                <li><Link href="/legal" passHref>{t('components:legal')}</Link></li>
+                <li><Link href="/contribute" passHref>{t('components:contribute')}</Link></li>
             </ul>
             <ul className="social">
                 <li><a href="mailto:contact@openfisca.org?Subject=openfisca.org" passHref><img src="/static/icons/Email.svg" alt="Envoyer un email"></img></a></li>
                 <li><a href="https://github.com/openfisca" passHref><img src="/static/icons/Github.svg" alt="GitHub"></img></a></li>
-                <li><a href="https://forms.gle/XFxiFvfaAa6w7LGy7" passHref><img src="/static/icons/Slack.svg" alt="Slack"></img></a></li>
+                <li><a href={t('welcomeform')} passHref><img src="/static/icons/Slack.svg" alt="Slack"></img></a></li>
                 <li><a href="https://twitter.com/openfisca" passHref><img src="/static/icons/Twitter.svg" alt="Twitter"></img></a></li>
             </ul>
         </footer>
@@ -43,10 +46,6 @@ const Footer = () => (
 			.baseline img {
 				max-height: 1.5em;
         		vertical-align: bottom;
-			}
-
-			.CTA {
-				max-width: 8em;
 			}
 
 			.social {
@@ -86,7 +85,7 @@ const Footer = () => (
 			}
 		`}</style>
     </div>
+	)
 )
 
 export default Footer
-

@@ -1,0 +1,9 @@
+{
+    "title": "Contribute",
+    "title-suggest": "Suggest or add content",
+    "content-suggest":"This website - and this project - is contributive! Do you need a tool? Are you missing some information? Do you have a suggestion? You can contribute via GitHub by building tools or tell the community about your needs and ideas by droping us an email or via Slack. Someone else might have the same need.",
+    "title-share": "Share the love",
+    "content-share": "Do you want to talk to OpenFisca to someone? Or convince someone to use it? You want to write an article about OpenFisca? Feel free to use this presentation document https://drive.google.com/open?id=1eGa4PphlDCSzhGSTFDhG6CGRafJi6cAj3vlD7wNw2NM.",
+    "title-reuse": "Reuse OpenFisca",
+    "content-reuse": "OpenFisca is published under the AGPL 3.0 licence. Please mention OpenFisca when you reuse it. Details of the licence can be found on our documentation https://openfisca.org/doc/publishing.html."
+}

@@ -1,0 +1,15 @@
+{
+    "title": "TaxIpp",
+    "back":"Retour",
+    "baseline" : "TaxIPP est un modèle de microsimulation.",
+    "desc1":"Le modèle TaxIPP réalise l'appariement de données administratives et de données d'enquête pour réaliser un échantillon représentatif des ménages français. Il est injecté dans par openfisca pour simuler l'impact de réformes du système socio-fiscal sur les ménages.",
+    "desc2":"TAXIPP outille l’IPP (l’Institut des Politiques Publiques) dans sa mission d’animation du débat public depuis 2012.",
+    "desc3":"Il est notamment utilisé pour évaluer les effets des projets de loi de finances.",
+    "textlink":"Visiter TaxIPP",
+    "car":"Caractéristique du projet",
+    "api":"utilise l'API Python",
+    "country":"interroge le système France",
+    "simulation":"produit une simulation sur une population",
+    "perimetre":"utilise l'intégralité du système socio-fiscal",
+    "poweredby":"porté par une administration publique"
+}

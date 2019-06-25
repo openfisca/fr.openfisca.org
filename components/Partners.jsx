@@ -1,16 +1,19 @@
 import asset from 'next/asset'
+import { withNamespaces } from 'react-i18next';
 
-const Partners = () => (
-  <div className="content">
-    <h2>Nos partenaires</h2>
-    <ul className="flex__container">
-      <li className="flex-item logo"><img alt="IPP" src={asset('/images/logo-ipp.png')} /></li>
-      <li className="flex-item logo"><img alt="Etalab" src={asset('/images/logo-etalab.png')} /></li>
-      <li className="flex-item logo"><img alt="MSA" src={asset('/images/logo-msa.svg')} /></li>
-      <li className="flex-item logo"><img alt="beta.gouv.fr" src={asset('/images/logo-betagouv-url.svg')} /></li>
-      <li className="flex-item logo"><img alt="IDEP" src={asset('/images/logo-idep.png')} /></li>
-      <li className="flex-item logo"><img alt="France Stratégie" src={asset('/images/logo-france-strategie.jpg')} /></li>
-    </ul>
+
+const Partners = withNamespaces("components")(
+  ({t}) => (
+    <div className="content">
+        <h2>{t('partners')}</h2>
+        <ul className="flex__container">
+            <li className="flex-item logo"><img alt="IPP" src={asset('/images/logo-ipp.png')} /></li>
+            <li className="flex-item logo"><img alt="Etalab" src={asset('/images/logo-etalab.png')} /></li>
+            <li className="flex-item logo"><img alt="MSA" src={asset('/images/logo-msa.svg')} /></li>
+            <li className="flex-item logo"><img alt="beta.gouv.fr" src={asset('/images/logo-betagouv-url.svg')} /></li>
+            <li className="flex-item logo"><img alt="IDEP" src={asset('/images/logo-idep.png')} /></li>
+            <li className="flex-item logo"><img alt="France Stratégie" src={asset('/images/logo-france-strategie.jpg')} /></li>
+        </ul>
 
     <style jsx>{`
       div {
@@ -60,7 +63,8 @@ const Partners = () => (
       }
     `}</style>
   </div>
+  )
 )
 
-export default Partners
 
+export default Partners

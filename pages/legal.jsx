@@ -3,41 +3,34 @@ import GlobalStyle from '../components/GlobalStyle'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Piwik from '../components/Piwik'
+import { withNamespaces } from 'react-i18next';
 
-const Legal = () => (
+
+const Legal = withNamespaces("legal")(
+    ({t}, props) => (
     <div className="content">
-        <h2>Responsable de la publication</h2>
+        <h2>{t('director')}</h2>
         <p>
-            Laure Lucchesi<br />
-            Directrice d’Etalab<br />
-            20, avenue de Ségur<br />
-            75007 Paris<br />
-            <a href="https://www.etalab.gouv.fr">https://www.etalab.gouv.fr</a>
+            {t('director-address')}
         </p>
 
-        <h2>Hébergeur</h2>
-        <p>
-            Netlify<br />
-            2325 3rd St Suite 215<br />
-            San Francisco, CA 94107, États-Unis<br />
-        </p>
-
-        <style jsx>{`
-
-        `}</style>
+        <h2>{t('host')}</h2>
+        <p>{t('host-address')}</p>
     </div>
+    )
 )
 
-export default () => (
+export default withNamespaces("legal")(({t}) => (
     <div>
         <Head>
-            <title>Mentions légales</title>
+            <title>{t('title')}</title>
             <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <GlobalStyle/>
-        <Header title="Mentions légales" page="legal" />
+        <Header page="legal" title={t('title')}  />
         <Legal />
         <Footer />
         <Piwik page="legal"/>
     </div>
+    )
 )

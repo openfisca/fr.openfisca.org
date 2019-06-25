@@ -1,0 +1,15 @@
+{
+    "title": "TaxIpp",
+    "back":"back",
+    "baseline" : "TaxIPP is a microsimulation model.",
+    "desc1":"This model mixes survey data and administrative data to get a representative sample of households. The data is then injected into OpenFisca to analyse the impact of a tax & benefit system on households.",
+    "desc2":"TAXIPP is used by the IPP (The Institute for Public Policy) which animate public debate since 2012.",
+    "desc3":"Among other subjects, TaxIPP analyses the French government Finance Law every year.",
+    "textlink":"Visit TaxIPP",
+    "car":"Project attributes",
+    "api":"uses the Python API",
+    "country":"queries the French system",
+    "simulation":"runs a simulation on a population",
+    "perimetre":"uses all of the tax & benefit system",
+    "poweredby":"powered by economists"
+}

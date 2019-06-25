@@ -1,19 +1,25 @@
 import asset from 'next/asset'
 import Link from 'next/link'
+import {i18n, switchLanguage, changeLanguage} from '../i18n';
+import { withNamespaces } from 'react-i18next';
+import i18next from 'i18next';
 
-const Header = (props) => (
+function Header(props){
+	const {t} = props;
+	const currentPageTitle = t('title')
+  return (
     <header>
-        <title>{props.title}</title>
         <nav>
             <Link href="/">
-                <img id="logo-small" src={asset('/images/logo_mini.svg')} />
+                <img id="logo-small" src={asset('/images/logo_mini.svg')} alt={t('title')} />
             </Link>
             <ul>
-                <li><Link href="/showcase/" passHref><a className="menu">Projets</a></Link></li>
-                <li><Link href="/resources" passHref><a className="menu">Ressources</a></Link></li>
-                <li><Link href="/community" passHref><a className="menu">Communauté</a></Link></li>
-                <li><a className="btn outline" href="https://github.com/openfisca/openfisca-france">Code source <img src={asset('/icons/github.svg')} alt="github.com"/></a></li>
-                <li><Link href="https://openfisca.org/doc/" passHref><a className="btn CTA">Commencer <img src={asset('/icons/Rocket.svg')} /></a></Link></li>
+                <li><Link href="/showcase/" passHref><a className="menu">{t('projects')}</a></Link></li>
+                <li><Link href="/resources" passHref><a className="menu">{t('ressources')}</a></Link></li>
+                <li><Link href="/community" passHref><a className="menu">{t('community')}</a></Link></li>
+                <li><a className="btn outline" href="https://github.com/openfisca/openfisca-france">{t('github')} <img src={asset('/icons/github.svg')} alt="github.com"/></a></li>
+                <li><Link href="https://openfisca.org/doc/" passHref><a className="btn CTA">{t('start')} <img src={asset('/icons/Rocket.svg')} /></a></Link></li>
+                <li><a className="switch" onClick={(e) => changeLanguage(switchLanguage())}>{switchLanguage()}</a></li>
             </ul>
             <h1>{props.title}</h1>
         </nav>
@@ -35,7 +41,7 @@ const Header = (props) => (
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d69fb', endColorstr='#00baaf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 			}
 
-      		ul {
+      ul {
 				list-style-type: none;
 				min-height: 3em;
 				display: flex;
@@ -52,6 +58,13 @@ const Header = (props) => (
 				max-height: 1.5em;
 				vertical-align: bottom;
 			}
+			.switch{
+				border-radius: 25px;
+				background: white;
+				color: black;
+				font-size: 0.8em;
+				width: 3em;
+				}
 
 			@media (max-width: 720px) {
 				header{
@@ -68,6 +81,7 @@ const Header = (props) => (
 			}
 		`}</style>
     </header>
-)
+  )
+}
 
-export default Header
+export default withNamespaces()(Header)

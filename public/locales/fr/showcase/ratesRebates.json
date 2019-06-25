@@ -1,0 +1,15 @@
+{
+    "title": "Rates rebates",
+    "back":"Retour",
+    "baseline" : "Prototyper le versement automatique d’une aide sociale.",
+    "desc1":"Produit par Lab Inno NZ, l’équipe d’innovation du gouvernement néo-zélandais, ce prototype vise à faciliter le versement automatique de l’aide Rates Rebates pour le public senior.",
+    "desc2":"L’équipe a intégralement modélisé le système socio-fiscal néo-zélandais.",
+    "desc3":"Rates Rebates a été prototypé en 2018.",
+    "textlink":"Lire le rapport",
+    "car":"Caractéristiques du projet",
+    "api":"utilise l'API web",
+    "country":"interroge le système Nouvelle-Zélande & Aotearoa",
+    "simulation":"produit une simulation individuelle",
+    "perimetre":"utilise le périmètre de la loi lié aux prestations sociales",
+    "poweredby":"porté par une administration publique"
+}

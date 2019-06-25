@@ -1,0 +1,15 @@
+{
+    "title": "Fastoch€",
+    "back":"Back",
+    "baseline" : "Fastoch€ is a financial coach.",
+    "desc1":"Developed by PayBoost, a company specialized in online payment.",
+    "desc2":"Fastoch€ is a mobile app that works as a financial coach. It aims at helping users to deal with their monthly bugdget. It also informs them on elegibility to social benefits and how to apply for those benefits.",
+    "desc3":"Fastoch€ was launched in 2018.",
+    "textlink":"Visit Fastoch€",
+    "car":"Project attributes",
+    "api":"uses the web API",
+    "country":"questions the French system",
+    "simulation":"runs a simulation on individuals",
+    "perimetre":"uses social benefits",
+    "poweredby":"powered by a private start-up"
+}
