@@ -1,8 +1,7 @@
 import { withNamespaces } from "react-i18next"
 
 
-const CardResource = withNamespaces("components")(
-    ({t}, props) => (
+const CardResource = ({t}, props) => (
         <div className="card-container">
             <div className="card-desc">
                 <p className="medium">{props.title}</p>
@@ -50,7 +49,6 @@ const CardResource = withNamespaces("components")(
             </style>
         </div>    
     )
-)
 
 
-export default CardResource
+export default withNamespaces("components")(CardResource)

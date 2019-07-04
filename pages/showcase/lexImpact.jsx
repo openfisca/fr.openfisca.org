@@ -5,8 +5,9 @@ import ProjectDesc from "components/ProjectDesc"
 import ProjectAttribute from "components/ProjectAttribute"
 
 
-function LexImpact() {
-    return withNamespaces("leximpact")(
+function LexImpact(props) {
+    const {t} = props
+    return (
         <Layout page="leximpact" title={t('title')}>
             <div className="content">
                 <a className="outline" href="/showcase/">
@@ -56,4 +57,4 @@ function LexImpact() {
 }
 
 
-export default LexImpact
+export default withNamespaces("leximpact")(LexImpact)

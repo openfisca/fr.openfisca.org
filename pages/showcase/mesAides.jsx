@@ -5,8 +5,9 @@ import ProjectDesc from "components/ProjectDesc"
 import ProjectAttribute from "components/ProjectAttribute"
 
 
-function MesAides() {
-    return withNamespaces("mesaides")(
+function MesAides(props) {
+    const {t} = props
+    return (
         <Layout page="mesaides" title={t('title')}>
             <div className="content">
                 <a className="outline" href="/showcase/">
@@ -56,4 +57,4 @@ function MesAides() {
 }
 
 
-export default MesAides
+export default withNamespaces("mesaides")(MesAides)

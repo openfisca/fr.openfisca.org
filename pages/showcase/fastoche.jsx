@@ -5,8 +5,9 @@ import ProjectDesc from "components/ProjectDesc"
 import ProjectAttribute from "components/ProjectAttribute"
 
 
-function Fastoche() {
-    return withNamespaces("fastoche")(
+function Fastoche(props) {
+    const {t} = props
+    return (
         <Layout page="fastoche" title={t('title')}>
             <div className="content">
                 <a className="outline" href="/showcase/">
@@ -56,4 +57,4 @@ function Fastoche() {
 }
 
 
-export default Fastoche
+export default withNamespaces("fastoche")(Fastoche)

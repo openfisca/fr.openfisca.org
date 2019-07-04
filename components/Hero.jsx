@@ -6,7 +6,7 @@ import { withNamespaces } from "react-i18next"
 import i18next from "i18next"
 
 
-const Hero = withNamespaces()(
+const Hero = (
     ({t}) => (
         <div className="hero" >
             <nav>
@@ -15,17 +15,17 @@ const Hero = withNamespaces()(
                 </Link>
                 <ul>
                     <li>
-                        <Link href="/showcase/" passHref>
+                        <Link href="/showcase/" passhref>
                             <a className="menu">{t('projects')}</a>
                         </Link>
                     </li>
                     <li>
-                        <Link href="/resources" passHref>
+                        <Link href="/resources" passhref>
                             <a className="menu">{t('ressources')}</a>
                         </Link>
                     </li>
                     <li>
-                        <Link href="/community" passHref>
+                        <Link href="/community" passhref>
                               <a className="menu">{t('community')}</a>
                         </Link>
                     </li>
@@ -35,7 +35,7 @@ const Hero = withNamespaces()(
                         </a>
                     </li>
                     <li>
-                        <Link href="https://openfisca.org/doc/" passHref>
+                        <Link href="https://openfisca.org/doc/" passhref>
                             <a className="btn cta">{t('start')} <img src={asset('/icons/rocket.svg')}  alt=""/></a>
                         </Link>
                     </li>
@@ -50,7 +50,7 @@ const Hero = withNamespaces()(
             <div className="content">
                 <img src="static/images/logo_main.svg" alt="OpenFisca"/>
                 <p className="baseline" >{t('pitch1')}<br/>{t('pitch2')}</p>
-                <Link href="https://openfisca.org/doc/" passHref>
+                <Link href="https://openfisca.org/doc/" passhref>
                     <a className="btn cta">
                         {t('start')} <img src={asset('/icons/rocket.svg')} alt="" />
                     </a>
@@ -146,4 +146,4 @@ const Hero = withNamespaces()(
 )
 
 
-export default Hero
+export default withNamespaces()(Hero)

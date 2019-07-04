@@ -4,8 +4,9 @@ import Layout from "layouts/Layout"
 import asset from "next/asset"
 
 
-function Community() {
-    return withNamespaces("community")(
+function Community(props) {
+    const {t} = props
+    return (
         <Layout page="community" title={t('title')}>
             <div className="content">
                 <section>
@@ -81,4 +82,4 @@ function Community() {
 }
 
 
-export default Community
+export default withNamespaces("community")(Community)

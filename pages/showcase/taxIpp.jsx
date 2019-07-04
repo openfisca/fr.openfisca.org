@@ -5,8 +5,9 @@ import ProjectDesc from "components/ProjectDesc"
 import ProjectAttribute from "components/ProjectAttribute"
 
 
-function TaxIPP() {
-    return withNamespaces("taxipp")(
+function TaxIPP(props) {
+    const {t} = props
+    return (
         <Layout page="taxipp" title={t('title')}>
             <div className="content">
                 <a className="outline" href="/showcase/">
@@ -56,4 +57,4 @@ function TaxIPP() {
 }
 
 
-export default TaxIPP
+export default withNamespaces("taxipp")(TaxIPP)

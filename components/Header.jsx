@@ -6,7 +6,7 @@ import { withNamespaces } from "react-i18next"
 import i18next from "i18next"
 
 
-const Header = withNamespaces()(
+const Header = (
 	({t}, props) => (
         <header>
             <nav>
@@ -15,17 +15,17 @@ const Header = withNamespaces()(
                 </Link>
                 <ul>
                     <li>
-                        <Link href="/showcase/" passHref>
+                        <Link href="/showcase/" passhref="true">
                             <a className="menu">{t('projects')}</a>
                         </Link>
                     </li>
                     <li>
-                        <Link href="/resources" passHref>
+                        <Link href="/resources" passhref="true">
                             <a className="menu">{t('ressources')}</a>
                         </Link>
                     </li>
                     <li>
-                        <Link href="/community" passHref>
+                        <Link href="/community" passhref="true">
                             <a className="menu">{t('community')}</a>
                         </Link>
                     </li>
@@ -36,7 +36,7 @@ const Header = withNamespaces()(
 	    				</a>
 	    			</li>
                     <li>
-	    				<Link href="https://openfisca.org/doc/" passHref>
+	    				<Link href="https://openfisca.org/doc/" passhref="true">
 	    					<a className="btn cta">{t('start')} <img src={asset('/icons/rocket.svg')} /></a>
 	    				</Link>
 	    			</li>
@@ -128,4 +128,4 @@ const Header = withNamespaces()(
 )
 
 
-export default Header
+export default withNamespaces()(Header)

@@ -4,8 +4,9 @@ import Layout from "layouts/Layout"
 import Partners from "components/Partners"
 
 
-function Contribute() {
-    return withNamespaces("contribute")(
+function Contribute(props) {
+    const {t} = props
+    return (
         <Layout page="contribute" title={t('title')}>
             <div className="content">
                 <h2>{t('title-suggest')}</h2>
@@ -41,4 +42,4 @@ function Contribute() {
 }
 
 
-export default Contribute
+export default withNamespaces("contribute")(Contribute)

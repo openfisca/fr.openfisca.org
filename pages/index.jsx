@@ -5,8 +5,9 @@ import Hero from "components/Hero"
 import Partners from "components/Partners"
 
 
-function Index() {
-    return withNamespaces()(
+function Index(props) {
+    const {t} = props
+    return (
         <Home page="home" title={t('title')}>
             <Hero />
             <div className="content">
@@ -138,4 +139,4 @@ function Index() {
 }
 
 
-export default Index
+export default withNamespaces()(Index)

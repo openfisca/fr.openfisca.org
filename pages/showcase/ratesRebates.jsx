@@ -5,8 +5,9 @@ import ProjectDesc from "components/ProjectDesc"
 import ProjectAttribute from "components/ProjectAttribute"
 
 
-function RatesRebates() {
-    return withNamespaces("ratesrebates")(
+function RatesRebates(props) {
+    const {t} = props
+    return (
         <Layout page="ratesrebates" title={t('title')}>
             <div className="content">
                 <a className="outline" href="/showcase/">
@@ -56,4 +57,4 @@ function RatesRebates() {
 }
 
 
-export default RatesRebates
+export default withNamespaces("ratesrebates")(RatesRebates)

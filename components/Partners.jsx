@@ -2,7 +2,7 @@ import asset from "next/asset"
 import {withNamespaces} from "react-i18next"
 
 
-const Partners = withNamespaces ("components") (
+const Partners = (
     ({t}) => (
         <div className="content">
             <h2>{t ("partners")}</h2>
@@ -81,4 +81,4 @@ const Partners = withNamespaces ("components") (
 )
 
 
-export default Partners
+export default withNamespaces("components")(Partners)
