@@ -53,8 +53,6 @@ function Resources(props) {
         }
     ]
 
-    resourceList.map(resource => console.log(resource.title))
-
     return (
         <Layout page="resources" title={t('title')}>
             <div className="content">
