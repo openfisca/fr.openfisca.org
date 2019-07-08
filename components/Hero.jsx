@@ -121,15 +121,16 @@ const Hero = (
                         text-align: center;
                     }
 
-                    @media (max-width:880px) {
-                        .content {
+                    @media (max-width: 720px) {
+                        ul {
                             display: flex;
                             flex-direction: column;
                             align-items: center;
+                            padding: 0.2rem; // Fix menu to top
                         }
 
-                        ul {
-                            padding: 0.2rem;
+                        li {
+                            margin-bottom: 1em;
                         }
 	            	}
                 `}

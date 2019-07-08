@@ -112,16 +112,21 @@ const Header = (
 
 				    @media (max-width: 720px) {
 				    	header{
+							display: flex;
 				    		flex-direction: column;
 				    		justify-content: stretch;
 				    	}
 
 					    ul {
        				    	display: flex;
-          			    	padding: 0.2rem;
           			    	flex-direction: column;
           			    	align-items: center;
+							padding: 0.2rem; // Fix menu to top
 					    }
+
+						li {
+							margin-bottom: 1em;
+						}
 				    }
 			    `}
             </style>
