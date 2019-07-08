@@ -40,7 +40,7 @@ const Hero = (
                         </Link>
                     </li>
                     <li>
-                        <a className="switch" onClick={(e) => changeLanguage(switchLanguage())}>
+                        <a className="switch btn cta" onClick={(e) => changeLanguage(switchLanguage())}>
                             {switchLanguage()}
                         </a>
                     </li>
@@ -70,7 +70,7 @@ const Hero = (
                     .logo {
                     	max-width: 4em;
                     	margin: 1em;
-                    	cursor:pointer;
+                    	cursor: pointer;
                     }
 
                     .switch {
@@ -87,16 +87,16 @@ const Hero = (
                     }
 
                     .baseline {
-                      color: #ffffff;
-                      font-size: 1.5em;
-                      line-height: 1.75em;
-                      font-family: "asapmedium";
-                      font-style: normal;
+                        color: #ffffff;
+                        font-size: 1.5em;
+                        line-height: 1.75em;
+                        font-family: "asapmedium";
+                        font-style: normal;
                     }
 
                     img {
-                      max-width: 30em;
-                      vertical-align: bottom;
+                        max-width: 30em;
+                        vertical-align: bottom;
                     }
 
                     ul {
@@ -108,8 +108,8 @@ const Hero = (
 	            	}
 
 	            	li {
-	            		display: inline;
 	            		list-style: none;
+                        margin-right: 0.5em;
 	            	}
 
                     li img {
@@ -121,22 +121,15 @@ const Hero = (
                         text-align: center;
                     }
 
-                    .cta {
-                        max-width: 10em;
-                    }
-
                     @media (max-width:880px) {
-                        .logo {
+                        .content {
                             display: flex;
                             flex-direction: column;
                             align-items: center;
                         }
 
                         ul {
-                            display: flex;
                             padding: 0.2rem;
-                            flex-direction: column;
-                            align-items: center;
                         }
 	            	}
                 `}

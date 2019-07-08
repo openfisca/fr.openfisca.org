@@ -41,7 +41,7 @@ const Header = (
 	    				</Link>
 	    			</li>
                     <li>
-                        <a className="switch" onClick={(e) => changeLanguage(switchLanguage())}>{switchLanguage()}</a>
+                        <a className="switch btn cta" onClick={(e) => changeLanguage(switchLanguage())}>{switchLanguage()}</a>
                     </li>
                 </ul>
                 <h1>{props.title}</h1>
@@ -94,10 +94,12 @@ const Header = (
 				    li {
 				    	display: inline;
 				    	list-style: none;
+						margin-right: 0.5em;
 				    }
 
 				    li img {
 				    	max-height: 1.5em;
+						vertical-align: bottom;
 				    }
 
 				    .switch {
