@@ -3,58 +3,57 @@ import { withNamespaces } from "react-i18next"
 import Layout from "layouts/Layout"
 import CardProject from "components/CardProject"
 
-
-const Showcase = ({t}) => {
+const Showcase = ({ t }) => {
     const projectList = [
         {
             href: "mesAides",
             img: "/static/projects/mesaides.png",
-            title: t('title-mesaides'),
-            desc: t('desc-mesaides'),
-            attribute1: t('fr'),
-            attribute2: t('apiweb'),
-            attribute3: t('social')
+            title: t("title-mesaides"),
+            desc: t("desc-mesaides"),
+            attribute1: t("fr"),
+            attribute2: t("apiweb"),
+            attribute3: t("social"),
         },
         {
             href: "lexImpact",
             img: "/static/projects/leximpact.png",
-            title: t('title-lex'),
-            desc: t('desc-lex'),
-            attribute1: t('fr'),
-            attribute2: t('apipython'),
-            attribute3: t('reforms')
+            title: t("title-lex"),
+            desc: t("desc-lex"),
+            attribute1: t("fr"),
+            attribute2: t("apipython"),
+            attribute3: t("reforms"),
         },
         {
             href: "taxIpp",
             img: "/static/projects/taxipp.png",
-            title: t('title-tax'),
-            desc: t('desc-tax'),
-            attribute1: t('fr'),
-            attribute2: t('apipython'),
-            attribute3: t('reforms')
+            title: t("title-tax"),
+            desc: t("desc-tax"),
+            attribute1: t("fr"),
+            attribute2: t("apipython"),
+            attribute3: t("reforms"),
         },
         {
             href: "ratesRebates",
             img: "/static/projects/ratesrebates.png",
-            title: t('title-rates'),
-            desc: t('desc-rates'),
-            attribute1: t('nz'),
-            attribute2: t('apiweb'),
-            attribute3: t('social')
+            title: t("title-rates"),
+            desc: t("desc-rates"),
+            attribute1: t("nz"),
+            attribute2: t("apiweb"),
+            attribute3: t("social"),
         },
         {
             href: "fastoche",
             img: "/static/projects/fastoche.png",
-            title: t('title-fastoche'),
-            desc: t('desc-fastoche'),
-            attribute1: t('fr'),
-            attribute2: t('apiweb'),
-            attribute3: t('social')
-        }
+            title: t("title-fastoche"),
+            desc: t("desc-fastoche"),
+            attribute1: t("fr"),
+            attribute2: t("apiweb"),
+            attribute3: t("social"),
+        },
     ]
 
     return (
-        <Layout page="showcase" title={t('title')}>
+        <Layout page="showcase" title={t("title")}>
             <div className="content">
                 <ul className="flex__container">
                     {projectList.map(project => (
@@ -73,7 +72,6 @@ const Showcase = ({t}) => {
                     ))}
                 </ul>
             </div>
-
 
             <style jsx>
                 {`
@@ -96,6 +94,5 @@ const Showcase = ({t}) => {
         </Layout>
     )
 }
-
 
 export default withNamespaces("showcase")(Showcase)

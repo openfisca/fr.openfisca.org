@@ -40,5 +40,4 @@ const ProjectDesc = props => (
     </div>
 )
 
-
 export default ProjectDesc

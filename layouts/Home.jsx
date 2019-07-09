@@ -3,11 +3,13 @@ import Footer from "components/Footer"
 import Piwik from "components/Piwik"
 import "styles/theme.scss"
 
-
 const Home = ({ page, title, children }) => (
     <div>
         <Head>
-            <title>OpenFisca: {title}</title>
+            <title>
+OpenFisca:
+                {title}
+            </title>
             <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         {children}
@@ -15,6 +17,5 @@ const Home = ({ page, title, children }) => (
         <Piwik page={page} />
     </div>
 )
-
 
 export default Home

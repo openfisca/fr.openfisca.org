@@ -4,37 +4,36 @@ import Layout from "layouts/Layout"
 import ProjectDesc from "components/ProjectDesc"
 import ProjectAttribute from "components/ProjectAttribute"
 
-
-const Fastoche = ({t}) => (
-    <Layout page="fastoche" title={t('title')}>
+const Fastoche = ({ t }) => (
+    <Layout page="fastoche" title={t("title")}>
         <div className="content">
             <a className="outline" href="/showcase/">
-                {t('back')}
+                {t("back")}
             </a>
 
             <ProjectDesc
                 img="/static/projects/fastoche.png"
-                baseline={t('baseline')}
-                desc1={t('desc1')}
-                desc2={t('desc2')}
-                desc3={t('desc3')}
+                baseline={t("baseline")}
+                desc1={t("desc1")}
+                desc2={t("desc2")}
+                desc3={t("desc3")}
                 url="https://www.fastoche.fr/"
-                textlink={t('textlink')}
+                textlink={t("textlink")}
             />
 
             <section>
-                <h2>{t('car')}</h2>
+                <h2>{t("car")}</h2>
                 <ProjectAttribute
                     imgapi="/static/icons/circle/api.svg"
-                    api={t('api')}
+                    api={t("api")}
                     imgcountry="/static/icons/circle/france.svg"
-                    country={t('country')}
+                    country={t("country")}
                     imgsimulation="/static/icons/circle/simindividuelle.svg"
-                    simulation={t('simulation')}
+                    simulation={t("simulation")}
                     imgperimetre="/static/icons/circle/perimetre.svg"
-                    perimetre={t('perimetre')}
+                    perimetre={t("perimetre")}
                     imgpoweredby="/static/icons/circle/startup.svg"
-                    poweredby={t('poweredby')}
+                    poweredby={t("poweredby")}
                 />
             </section>
         </div>
@@ -52,6 +51,5 @@ const Fastoche = ({t}) => (
         </style>
     </Layout>
 )
-
 
 export default withNamespaces("fastoche")(Fastoche)

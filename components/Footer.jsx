@@ -1,36 +1,39 @@
 import { withNamespaces } from "react-i18next"
 import Link from "next/link"
 
-
-const Footer = ({t}) => (
+const Footer = ({ t }) => (
     <div>
         <footer>
             <div className="baseline">
-                <h3>{t('pitch1')} {t('pitch2')}</h3>
+                <h3>
+                    {t("pitch1")}
+                    {" "}
+                    {t("pitch2")}
+                </h3>
                 <a href="https://openfisca.org/doc/" className="btn cta">
-                    {t('start')}
+                    {t("start")}
                     <img src="/static/icons/rocket.svg" />
                 </a>
             </div>
             <ul>
                 <li>
                     <Link href="/status" passHref>
-                        <a>{t('components:status')}</a>
+                        <a>{t("components:status")}</a>
                     </Link>
                 </li>
                 <li>
                     <Link href="/cookies" passHref>
-                        <a>{t('components:privacy')}</a>
+                        <a>{t("components:privacy")}</a>
                     </Link>
                 </li>
                 <li>
                     <Link href="/legal" passHref>
-                        <a>{t('components:legal')}</a>
+                        <a>{t("components:legal")}</a>
                     </Link>
                 </li>
                 <li>
                     <Link href="/contribute" passHref>
-                        <a>{t('components:contribute')}</a>
+                        <a>{t("components:contribute")}</a>
                     </Link>
                 </li>
             </ul>
@@ -46,7 +49,7 @@ const Footer = ({t}) => (
                     </a>
                 </li>
                 <li>
-                    <a href={t('welcomeform')}>
+                    <a href={t("welcomeform")}>
                         <img src="/static/icons/Slack.svg" alt="Slack" />
                     </a>
                 </li>
@@ -64,19 +67,21 @@ const Footer = ({t}) => (
                     background: #6d69fb; /* Old browsers */
                     background: -moz-linear-gradient(
                         163.99deg,
-                        #00BAAF -21.24%,
-                        #6D69FB 76.56%,
-                        #6D69FB 83.4%
+                        #00baaf -21.24%,
+                        #6d69fb 76.56%,
+                        #6d69fb 83.4%
                     ); /* FF3.6-15 */
                     background: -webkit-linear-gradient(
-                        163.99deg, #00BAAF -21.24%,
-                        #6D69FB 76.56%,
-                        #6D69FB 83.4%
+                        163.99deg,
+                        #00baaf -21.24%,
+                        #6d69fb 76.56%,
+                        #6d69fb 83.4%
                     ); /* Chrome10-25,Safari5.1-6 */
                     background: linear-gradient(
-                        163.99deg, #00BAAF -21.24%,
-                        #6D69FB 76.56%,
-                        #6D69FB 83.4%
+                        163.99deg,
+                        #00baaf -21.24%,
+                        #6d69fb 76.56%,
+                        #6d69fb 83.4%
                     ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
                     filter: progid:DXImageTransform.Microsoft.gradient(
                         startColorstr='#6d69fb',
@@ -140,6 +145,5 @@ const Footer = ({t}) => (
         </style>
     </div>
 )
-
 
 export default withNamespaces(["index", "components"])(Footer)

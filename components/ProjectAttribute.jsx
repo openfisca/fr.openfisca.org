@@ -51,5 +51,4 @@ const ProjectAttribute = props => (
     </div>
 )
 
-
 export default ProjectAttribute

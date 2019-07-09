@@ -29,5 +29,4 @@ class Piwik extends React.Component {
     }
 }
 
-
 export default Piwik

@@ -1,16 +1,14 @@
-
 import { withNamespaces } from "react-i18next"
 
 import Layout from "layouts/Layout"
 
-
-const Status = ({t}) => (
-    <Layout page="status" title={t('title')}>
+const Status = ({ t }) => (
+    <Layout page="status" title={t("title")}>
         <div className="content">
-            <h1>{t('title')}</h1>
+            <h1>{t("title")}</h1>
             <div id="iframe-container">
                 <iframe
-                    title={t('title')}
+                    title={t("title")}
                     src="https://status.openfisca.org"
                     style={{
                         backgroundColor: "#9a9a9a24",
@@ -24,6 +22,5 @@ const Status = ({t}) => (
         </div>
     </Layout>
 )
-
 
 export default withNamespaces("status")(Status)

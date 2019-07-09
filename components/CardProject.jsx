@@ -57,5 +57,4 @@ const CardProject = props => (
     </div>
 )
 
-
 export default CardProject
