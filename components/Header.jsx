@@ -15,17 +15,17 @@ const Header = (
                 </Link>
                 <ul>
                     <li>
-                        <Link href="/showcase/" passhref="true">
+                        <Link href="/showcase/" passHref>
                             <a className="menu">{t('projects')}</a>
                         </Link>
                     </li>
                     <li>
-                        <Link href="/resources" passhref="true">
+                        <Link href="/resources" passHref>
                             <a className="menu">{t('ressources')}</a>
                         </Link>
                     </li>
                     <li>
-                        <Link href="/community" passhref="true">
+                        <Link href="/community" passHref>
                             <a className="menu">{t('community')}</a>
                         </Link>
                     </li>
@@ -36,7 +36,7 @@ const Header = (
                         </a>
                     </li>
                     <li>
-                        <Link href="https://openfisca.org/doc/" passhref="true">
+                        <Link href="https://openfisca.org/doc/" passHref>
                             <a className="btn cta">{t('start')} <img src={asset('/icons/rocket.svg')} /></a>
                         </Link>
                     </li>

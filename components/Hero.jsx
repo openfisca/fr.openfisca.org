@@ -15,17 +15,17 @@ const Hero = (
                 </Link>
                 <ul>
                     <li>
-                        <Link href="/showcase/" passhref>
+                        <Link href="/showcase/" passHref>
                             <a className="menu">{t('projects')}</a>
                         </Link>
                     </li>
                     <li>
-                        <Link href="/resources" passhref>
+                        <Link href="/resources" passHref>
                             <a className="menu">{t('ressources')}</a>
                         </Link>
                     </li>
                     <li>
-                        <Link href="/community" passhref>
+                        <Link href="/community" passHref>
                               <a className="menu">{t('community')}</a>
                         </Link>
                     </li>
@@ -35,7 +35,7 @@ const Hero = (
                         </a>
                     </li>
                     <li>
-                        <Link href="https://openfisca.org/doc/" passhref>
+                        <Link href="https://openfisca.org/doc/" passHref>
                             <a className="btn cta">{t('start')} <img src={asset('/icons/rocket.svg')}  alt=""/></a>
                         </Link>
                     </li>
@@ -50,7 +50,7 @@ const Hero = (
             <div className="content">
                 <img src="static/images/logo_main.svg" alt="OpenFisca"/>
                 <p className="baseline" >{t('pitch1')}<br/>{t('pitch2')}</p>
-                <Link href="https://openfisca.org/doc/" passhref>
+                <Link href="https://openfisca.org/doc/" passHref>
                     <a className="btn cta">
                         {t('start')} <img src={asset('/icons/rocket.svg')} alt="" />
                     </a>

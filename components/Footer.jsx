@@ -14,44 +14,44 @@ const Footer = ({t}) => (
             </div>
             <ul>
                 <li>
-                    <Link href="/status" passhref="true">
+                    <Link href="/status" passHref>
                         <a>{t('components:status')}</a>
                     </Link>
                 </li>
                 <li>
-                    <Link href="/cookies" passhref="true">
+                    <Link href="/cookies" passHref>
                         <a>{t('components:privacy')}</a>
                     </Link>
                 </li>
                 <li>
-                    <Link href="/legal" passhref="true">
+                    <Link href="/legal" passHref>
                         <a>{t('components:legal')}</a>
                     </Link>
                 </li>
                 <li>
-                    <Link href="/contribute" passhref="true">
+                    <Link href="/contribute" passHref>
                         <a>{t('components:contribute')}</a>
                     </Link>
                 </li>
             </ul>
             <ul className="social">
                 <li>
-                    <a href="mailto:contact@openfisca.org?Subject=openfisca.org" passhref="true">
+                    <a href="mailto:contact@openfisca.org?Subject=openfisca.org">
                         <img src="/static/icons/Email.svg" alt="Envoyer un email" />
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/openfisca" passhref="true">
+                    <a href="https://github.com/openfisca">
                         <img src="/static/icons/Github.svg" alt="GitHub" />
                     </a>
                 </li>
                 <li>
-                    <a href={t('welcomeform')} passhref="true">
+                    <a href={t('welcomeform')}>
                         <img src="/static/icons/Slack.svg" alt="Slack" />
                     </a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/openfisca" passhref="true">
+                    <a href="https://twitter.com/openfisca">
                         <img src="/static/icons/Twitter.svg" alt="Twitter" />
                     </a>
                 </li>
