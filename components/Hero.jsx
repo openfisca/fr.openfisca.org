@@ -68,17 +68,17 @@ const Hero = (
                     }
 
                     .logo {
-                    	max-width: 4em;
-                    	margin: 1em;
-                    	cursor: pointer;
+                        max-width: 4em;
+                        margin: 1em;
+                        cursor: pointer;
                     }
 
                     .switch {
-                    	border-radius: 25px;
-                    	background: white;
-                    	color: black;
-                    	font-size: 0.8em;
-                    	width: 3em;
+                        border-radius: 25px;
+                        background: white;
+                        color: black;
+                        font-size: 0.8em;
+                        width: 3em;
                     }
 
                     .content {
@@ -100,23 +100,23 @@ const Hero = (
                     }
 
                     ul {
-	            		list-style-type: none;
-	            		min-height: 3em;
-	            		display: flex;
-	            		align-items : first baseline;
-	            		float: right;
-	            	}
+                        list-style-type: none;
+                        min-height: 3em;
+                        display: flex;
+                        align-items : first baseline;
+                        float: right;
+                    }
 
-	            	li {
-	            		list-style: none;
+                    li {
+                        list-style: none;
                         margin-right: 0.5em;
-	            	}
+                    }
 
                     li img {
                         max-height: 1.5em;
                     }
 
-	            	h3 {
+                    h3 {
                         color: #ffffff;
                         text-align: center;
                     }
@@ -132,7 +132,7 @@ const Hero = (
                         li {
                             margin-bottom: 1em;
                         }
-	            	}
+                    }
                 `}
             </style>
         </div>
