@@ -7,7 +7,7 @@ import i18next from "i18next"
 
 
 const Header = (
-	({t}, props) => (
+	({t, title}) => (
         <header>
             <nav>
                 <Link href="/">
@@ -44,7 +44,7 @@ const Header = (
                         <a className="switch btn cta" onClick={(e) => changeLanguage(switchLanguage())}>{switchLanguage()}</a>
                     </li>
                 </ul>
-                <h1>{props.title}</h1>
+                <h1>{title}</h1>
             </nav>
 
 
