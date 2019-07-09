@@ -4,8 +4,7 @@ import Layout from "layouts/Layout"
 import CardResource from "components/CardResource"
 
 
-function Resources(props) {
-    const {t} = props
+const Resources = ({t}) => {
     const resourceList = [
         {
             img: "/static/icons/france.svg",

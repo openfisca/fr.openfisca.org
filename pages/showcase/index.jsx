@@ -4,14 +4,13 @@ import Layout from "layouts/Layout"
 import CardProject from "components/CardProject"
 
 
-function Showcase(props) {
-    const {t} = props
+const Showcase = ({t}) => {
     const projectList = [
         {
             href: "mesAides",
             img: "/static/projects/mesaides.png",
             title: t('title-mesaides'),
-            desc: t('desc-mesaides'), 
+            desc: t('desc-mesaides'),
             attribute1: t('fr'),
             attribute2: t('apiweb'),
             attribute3: t('social')
@@ -20,7 +19,7 @@ function Showcase(props) {
             href: "lexImpact",
             img: "/static/projects/leximpact.png",
             title: t('title-lex'),
-            desc: t('desc-lex'), 
+            desc: t('desc-lex'),
             attribute1: t('fr'),
             attribute2: t('apipython'),
             attribute3: t('reforms')
@@ -29,7 +28,7 @@ function Showcase(props) {
             href: "taxIpp",
             img: "/static/projects/taxipp.png",
             title: t('title-tax'),
-            desc: t('desc-tax'), 
+            desc: t('desc-tax'),
             attribute1: t('fr'),
             attribute2: t('apipython'),
             attribute3: t('reforms')
@@ -38,7 +37,7 @@ function Showcase(props) {
             href: "ratesRebates",
             img: "/static/projects/ratesrebates.png",
             title: t('title-rates'),
-            desc: t('desc-rates'), 
+            desc: t('desc-rates'),
             attribute1: t('nz'),
             attribute2: t('apiweb'),
             attribute3: t('social')
@@ -47,7 +46,7 @@ function Showcase(props) {
             href: "fastoche",
             img: "/static/projects/fastoche.png",
             title: t('title-fastoche'),
-            desc: t('desc-fastoche'), 
+            desc: t('desc-fastoche'),
             attribute1: t('fr'),
             attribute2: t('apiweb'),
             attribute3: t('social')
