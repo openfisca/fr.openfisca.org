@@ -3,11 +3,12 @@ import { withNamespaces } from "react-i18next"
 const CardResource = ({ t, ...props }) => (
     <div className="card-container">
         <div className="card-desc">
-            <p className="medium">{props.title}</p>
-            <p className="small">
-                <img src={props.img} alt="" />
-                {props.desc}
+            <a className="categorie">{props.categorie}</a>
+            <p className="medium">
+                <img className="flag" src={props.img} alt="" />
+                {props.title}
             </p>
+            <p className="small">{props.desc}</p>
         </div>
         <div className="card-links">
             {props.linkexplorer && <a href={props.linkexplorer}>{t("explore")}</a>}
@@ -30,6 +31,7 @@ const CardResource = ({ t, ...props }) => (
                 .card-desc {
                     text-align: left;
                     padding-left: 4%;
+                    padding-right: 4%;
                 }
 
                 .card-desc > p {
@@ -42,6 +44,23 @@ const CardResource = ({ t, ...props }) => (
                     justify-content: space-between;
                     flex-direction: row;
                     background-color: #6d69fb;
+                    font-size: 1em;
+                }
+
+                .categorie {
+                    font-family: asapmedium;
+                    font-size: 0.75em;
+                    color: #000;
+                    background-color: #E5E5E5;
+                    border: solid 0px;
+                    margin-top: 4%;
+                    padding: 1%;
+                    border-radius: 4px;
+                }
+
+                .flag {
+                    width: 3em;
+                    padding-right: 1em;
                 }
             `}
         </style>
