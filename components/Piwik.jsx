@@ -1,13 +1,16 @@
-import React from 'react'
-import Head from 'next/head'
+import React from "react"
+import Head from "next/head"
 
-const PiwikConfig = require('../piwik.config')
+const PiwikConfig = require("../piwik.config")
 
 class Piwik extends React.Component {
     componentDidMount() {
         setTimeout(() => {
             if (window.Piwik) {
-                const tracker = window.Piwik.getTracker(`${PiwikConfig.url}/piwik.php`, PiwikConfig.siteId)
+                const tracker = window.Piwik.getTracker(
+                    `${PiwikConfig.url}/piwik.php`,
+                    PiwikConfig.siteId,
+                )
                 tracker.trackPageView(`${PiwikConfig.website} - ${this.props.page}`)
             }
         }, 300)

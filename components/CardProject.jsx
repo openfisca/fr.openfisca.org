@@ -1,17 +1,18 @@
-const CardProject = (props) => (
+const CardProject = props => (
     <div className="card-project">
         <div className="card-background">
             <img src={props.img} />
         </div>
         <div className="card-shortdesc">
-            <p className="Medium">{props.title}</p>
-            <p className="Small">{props.desc}</p>
+            <p className="medium">{props.title}</p>
+            <p className="small">{props.desc}</p>
             <button>{props.attribute1}</button>
             <button>{props.attribute2}</button>
             <button>{props.attribute3}</button>
         </div>
 
-        <style jsx>{`
+        <style jsx>
+            {`
 
             .card-project {
                 background-color: #ffffff;
@@ -51,7 +52,8 @@ const CardProject = (props) => (
                 background: linear-gradient(164deg, rgba(0,186,175,.7) -21.24%, rgba(105,109,261,0.7) 76.5%, rgba(105,109,261,0.7) 84.5%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d69fb', endColorstr='#00baaf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
             }
-        `}</style>
+        `}
+        </style>
     </div>
 )
 

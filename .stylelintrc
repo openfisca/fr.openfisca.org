@@ -1,0 +1,12 @@
+{
+    "parserOptions": {},
+    "extends": "stylelint-config-sass-guidelines",
+    "rules": {
+        "font-family-name-quotes": "always-unless-keyword",
+        "function-url-quotes": "always",
+        "indentation": 4,
+        "string-quotes": "double",
+        "selector-attribute-quotes": "always",
+        "selector-class-pattern": null,
+    }
+}
