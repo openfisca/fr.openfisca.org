@@ -7,7 +7,7 @@
     "start": "Getting started",
 
     "pitch1": "The open source platform",
-    "pitch2": "that turns law into software.",
+    "pitch2": "to write rules as code.",
 
     "everything": "Everything you can do with OpenFisca",
     "title-economists":"For economists",
@@ -20,7 +20,7 @@
 
     "title-how":"How does it work?",
     "content-how":"OpenFisca is a free, reusable, modular open source project. Il permet de modéliser le code législatif en code informatique, pour améliorer la transparence et l’accès à la loi.",
-    
+
     "feature1-list-a":"Use an existing tax & benefit system existant",
     "feature1-list-b": "Build your own system",
     "feature1-list-c": "Improve an existing system",
