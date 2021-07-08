@@ -8,7 +8,7 @@ const Legal = ({ t }) => (
             <p>
                 {t("director-address-1")}
                 <br />
-                <a href="https://www.etalab.gouv.fr">{t("director-address-2")}</a>
+                <a href="https://agence-cohesion-territoires.gouv.fr">{t("director-address-2")}</a>
                 <br />
                 {t("director-address-3")}
                 <br />
