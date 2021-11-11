@@ -17,7 +17,7 @@ const Footer = ({ t }) => (
             </div>
             <ul>
                 <li>
-                    <Link href="/status" passHref>
+                    <Link href="https://stats.uptimerobot.com/A6WQWi553" passHref>
                         <a>{t("components:status")}</a>
                     </Link>
                 </li>
