@@ -9,7 +9,7 @@ const Status = ({ t }) => (
             <div id="iframe-container">
                 <iframe
                     title={t("title")}
-                    src="https://status.openfisca.org"
+                    src="https://stats.uptimerobot.com/A6WQWi553"
                     style={{
                         backgroundColor: "#9a9a9a24",
                         width: "100%",
