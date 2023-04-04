@@ -1,5 +1,5 @@
 {
-	"url": "https://stats.data.gouv.fr",
-    "siteId": 4,
+	"url": "https://stats.beta.gouv.fr",
+    "siteId": 11,
     "website": "https://fr.openfisca.org/"
 }
